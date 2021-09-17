@@ -65,12 +65,10 @@ h5 {
 }
 
 a,
-a:visited {
-    text-decoration: none;
-}
-
+a:visited,
 a:hover {
     text-decoration: none;
+    color: inherit;
 }
 
 ul {
@@ -87,9 +85,9 @@ ul {
 
 .wrapper {
     min-height: 100%;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 /* global end ------------------------------------------- */

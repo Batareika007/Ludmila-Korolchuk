@@ -15,39 +15,44 @@
 <body>
     <div class="wrapper">
         <!-- Header ---------------------------->
-        <header class="header container">
+        <header class="header">
             <div class="container">
-                <div class="logo">LOGO</div>
-                <nav>
-                    <a href="http://">Обо мне</a>
-                    <a href="http://">Курсы и тренинги</a>
-                    <a href="http://">Консультации</a>
-                    <a href="http://">Блог</a>
-                    <a href="http://">Контакты</a>
-                </nav>
+                <div class="header__row flex-row">
+                    <a href="index.html" class="header__logo">LOGO</a>
+
+                    <nav class="header__nav flex-row">
+                        <a href="#">Обо мне</a>
+                        <a href="#">Курсы и тренинги</a>
+                        <a href="#">Консультации</a>
+                        <a href="#">Блог</a>
+                        <a href="#">Контакты</a>
+                    </nav>
+                </div>
             </div>
         </header>
-
+        
         <!-- Main -------------------------------->
-        <main class="main container">
+        <main class="main">
             <!--Subheader  ----------------------->
             <div class="subheader">
                 <div class="container">
-                    <div class="subheader__img">
+                    <!-- <div class="subheader__img">
                         <img src="" alt="Людмила Корольчук">
-                    </div>
+                    </div> -->
                     <div class="subheader__title">
-
-                        <h1>
-                            Людмила
-                            Корольчук
+                        <h1 class="subheader__title_header">
+                            <span>Людмила</span>
+                            <span>Корольчук</span>
                         </h1>
-                        <span>
+                        <span class="subheader__title_text">
                             психолог, арт-терапевт
                         </span>
                     </div>
                 </div>
             </div>
+
+
+
             <!-- Subheader2 ---------------------->
             <div class="subheader2">
                 <div class="container">
@@ -118,7 +123,7 @@
                         <span>Viber, Skype, Messenger, Zoom</span>
                     </div>
                     <div class="card">
-                        <h3>  Очная консультация</h3>
+                        <h3> Очная консультация</h3>
                         <span>Продолжтельность - 90 минут</span>
                         <span>г. Киев, ул. Героев Сталинграда 3</span>
                     </div>
@@ -190,28 +195,30 @@
                     <!-- Blog Video  ----------------->
                     <div class="blog__video">
                         <h3>Видео</h3>
-                        <a href="http://">Ознакомится со всеми видеоматериалами Вы также можете на моем youtube-канале</a>
+                        <a href="http://">Ознакомится со всеми видеоматериалами Вы также можете на моем
+                            youtube-канале</a>
                         <div class="blog__video__carousel">
                         </div>
                     </div>
                     <!-- Blog Gallery  ----------------->
                     <div class="blog__gallery">
                         <h3>Галлерея</h3>
-                        <p>Во время наших курсов и тренингов женщины познают себя и обретают уверенность через волшебную силу творчества</p>
-                        <p>Творчество помагает женщинам расскрыть свою самоценность и уверенно творить свою счастливую жизнь</p>
+                        <p>Во время наших курсов и тренингов женщины познают себя и обретают уверенность через волшебную
+                            силу творчества</p>
+                        <p>Творчество помагает женщинам расскрыть свою самоценность и уверенно творить свою счастливую
+                            жизнь</p>
                         <div class="blog__gallery__carousel">
                         </div>
                     </div>
                     <!-- Blog Poetry   ----------------->
-                    <div class="blog__gallery">
+                    <div class="blog__gallery gallery">
                         <h3>Стихи</h3>
-                        <p>Когда ты открываешся миру, приходят строки сами по себе. Как будто кто-то берет твою руку и пишет. Вот такие строки вышли у меня</p>
-                        <div class="blog__gallery__carousel">
+                        <p>Когда ты открываешся миру, приходят строки сами по себе. Как будто кто-то берет твою руку и
+                            пишет. Вот такие строки вышли у меня</p>
+                        <div class="gallery__carousel">
                         </div>
+                        <a class="gallery__read-more" href="http://">Читать еще</a>
                     </div>
-
-
-
                 </div>
             </div>
 
@@ -219,27 +226,59 @@
             <!-- Contacts ------------------------------->
             <div class="contacts">
                 <div class="container">
-                    <h1>Контакты</h1>
-                    
+                    <h2>Контакты</h2>
+                    <div class="contacts__row">
+                        <div class="contacts__column">
+                            <a href="tel:+"></a>
+                            <a href="mailto:"></a>
+                            <span>Мессенджеры:</span>
+                            <ul>
+                                <li><a href="#"> messenger </a></li>
+                                <li><a href="#"> viber </a></li>
+                                <li><a href="#"> telegram </a></li>
+                                <li><a href="#"> whatsapp </a></li>
+                            </ul>
+                        </div>
+                        <div class="contacts__column">
+                            <span>Соцсети:</span>
+                            <ul>
+                                <li><a href="#">facebook</a></li>
+                                <li><a href="#">instagram</a></li>
+                            </ul>
+                            <span>Видео Вы можете посмотреть на</span>
+                            <a href="#">youtube</a>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
         </main>
 
         <!-- Footer ------------------------------->
-        <footer class="footer container">
-            <h3>
-                I am footer
-            </h3>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row flex-row">
+                    <div class="logo">logo</div>
+                    <a href="tel:+"></a>
+                    <a href="mailto:"></a>
+                    <ul class="links flex-row">
+                        <li><a href="#">facebook</a></li>
+                        <li><a href="#">instagram</a></li>
+                        <li><a href="#">messager</a></li>
+                        <li><a href="#">viber</a></li>
+                        <li><a href="#">telegram</a></li>
+                        <li><a href="#">whatsapp</a></li>
+                        <li><a href="#">youtube</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column flex-column">
+                    <div class="footer__column_coop">© 2021 Ludmila korolchuk.</div>
+                    <div class="footer__column_coop">2021 Ludmila korolchuk. Все тексты на этом сайте - интелектуальная
+                        собственность автора</div>
+                    <div class="footer__column_coop">© Desing by Yuliya Hryschenko</div>
+                </div>
+            </div>
         </footer>
 
     </div>
