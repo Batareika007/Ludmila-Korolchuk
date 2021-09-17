@@ -1,0 +1,32 @@
+/* container max width -------------------  */
+.container {
+  max-width: 1120px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 3rem;
+}
+
+.header {
+  margin: 0 auto;
+  background-color: blue;
+}
+
+/* main -------------------  */
+.main {
+  margin: 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+/* footer -------------------  */
+.footer {
+  margin: 0 auto;
+  background-color: red;
+}
