@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="src/jquery-gp-gallery.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="src/jquery-gp-gallery.css" />
     <title>Edit Me!</title>
 
 </head>
@@ -30,7 +33,7 @@
                 </div>
             </div>
         </header>
-        
+
         <!-- Main -------------------------------->
         <main class="main">
             <!--Subheader  ----------------------->
@@ -56,11 +59,13 @@
             <!-- Subheader2 ---------------------->
             <div class="subheader2">
                 <div class="container">
-                    <h2>“Именно Вы - автор картины своей жизни”</h2>
+                    <h2 class="subheader2_title flex-center">“Именно Вы - автор картины своей жизни”</h2>
                 </div>
             </div>
+
+
             <!-- About --------------------------->
-            <div class="about">
+            <div class="about  flex-center">
                 <div class="container">
                     <h2>Обо мне</h2>
                     <div class="about__main">
@@ -74,14 +79,20 @@
                     <button>Узнать больше</button>
                 </div>
             </div>
+
+
             <!-- Certificates -------------------------->
-            <div class="certificates">
+            <div class="certificates flex-center">
                 <div class="container">
-                    <h3>CARUSEL OF IMAGES</h3>
+                    <div class="certificates__carousel">
+                        <h3>CARUSEL OF IMAGES - certificates</h3>
+                    </div>
                 </div>
             </div>
+
+
             <!-- Courses and trainings ----------------->
-            <div class="coursese-and-trainungs">
+            <div class="coursese-and-trainungs flex-center">
                 <div class="container">
                     <h2>Курсы и тренинги</h2>
                     <div class="cards">
@@ -89,54 +100,70 @@
                     </div>
                 </div>
             </div>
-            <!-- Consulting  --------------------------->
+
+
+            <!-- Consulting  Консультации ------------->
             <div class="consulting">
                 <div class="container">
-                    <h2>Консультации</h2>
-                </div>
-                <div class="consulting__content">
-                    <p>Я провожу консультации как онлайн так и очно в Киеве. Дату и время консультации мы согласовываем
-                        заранее таким образом, чтобы было удобно и Вам, и мне.
 
-                        Как-то особо готовится к встрече не нужно, даже если вам покажется, что Вы не сможете полностью
-                        изложить суть вашей проблемы, я помогу вам наводящими вопросами, тестовыми, диагностическими
-                        заданиями.</p>
-                    <p>Продолжительность психотерапии (сколько потребуется встреч) зависит от изначального запроса, от
-                        уровня сложности поставленной задачи, степени травматичности переживаний, от продолжительности
-                        воздействия стрессовых факторов, которые привели к проблеме, от текущих условий вашей жизни, от
-                        уровня физического здоровья и поддержки вне терапии (друзья, любимый человек, родители).
-                        Любая информация о Вас, которую Вы мне доверите - конфиденциальна.
-
-                        Заранее перед встречей Вы можете самостоятельно поразмышлять, как Вы поймете, что цель
-                        совместной работы - достигнута, что Вы получили результат, за которым обратились.</p>
-                    <p>Если возникнет необходимость переноса встречи (непредвиденные обстоятельства, технические
-                        проблемы с компьютером или телефоном, заболевание и т.д.), об этом следует известить
-                        заблаговеременно, как минимум, за сутки.
-
-                        Для клиентов из других стран есть сервис wayforpay, т.е. Вам на электронную почту приходит счет
-                        от меня и Вы можете оплатить в своей валюте.</p>
-                </div>
-                <div class="consultiung__cards">
-                    <div class="card">
-                        <h3>Онлайн-консультация</h3>
-                        <span>Продолжтельность - 90 минут</span>
-                        <span>Viber, Skype, Messenger, Zoom</span>
+                    <div class="consulting__title">
+                        <h2>Консультации</h2>
                     </div>
-                    <div class="card">
-                        <h3> Очная консультация</h3>
-                        <span>Продолжтельность - 90 минут</span>
-                        <span>г. Киев, ул. Героев Сталинграда 3</span>
+
+
+                    <div class="consulting__content">
+                        <p>Я провожу консультации как онлайн так и очно в Киеве. Дату и время консультации мы
+                            согласовываем
+                            заранее таким образом, чтобы было удобно и Вам, и мне.
+
+                            Как-то особо готовится к встрече не нужно, даже если вам покажется, что Вы не сможете
+                            полностью
+                            изложить суть вашей проблемы, я помогу вам наводящими вопросами, тестовыми, диагностическими
+                            заданиями.</p>
+                        <p>Продолжительность психотерапии (сколько потребуется встреч) зависит от изначального запроса,
+                            от
+                            уровня сложности поставленной задачи, степени травматичности переживаний, от
+                            продолжительности
+                            воздействия стрессовых факторов, которые привели к проблеме, от текущих условий вашей жизни,
+                            от
+                            уровня физического здоровья и поддержки вне терапии (друзья, любимый человек, родители).
+                            Любая информация о Вас, которую Вы мне доверите - конфиденциальна.
+
+                            Заранее перед встречей Вы можете самостоятельно поразмышлять, как Вы поймете, что цель
+                            совместной работы - достигнута, что Вы получили результат, за которым обратились.</p>
+
+                        <p>Если возникнет необходимость переноса встречи (непредвиденные обстоятельства, технические
+                            проблемы с компьютером или телефоном, заболевание и т.д.), об этом следует известить
+                            заблаговеременно, как минимум, за сутки.
+
+                            Для клиентов из других стран есть сервис wayforpay, т.е. Вам на электронную почту приходит
+                            счет
+                            от меня и Вы можете оплатить в своей валюте.</p>
                     </div>
-                    <div class="card">
-                        <h3>Консультация пары</h3>
-                        <span>Продолжтельность - 90 минут</span>
+
+                    <div class="consultiung__cards">
+                        <div class="card">
+                            <h3>Онлайн-консультация</h3>
+                            <span>Продолжтельность - 90 минут</span>
+                            <span>Viber, Skype, Messenger, Zoom</span>
+                        </div>
+                        <div class="card">
+                            <h3> Очная консультация</h3>
+                            <span>Продолжтельность - 90 минут</span>
+                            <span>г. Киев, ул. Героев Сталинграда 3</span>
+                        </div>
+                        <div class="card">
+                            <h3>Консультация пары</h3>
+                            <span>Продолжтельность - 90 минут</span>
+                        </div>
                     </div>
 
                 </div>
             </div>
 
+
             <!-- Form ----------------------------------->
-            <div class="form">
+            <div class="form flex-center">
                 <div class="container">
                     <h2>Записаться на консультацию</h2>
 
@@ -188,36 +215,68 @@
 
                     <!-- Blog Articles  ----------------->
                     <div class="blog__cards">
-                        <h3>Статьи</h3>
+                        <h3 class="blog__cards_title">Статьи</h3>
                         <div class="blog__cards__carousel">
                         </div>
                     </div>
                     <!-- Blog Video  ----------------->
                     <div class="blog__video">
-                        <h3>Видео</h3>
+                        <h3 class="blog__video_title">Видео</h3>
                         <a href="http://">Ознакомится со всеми видеоматериалами Вы также можете на моем
                             youtube-канале</a>
                         <div class="blog__video__carousel">
                         </div>
                     </div>
+
+
+
                     <!-- Blog Gallery  ----------------->
                     <div class="blog__gallery">
-                        <h3>Галлерея</h3>
-                        <p>Во время наших курсов и тренингов женщины познают себя и обретают уверенность через волшебную
-                            силу творчества</p>
-                        <p>Творчество помагает женщинам расскрыть свою самоценность и уверенно творить свою счастливую
-                            жизнь</p>
+                        <h3 class="blog__gallery_title">Галлерея</h3>
+                        <div class="flex-row">
+
+                            <p>Во время наших курсов и тренингов женщины познают себя и обретают уверенность через
+                                волшебную
+                                силу творчества</p>
+                            <p>Творчество помагает женщинам расскрыть свою самоценность и уверенно творить свою
+                                счастливую
+                                жизнь</p>
+                        </div>
                         <div class="blog__gallery__carousel">
+                            <div class="pictures">
+                                <img src="untitled-3-2.jpg" width="267" height="400" />
+                                <img src="untitled-3-16.jpg" width="400" height="267" />
+                                <img src="untitled-3-5.jpg" width="400" height="267" />
+                                <img src="untitled-3-0.jpg" width="400" height="267" />
+                                <img src="untitled-3-14.jpg" width="400" height="267" />
+                                <img src="untitled-3-9.jpg" width="400" height="267" />
+                                <img src="untitled-3-4.jpg" width="400" height="267" />
+                                <img src="untitled-3-10.jpg" width="267" height="400" />
+                                <img src="untitled-3-8.jpg" width="267" height="400" />
+                                <img src="untitled-3-3.jpg" width="400" height="267" />
+                                <img src="untitled-3-1.jpg" width="400" height="267" />
+                                <img src="untitled-3-13.jpg" width="400" height="267" />
+                                <img src="untitled-3-19.jpg" width="400" height="267" />
+                                <img src="untitled-3-7.jpg" width="400" height="267" />
+                                <img src="untitled-3-12.jpg" width="267" height="400" />
+                                <img src="untitled-3-15.jpg" width="400" height="267" />
+                                <img src="untitled-3-18.jpg" width="400" height="267" />
+                                <img src="untitled-3-6.jpg" width="400" height="267" />
+                                <img src="untitled-3-11.jpg" width="267" height="400" />
+                                <img src="untitled-3-17.jpg" width="267" height="400" />
+                                <div class="clear"></div>
+                            </div>
                         </div>
                     </div>
                     <!-- Blog Poetry   ----------------->
-                    <div class="blog__gallery gallery">
+                    <div class="blog__poetry poetry">
                         <h3>Стихи</h3>
-                        <p>Когда ты открываешся миру, приходят строки сами по себе. Как будто кто-то берет твою руку и
+                        <p>Когда ты открываешся миру, приходят строки сами по себе. Как будто кто-то берет твою руку
+                            и
                             пишет. Вот такие строки вышли у меня</p>
-                        <div class="gallery__carousel">
+                        <div class="poetry">
                         </div>
-                        <a class="gallery__read-more" href="http://">Читать еще</a>
+                        <a class="poetry-more" href="http://">Читать еще</a>
                     </div>
                 </div>
             </div>
@@ -280,8 +339,14 @@
                 </div>
             </div>
         </footer>
-
     </div>
+
+
+    <script>
+        $(function () {
+            $('.pictures').gpGallery('img');
+        })
+    </script>
 </body>
 
 </html>
