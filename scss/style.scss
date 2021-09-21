@@ -1,9 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
     font-size: 16px;
     font-family: 'Montserrat',
         sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lucida Calligraphy', sans-serif;
 }
 
 .flex-row {
@@ -45,6 +55,16 @@ span {
 
 }
 
+// ##     ## ########    ###    ########  ######## ########  
+// ##     ## ##         ## ##   ##     ## ##       ##     ## 
+// ##     ## ##        ##   ##  ##     ## ##       ##     ## 
+// ######### ######   ##     ## ##     ## ######   ########  
+// ##     ## ##       ######### ##     ## ##       ##   ##   
+// ##     ## ##       ##     ## ##     ## ##       ##    ##  
+// ##     ## ######## ##     ## ########  ######## ##     ## 
+
+
+
 /* header --------------------------------- */
 .header {
     font-weight: 600;
@@ -82,6 +102,15 @@ span {
 
 }
 
+// ##     ##    ###    #### ##    ## 
+// ###   ###   ## ##    ##  ###   ## 
+// #### ####  ##   ##   ##  ####  ## 
+// ## ### ## ##     ##  ##  ## ## ## 
+// ##     ## #########  ##  ##  #### 
+// ##     ## ##     ##  ##  ##   ### 
+// ##     ## ##     ## #### ##    ## 
+
+
 
 
 /* main -------------------  */
@@ -91,6 +120,15 @@ span {
     flex: 1 1 auto;
 }
 
+//  ######  ##     ## ########  ##     ## ########    ###    ########  ######## ########  
+// ##    ## ##     ## ##     ## ##     ## ##         ## ##   ##     ## ##       ##     ## 
+// ##       ##     ## ##     ## ##     ## ##        ##   ##  ##     ## ##       ##     ## 
+//  ######  ##     ## ########  ######### ######   ##     ## ##     ## ######   ########  
+//       ## ##     ## ##     ## ##     ## ##       ######### ##     ## ##       ##   ##   
+// ##    ## ##     ## ##     ## ##     ## ##       ##     ## ##     ## ##       ##    ##  
+//  ######   #######  ########  ##     ## ######## ##     ## ########  ######## ##     ## 
+
+
 /* subheader ------------------- */
 
 .subheader {
@@ -99,7 +137,6 @@ span {
     // min-height: 638px;
     background-repeat: no-repeat;
     background-size: cover;
-    font-style: italic;
 }
 
 .subheader__title {
@@ -108,6 +145,8 @@ span {
     background-repeat: no-repeat;
     background-position: left bottom;
     text-align: center;
+    // font-family: 'Lucida Calligraphy Italic', sans-serif;
+    font-weight: 600;
 }
 
 .subheader__title_header {
@@ -116,6 +155,8 @@ span {
     line-height: 110%;
     font-weight: 500;
     margin-left: 17%;
+    font-weight: 400;
+    font-style: italic;
 
     span:last-child {
         margin-left: 45%;
@@ -127,23 +168,45 @@ span {
     margin-left: 23%;
 }
 
+//  ######  ##     ## ########  ##     ## ########    ###    ########  ######## ########   #######  
+// ##    ## ##     ## ##     ## ##     ## ##         ## ##   ##     ## ##       ##     ## ##     ## 
+// ##       ##     ## ##     ## ##     ## ##        ##   ##  ##     ## ##       ##     ##        ## 
+//  ######  ##     ## ########  ######### ######   ##     ## ##     ## ######   ########   #######  
+//       ## ##     ## ##     ## ##     ## ##       ######### ##     ## ##       ##   ##   ##        
+// ##    ## ##     ## ##     ## ##     ## ##       ##     ## ##     ## ##       ##    ##  ##        
+//  ######   #######  ########  ##     ## ######## ##     ## ########  ######## ##     ## ######### 
+
 /* subheader2 --------------------*/
 
 .subheader2 {
     background: url('../img/subheader2__backgrpund.png') 0 0/100% 100% no-repeat;
     // background-size: cover;
     position: relative;
-    top: -100px;
-    margin-bottom: -100px;
+    top: -60px;
+    margin-bottom: -60px;
 }
 
 .subheader2_title {
-    min-height: 220px;
+    min-height: 152px;
+    // line-height: 152px;
     color: #fff;
     font-size: 46px;
     font-style: italic;
     text-align: center;
 }
+
+//    ###    ########   #######  ##     ## ######## 
+//   ## ##   ##     ## ##     ## ##     ##    ##    
+//  ##   ##  ##     ## ##     ## ##     ##    ##    
+// ##     ## ########  ##     ## ##     ##    ##    
+// ######### ##     ## ##     ## ##     ##    ##    
+// ##     ## ##     ## ##     ## ##     ##    ##    
+// ##     ## ########   #######   #######     ##    
+
+
+
+
+
 
 /* about -------------------------*/
 
@@ -164,7 +227,7 @@ span {
     gap: 32px;
 }
 
-.about__image {}
+// .about__image {}
 
 .about__content {
     max-width: 735px;
@@ -207,6 +270,18 @@ span {
     }
 }
 
+
+//  ######  ######## ########  ######## #### ######## ####  ######     ###    ######## ########  ######  
+// ##    ## ##       ##     ##    ##     ##  ##        ##  ##    ##   ## ##      ##    ##       ##    ## 
+// ##       ##       ##     ##    ##     ##  ##        ##  ##        ##   ##     ##    ##       ##       
+// ##       ######   ########     ##     ##  ######    ##  ##       ##     ##    ##    ######    ######  
+// ##       ##       ##   ##      ##     ##  ##        ##  ##       #########    ##    ##             ## 
+// ##    ## ##       ##    ##     ##     ##  ##        ##  ##    ## ##     ##    ##    ##       ##    ## 
+//  ######  ######## ##     ##    ##    #### ##       ####  ######  ##     ##    ##    ########  ######  
+
+
+
+
 /* Certificates -----------------*/
 
 .certificates {
@@ -221,6 +296,17 @@ span {
     justify-content: center;
     gap: 32px;
 }
+
+
+
+//  ######   #######  ##     ## ########   ######  ########  ######        ###    ##    ## ########     ######## ########     ###    #### ##    ## #### ##    ##  ######    ######  
+// ##    ## ##     ## ##     ## ##     ## ##    ## ##       ##    ##      ## ##   ###   ## ##     ##       ##    ##     ##   ## ##    ##  ###   ##  ##  ###   ## ##    ##  ##    ## 
+// ##       ##     ## ##     ## ##     ## ##       ##       ##           ##   ##  ####  ## ##     ##       ##    ##     ##  ##   ##   ##  ####  ##  ##  ####  ## ##        ##       
+// ##       ##     ## ##     ## ########   ######  ######    ######     ##     ## ## ## ## ##     ##       ##    ########  ##     ##  ##  ## ## ##  ##  ## ## ## ##   ####  ######  
+// ##       ##     ## ##     ## ##   ##         ## ##             ##    ######### ##  #### ##     ##       ##    ##   ##   #########  ##  ##  ####  ##  ##  #### ##    ##        ## 
+// ##    ## ##     ## ##     ## ##    ##  ##    ## ##       ##    ##    ##     ## ##   ### ##     ##       ##    ##    ##  ##     ##  ##  ##   ###  ##  ##   ### ##    ##  ##    ## 
+//  ######   #######   #######  ##     ##  ######  ########  ######     ##     ## ##    ## ########        ##    ##     ## ##     ## #### ##    ## #### ##    ##  ######    ######  
+
 
 /* Courses and trainings ---------- */
 .coursese-and-trainungs {
@@ -244,6 +330,14 @@ span {
     border: grey 5px solid;
 }
 
+//  ######   #######  ##    ##  ######  ##     ## ##       ######## #### ##    ##  ######   
+// ##    ## ##     ## ###   ## ##    ## ##     ## ##          ##     ##  ###   ## ##    ##  
+// ##       ##     ## ####  ## ##       ##     ## ##          ##     ##  ####  ## ##        
+// ##       ##     ## ## ## ##  ######  ##     ## ##          ##     ##  ## ## ## ##   #### 
+// ##       ##     ## ##  ####       ## ##     ## ##          ##     ##  ##  #### ##    ##  
+// ##    ## ##     ## ##   ### ##    ## ##     ## ##          ##     ##  ##   ### ##    ##  
+//  ######   #######  ##    ##  ######   #######  ########    ##    #### ##    ##  ######   
+
 /* Consulting ----------------------*/
 .consulting {
     // text-align: center;
@@ -256,21 +350,18 @@ span {
 }
 
 .consulting__content {
-    margin: 0 0 40px 0;
-    gap: 32px;
+    justify-content: space-evenly;
+}
 
-    p {
-        max-width: 544px;
-        align-self: center;
+.consulting__content_text {
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 510px;
+    margin: 0 0 16px 0;
+}
 
-        &:first-child {
-            align-self: flex-start;
-        }
-
-        &:last-child {
-            align-self: flex-end;
-        }
-    }
+.content-item_image {
+    align-self: center;
 }
 
 .consultiung__cards {
@@ -280,33 +371,111 @@ span {
 
 .consultiung__cards_card {
     padding: 32px 16px;
-    width: 352px;
-    border: 1px solid #000000;
-    border-radius: 8px;
     gap: 16px;
     text-align: center;
+    border: 1px solid #330774;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgba(93, 12, 212, 0.4);
+    border-radius: 8px;
+
+    h3 {
+        font-size: 32px;
+        line-height: 37px;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+    }
 
 }
+
+// ########  #######  ########  ##     ## 
+// ##       ##     ## ##     ## ###   ### 
+// ##       ##     ## ##     ## #### #### 
+// ######   ##     ## ########  ## ### ## 
+// ##       ##     ## ##   ##   ##     ## 
+// ##       ##     ## ##    ##  ##     ## 
+// ##        #######  ##     ## ##     ## 
+
 
 /* form --------------------------- */
 
 .form {
-    justify-content: space-between;
+    padding: 74px 0 82px 0;
+    background: url('../img/form-background.png'), url('../img/form-background.png');
+    background-repeat: no-repeat;
+    background-position: top center, bottom center;
+    background-size: contain;
 }
 
 .form__title {
-    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 150%;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 40px 0;
     text-align: center;
 }
 
+
+.form-container {
+    margin: 0 auto;
+    /* if adding new content make width bigger */
+    max-width: 1230px;
+}
+
+
 .form__row {
-    justify-content: space-between;
+    // justify-content: space-between;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    background: #E3D2FC;
+    backdrop-filter: blur(40px);
+    border-radius: 8px;
+    padding: 48px;
 }
 
 .form__column {
-    width: 354px;
-    justify-content: space-between;
+    flex: 0 1 354px;
 
+    label {
+        margin: 0 0 4px 0;
+    }
+
+    input {
+        margin: 0 0 24px 0;
+    }
+
+    div {
+        margin: 0 0 16px 0;
+    }
+
+    textarea {
+        min-height: 172px;
+        resize: none;
+        margin-bottom: 24px;
+    }
+
+    input[type=checkbox] {
+        margin-right: 16px;
+    }
+
+    button[type=submit] {
+        background: #904CF5;
+        border-radius: 60px;
+        color: #fff;
+        font-size: 16px;
+        line-height: 20px;
+        min-height: 60px;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: all ease-in-out 0.3s;
+
+        &:hover {
+            box-shadow: inset 1px 1px 16px #fff;
+            // color: #fff;
+            transition: all ease-in-out 0.3s;
+        }
+    }
 }
 
 .form_input {
@@ -316,11 +485,18 @@ span {
     border-radius: 8px;
 }
 
+// ########  ##        #######   ######   
+// ##     ## ##       ##     ## ##    ##  
+// ##     ## ##       ##     ## ##        
+// ########  ##       ##     ## ##   #### 
+// ##     ## ##       ##     ## ##    ##  
+// ##     ## ##       ##     ## ##    ##  
+// ########  ########  #######   ######   
 /* blog ----------------------------*/
 
 .blog {
-    text-align: center;
 
+    text-align: center;
 }
 
 .blog__title {
@@ -328,50 +504,271 @@ span {
     font-size: 2rem;
 }
 
+// ########  ##        #######   ######         ###    ########  ######## ####  ######  ##       ########  ######  
+// ##     ## ##       ##     ## ##    ##       ## ##   ##     ##    ##     ##  ##    ## ##       ##       ##    ## 
+// ##     ## ##       ##     ## ##            ##   ##  ##     ##    ##     ##  ##       ##       ##       ##       
+// ########  ##       ##     ## ##   ####    ##     ## ########     ##     ##  ##       ##       ######    ######  
+// ##     ## ##       ##     ## ##    ##     ######### ##   ##      ##     ##  ##       ##       ##             ## 
+// ##     ## ##       ##     ## ##    ##     ##     ## ##    ##     ##     ##  ##    ## ##       ##       ##    ## 
+// ########  ########  #######   ######      ##     ## ##     ##    ##    ####  ######  ######## ########  ######  
+
 /*---- Blog Articles -------------------*/
 
-.blog__article {}
+.blog__article {
+    gap: 43px;
+}
 
-.blog__article_title {
-    padding: 40px 0;
+.article {
+    max-width: 740px;
+    margin: 0 auto;
 }
 
 .blog__article_title {
-    justify-content: space-between;
+    margin: 0 0 31px 0;
 }
 
-.blog__article__content {}
+.article__section {
+    position: relative;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.article__image {
+    flex: 0 1 160px;
+    width: 160px;
+    height: 160px;
+    border-radius: 8px;
+    background-color: grey;
+}
+
+.article__content {
+    flex: 0 1 547px;
+    text-align: left;
+}
+
+.article__content_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.article__content_paragraph {
+    position: relative;
+    flex: 1 1 auto;
+    font-size: 16px;
+    line-height: 150%;
+    max-height: 100px;
+    overflow-y: hidden;
+
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #FFFFFF 30%, rgba(255, 255, 255, 0) 90%);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.article__content_read-more {
+    align-self: flex-end;
+    font-size: 18px;
+    line-height: 150%;
+    padding: 0 32px 0 0;
+    background-image: url('../svg/read-more.svg');
+    background-position: right center;
+    background-repeat: no-repeat;
+
+}
+
+// ########  ##        #######   ######      ##     ## #### ########  ########  #######  
+// ##     ## ##       ##     ## ##    ##     ##     ##  ##  ##     ## ##       ##     ## 
+// ##     ## ##       ##     ## ##           ##     ##  ##  ##     ## ##       ##     ## 
+// ########  ##       ##     ## ##   ####    ##     ##  ##  ##     ## ######   ##     ## 
+// ##     ## ##       ##     ## ##    ##      ##   ##   ##  ##     ## ##       ##     ## 
+// ##     ## ##       ##     ## ##    ##       ## ##    ##  ##     ## ##       ##     ## 
+// ########  ########  #######   ######         ###    #### ########  ########  #######  
 
 /*---- Blog Video  ---------------------*/
 
-.blog__video {}
+// .blog__video {}
 
 .blog__video_title {
     padding: 40px 0;
 }
 
-.blog__video__carousel {}
+.blog__video_link {
+    align-self: flex-start;
+    margin: 0 0 22px 0;
+}
+
+.blog__video__carousel {
+    justify-content: space-between;
+}
+
+.blog__video__carousel_item {
+    flex: 0 1 352px;
+    height: 200px;
+    border-radius: 8px;
+    border: 2px solid red;
+}
 
 
+
+// ########  ##        #######   ######       ######      ###    ##       ##       ######## ########  ##    ## 
+// ##     ## ##       ##     ## ##    ##     ##    ##    ## ##   ##       ##       ##       ##     ##  ##  ##  
+// ##     ## ##       ##     ## ##           ##         ##   ##  ##       ##       ##       ##     ##   ####   
+// ########  ##       ##     ## ##   ####    ##   #### ##     ## ##       ##       ######   ########     ##    
+// ##     ## ##       ##     ## ##    ##     ##    ##  ######### ##       ##       ##       ##   ##      ##    
+// ##     ## ##       ##     ## ##    ##     ##    ##  ##     ## ##       ##       ##       ##    ##     ##    
+// ########  ########  #######   ######       ######   ##     ## ######## ######## ######## ##     ##    ##    
 /*----- blog Gallery --------------------*/
-.blog__gallery {}
+.blog__gallery {
+    padding: 98px 0 48px 0;
+}
+
+.blog__portey_sub-title {
+    margin: 0 0 32px 0;
+}
 
 .blog__gallery_title {
     padding: 40px 0;
 }
 
-.blog__gallery__carousel {}
+.blog__gallery__text {
+    justify-content: space-around;
+}
+
+.blog__gallery_paragragh {
+    flex: 0 1 352px;
+    text-align: left;
+}
+
+.blog__gallery__carousel {
+    // min-height: 472px;
+}
+
+.image-container {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+
+    .image-item {
+        flex: 1 0 auto;
+        display: flex;
+        height: 150px;
+        transition: all ease-in-out 1s;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+
+            &:hover {
+                object-fit: contain;
+                transform: scale(1.8);
+                transition: all ease-in-out 1s;
+            }
+        }
+
+        // }
+
+        // &:hover {
+        //     // transition: all ease-in-out 1s;
+        //     position: relative;
+        //     // transform: scale(1.4);
+        //     z-index: 100;
+
+        //     img {
+        //         // transition: all ease-in-out 1s;
+        //         object-fit: contain;
+        //     }
+        // }
 
 
+    }
+
+}
+
+
+// ########  ##        #######   ######         ########   #######  ######## ######## ########  ##    ## 
+// ##     ## ##       ##     ## ##    ##        ##     ## ##     ## ##          ##    ##     ##  ##  ##  
+// ##     ## ##       ##     ## ##              ##     ## ##     ## ##          ##    ##     ##   ####   
+// ########  ##       ##     ## ##   ####       ########  ##     ## ######      ##    ########     ##    
+// ##     ## ##       ##     ## ##    ##        ##        ##     ## ##          ##    ##   ##      ##    
+// ##     ## ##       ##     ## ##    ##        ##        ##     ## ##          ##    ##    ##     ##    
+// ########  ########  #######   ######         ##         #######  ########    ##    ##     ##    ##    
 
 
 /* Blog  Poetry ------------------------*/
-.blog__poetry {}
 
-.poetry {}
+.blog__poetry {
+    padding: 0 0 40px 0;
+}
 
-.poetry-more {}
+.poetry__section {
+    padding: 0 0 32px 0;
+    justify-content: space-between;
+}
 
+.blog__poetry_title {
+    margin: 0 0 32px 0;
+}
+
+.poetry__card {
+    padding: 10px 10px 0 10px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px #904CF5;
+    overflow: hidden;
+    flex: 0 1 352px;
+    max-height: 352px;
+    position: relative;
+
+
+    &::after {
+        content: '';
+        margin-top: 40px;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.19) 45.1%, #FFFFFF 90%);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.poetry__card_svg {
+    margin: 0 0 17px 0;
+}
+
+.poetry__card_paraghraph {
+    text-align: left;
+
+    p {
+        line-height: 150%;
+        margin: 0 0 16px 0;
+    }
+}
+
+.poetry-more {
+    display: flex;
+    justify-content: right;
+}
+
+//  ######   #######  ##    ## ########    ###     ######  ########  ######  
+// ##    ## ##     ## ###   ##    ##      ## ##   ##    ##    ##    ##    ## 
+// ##       ##     ## ####  ##    ##     ##   ##  ##          ##    ##       
+// ##       ##     ## ## ## ##    ##    ##     ## ##          ##     ######  
+// ##       ##     ## ##  ####    ##    ######### ##          ##          ## 
+// ##    ## ##     ## ##   ###    ##    ##     ## ##    ##    ##    ##    ## 
+//  ######   #######  ##    ##    ##    ##     ##  ######     ##     ######  
 
 
 
@@ -382,10 +779,16 @@ span {
 
 .contacts {
     min-height: 252px;
-    border: 5px solid red;
+
 }
 
-
+// ########  #######   #######  ######## ######## ########  
+// ##       ##     ## ##     ##    ##    ##       ##     ## 
+// ##       ##     ## ##     ##    ##    ##       ##     ## 
+// ######   ##     ## ##     ##    ##    ######   ########  
+// ##       ##     ## ##     ##    ##    ##       ##   ##   
+// ##       ##     ## ##     ##    ##    ##       ##    ##  
+// ##        #######   #######     ##    ######## ##     ## 
 
 
 /* footer -------------------  */

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Edit Me!</title>
 
 </head>
@@ -168,45 +169,44 @@
                     </div>
 
 
-                    <div class="consulting__content flex-column ">
-                        <p><span>
+                    <div class="consulting__content  flex-row">
+                        <div class="content-item">
+                            <p class="consulting__content_text">
                                 Я провожу консультации как онлайн так и очно в Киеве. Дату и время консультации мы
                                 согласовываем заранее таким образом, чтобы было удобно и Вам, и мне.
-                            </span>
-                            <span>
+                            </p>
+                            <p class="consulting__content_text">
                                 Как-то особо готовится к встрече не нужно, даже если вам покажется, что Вы не сможете
                                 полностью изложить суть вашей проблемы, я помогу вам наводящими вопросами, тестовыми,
                                 диагностическими заданиями.
-                            </span>
-                        </p>
-                        <p>
-                            <span>Продолжительность психотерапии (сколько потребуется встреч) зависит от изначального
+                            </p>
+                            <p class="consulting__content_text">
+                                Продолжительность психотерапии (сколько потребуется встреч) зависит от изначального
                                 запроса, от уровня сложности поставленной задачи, степени травматичности переживаний, от
                                 продолжительности воздействия стрессовых факторов, которые привели к проблеме, от
                                 текущих условий вашей жизни, от уровня физического здоровья и поддержки вне терапии
-                                (друзья, любимый человек, родители).</span>
-                            <span>
+                                (друзья, любимый человек, родители).
+                            </p>
+                            <p class="consulting__content_text">
                                 Любая информация о Вас, которую Вы мне доверите - конфиденциальна.
-                            </span>
-                            <span>
+                            </p>
+                            <p class="consulting__content_text">
                                 Заранее перед встречей Вы можете самостоятельно поразмышлять, как Вы поймете, что цель
                                 совместной работы - достигнута, что Вы получили результат, за которым обратились.
-                            </span>
-                        </p>
-
-                        <p>
-                            <span>
+                            </p>
+                            <p class="consulting__content_text">
                                 Если возникнет необходимость переноса встречи (непредвиденные обстоятельства,
                                 технические проблемы с компьютером или телефоном, заболевание и т.д.), об этом следует
                                 известить заблаговеременно, как минимум, за сутки.
-                            </span>
-
-                            <span>
+                            </p>
+                            <p class="consulting__content_text">
                                 Для клиентов из других стран есть сервис wayforpay, т.е. Вам на электронную почту
                                 приходит счет от меня и Вы можете оплатить в своей валюте.
-                            </span>
-
-                        </p>
+                            </p>
+                        </div>
+                        <div class="content-item_image">
+                            <img src="/img/consulting_img.png" alt="">
+                        </div>
                     </div>
 
                     <div class="consultiung__cards flex-row">
@@ -232,9 +232,11 @@
 
 
             <!-- Form ----------------------------------->
-            <div class="form flex-center">
-                <div class="container">
-                    <h2 class="form__title">Записаться на консультацию</h2>
+            <div class="form">
+
+                <h2 class="form__title">Записаться на консультацию</h2>
+
+                <div class="form-container">
 
                     <form class="form__row flex-row" action="">
 
@@ -242,14 +244,15 @@
                         <div class="form__column flex-column">
 
                             <label for="consulting-type">Тип консультации</label>
-                            <input class="form_input" type="text" name="" id="consulting-type" placeholder="Выбрать тип консультации">
+                            <input class="form_input" type="text" name="" id="consulting-type"
+                                placeholder="Выбрать тип консультации">
 
                             <div>Выберите наиболее удобный для Вас способ связи для онлайн-консультации</div>
 
                             <label for="skype"><input type="checkbox" name="" id="skype"> Skype </label>
 
                             <label for="viber"><input type="checkbox" name="" id="viber"> Viber </label>
-                            
+
                             <label for="messenger"><input type="checkbox" name="" id="messenger"> Messenger</label>
 
                             <label for="zoom"><input type="checkbox" name="" id="zoom"> Zoom</label>
@@ -258,26 +261,32 @@
                         </div>
                         <!-- name and privet data -->
                         <div class="form__column flex-column">
-                            <label for="lastname" >Фамилия</label>
+                            <label for="lastname">Фамилия</label>
                             <input class="form_input" type="text" id="lastname" placeholder="Фамилия">
-                            
-                            <label for="firstname" >Имя</label>
+
+                            <label for="firstname">Имя</label>
                             <input class="form_input" type="text" id="firstname" placeholder="Имя">
 
-                            <label for="email" >E-mail</label>
+                            <label for="email">E-mail</label>
                             <input class="form_input" type="email" name="email" id="email" placeholder="E-mail">
 
-                            <label for="phone" >Телефон</label>
-                            <input class="form_input" type="tel" name="phone" id="phone" placeholder="+38(___) ___-__-__">
+                            <label for="phone">Телефон</label>
+                            <input class="form_input" type="tel" name="phone" id="phone"
+                                placeholder="+38(___) ___-__-__">
+
                         </div>
 
                         <!-- textarea and submit -->
                         <div class="form__column flex-column">
                             <label for="about-problem">Напишите коротко о проблеме</label>
-                            <textarea  name="" id="about-problem"  placeholder="Коротко о проблеме"></textarea>
-                            <div class="form_date">Когда Вам было бы удобно получить консультацию</div>
-                            <input class="form_input" type="text" name="" id="" placeholder="Укажите удобные даты и время">
-                            <input type="submit" value="ЗАПИСАТЬСЯ">
+                            <textarea class="form_input" name="" id="about-problem"
+                                placeholder="Коротко о проблеме"></textarea>
+                            <label for="date-and-time">Когда Вам было бы удобно получить консультацию</label>
+                            <input class="form_input" type="text" name="" id="date-and-time"
+                                placeholder="Укажите удобные даты и время">
+
+                            <button type="submit" value="Submit">ЗАПИСАТЬСЯ</button>
+                            <!-- <submit type="submit" value="ЗАПИСАТЬСЯ ЗАПИСАТЬСЯ ЗАПИСАТЬСЯ"> -->
                         </div>
 
 
@@ -292,22 +301,72 @@
                         <h2>Блог</h2>
                     </div>
 
-            <!-- Blog Articles  ----------------->
-                    <div class="blog__article">
+                    <!-- Blog Articles  ----------------->
+                    <div class="blog__article article flex-column">
                         <h3 class="blog__article_title">Статьи</h3>
-                        <div class="blog__article__content flex-row">
-                            
+                        <div class="article__section flex-row">
+                            <div class="article__image"></div>
+                            <div class="article__content flex-column">
+                                <h3 class="article__content_title">“Дневник благодарности Роду”</h3>
+                                <p class="article__content_paragraph">Ко мне часто приходят женщины с запросом про
+                                    уверенность в себе. Они хотят изменений на работе, в отношении с партнером...</p>
+                                <span class="article__content_read-more">Читать далее</span>
+                            </div>
                         </div>
+
+
+                        <div class="article__section flex-row">
+                            <div class="article__image"></div>
+                            <div class="article__content flex-column">
+                                <h3 class="article__content_title">“Женские желания”</h3>
+                                <p class="article__content_paragraph">Казалось, что может быть естественнее, а вот
+                                    нетушки…
+                                    Оказывается за столь простым предложением: «Напишите свои 30 желаний», скрывается
+                                    столько всего?! Способность спонтанно реагировать, идти за своим интересом и желать
+                                    – все это качества нашего «внутреннего» ребенка. И у многих людей доступ к этой
+                                    эмоциональной части себя перекрыт логикой, страхом, стыдом, виной.
+                                </p>
+                                <span class="article__content_read-more">Читать далее</span>
+                            </div>
+                        </div>
+
+
+                        <div class="article__section flex-row">
+                            <div class="article__image"></div>
+                            <div class="article__content flex-column">
+                                <h3 class="article__content_title">“Отношения двоих”</h3>
+                                <p class="article__content_paragraph">Отношения двоих всегда начинаются с отношения к
+                                    себе!
+                                    В женском представлении часто присутствует идеальная картинка отношений. Ну а если
+                                    что-то не складывается, то это ведь с мужчиной что-то не так. А как хорошо мы знаем
+                                    сами
+                                    себя?
+                                </p>
+                                <span class="article__content_read-more">Читать далее</span>
+                            </div>
+                        </div>
+
+
                     </div>
 
 
-                    
+
                     <!-- Blog Video  ----------------->
-                    <div class="blog__video">
+                    <div class="blog__video flex-column">
                         <h3 class="blog__video_title">Видео</h3>
-                        <a href="http://">Ознакомится со всеми видеоматериалами Вы также можете на моем
+                        <a class="blog__video_link" href="http://">Ознакомится со всеми видеоматериалами Вы также можете
+                            на моем
                             youtube-канале</a>
-                        <div class="blog__video__carousel">
+                        <div class="blog__video__carousel flex-row">
+                            <div class="blog__video__carousel_item flex-center">
+                                PLAY ME
+                            </div>
+                            <div class="blog__video__carousel_item flex-center">
+                                PLAY ME
+                            </div>
+                            <div class="blog__video__carousel_item flex-center">
+                                PLAY ME
+                            </div>
                         </div>
                     </div>
 
@@ -316,27 +375,140 @@
                     <!-- Blog Gallery  ----------------->
                     <div class="blog__gallery">
                         <h3 class="blog__gallery_title">Галлерея</h3>
-                        <div class="flex-row">
 
-                            <p>Во время наших курсов и тренингов женщины познают себя и обретают уверенность через
+                        <div class="blog__gallery__text flex-row">
+                            <p class="blog__gallery_paragragh">Во время наших курсов и тренингов женщины познают себя и
+                                обретают уверенность через
                                 волшебную
                                 силу творчества</p>
-                            <p>Творчество помагает женщинам расскрыть свою самоценность и уверенно творить свою
+                            <p class="blog__gallery_paragragh">Творчество помагает женщинам расскрыть свою самоценность
+                                и уверенно творить свою
                                 счастливую
                                 жизнь</p>
                         </div>
-                        <div class="blog__gallery__carousel">
 
+
+                        <div class="blog__gallery__carousel">
+                            <div class="image-container">
+                                <div class="image-item">
+                                    <img src="/img/gallery/1.jpg" alt="" srcset="">
+                                </div>
+                                <div class="image-item">
+                                    <img src="/img/gallery/2.jpg" alt="" srcset="">
+                                </div>
+                                <div class="image-item">
+                                    <img src="/img/gallery/3.jpg" alt="" srcset="">
+                                </div>
+                                <div class="image-item">
+                                    <img src="/img/gallery/4.jpg" alt="" srcset="">
+                                </div>
+                                <div class="image-item">
+                                    <img src="/img/gallery/5.jpg" alt="" srcset="">
+                                </div>
+                                <div class="image-item">
+                                    <img src="/img/gallery/6.jpg" alt="" srcset="">
+                                </div>
+                                <div class="image-item">
+                                    <img src="/img/gallery/7.jpg" alt="" srcset="">
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                     <!-- Blog Poetry   ----------------->
+
+
+
                     <div class="blog__poetry poetry">
-                        <h3>Стихи</h3>
-                        <p>Когда ты открываешся миру, приходят строки сами по себе. Как будто кто-то берет твою руку
-                            и
-                            пишет. Вот такие строки вышли у меня</p>
-                        <div class="poetry">
+                        <h3 class="blog__poetry_title">Стихи</h3>
+                        <p class="blog__portey_sub-title">Когда ты открываешся миру, строки приходят сами по себе...
+                        </p>
+
+                        <div class="poetry__section flex-row">
+                            <div class="poetry__card">
+                                <div class="poetry__card_svg">
+                                    <img src="/svg/poetry-stars.svg" alt="">
+                                </div>
+                                <div class="poetry__card_paraghraph">
+                                    <p>
+                                        Сколько женщине для счастья надо?Посмотреть в любимые глаза,
+                                        Улыбнуться солнцу, скушать персик,Разрешить себе то, что нельзя.
+                                    </p>
+                                    <p>
+                                        Импульс жизни он свое подскажет, И вибрация по телу зазвенит, Расцветет в груди
+                                        цветком нежнейшим,Голосом из сердца зазвучит.
+                                    </p>
+                                    <p>
+                                        Сколько нужно женщине для счастья?Знать, что есть защита у Творца,Что есть силы
+                                        пережить ненастье,И смахнуть слезиночку с лица.
+                                    </p>
+                                    <p>
+                                        Подстветить то лучшее в мужчине,А оно там сто процентов есть,Что позволит
+                                        создавать причины,Наслаждаться этим счастьем здесь.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="poetry__card">
+                                <div class="poetry__card_svg">
+                                    <img src="/svg/poetry-stars.svg" alt="">
+                                </div>
+                                <div class="poetry__card_paraghraph">
+                                    <p>
+                                        Жизнь она просто течет,Доверься, открой ей сердце!Почувствуй души полет,Чтоб
+                                        любовью Творца согреться.
+                                    </p>
+                                    <p>
+                                        Она ведь в пространстве разлитаИмпульс дает всему,Ею листья деревьев умыты,С ней
+                                        солнце встает поутру!
+                                    </p>
+                                    <p>
+                                        С ней пишут стихи и картины,Встречают родные глаза,Потоки любви и светаОни ведь
+                                        с тобою всегда.
+                                    </p>
+                                    <p>
+                                        Настройся на жизни волну,Почувствуй свою дорогу.В дороге таких же
+                                        найдешьТворящих с импульсом Бога!
+                                    </p>
+                                    <p>
+                                        Одно я прошу, не беги,Иногда нас ум загоняет,Замедляйся, дыши, смотри,Каждый миг
+                                        раз в жизни бывает.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="poetry__card">
+                                <div class="poetry__card_svg">
+                                    <img src="/svg/poetry-stars.svg" alt="">
+                                </div>
+                                <div class="poetry__card_paraghraph">
+                                    <p>
+                                        Ты просто женщина, а значит уязвима,Из плоти, крови, но есть еще Душа.Моменты
+                                        жизни, они не повторимы,Попробуй смаковать их не спеша.
+                                    </p>
+                                    <p>
+                                        Стоит раскрыть свои ладони Миру
+                                        И принять то, что он сейчас дает.
+                                        Ты вправе прокричать:”Несправедливо!”Но в этом суть, Души твоей полет.
+                                    </p>
+                                    <p>
+                                        Из бурелома недоверия пробраться,Пройти сквозь боль, обиду и упрек.И несмотря на
+                                        все открытой оставаться,Ведь в мире каждый получает свой урок.
+                                    </p>
+                                    <p>
+                                        Что людям предлагаем мы отведать,То вскоре получаем и в ответ,Поэтому в любом
+                                        моменте жизниБудет полезным следующий рецепт.
+                                    </p>
+                                    <p>
+                                        Чтоб смаковать добро и красоту, и благость,Попробуйте с принятия начать,
+                                        Готовьте с благодарностью, в конце добавьте сладость,И знайте очень много
+                                        любовью можно напитать.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
+
+
                         <a class="poetry-more" href="http://">Читать еще</a>
                     </div>
                 </div>
@@ -402,8 +574,8 @@
         </footer>
     </div>
 
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
