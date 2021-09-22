@@ -72,8 +72,10 @@ span {
     background: radial-gradient(108.28% 18624.03% at 0% 12.3%, rgba(255, 255, 255, 0.4) 0%, rgba(230, 209, 240, 0.4) 100%);
     box-shadow: 0px 2px 4px #E3D2FC;
     position: absolute;
+    position: fixed;
     width: 100%;
     overflow: hidden;
+    z-index: 1000;
 }
 
 .header__row {

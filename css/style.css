@@ -79,8 +79,10 @@ span {
   -webkit-box-shadow: 0px 2px 4px #E3D2FC;
           box-shadow: 0px 2px 4px #E3D2FC;
   position: absolute;
+  position: fixed;
   width: 100%;
   overflow: hidden;
+  z-index: 1000;
 }
 
 .header__row {
