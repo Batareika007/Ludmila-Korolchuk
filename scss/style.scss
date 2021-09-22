@@ -310,26 +310,173 @@ span {
 
 
 /* Courses and trainings ---------- */
-.coursese-and-trainungs {
+.courses-trainings {
     padding: 40px 0;
     text-align: center;
 }
 
-.coursese-and-trainungs__title {
+.courses-trainings__title {
     margin: 0 0 32px 0;
 }
 
-.coursese-and-trainungs__cards {
+/* card section ---------------------- */
+.courses-trainings__cards {
     justify-content: center;
     flex-wrap: wrap-reverse;
     gap: 32px;
 }
 
-.coursese-and-trainungs__cards_card {
+.courses-trainings__card {
+    position: relative;
+    cursor: pointer;
+    // width: 352px;
+    // height: 352px;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    background-size: cover;
+}
+
+.flip-card__item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border-radius: 8px;
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card__container:hover .flip-card_item {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    // position: absolute;
+    // width: 100%;
+    // height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+// card-front side -------------------------------//
+
+.flip-card-front {
+    font-size: 32px;
+    line-height: 39px;
+    // font-weight: bold;
+    padding: 0 40px;
+}
+
+// card-back side --------------------------- //
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    text-align: left;
+    padding-top: 30px;
+}
+
+// card-back-flip style 
+.flip-card__main {
+    padding-left: 8px;
+    flex: 1 1 auto;
+}
+
+.flip-card-title {
+    font-size: 24px;
+    line-height: 110%;
+    margin-bottom: 10px;
+}
+
+.flip-card-text {
+    font-size: 18px;
+    line-height: 20px;
+    width: 320px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.flip-card-price {
+    font-size: 24px;
+    line-height: 200%;
+    font-weight: 600;
+}
+
+.flip-card_footer {
+    background-color: #741FF2;
+    font-size: 16px;
+    text-transform: uppercase;
+    height: 60px;
+}
+
+// flip animation
+
+.flip-card {
+    background-color: transparent;
     width: 352px;
     height: 352px;
-    border: grey 5px solid;
+    perspective: 1000px;
 }
+
+.flip-card:hover .flip-card__item {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+
+
+// each card private
+
+.important-about-yourself {
+    background-image: url("../img/courses-trainings/about-yourself.png");
+
+}
+
+.treasures-in-the-shadows {
+    background-image: url("../img/courses-trainings/treasures-in-the-shadows.png");
+}
+
+.healing-the-inner-child {
+    background-image: url("../img/courses-trainings/healing-the-inner-child.png");
+}
+
+.my-life-my-rules {
+    background-image: url("../img/courses-trainings/my-life-my-rules.png");
+
+    p {
+        width: 242px;
+    }
+}
+
+.personal-code-of-your-confidence {
+    background-image: url("../img/courses-trainings/code-of-your-confidence.png");
+}
+
+.the-artist-way {
+    background-image: url("../img/courses-trainings/artist-way.png");
+}
+
+.palette-of-my-soul {
+    background-image: url("../img/courses-trainings/palette-of-my-soul.png");
+
+    p {
+        width: 227px;
+    }
+}
+
 
 //  ######   #######  ##    ##  ######  ##     ## ##       ######## #### ##    ##  ######   
 // ##    ## ##     ## ###   ## ##    ## ##     ## ##          ##     ##  ###   ## ##    ##  
@@ -520,6 +667,7 @@ span {
     // margin: 0 auto;
 }
 
+
 .article {
     // max-width: 740px;
     // margin: 0 auto;
@@ -617,7 +765,7 @@ span {
 
 .accordion {
     flex: 0 1 351px;
-    height: fit-content;
+    // height: fit-content;
 }
 
 .accordion_title {
@@ -635,6 +783,8 @@ span {
     padding: 8px;
     background-color: #E3D2FC;
     color: black;
+    // height: 50%;
+    overflow-y: scroll;
 
     img {
         border-radius: 8px;
@@ -811,20 +961,20 @@ span {
     flex: 0 1 352px;
     max-height: 352px;
     position: relative;
-    // background: -webkit-linear-gradient(#000, #fff);
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(#000, #000, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-    &::after {
-        content: '';
-        margin-top: 40px;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.19) 45.1%, #FFFFFF 90%);
-        position: absolute;
-        top: 0px;
-        left: 0px;
-    }
+    // &::after {
+    //     content: '';
+    //     margin-top: 40px;
+    //     width: 100%;
+    //     height: 100%;
+    //     background: linear-gradient(180deg, rgba(255, 255, 255, 0.19) 45.1%, #FFFFFF 90%);
+    //     position: absolute;
+    //     top: 0px;
+    //     left: 0px;
+    // }
 }
 
 .poetry__card_svg {
@@ -865,9 +1015,52 @@ span {
 /* contacts ------------------------- */
 
 .contacts {
-    min-height: 252px;
+    padding: 64px 0;
 
 }
+
+.contacts_title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 32px;
+}
+
+.contacts__row {
+    margin: 0 auto;
+    max-width: 544px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 540px) {
+        max-width: 300px;
+    }
+}
+
+.contacts__column {
+    margin: 0 60px 20px 0;
+    // margin: 0 0 20px 0;
+    gap: 16px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    img {
+        padding-right: 8px
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 8px;
+    }
+
+    @media (max-width: 544px) {
+        // flex: 1 1 auto;
+        // margin: 0 0 20px 0;
+    }
+}
+
+
 
 // ########  #######   #######  ######## ######## ########  
 // ##       ##     ## ##     ##    ##    ##       ##     ## 
@@ -880,7 +1073,28 @@ span {
 
 /* footer -------------------  */
 .footer {
-    min-height: 326px;
+    padding: 32px 0 16px 0;
     background-color: #C7A5FA;
     color: #fff;
+
+    img {
+        margin-right: 16px;
+    }
+}
+
+.footer__row {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 32px 0;
+    align-items: center;
+    // text-align: center;
+
+    a {
+        margin-bottom: 16px;
+    }
+}
+
+.footer__column {
+    text-align: center;
+    line-height: 150%;
 }
