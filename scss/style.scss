@@ -55,6 +55,7 @@ span {
 
 }
 
+
 // ##     ## ########    ###    ########  ######## ########  
 // ##     ## ##         ## ##   ##     ## ##       ##     ## 
 // ##     ## ##        ##   ##  ##     ## ##       ##     ## 
@@ -257,21 +258,38 @@ span {
     }
 }
 
-.about_button {
-    background: #904CF5;
+.button_style {
     border-radius: 60px;
     min-width: 256px;
     min-height: 60px;
     color: #fff;
     font-weight: 600;
-    transition: all ease-in-out 0.5s;
+    background-color: #904CF5;
+    position: relative;
+    padding: 4px;
 
     &:hover {
-        box-shadow: inset 4px 4px 16px #fff;
         color: #fff;
-        transition: all ease-in-out 0.5s;
+        background: linear-gradient(90.43deg, #4D7AF5 3.03%, #904CF5 55.73%, #F54DE9 97.29%);
+    }
+
+    &:active {
+        box-shadow: 2px 2px 4px #330774;
+        color: #330774;
+
+        >span {
+            box-shadow: inset 4px 4px 16px #904CF5;
+            background: #fff;
+            height: 52px;
+            width: 100%;
+            color: #FFFFFF;
+            border-radius: 60px;
+            color: #330774;
+
+        }
     }
 }
+
 
 
 //  ######  ######## ########  ######## #### ######## ####  ######     ###    ######## ########  ######  
@@ -440,19 +458,35 @@ span {
 
 
 
-// each card private
+// each card background 
 
 .important-about-yourself {
     background-image: url("../img/courses-trainings/about-yourself.png");
+}
 
+.important-about-yourself-back {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/courses-trainings/about-yourself.png");
+    background-size: cover;
 }
 
 .treasures-in-the-shadows {
     background-image: url("../img/courses-trainings/treasures-in-the-shadows.png");
 }
 
+.treasures-in-the-shadows-back {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../img/courses-trainings/treasures-in-the-shadows.png");
+    background-size: cover;
+}
+
 .healing-the-inner-child {
     background-image: url("../img/courses-trainings/healing-the-inner-child.png");
+}
+
+.healing-the-inner-child-back {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../img/courses-trainings/healing-the-inner-child.png");
+    background-size: cover;
 }
 
 .my-life-my-rules {
@@ -463,12 +497,30 @@ span {
     }
 }
 
+.my-life-my-rules-back {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../img/courses-trainings/my-life-my-rules.png");
+    background-size: cover;
+}
+
 .personal-code-of-your-confidence {
     background-image: url("../img/courses-trainings/code-of-your-confidence.png");
 }
 
+.personal-code-of-your-confidence-back {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../img/courses-trainings/code-of-your-confidence.png");
+    background-size: cover;
+}
+
 .the-artist-way {
     background-image: url("../img/courses-trainings/artist-way.png");
+}
+
+.the-artist-way-back {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../img/courses-trainings/artist-way.png");
+    background-size: cover;
 }
 
 .palette-of-my-soul {
@@ -477,6 +529,12 @@ span {
     p {
         width: 227px;
     }
+}
+
+.palette-of-my-soul-back {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../img/courses-trainings/palette-of-my-soul.png");
+    background-size: cover;
 }
 
 
@@ -607,24 +665,6 @@ span {
 
     input[type=checkbox] {
         margin-right: 16px;
-    }
-
-    button[type=submit] {
-        background: #904CF5;
-        border-radius: 60px;
-        color: #fff;
-        font-size: 16px;
-        line-height: 20px;
-        min-height: 60px;
-        font-weight: 600;
-        text-transform: uppercase;
-        transition: all ease-in-out 0.3s;
-
-        &:hover {
-            box-shadow: inset 1px 1px 16px #fff;
-            // color: #fff;
-            transition: all ease-in-out 0.3s;
-        }
     }
 }
 
