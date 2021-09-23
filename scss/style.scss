@@ -32,6 +32,10 @@ h6 {
     justify-content: center;
 }
 
+.pos-relativ {
+    position: relative;
+}
+
 span {
     display: inline-block;
 }
@@ -233,11 +237,16 @@ span {
 // .about__image {}
 
 .about__content {
-    max-width: 735px;
+    max-width: 670px;
     font-size: 16px;
     line-height: 150%;
 
+    span {
+        display: block;
+    }
+
     p {
+        max-width: 700px;
         margin: 0 0 16px 0;
     }
 
@@ -548,8 +557,7 @@ span {
 
 /* Consulting ----------------------*/
 .consulting {
-    // text-align: center;
-    padding: 40px 0;
+    padding: 40px 0 64px 0;
 }
 
 .consulting__title {
@@ -558,6 +566,7 @@ span {
 }
 
 .consulting__content {
+    padding: 0 0 64px 0;
     justify-content: space-evenly;
 }
 
@@ -572,27 +581,76 @@ span {
     align-self: center;
 }
 
+
+// cards section ----------------//
+
 .consultiung__cards {
-    justify-content: space-between;
-    // flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
 }
 
 .consultiung__cards_card {
-    padding: 32px 16px;
-    gap: 16px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    min-height: 172px;
+    flex: 0 1 352px;
+    padding: 32px 8px;
     text-align: center;
     border: 1px solid #330774;
     box-sizing: border-box;
     box-shadow: 4px 4px 4px rgba(93, 12, 212, 0.4);
     border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
 
     h3 {
         font-size: 32px;
-        line-height: 37px;
         font-weight: 400;
-        font-family: 'Roboto', sans-serif;
+        margin: 0 0 16px 0;
     }
 
+    span {
+        position: relative;
+        top: 0px;
+        transition: all 0.3s linear;
+    }
+
+    span:not(:last-child) {
+        margin: 0 0 16px 0;
+    }
+
+    .price {
+        font-size: 24px;
+        opacity: 1;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 40px;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s linear;
+    }
+
+    &:hover {
+
+
+        span {
+            transition: all 0.3s linear;
+            opacity: 0;
+            top: 20px;
+        }
+
+        .price {
+            position: absolute;
+            top: 0px;
+            transition: all 0.3s linear;
+            opacity: 1;
+        }
+
+    }
 }
 
 // ########  #######  ########  ##     ## 
@@ -691,7 +749,7 @@ span {
 
 .blog__title {
     padding: 40px 0;
-    font-size: 2rem;
+    font-size: 48px;
 }
 
 // ########        ###    ########  ######## ####  ######  ##       ########  ######  
@@ -704,20 +762,17 @@ span {
 
 /*---- Blog Articles -------------------*/
 
-.blog__article {
-
-    // margin: 0 auto;
-}
+// .blog__article {}
 
 
-.article {
-    // max-width: 740px;
-    // margin: 0 auto;
-}
+// .article {
+// max-width: 740px;
+// margin: 0 auto;
+// }
 
 .article-main {
     justify-content: space-between;
-    // border: 1px solid black;
+    border: 1px solid black;
 }
 
 .article-main__item {
@@ -730,6 +785,7 @@ span {
 }
 
 .blog__article_title {
+    font-size: 32px;
     margin: 0 0 31px 0;
 }
 
@@ -772,7 +828,9 @@ span {
     overflow-y: hidden;
     background: -webkit-linear-gradient(#000, #fff);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    /*
 
     // &::after {
     //     content: '';
@@ -784,6 +842,7 @@ span {
     //     top: 0px;
     //     left: 0px;
     // }
+    */
 }
 
 .article__content_read-more {
@@ -802,12 +861,14 @@ span {
     text-align: left;
     border-radius: 8px;
     overflow: hidden;
-    // border: 1px solid red;
 }
+
+/* accordion -----------------------*/
+
 
 .accordion {
     flex: 0 1 351px;
-    // height: fit-content;
+    height: 600px;
 }
 
 .accordion_title {
@@ -922,9 +983,9 @@ span {
     text-align: left;
 }
 
-.blog__gallery__carousel {
-    // min-height: 472px;
-}
+// .blog__gallery__carousel {
+// min-height: 472px;
+// }
 
 .image-container {
     display: inline-flex;
@@ -1005,6 +1066,7 @@ span {
     position: relative;
     background: -webkit-linear-gradient(#000, #000, #fff);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 
     // &::after {
