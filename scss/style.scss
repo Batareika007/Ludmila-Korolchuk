@@ -273,13 +273,18 @@ span {
     min-height: 60px;
     color: #fff;
     font-weight: 600;
+    background: linear-gradient(#904CF5);
     background-color: #904CF5;
-    position: relative;
+    // position: relative;
     padding: 4px;
+    transition: 0.3s ease-in-out;
+
 
     &:hover {
         color: #fff;
+        transition: 0.1s ease-in-out;
         background: linear-gradient(90.43deg, #4D7AF5 3.03%, #904CF5 55.73%, #F54DE9 97.29%);
+        box-shadow: 1px 1px 4px #330774;
     }
 
     &:active {
