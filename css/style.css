@@ -268,22 +268,115 @@ span {
 
 /* Certificates -----------------*/
 .certificates {
+  height: 536px;
   background: radial-gradient(100% 786.95% at 0% 4.74%, #D3DEFC 0%, #E3D2FC 100%);
   -webkit-backdrop-filter: blur(36px);
           backdrop-filter: blur(36px);
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .certificates__carousel {
-  min-height: 464px;
+  padding-bottom: 20px;
+  height: 464px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 32px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  overflow-y: scroll;
 }
 
+.dragscroll {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.dragscroll:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.certificates__carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.certificates__carousel {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.certifivates_item {
+  border-radius: 8px;
+}
+
+.swiper-slide img {
+  border-radius: 8px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  z-index: 300;
+}
+
+.swiper-slide img:hover {
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  -webkit-box-shadow: 2px 2px 14px black;
+          box-shadow: 2px 2px 14px black;
+}
+
+/* 
+
+.swiper {
+    width: 100%;
+    height: 536px;
+    // height: 100%;
+    // height: 480px;
+    // height: 300px;
+    // border: 5px solid red;
+}
+
+.swiper-slide {
+    text-align: center;
+    // font-size: 18px;
+    // background: #fff;
+    height: calc((100% - 30px) / 2);
+
+    // Center slide text vertically 
+    display: flex;
+    // gap: 12px;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        border-radius: 8px;
+        transition: all ease-in-out 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all ease-in-out 1s;
+            box-shadow: 2px 2px 14px black;
+            z-index: 200;
+        }
+    }
+}
+
+
+@media (max-width: 760px) {
+    .swiper-button-next {
+        right: 20px;
+        transform: rotate(90deg);
+    }
+
+    .swiper-button-prev {
+        left: 20px;
+        transform: rotate(90deg);
+    }
+}
+*/
 /* Courses and trainings ---------- */
 .courses-trainings {
   padding: 40px 0;
