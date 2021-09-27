@@ -141,6 +141,17 @@ span {
   font-weight: 600;
 }
 
+/* for non-main page -----------------*/
+.subheader__non-main-page {
+  background-image: url("../img/abstract-background-2.jpg");
+  background-position: center;
+}
+
+.subheader__non-main-page .subheader__title {
+  background-image: none;
+}
+
+/* contacts page end ------------------ */
 .subheader__title_header {
   font-size: 96px;
   max-width: 650px;
@@ -542,6 +553,8 @@ min-widht: 0;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .consulting__content_text {
@@ -555,6 +568,10 @@ min-widht: 0;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.content-item_image img {
+  max-width: 100%;
 }
 
 .consultiung__cards {
@@ -720,19 +737,12 @@ min-widht: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid black;
 }
 
 .article-main__item {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 736px;
           flex: 0 1 736px;
-}
-
-.cardion {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 351px;
-          flex: 0 1 351px;
 }
 
 .blog__article_title {
@@ -788,19 +798,6 @@ min-widht: 0;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  /*
-
-    // &::after {
-    //     content: '';
-    //     width: 100%;
-    //     height: 100%;
-    //     background: linear-gradient(180deg, #FFFFFF 30%, rgba(255, 255, 255, 0) 90%);
-    //     transform: matrix(1, 0, 0, -1, 0, 0);
-    //     position: absolute;
-    //     top: 0px;
-    //     left: 0px;
-    // }
-    */
 }
 
 .article__content_read-more {
@@ -829,6 +826,7 @@ min-widht: 0;
       -ms-flex: 0 1 351px;
           flex: 0 1 351px;
   height: 600px;
+  overflow-y: scroll;
 }
 
 .accordion_title {
@@ -889,19 +887,28 @@ min-widht: 0;
   margin: 0 0 22px 0;
 }
 
+.blog__video_link img {
+  position: relative;
+  top: 7px;
+}
+
 .blog__video__carousel {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 32px;
 }
 
 .blog__video__carousel_item {
+  overflow: hidden;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 352px;
-          flex: 0 1 352px;
-  height: 200px;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  width: 352px;
+  height: 192px;
   border-radius: 8px;
-  border: 2px solid red;
 }
 
 /*----- blog Gallery --------------------*/
@@ -909,24 +916,14 @@ min-widht: 0;
   padding: 98px 0 48px 0;
 }
 
-.blog__portey_sub-title {
-  margin: 0 0 32px 0;
-}
-
 .blog__gallery_title {
   padding: 40px 0;
 }
 
 .blog__gallery__text {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.blog__gallery_paragragh {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 352px;
-          flex: 0 1 352px;
-  text-align: left;
+  max-width: 450px;
+  margin: 0 auto 32px auto;
+  line-height: 24px;
 }
 
 .image-container {
@@ -939,7 +936,7 @@ min-widht: 0;
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 5px;
+  gap: 32px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -955,9 +952,7 @@ min-widht: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 150px;
-  -webkit-transition: all ease-in-out 1s;
-  transition: all ease-in-out 1s;
+  height: 200px;
 }
 
 .image-container .image-item img {
@@ -966,15 +961,18 @@ min-widht: 0;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  -webkit-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .image-container .image-item img:hover {
-  -o-object-fit: contain;
-     object-fit: contain;
-  -webkit-transform: scale(1.8);
-          transform: scale(1.8);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   -webkit-transition: all ease-in-out 1s;
   transition: all ease-in-out 1s;
+  z-index: 100;
 }
 
 /* Blog  Poetry ------------------------*/
@@ -982,14 +980,21 @@ min-widht: 0;
   padding: 0 0 40px 0;
 }
 
-.poetry__section {
+.poetry {
   padding: 0 0 32px 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 32px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .blog__poetry_title {
+  margin: 0 0 32px 0;
+}
+
+.blog__portey_sub-title {
   margin: 0 0 32px 0;
 }
 
@@ -1008,6 +1013,15 @@ min-widht: 0;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.poetry__card:hover {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-box-shadow: 4px 4px 18px #904CF5;
+          box-shadow: 4px 4px 18px #904CF5;
 }
 
 .poetry__card_svg {
@@ -1088,14 +1102,10 @@ min-widht: 0;
   color: #fff;
 }
 
-.footer img {
-  margin-right: 16px;
-}
-
 .footer__row {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 0 32px 0;
@@ -1104,7 +1114,33 @@ min-widht: 0;
           align-items: center;
 }
 
+.footer__row .logo {
+  margin-right: 16px;
+}
+
+.footer__row .footer__row_phone,
+.footer__row .footer__row_email {
+  margin-right: 94px;
+}
+
+.footer__row .footer__row_phone img,
+.footer__row .footer__row_email img {
+  margin-right: 16px;
+  position: relative;
+  top: 3px;
+}
+
+.footer__row .footer__links {
+  position: relative;
+  bottom: 6px;
+}
+
+.footer__row .footer__links li {
+  margin-right: 16px;
+}
+
 .footer__row a {
+  line-height: 150%;
   margin-bottom: 16px;
 }
 
