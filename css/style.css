@@ -240,7 +240,7 @@ span {
   border-radius: 60px;
   min-width: 256px;
   min-height: 60px;
-  color: #fff;
+  color: #fff !important;
   font-weight: 600;
   background: -webkit-gradient(linear, left top, left bottom, from(#904CF5));
   background: linear-gradient(#904CF5);
