@@ -179,6 +179,7 @@ span {
     margin-left: 17%;
     font-weight: 400;
     font-style: italic;
+    margin-bottom: 16px;
 
     span:last-child {
         margin-left: 45%;
@@ -188,6 +189,7 @@ span {
 .subheader__title_text {
     font-size: 32px;
     margin-left: 23%;
+    font-weight: 500;
 }
 
 //  ######  ##     ## ########  ##     ## ########    ###    ########  ######## ########   #######  
@@ -205,14 +207,14 @@ span {
     // background-size: cover;
     position: relative;
     top: -60px;
-    margin-bottom: -60px;
+    // margin-bottom: -60px;
 }
 
 .subheader2_title {
-    min-height: 152px;
-    // line-height: 152px;
+    line-height: 152px;
     color: #fff;
-    font-size: 46px;
+    font-size: 48px;
+    font-weight: 600;
     font-style: italic;
     text-align: center;
 }
@@ -238,7 +240,8 @@ span {
 
 .about_title {
     text-align: center;
-    font-size: 46px;
+    font-size: 48px;
+    font-weight: 500;
     margin: 0 0 32px 0;
 }
 
@@ -344,6 +347,7 @@ min-widht: 0;
     background: radial-gradient(100% 786.95% at 0% 4.74%, #D3DEFC 0%, #E3D2FC 100%);
     backdrop-filter: blur(36px);
     padding: 10px 0;
+    margin-bottom: 118px;
 }
 
 .swiper {
@@ -404,12 +408,15 @@ min-widht: 0;
 
 /* Courses and trainings ---------- */
 .courses-trainings {
-    padding: 40px 0;
+    // padding: 40px 0;
     text-align: center;
+    margin-bottom: 128px;
 }
 
 .courses-trainings__title {
-    margin: 0 0 32px 0;
+    margin: 0 0 62px 0;
+    font-weight: 500;
+    font-size: 48px;
 }
 
 /* card section ---------------------- */
@@ -621,12 +628,14 @@ min-widht: 0;
 
 /* Consulting ----------------------*/
 .consulting {
-    padding: 40px 0 64px 0;
+    margin-bottom: 64px;
 }
 
-.consulting__title {
+.consulting_title {
     text-align: center;
-    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 62px;
 }
 
 .consulting__content {
@@ -640,6 +649,10 @@ min-widht: 0;
     line-height: 150%;
     max-width: 510px;
     margin: 0 0 16px 0;
+
+    a {
+        font-style: italic;
+    }
 }
 
 .content-item_image {
@@ -734,7 +747,7 @@ min-widht: 0;
 /* form --------------------------- */
 
 .form {
-    padding: 74px 0 82px 0;
+    padding: 10px 0 62px 0;
     background: url('../img/form-background.png'), url('../img/form-background.png');
     background-repeat: no-repeat;
     background-position: top center, bottom center;
@@ -742,11 +755,13 @@ min-widht: 0;
 }
 
 .form__title {
+    font-style: normal;
+    font-weight: bold;
     font-size: 32px;
     line-height: 150%;
-    font-weight: 700;
     color: #fff;
-    margin: 0 0 40px 0;
+    padding-top: 55px;
+    margin: 0 0 21px 0;
     text-align: center;
 }
 
@@ -816,8 +831,10 @@ min-widht: 0;
 }
 
 .blog__title {
-    padding: 40px 0;
+    font-weight: 500;
     font-size: 48px;
+    line-height: 150%;
+    padding: 32px 0;
 }
 
 // ########        ###    ########  ######## ####  ######  ##       ########  ######  
@@ -849,8 +866,10 @@ min-widht: 0;
 }
 
 .blog__article_title {
+    font-weight: 500;
     font-size: 32px;
-    margin: 0 0 31px 0;
+    line-height: 150%;
+    margin: 0 0 24px 0;
 }
 
 .article__section {
@@ -1023,6 +1042,9 @@ min-widht: 0;
 // .blog__video {}
 
 .blog__video_title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 150%;
     padding: 40px 0;
 }
 
@@ -1067,6 +1089,9 @@ min-widht: 0;
 }
 
 .blog__gallery_title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 150%;
     padding: 0 0 40px 0;
 }
 
@@ -1148,6 +1173,9 @@ min-widht: 0;
 
 .blog__poetry_title {
     margin: 0 0 32px 0;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 150%;
 }
 
 .blog__portey_sub-title {
@@ -1218,7 +1246,9 @@ min-widht: 0;
 
 .contacts_title {
     text-align: center;
-    font-size: 3rem;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 150%;
     margin-bottom: 32px;
 }
 
