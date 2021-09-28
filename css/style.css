@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700;1,400;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&display=swap");
 body {
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
@@ -11,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lucida Calligraphy', sans-serif;
+  font-family: 'Lora', serif;
 }
 
 .flex-row {
@@ -942,18 +943,20 @@ min-widht: 0;
   width: 352px;
   height: 192px;
   border-radius: 8px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#741FF2), color-stop(15.03%, #C7A5FA), color-stop(27.01%, rgba(255, 255, 255, 0.2)), color-stop(38.52%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, #741FF2 0%, #C7A5FA 15.03%, rgba(255, 255, 255, 0.2) 27.01%, rgba(255, 255, 255, 0) 38.52%);
 }
 
 /*----- blog Gallery --------------------*/
 .blog__gallery {
-  padding: 98px 0 48px 0;
+  padding: 88px 0 48px 0;
 }
 
 .blog__gallery_title {
-  padding: 40px 0;
+  padding: 0 0 40px 0;
 }
 
-.blog__gallery__text {
+.blog__gallery_text {
   max-width: 450px;
   margin: 0 auto 32px auto;
   line-height: 24px;
