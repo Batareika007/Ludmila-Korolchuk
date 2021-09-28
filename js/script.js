@@ -42,3 +42,14 @@ const swiper = new Swiper('.swiper', {
     }
     
 });
+
+
+// accordion
+
+
+ $(document).ready(function () {
+        $('.accordion__box').click(function () {
+            $(this).toggleClass('active').siblings().removeClass('active');
+        });
+    });
+

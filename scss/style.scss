@@ -916,12 +916,31 @@ min-widht: 0;
 
 
 .accordion {
-    flex: 0 1 351px;
-    height: 600px;
-    overflow-y: scroll;
+    // flex: 0 1 351px;
+    // height: 600px;
+    max-width: 352px;
+    max-height: 594px;
+    overflow-y: hidden;
+
+    .accordion__box {
+        position: relative;
+
+        &.active {
+            .accordion_title::after {
+                content: url('/img/accordion/arrowDown.svg');
+            }
+
+            .accordion__content {
+                height: 438px;
+                padding: 16px 8px;
+            }
+        }
+
+    }
 }
 
 .accordion_title {
+    position: relative;
     font-weight: 500;
     line-height: 150%;
     font-size: 24px;
@@ -930,14 +949,33 @@ min-widht: 0;
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
+
+    &::after {
+        content: url('/img/accordion/arrowUp.svg');
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
 }
 
 .accordion__content {
-    padding: 8px;
+    position: relative;
     background-color: #E3D2FC;
+    height: 0;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    transition: 0.5s;
     color: black;
     // height: 50%;
-    overflow-y: scroll;
+
+    /* hide scroll bar*/
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
     img {
         border-radius: 8px;
@@ -949,18 +987,18 @@ min-widht: 0;
     }
 }
 
-.accordion_icon_up {
-    background-image: url('/img/accordion/arrowUp.svg');
-    background-repeat: no-repeat;
-    background-position: center right;
-}
+// .accordion_icon_up {
+//     background-image: url('/img/accordion/arrowUp.svg');
+//     background-repeat: no-repeat;
+//     background-position: center right;
+// }
 
-.accordion_icon_down {
-    background-image: url('/img/accordion/arrowDown.svg');
-    background-repeat: no-repeat;
-    background-position: right center;
+// .accordion_icon_down {
+//     background-image: url('/img/accordion/arrowDown.svg');
+//     background-repeat: no-repeat;
+//     background-position: right center;
 
-}
+// }
 
 .accordion_text {
     font-weight: bold;
