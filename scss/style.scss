@@ -925,9 +925,17 @@ min-widht: 0;
     .accordion__box {
         position: relative;
 
+
         &.active {
+            transition: 0.5s;
+
+            .accordion_title {
+                box-shadow: none;
+            }
+
             .accordion_title::after {
                 content: url('/img/accordion/arrowDown.svg');
+
             }
 
             .accordion__content {
@@ -949,6 +957,9 @@ min-widht: 0;
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
+    box-shadow: inset 0px 2px 8px rgba(255, 255, 255, 0.8);
+
+
 
     &::after {
         content: url('/img/accordion/arrowUp.svg');
@@ -956,6 +967,7 @@ min-widht: 0;
         top: 50%;
         right: 20px;
         transform: translateY(-50%);
+
     }
 }
 
@@ -987,18 +999,7 @@ min-widht: 0;
     }
 }
 
-// .accordion_icon_up {
-//     background-image: url('/img/accordion/arrowUp.svg');
-//     background-repeat: no-repeat;
-//     background-position: center right;
-// }
 
-// .accordion_icon_down {
-//     background-image: url('/img/accordion/arrowDown.svg');
-//     background-repeat: no-repeat;
-//     background-position: right center;
-
-// }
 
 .accordion_text {
     font-weight: bold;

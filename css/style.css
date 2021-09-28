@@ -831,6 +831,16 @@ min-widht: 0;
   position: relative;
 }
 
+.accordion .accordion__box.active {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.accordion .accordion__box.active .accordion_title {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .accordion .accordion__box.active .accordion_title::after {
   content: url("/img/accordion/arrowDown.svg");
 }
@@ -850,6 +860,8 @@ min-widht: 0;
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
+  -webkit-box-shadow: inset 0px 2px 8px rgba(255, 255, 255, 0.8);
+          box-shadow: inset 0px 2px 8px rgba(255, 255, 255, 0.8);
 }
 
 .accordion_title::after {
