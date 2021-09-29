@@ -30,7 +30,9 @@
         <header class="header">
             <div class="container">
                 <div class="header__row flex-row">
-                    <a href="index.html" class="header__logo"><img src="img/LOGO.svg" alt="logo"></a>
+                    <a href="index.html" class="header__logo">
+                        <img src="img/LOGO.svg" alt="logo">
+                    </a>
                     <nav class="header__nav flex-row">
                         <a href="about.html">Обо мне</a>
                         <a href="courses_and_trainings.html">Курсы и тренинги</a>
@@ -62,17 +64,14 @@
  ######   #######  ########  ##     ## ######## ##     ## ########  ######## ##     ##  
 -->
 
-            <section class="subheader ">
+            <section class="subheader">
                 <div class="container">
-                    <!-- <div class="subheader__img">
-                        <img src="" alt="Людмила Корольчук">
-                    </div> -->
-                    <div class="subheader__title">
-                        <h1 class="subheader__title_header">
+                    <div class="subheader__content">
+                        <h1 class="subheader__title">
                             <span>Людмила</span>
                             <span>Корольчук</span>
                         </h1>
-                        <span class="subheader__title_text">
+                        <span class="subheader__subtitle">
                             психолог, арт-терапевт
                         </span>
                     </div>
@@ -90,9 +89,9 @@
 -->
 
 
-            <section class="subheader2">
+            <section class="slogan">
                 <div class="container">
-                    <p class="subheader2_title flex-center">“Именно Вы - автор картины своей жизни”</>
+                    <span class="slogan_title flex-center">“Именно Вы - автор картины своей жизни”</span>
                 </div>
             </section>
             <!-- 
@@ -247,7 +246,7 @@
                     <!-- !! new card add on top, flex reverse used !!-->
 
 
-                    <div class="courses-trainings__cards flex-row">
+                    <div class="courses-trainings__container flex-row">
                         <!-- Курс ”Личный код твоей уверенности” -->
                         <div class="flip-card">
                             <div class="flip-card__item">
@@ -261,9 +260,11 @@
                                     <div class="flip-card__main">
                                         <h4 class="flip-card-title flex-column"><span>Тренинг</span> <span> «Личный код
                                                 твоей уверенности»</span></h4>
-                                        <span class="flip-card-text">Программа индивидульного сопровождения: </span>
-                                        <span class="flip-card-text">7 вебинаров в записи и </span>
-                                        <span class="flip-card-text">7 личных консультаций</span>
+                                        <p class="flip-card-text">
+                                            <span>Программа индивидульного сопровождения:</span>
+                                            <span>7 вебинаров в записи и </span>
+                                            <span>7 личных консультаций</span>
+                                        </p>
                                         <span class="flip-card-price">Стоимость - 9 000 грн</span>
                                     </div>
                                     <div class="flip-card_footer flex-center">подробнее</div>
@@ -299,12 +300,13 @@
 
                                 <div class="courses-trainings__card flip-card-back flex-column palette-of-my-soul-back">
                                     <div class="flip-card__main">
-                                        <h4 class="flip-card-title flex-column"><span>Курс</span> <span> ”Раскрась свою
-                                                жизнь”</span></h4>
+                                        <h4 class="flip-card-title flex-column">
+                                            <span>Курс</span>
+                                            <span>”Раскрась свою жизнь”</span></h4>
                                         <span class="flip-card-text">Мини-курс с арт-практиками и обучение
                                             правополушарному рисованию «Раскрась свою жизнь». </span>
                                         <span class="flip-card-price">Стоимость - 750 грн</span>
-                                        <span class="flip-card-text">Цена указана за тренинг в записи</span>
+                                        <span class="flip-card-text">*Цена указана за тренинг в записи</span>
                                     </div>
                                     <div class="flip-card_footer flex-center">подробнее</div>
                                 </div>
@@ -325,7 +327,7 @@
                                         <span class="flip-card-text">Познакомит вас с новыми гранями себя.</span>
                                         <span class="flip-card-text">Груповой</span>
                                         <span class="flip-card-price">Стоимость - 600 грн*</span>
-                                        <span class="flip-card-text">Цена указана за тренинг в записи</span>
+                                        <span class="flip-card-text">*Цена указана за тренинг в записи</span>
                                     </div>
                                     <div class="flip-card_footer flex-center">подробнее</div>
                                 </div>
@@ -336,7 +338,7 @@
                             <div class="flip-card__item">
                                 <div
                                     class="courses-trainings__card flip-card-front flex-center healing-the-inner-child ">
-                                    <p class="flex-column"><span>Тренинг</span> ”Исцеление внутреннего ребенка”</p>
+                                    <p class="flex-column"><span>Тренинг</span>«Исцеление внутреннего ребенка»</p>
                                 </div>
                                 <div
                                     class="courses-trainings__card flip-card-back flex-column healing-the-inner-child-back">
@@ -347,7 +349,7 @@
                                             доверия к миру.</span>
                                         <span class="flip-card-text">Груповой</span>
                                         <span class="flip-card-price">Стоимость - 500 грн*</span>
-                                        <span class="flip-card-text">Цена указана за тренинг в записи</span>
+                                        <span class="flip-card-text">*Цена указана за тренинг в записи</span>
                                     </div>
                                     <div class="flip-card_footer flex-center">подробнее</div>
                                 </div>
@@ -368,7 +370,7 @@
                                             убеждения. </span>
                                         <span class="flip-card-text">Груповой</span>
                                         <span class="flip-card-price">Стоимость - 500 грн*</span>
-                                        <span class="flip-card-text">Цена указана за тренинг в записи</span>
+                                        <span class="flip-card-text">*Цена указана за тренинг в записи</span>
                                     </div>
                                     <div class="flip-card_footer flex-center">подробнее</div>
                                 </div>
@@ -376,17 +378,26 @@
                         </div>
                         <!-- Игра ”Важное о себе” -->
                         <div class="flip-card">
+
                             <div class="flip-card__item">
+                                <!-- front card -->
                                 <div
                                     class="courses-trainings__card flip-card-front flex-center important-about-yourself">
-                                    <p class="flex-column"><span>Игра</span> ”Важное о себе”</p>
+                                    <p class="flex-column">
+                                        <span>Игра</span>
+                                        <span>”Важное о себе”</span>
+                                    </p>
                                 </div>
 
+
+                                <!-- back card -->
                                 <div
                                     class="courses-trainings__card flip-card-back flex-column important-about-yourself-back">
                                     <div class="flip-card__main">
-                                        <h4 class="flip-card-title flex-column"><span>Игра</span> <span> «Важное о
-                                                себе»</span></h4>
+                                        <h4 class="flip-card-title flex-column">
+                                            <span>Игра</span>
+                                            <span> «Важное о себе»</span>
+                                        </h4>
                                         <span class="flip-card-text">Трансформационная игра для женщин для познания
                                             своих истинных целей и обретения ресурсного состояния. </span>
                                         <span class="flip-card-text">Груповой от 4 участниц</span>
@@ -649,16 +660,11 @@
                                         <h3 class="article__content_title">“Отношения двоих”</h3>
                                         <p class="article__content_paragraph">Отношения двоих всегда начинаются с
                                             отношения
-                                            к
-                                            себе!
-                                            В женском представлении часто присутствует идеальная картинка отношений. Ну
-                                            а
-                                            если
-                                            что-то не складывается, то это ведь с мужчиной что-то не так. А как хорошо
-                                            мы
-                                            знаем
-                                            сами
-                                            себя?
+                                            к себе! В женском представлении часто присутствует идеальная картинка
+                                            отношений. Ну
+                                            а если что-то не складывается, то это ведь с мужчиной что-то не так. А как
+                                            хорошо мы
+                                            знаем сами себя?
                                         </p>
                                         <a href="blog.html" class="article__content_read-more">Читать далее</a>
                                     </div>
@@ -914,7 +920,7 @@
                             <div class="image-item">
                                 <img src="img/gallery/7.jpg" alt="">
                             </div>
-                            
+
                         </div>
 
                     </div>

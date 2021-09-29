@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&display=swap");
 body {
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
+  line-height: 24px;
 }
 
 h1,
@@ -12,6 +13,9 @@ h4,
 h5,
 h6 {
   font-family: 'Lora', serif;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 500;
 }
 
 .flex-row {
@@ -107,12 +111,25 @@ span {
 }
 
 .header__nav a {
+  position: relative;
+  color: #000;
   margin-right: 32px;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 
 .header__nav a:last-child {
   margin-right: 0;
   margin-left: auto;
+}
+
+.header__nav a:hover {
+  color: #904CF5;
+  text-underline-offset: 50%;
+  -webkit-text-decoration: underline 3px;
+          text-decoration: underline 3px;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 
 /* main -------------------  */
@@ -127,18 +144,17 @@ span {
 /* subheader ------------------- */
 .subheader {
   background-image: url("../img/abstract-background-1.jpg");
-  padding-top: 192px;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 192px;
 }
 
-.subheader__title {
+.subheader__content {
   min-height: 446px;
   background-image: url("../img/subheader_main_image.png");
   background-repeat: no-repeat;
   background-position: left bottom;
   text-align: center;
-  font-weight: 600;
 }
 
 /* for non-main page -----------------*/
@@ -152,38 +168,40 @@ span {
 }
 
 /* contacts page end ------------------ */
-.subheader__title_header {
+.subheader__title {
   font-size: 96px;
   max-width: 650px;
   line-height: 110%;
-  font-weight: 500;
   margin-left: 17%;
   font-weight: 400;
   font-style: italic;
   margin-bottom: 16px;
+  font-weight: 500;
 }
 
-.subheader__title_header span:last-child {
+.subheader__title span:last-child {
   margin-left: 45%;
 }
 
-.subheader__title_text {
+.subheader__subtitle {
   font-size: 32px;
   margin-left: 23%;
   font-weight: 500;
 }
 
 /* subheader2 --------------------*/
-.subheader2 {
-  background: url("../img/subheader2__backgrpund.png") 0 0/100% 100% no-repeat;
+.slogan {
+  background: url("../img/subheader2__backgrpund.png") right/cover no-repeat;
   position: relative;
   top: -60px;
+  height: 162px;
 }
 
-.subheader2_title {
-  line-height: 152px;
+.slogan_title {
+  height: 152px;
+  line-height: 2rem;
   color: #fff;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
   font-style: italic;
   text-align: center;
@@ -196,8 +214,6 @@ span {
 
 .about_title {
   text-align: center;
-  font-size: 48px;
-  font-weight: 500;
   margin: 0 0 32px 0;
 }
 
@@ -350,12 +366,10 @@ min-widht: 0;
 
 .courses-trainings__title {
   margin: 0 0 62px 0;
-  font-weight: 500;
-  font-size: 48px;
 }
 
 /* card section ---------------------- */
-.courses-trainings__cards {
+.courses-trainings__container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -369,7 +383,7 @@ min-widht: 0;
   cursor: pointer;
   color: #fff;
   border-radius: 8px;
-  font-weight: 600;
+  font-weight: 700;
   background-size: cover;
 }
 
@@ -409,7 +423,7 @@ min-widht: 0;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   text-align: left;
-  padding-top: 30px;
+  padding-top: 23px;
 }
 
 .flip-card__main {
@@ -420,17 +434,21 @@ min-widht: 0;
 }
 
 .flip-card-title {
+  max-width: 310px;
   font-size: 24px;
-  line-height: 110%;
+  line-height: 120%;
   margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 .flip-card-text {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   width: 320px;
-  font-weight: normal;
   margin-bottom: 8px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .flip-card-price {
