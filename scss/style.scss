@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700;1,400;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&display=swap');
 
 body {
@@ -46,7 +45,6 @@ span {
 .container {
     width: 100%;
     margin: 0 auto;
-    // max-width: 1120px;
     padding: 0 10px;
     max-width: 1140px;
 
@@ -684,7 +682,7 @@ min-widht: 0;
     box-sizing: border-box;
     box-shadow: 4px 4px 4px rgba(93, 12, 212, 0.4);
     border-radius: 8px;
-    font-family: 'Roboto', sans-serif;
+    // font-family: 'Roboto', sans-serif;
 
     h3 {
         font-size: 32px;

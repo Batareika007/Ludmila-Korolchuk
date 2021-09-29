@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700;1,400;1,600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&display=swap");
 body {
   font-size: 16px;
@@ -614,7 +613,6 @@ min-widht: 0;
   -webkit-box-shadow: 4px 4px 4px rgba(93, 12, 212, 0.4);
           box-shadow: 4px 4px 4px rgba(93, 12, 212, 0.4);
   border-radius: 8px;
-  font-family: 'Roboto', sans-serif;
 }
 
 .consultiung__cards_card h3 {
