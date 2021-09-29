@@ -206,6 +206,8 @@ span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 32px;
 }
 
@@ -986,53 +988,66 @@ min-widht: 0;
   line-height: 24px;
 }
 
+/* 
 .image-container {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 32px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    display: inline-flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    max-height: 432px;
+
+    .image-item {
+        flex: 0 1 200px;
+        // height: 200px;
+        max-width: 352px;
+
+        img {
+            width: 100%;
+            max-width: 352px;
+            object-fit: contain;
+            object-position: center;
+            transition: all ease-in-out 1s;
+            border-radius: 8px;
+            overflow: hidden;
+
+            &:hover {
+                object-fit: contain;
+                transform: scale(1.5);
+                transition: all ease-in-out 1s;
+                z-index: 100;
+            }
+        }
+
+    }
+
 }
 
-.image-container .image-item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+*/
+.image-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 200px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 32px;
 }
 
-.image-container .image-item img {
+.image-item {
+  max-height: 200px;
+  border: 2px solid red;
+}
+
+.image-item img {
+  max-width: 352px;
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  -webkit-transition: all ease-in-out 1s;
-  transition: all ease-in-out 1s;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.image-container .image-item img:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  -webkit-transition: all ease-in-out 1s;
-  transition: all ease-in-out 1s;
-  z-index: 100;
 }
 
 /* Blog  Poetry ------------------------*/
