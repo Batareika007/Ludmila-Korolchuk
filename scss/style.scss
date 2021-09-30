@@ -400,7 +400,9 @@ min-widht: 0;
     text-align: center;
     height: auto;
 
+
     &:hover {
+
         z-index: 100;
     }
 
@@ -411,6 +413,7 @@ min-widht: 0;
     }
 
     img {
+        max-width: 256px;
         display: inline;
         border-radius: 8px;
         transition: all ease-in-out 0.3s;
@@ -419,7 +422,7 @@ min-widht: 0;
 
         &:hover {
             transform: scale(2);
-            // transition: all ease-in-out 0.3s;
+            transition: all ease-in-out 0.3s;
         }
 
 
@@ -722,7 +725,7 @@ min-widht: 0;
     background-color: #FFFFFF;
     min-height: 172px;
     flex: 0 1 352px;
-    padding: 32px 8px;
+    padding: 32px 18px;
     text-align: center;
     border: 1px solid #330774;
     box-sizing: border-box;
@@ -741,6 +744,7 @@ min-widht: 0;
         margin: 0 0 16px 0;
         font-family: 'Montserrat',
             sans-serif;
+
     }
 
     span {
@@ -837,13 +841,15 @@ min-widht: 0;
 }
 
 .form__column {
+    position: relative;
     flex: 0 1 354px;
 
     label {
         margin: 0 0 4px 0;
     }
 
-    input {
+    input,
+    select {
         margin: 0 0 24px 0;
     }
 
@@ -869,6 +875,11 @@ min-widht: 0;
     border-radius: 8px;
 }
 
+option {
+    background-color: white;
+    border: none;
+}
+
 // ########  ##        #######   ######   
 // ##     ## ##       ##     ## ##    ##  
 // ##     ## ##       ##     ## ##        
@@ -876,7 +887,7 @@ min-widht: 0;
 // ##     ## ##       ##     ## ##    ##  
 // ##     ## ##       ##     ## ##    ##  
 // ########  ########  #######   ######   
-/* blog ----------------------------*/
+/* blog ---------------------------------*/
 
 .blog {
     text-align: center;
@@ -1317,8 +1328,7 @@ min-widht: 0;
 
 .contacts__row {
     margin: 0 auto;
-    max-width: 544px;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 
     @media (max-width: 540px) {
@@ -1327,12 +1337,12 @@ min-widht: 0;
 }
 
 .contacts__column {
+    max-width: 290px;
     margin: 0 60px 20px 0;
-    // margin: 0 0 20px 0;
     gap: 16px;
 
     &:last-child {
-        margin-right: 0;
+        margin: 0;
     }
 
     img {
@@ -1345,8 +1355,11 @@ min-widht: 0;
     }
 
     @media (max-width: 544px) {
+        min-width: 280px;
+        justify-content: center;
+        // align-items: center;
         // flex: 1 1 auto;
-        // margin: 0 0 20px 0;
+        margin: 0 0 20px 0;
     }
 }
 

@@ -135,41 +135,44 @@
 
             <section class="certificates">
                 <div class="container">
-
                     <div class="swiper">
-
                         <div class="swiper-wrapper">
-
                             <div class="swiper-slide">
-                                <img src="img/certificates/1.jpg" alt="">
-                                <img src="img/certificates/2.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/certificates/3.jpg" alt="">
-                                <img src="img/certificates/4.jpg" alt="">
+                                <img src="img/certificate/certificate-slide1-1.jpg" alt="">
+                                <img src="img/certificate/certificate-slide1-2.jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="img/certificates/5.jpg" alt="">
-                                <img src="img/certificates/6.jpg" alt="">
+                                <img src="img/certificate/certificate-slide1-3.jpg" alt="">
+                                <img src="img/certificate/certificate-slide1-4.jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="img/certificates/7.jpg" alt="">
-                                <img src="img/certificates/8.jpg" alt="">
+                                <img src="img/certificate/certificate-slide1-5.jpg" alt="">
+                                <img src="img/certificate/certificate-slide1-6.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/certificate/certificate-slide1-7.jpg" alt="">
+                                <img src="img/certificate/certificate-slide1-8.jpg" alt="">
                             </div>
                             <div class="swiper-slide flex-center">
-                                <img src="img/certificates/9.jpg" alt="">
+                                <img src="img/certificate/certificate-slide2-1.jpg" alt="">
                             </div>
                             <div class="swiper-slide flex-center">
-                                <img src="img/certificates/10.jpg" alt="">
+                                <img src="img/certificate/certificate-slide2-2.jpg" alt="">
                             </div>
                             <div class="swiper-slide flex-center">
-                                <img src="img/certificates/11.jpg" alt="">
+                                <img src="img/certificate/certificate-slide2-3.jpg" alt="">
                             </div>
                             <div class="swiper-slide flex-center">
-                                <img src="img/certificates/12.jpg" alt="">
+                                <img src="img/certificate/certificate-slide2-4.jpg" alt="">
                             </div>
                             <div class="swiper-slide flex-center">
-                                <img src="img/certificates/13.jpg" alt="">
+                                <img src="img/certificate/certificate-slide3-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide flex-center">
+                                <img src="img/certificate/Корольчук Людмила-1.png" alt="">
+                            </div>
+                            <div class="swiper-slide flex-center">
+                                <img src="img/certificate/certificate-slide3-3.jpg" alt="">
                             </div>
                         </div>
                         <!-- Add Pagination -->
@@ -415,7 +418,7 @@
                     <div class="consultiung__cards cards flex-row">
 
                         <div class="consultiung__cards_card flex-column">
-                            <h3>Онлайн-консультация</h3>
+                            <h3>Онлайн консультация</h3>
                             <div class="pos-relativ">
                                 <div class="price">Стоимость - 1 300 грн.</div>
                                 <span>Продолжтельность - 90 минут</span>
@@ -452,22 +455,27 @@
 
                 <div class="form-container">
 
-                    <form id="form" class="form__row flex-row" action="">
+                    <form id="form" class="form__row flex-row" action="mailto:ludakorolchuk@gmail.com" method="POST">
 
                         <!-- chose type of -->
                         <div class="form__column flex-column">
 
                             <label for="consulting-type">Тип консультации</label>
-                            <input class="form_input" type="text" name="" id="consulting-type"
-                                placeholder="Выбрать тип консультации">
+
+                            <select class="form_input" type="text" name="consulting-type" id="consulting-type">
+                                <option value="" selected disabled style="display: none;">Выбрать тип консультации</option>
+                                <option value="Online consultation">Онлайн консультация</option>
+                                <option value="Full-time consultation">Очная консультация</option>
+                                <option value="Couple consultation">Консультация пары</option>
+                            </select>
 
                             <div>Выберите наиболее удобный для Вас способ связи для онлайн-консультации</div>
 
-                            <label for="skype"><input type="checkbox" name="Skype" id="skype"> Skype </label>
+                            <label for="skype"><input type="checkbox" name="Skype" id="skype">Skype</label>
 
-                            <label for="viber"><input type="checkbox" name="Viber" id="viber"> Viber </label>
+                            <label for="viber"><input type="checkbox" name="Viber" id="viber">Viber</label>
 
-                            <label for="messenger"><input type="checkbox" name="Messenger" id="messenger"> Messenger</label>
+                            <label for="messenger"><input type="checkbox" name="Messenger" id="messenger">Messenger</label>
 
                             <label for="zoom"><input type="checkbox" name="Zoom" id="zoom">Zoom</label>
 
@@ -476,23 +484,23 @@
                         <!-- name and privet data -->
                         <div class="form__column flex-column">
                             <label for="lastname">Фамилия</label>
-                            <input class="form_input" type="text" id="lastname" placeholder="Фамилия">
+                            <input class="form_input" type="text" name="lastname" id="lastname" placeholder="Фамилия">
 
                             <label for="firstname">Имя</label>
-                            <input class="form_input" type="text" id="firstname" placeholder="Имя">
+                            <input class="form_input" type="text" name="firstname" id="firstname" placeholder="Имя">
 
                             <label for="email">E-mail</label>
                             <input class="form_input" type="email" name="email" id="email" placeholder="E-mail">
-
                             <label for="phone">Телефон</label>
                             <input id="phone-input" class="form_input" type="tel" name="phone" id="phone"
-                                placeholder="+38(___) ___-__-__" pattern="[\+]\d{2}\s[\(]\[69]{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+                                placeholder="+38(___) ___-__-__"
+                                pattern="[\+]\d{2}\s[\(]\[69]{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength=10 required>
                         </div>
 
                         <!-- textarea and submit -->
                         <div class="form__column flex-column">
                             <label for="about-problem">Напишите коротко о проблеме</label>
-                            <textarea class="form_input" name="" id="about-problem"
+                            <textarea class="form_input" name="about-problem" id="about-problem"
                                 placeholder="Коротко о проблеме"></textarea>
                             <label for="date-and-time">Когда Вам было бы удобно получить консультацию</label>
                             <input class="form_input" type="text" name="" id="date-and-time"
@@ -976,20 +984,28 @@
                         <img src="svg/footer/email.svg" alt="email">ludakorolchuk@gmail.com</a>
 
                     <ul class="footer__links flex-row">
-                        <li><a href="https://www.facebook.com/Ludmylakorolchuk" target="_blank"><img
-                                    src="svg/footer/facebook.svg" alt="facebook"></a></li>
-                        <li><a href="https://www.instagram.com/lyudmilakorolchuk/" target="_blank"> <img
-                                    src="svg/footer/instagram.svg" alt="instagram"></a></li>
-                        <li><a href="http://m.me/Ludmylakorolchuk" target="_blank"> <img src="svg/footer/messenger.svg"
-                                    alt="messenger"> </a></li>
-                        <li><a href="viber://chat?number=+38(067)7157416" target="_blank"> <img
-                                    src="svg/footer/viber.svg" alt="viber"></a></li>
-                        <li><a href="https://t.me/" target="_blank"> <img src="svg/footer/telegram.svg"
-                                    alt="telegram"></a></li>
-                        <li><a href="https://wa.me/+380677157416" target="_blank"> <img src="svg/footer/whatsapp.svg"
-                                    alt="whatsapp"></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCnUMZjr3zXIobOTSRs9pluQ" target="_blank"><img
-                                    src="svg/footer/youtube.svg" alt="youtube"></a></li>
+                        
+                        <li><a href="https://www.facebook.com/Ludmylakorolchuk" target="_blank">
+                            <img src="svg/footer/facebook.svg" alt="facebook"></a></li>
+
+                        <li><a href="https://www.instagram.com/lyudmilakorolchuk/" target="_blank"> 
+                            <img src="svg/footer/instagram.svg" alt="instagram"></a></li>
+
+                        <li><a href="http://m.me/Ludmylakorolchuk" target="_blank"> 
+                            <img src="svg/footer/messenger.svg" alt="messenger"> </a></li>
+
+                        <li><a href="viber://chat?number=+38(067)7157416" target="_blank"> 
+                            <img src="svg/footer/viber.svg" alt="viber"></a></li>
+
+                        <li><a href="https://t.me/" target="_blank"> 
+                            <img src="svg/footer/telegram.svg" alt="telegram"></a></li>
+
+                        <li><a href="https://wa.me/+380677157416" target="_blank"> 
+                            <img src="svg/footer/whatsapp.svg" alt="whatsapp"></a></li>
+
+                        <li><a href="https://www.youtube.com/channel/UCnUMZjr3zXIobOTSRs9pluQ" target="_blank">
+                            <img src="svg/footer/youtube.svg" alt="youtube"></a></li>
+
                     </ul>
                 </nav>
 
@@ -1011,7 +1027,6 @@
 
     <!-- =============== javascript ========================================= -->
     <script src="js/swiper-bundle.min.js"></script>
-    
     <script src="js/script.js"></script>
 </body>
 

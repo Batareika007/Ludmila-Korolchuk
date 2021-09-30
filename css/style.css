@@ -334,6 +334,7 @@ min-widht: 0;
 }
 
 .swiper-slide img {
+  max-width: 256px;
   display: inline;
   border-radius: 8px;
   -webkit-transition: all ease-in-out 0.3s;
@@ -347,6 +348,8 @@ min-widht: 0;
 .swiper-slide img:hover {
   -webkit-transform: scale(2);
           transform: scale(2);
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 .certificates-pagination {
@@ -630,7 +633,7 @@ min-widht: 0;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 352px;
           flex: 0 1 352px;
-  padding: 32px 8px;
+  padding: 32px 18px;
   text-align: center;
   border: 1px solid #330774;
   -webkit-box-sizing: border-box;
@@ -736,6 +739,7 @@ min-widht: 0;
 }
 
 .form__column {
+  position: relative;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 354px;
           flex: 0 1 354px;
@@ -745,7 +749,8 @@ min-widht: 0;
   margin: 0 0 4px 0;
 }
 
-.form__column input {
+.form__column input,
+.form__column select {
   margin: 0 0 24px 0;
 }
 
@@ -770,7 +775,12 @@ min-widht: 0;
   border-radius: 8px;
 }
 
-/* blog ----------------------------*/
+option {
+  background-color: white;
+  border: none;
+}
+
+/* blog ---------------------------------*/
 .blog {
   text-align: center;
 }
@@ -1174,10 +1184,9 @@ min-widht: 0;
 
 .contacts__row {
   margin: 0 auto;
-  max-width: 544px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1189,12 +1198,13 @@ min-widht: 0;
 }
 
 .contacts__column {
+  max-width: 290px;
   margin: 0 60px 20px 0;
   gap: 16px;
 }
 
 .contacts__column:last-child {
-  margin-right: 0;
+  margin: 0;
 }
 
 .contacts__column img {
@@ -1204,6 +1214,16 @@ min-widht: 0;
 .contacts__column li {
   display: inline-block;
   margin-right: 8px;
+}
+
+@media (max-width: 544px) {
+  .contacts__column {
+    min-width: 280px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 20px 0;
+  }
 }
 
 /* footer -------------------  */

@@ -41,6 +41,18 @@ textarea {
     font-family: inherit;
 }
 
+select::-ms-expand {
+    display: none;
+}
+
+/* remove arrow from select */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* text-indent: 1px; */
+    /* text-overflow: ''; */
+}
+
 input::-ms-clear {
     display: none;
 }
