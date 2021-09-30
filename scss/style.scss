@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital@1&display=swap');
 
 body {
     font-size: 16px;
@@ -189,6 +190,7 @@ span {
     font-style: italic;
     margin-bottom: 16px;
     font-weight: 500;
+    font-family: 'Tinos', serif;
 
     span:last-child {
         margin-left: 45%;
@@ -201,27 +203,64 @@ span {
     font-weight: 500;
 }
 
-//  ######  ##     ## ########  ##     ## ########    ###    ########  ######## ########   #######  
-// ##    ## ##     ## ##     ## ##     ## ##         ## ##   ##     ## ##       ##     ## ##     ## 
-// ##       ##     ## ##     ## ##     ## ##        ##   ##  ##     ## ##       ##     ##        ## 
-//  ######  ##     ## ########  ######### ######   ##     ## ##     ## ######   ########   #######  
-//       ## ##     ## ##     ## ##     ## ##       ######### ##     ## ##       ##   ##   ##        
-// ##    ## ##     ## ##     ## ##     ## ##       ##     ## ##     ## ##       ##    ##  ##        
-//  ######   #######  ########  ##     ## ######## ##     ## ########  ######## ##     ## ######### 
+//  ######  ##         #######  ########   #######  ###    ##
+// ##    ## ##        ##     ## ##     ## ##     ## ####   ##
+// ##       ##        ##     ## ##        ##     ## ## ##  ##
+//  ######  ##        ##     ## ##   #### ######### ##  ## ##
+//       ## ##        ##     ## ##     ## ##     ## ##   ####
+// ##    ## ##        ##     ## ##     ## ##     ## ##    ###
+//  ######  #########  #######   #######  ##     ## ##     ##
 
-/* subheader2 --------------------*/
+/* slogan --------------------*/
 
 .slogan {
-    background: url('../img/subheader2__backgrpund.png') right/cover no-repeat;
+    background: url('../img/subheader2__backgrpund.png') right/100% 100% no-repeat;
     position: relative;
-    // background-size: 100%;
     top: -60px;
-    height: 162px;
+    height: 180px;
+
+    // animation: gradient 5s ease-in-out infinite;
+
+    .container {
+        padding: 0;
+    }
+
 }
 
+
+// @keyframes gradient {
+//     0% {
+//         background: url('../img/subheader2__backgrpund.png') left/cover no-repeat;
+//     }
+
+
+
+//     // 25% {
+//     //     background: url('../img/subheader2__backgrpund.png') center/cover no-repeat;
+//     //     //     // background-position: right;
+//     // }
+
+//     50% {
+//         background: url('../img/subheader2__backgrpund.png') right/cover no-repeat;
+//         //     // background-position: right;
+//     }
+
+//     // 75% {
+//     //     background: url('../img/subheader2__backgrpund.png') center/cover no-repeat;
+//     //     // background-position: left;
+//     // }
+
+//     100% {
+//         background: url('../img/subheader2__backgrpund.png') left/cover no-repeat;
+//         // background-position: left;
+//     }
+// }
+
+
+
 .slogan_title {
-    height: 152px;
-    line-height: 2rem;
+    height: 180px;
+    line-height: 3rem;
     color: #fff;
     font-size: 3rem;
     font-weight: 600;
@@ -359,11 +398,16 @@ min-widht: 0;
 
 .swiper-slide {
     text-align: center;
-    // padding-bottom: 10px;
     height: auto;
+
+    &:hover {
+        z-index: 100;
+    }
 
     :not(:last-child) {
         margin-bottom: 32px;
+
+
     }
 
     img {
@@ -373,12 +417,12 @@ min-widht: 0;
         // min-width: 50%;
         user-select: none;
 
-
         &:hover {
-            // transform: scale(1.1);
-            transition: all ease-in-out 0.3s;
-            box-shadow: 2px 2px 14px #330774;
+            transform: scale(2);
+            // transition: all ease-in-out 0.3s;
         }
+
+
     }
 }
 
@@ -497,7 +541,7 @@ min-widht: 0;
     width: 320px;
     margin-bottom: 8px;
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
+    // font-family: 'Montserrat', sans-serif;
 }
 
 .flip-card-price {
@@ -682,14 +726,21 @@ min-widht: 0;
     text-align: center;
     border: 1px solid #330774;
     box-sizing: border-box;
-    box-shadow: 4px 4px 4px rgba(93, 12, 212, 0.4);
+    // box-shadow: 4px 4px 4px rgba(93, 12, 212, 0.4);
     border-radius: 8px;
-    // font-family: 'Roboto', sans-serif;
+    transition: all 0.3s linear;
+
+    &:hover {
+        transition: all 0.3s linear;
+        box-shadow: 4px 4px 4px rgba(93, 12, 212, 0.4);
+    }
 
     h3 {
         font-size: 32px;
         font-weight: 400;
         margin: 0 0 16px 0;
+        font-family: 'Montserrat',
+            sans-serif;
     }
 
     span {
@@ -714,6 +765,7 @@ min-widht: 0;
         text-align: center;
         opacity: 0;
         transition: all 0.3s linear;
+
     }
 
     &:hover {
@@ -1230,7 +1282,7 @@ min-widht: 0;
     padding-right: 32px;
     display: flex;
     justify-content: right;
-    background-image: url('../svg/read-more2.svg');
+    background-image: url('../svg/read-more.svg');
     background-position: right center;
     background-repeat: no-repeat;
 }
