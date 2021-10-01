@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital@1&display=swap');
 
-html {
-    scroll-behavior: smooth;
-}
+// html {
+//     scroll-behavior: smooth;
+// }
 
 body {
     font-size: 16px;
@@ -44,6 +44,17 @@ h6 {
 
 .pos-relativ {
     position: relative;
+}
+
+.hide-scroll {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+
+    /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 span {
@@ -87,6 +98,7 @@ span {
     box-shadow: 0px 2px 4px #E3D2FC;
     // position: absolute;
     position: fixed;
+    top: 0;
     width: 100%;
     overflow: hidden;
     z-index: 1000;
@@ -935,6 +947,37 @@ option {
     border: none;
 }
 
+//
+/* feedbacks ------------------------*/
+//
+.feedback {
+    padding: 128px 0 64px 0;
+}
+
+.feedback_title {
+    margin: 0 0 64px 0;
+}
+
+.feedback__content {
+    justify-content: space-between;
+}
+
+.feedback__card {
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 355px;
+    border: 1px solid #330774;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: white;
+}
+
+.feedback_text {
+    font-family: 'Lora';
+    font-size: 16px;
+    line-height: 150%;
+}
+
+
 // ########  ##        #######   ######   
 // ##     ## ##       ##     ## ##    ##  
 // ##     ## ##       ##     ## ##        
@@ -1106,6 +1149,9 @@ option {
     }
 }
 
+
+
+
 .accordion__content {
     position: relative;
     background-color: #E3D2FC;
@@ -1114,20 +1160,6 @@ option {
     transition: 0.5s;
     color: black;
     // height: 50%;
-
-
-    /* ----  hide scroll bar  start ------ */
-
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-
-    /* Firefox */
-    &::-webkit-scrollbar {
-        display: none;
-    }
-
-    /* ----  hide scroll bar  end ------ */
 
     img {
         border-radius: 8px;
@@ -1218,7 +1250,7 @@ option {
     line-height: 24px;
 }
 
-// images container 
+// ------------------------ images container 
 
 .image-container {
     // gap: 32px;
@@ -1229,25 +1261,13 @@ option {
 }
 
 .image-item {
-    height: 200px;
     max-width: 352px;
     border-radius: 8px;
     overflow: hidden;
 
-    // margin-bottom: 32px;
-    &:hover {
-        z-index: 100;
-        transform: scale(1.3);
-        transition: all ease-in-out 0.3s;
-
-        img {
-            object-fit: contain;
-        }
-    }
-
     img {
+        max-width: 100%;
         height: 100%;
-        width: 100%;
         object-fit: cover;
     }
 }
@@ -1285,40 +1305,97 @@ option {
     margin: 0 0 32px 0;
 }
 
+
+/* ---- poetry card ------ */
+
 .poetry__card {
-    padding: 10px 10px 0 10px;
+    background: url('../svg/poetry-stars.svg') 50% 3%/auto no-repeat;
+    padding: 49px 8px 8px 8px;
     border-radius: 8px;
     box-shadow: 4px 4px 8px #904CF5;
-    overflow: hidden;
+    overflow-y: auto;
     flex: 0 1 352px;
-    max-height: 352px;
+    height: 352px;
     position: relative;
-    background: -webkit-linear-gradient(#000, #000, #fff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     transition: all 0.3s linear;
+
 
     &:hover {
         transition: all 0.3s linear;
         box-shadow: 4px 4px 18px #904CF5;
+
+
     }
 }
 
-.poetry__card_svg {
-    margin: 0 0 17px 0;
-}
-
 .poetry__card_paraghraph {
+    // overflow: auto;
+    // max-height: 100%;
     text-align: left;
+
+    background: -webkit-linear-gradient(#000, #999, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s linear;
+    // opacity: 0.5;
+
+
+    &:hover {
+        opacity: 1;
+        background: -webkit-linear-gradient(#000, #000);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: 0.5s linear;
+        opacity: 1;
+    }
 
     p {
         line-height: 150%;
         margin: 0 0 16px 0;
+
     }
+
 }
 
-.poetry-more {
+.gradient {
+    position: relative;
+    min-height: 200px;
+    background-image: linear-gradient(to right,
+            hsl(211, 100%, 50%),
+            hsl(179, 100%, 30%));
+    z-index: 1;
+}
+
+.gradient::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom,
+            hsl(344, 100%, 50%),
+            hsl(31, 100%, 40%));
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+
+.gradient:hover::before {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+// arrow read more
+
+.poetry-link {
     padding-right: 32px;
     display: flex;
     justify-content: right;
