@@ -43,6 +43,18 @@ const swiper = new Swiper('.swiper', {
 
 });
 
+// hide header on scroll down
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header").style.top = "0";
+  } else {
+    document.getElementById("header").style.top = "-128px";
+  }
+  prevScrollpos = currentScrollPos;
+} 
 
 // accordion
 
@@ -50,6 +62,9 @@ const swiper = new Swiper('.swiper', {
 $(document).ready(function () {
     $('.accordion__box').click(function () {
         $(this).toggleClass('active').siblings().removeClass('active');
+    // $('.accordion_title').click(function () {
+    //     $('.accordion__box').toggleClass('active').siblings().removeClass('active');
+
     });
 });
 

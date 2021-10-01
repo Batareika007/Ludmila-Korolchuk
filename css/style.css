@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tinos:ital@1&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
@@ -87,11 +91,12 @@ span {
   background: radial-gradient(108.28% 18624.03% at 0% 12.3%, rgba(255, 255, 255, 0.4) 0%, rgba(230, 209, 240, 0.4) 100%);
   -webkit-box-shadow: 0px 2px 4px #E3D2FC;
           box-shadow: 0px 2px 4px #E3D2FC;
-  position: absolute;
   position: fixed;
   width: 100%;
   overflow: hidden;
   z-index: 1000;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
 }
 
 .header__row {
@@ -103,48 +108,40 @@ span {
           align-items: center;
 }
 
-.header__logo {
+.logo {
   width: 160px;
   height: 96px;
   margin-right: 32px;
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
-}
-
-.header__logo .logo-front {
-  position: absolute;
-  height: 96px;
-}
-
-.header__logo .logo-back {
-  height: 96px;
-  opacity: 0;
   position: relative;
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
 }
 
-.header__logo img {
+.logo .logo-front {
+  height: 96px;
+  opacity: 1;
+}
+
+.logo img {
   width: 160px;
 }
 
-.header__logo:hover {
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
-}
-
-.header__logo:hover .logo-front {
-  position: absolute;
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
+.logo:hover .logo-front {
+  -webkit-transition: linear 0.5s;
+  transition: linear 0.5s;
   opacity: 0;
 }
 
-.header__logo:hover .logo-back {
-  position: relative;
+.logo:hover .logo-back {
   opacity: 1;
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
+}
+
+.logo-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 96px;
+  opacity: 0;
+  -webkit-transition: linear 0.5s;
+  transition: linear 0.5s;
 }
 
 .header__nav {
@@ -155,8 +152,6 @@ span {
   position: relative;
   color: #000;
   margin-right: 32px;
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
 }
 
 .header__nav a:last-child {
@@ -166,11 +161,9 @@ span {
 
 .header__nav a:hover {
   color: #904CF5;
-  text-underline-offset: 50%;
-  -webkit-text-decoration: underline 3px;
-          text-decoration: underline 3px;
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
+  text-underline-offset: 30%;
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
 }
 
 /* main -------------------  */
@@ -944,7 +937,7 @@ option {
 }
 
 .accordion .accordion__box.active .accordion_title::after {
-  content: url("/img/accordion/arrowDown.svg");
+  content: url("../img/accordion/arrowDown.svg");
 }
 
 .accordion .accordion__box.active .accordion__content {
@@ -967,7 +960,7 @@ option {
 }
 
 .accordion_title::after {
-  content: url("/img/accordion/arrowUp.svg");
+  content: url("../img/accordion/arrowUp.svg");
   position: absolute;
   top: 50%;
   right: 20px;
@@ -980,14 +973,15 @@ option {
   background-color: #E3D2FC;
   height: 0;
   overflow-y: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: black;
+  /* ----  hide scroll bar  start ------ */
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  color: black;
-  /* hide scroll bar*/
+  /* ----  hide scroll bar  end ------ */
 }
 
 .accordion__content::-webkit-scrollbar {

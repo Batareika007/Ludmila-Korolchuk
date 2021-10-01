@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <title>Людмила Корольчук - психолог, арт-терапевт</title>
 
 </head>
@@ -19,12 +20,12 @@
 
         <!-- ================ header ============================== -->
 
-        <header class="header">
+        <header class="header" id="header">
             <div class="container">
                 <div class="header__row flex-row">
-                    <a href="index.html" class="header__logo">
-                        <img class="logo-front" src="/img/logo/LOGO.png" alt="logo">
-                        <img class="logo-back" src="/img/logo/LOGO2.png" alt="logo">
+                    <a href="index.html" class="logo">
+                        <img class="logo-front" src="img/logo/LOGO.png" alt="logo">
+                        <img class="logo-back" src="img/logo/LOGO2.png" alt="logo">
                     </a>
                     <nav class="header__nav flex-row">
                         <a href="about.html">Обо мне</a>
@@ -170,7 +171,7 @@
                                 <img src="img/certificate/certificate-slide3-1.jpg" alt="">
                             </div>
                             <div class="swiper-slide flex-center">
-                                <img src="img/certificate/Корольчук Людмила-1.png" alt="">
+                                <img src="img/certificate/certificate-slide3-2.png" alt="">
                             </div>
                             <div class="swiper-slide flex-center">
                                 <img src="img/certificate/certificate-slide3-3.jpg" alt="">
@@ -464,7 +465,8 @@
                             <label for="consulting-type">Тип консультации</label>
 
                             <select class="form_input" type="text" name="consulting-type" id="consulting-type">
-                                <option value="" selected disabled style="display: none;">Выбрать тип консультации</option>
+                                <option value="" selected disabled style="display: none;">Выбрать тип консультации
+                                </option>
                                 <option value="Online consultation">Онлайн консультация</option>
                                 <option value="Full-time consultation">Очная консультация</option>
                                 <option value="Couple consultation">Консультация пары</option>
@@ -476,7 +478,8 @@
 
                             <label for="viber"><input type="checkbox" name="Viber" id="viber">Viber</label>
 
-                            <label for="messenger"><input type="checkbox" name="Messenger" id="messenger">Messenger</label>
+                            <label for="messenger"><input type="checkbox" name="Messenger"
+                                    id="messenger">Messenger</label>
 
                             <label for="zoom"><input type="checkbox" name="Zoom" id="zoom">Zoom</label>
 
@@ -804,8 +807,8 @@
 
 
                         </div>
-                            <div class="image-container flex-row">
-                                
+                        <div class="image-container flex-row">
+
                             <div class="image-item">
                                 <img src="img/gallery/5.jpg" alt="">
                             </div>
@@ -836,9 +839,21 @@
                                     <img src="svg/poetry-stars.svg" alt="star_icon">
                                 </div>
                                 <div class="poetry__card_paraghraph">
-                                    <p>
-                                        Сколько женщине для счастья надо?Посмотреть в любимые глаза,
-                                        Улыбнуться солнцу, скушать персик,Разрешить себе то, что нельзя.
+                                    <p><span>
+                                            Сколько женщине для счастья надо?
+                                        </span>
+                                        <span>
+
+                                            Посмотреть в любимые глаза,
+                                        </span>
+                                        <span>
+
+                                            Улыбнуться солнцу, скушать персик,
+                                        </span>
+                                        <span>
+
+                                            Разрешить себе то, что нельзя.
+                                        </span>
                                     </p>
                                     <p>
                                         Импульс жизни он свое подскажет, И вибрация по телу зазвенит, Расцветет в груди
@@ -983,7 +998,12 @@
         <footer class="footer">
             <div class="container">
                 <nav class="footer__row flex-row">
-                    <a class="logo" href="index.html"><img src="img/LOGO.svg" alt="logo"></a>
+                    <a href="index.html" class="logo">
+
+                        <img src="img/logo/LOGO.png" alt="logo">
+                        <!-- <img class="logo-back" src="/img/logo/LOGO2.png" alt="logo"> -->
+                    </a>
+                    <!-- <a class="logo" href="index.html"><img src="img/LOGO.svg" alt="logo"></a> -->
                     <a class="footer__row_phone" href="tel:+38(067)7157416"> <img src="svg/footer/phone.svg"
                             alt="phone">+38 (067) 715 74
                         16</a>
@@ -991,28 +1011,28 @@
                         <img src="svg/footer/email.svg" alt="email">ludakorolchuk@gmail.com</a>
 
                     <ul class="footer__links flex-row">
-                        
+
                         <li><a href="https://www.facebook.com/Ludmylakorolchuk" target="_blank">
-                            <img src="svg/footer/facebook.svg" alt="facebook"></a></li>
+                                <img src="svg/footer/facebook.svg" alt="facebook"></a></li>
 
-                        <li><a href="https://www.instagram.com/lyudmilakorolchuk/" target="_blank"> 
-                            <img src="svg/footer/instagram.svg" alt="instagram"></a></li>
+                        <li><a href="https://www.instagram.com/lyudmilakorolchuk/" target="_blank">
+                                <img src="svg/footer/instagram.svg" alt="instagram"></a></li>
 
-                        <li><a href="http://m.me/Ludmylakorolchuk" target="_blank"> 
-                            <img src="svg/footer/messenger.svg" alt="messenger"> </a></li>
+                        <li><a href="http://m.me/Ludmylakorolchuk" target="_blank">
+                                <img src="svg/footer/messenger.svg" alt="messenger"> </a></li>
 
                         <!-- <li><a href="viber://chat?number=+38(067)7157416" target="_blank">  -->
-                        <li><a href="viber://add?number=+38(067)7157416" target="_blank"> 
-                            <img src="svg/footer/viber.svg" alt="viber"></a></li>
+                        <li><a href="viber://add?number=+38(067)7157416" target="_blank">
+                                <img src="svg/footer/viber.svg" alt="viber"></a></li>
 
-                        <li><a href="https://t.me/" target="_blank"> 
-                            <img src="svg/footer/telegram.svg" alt="telegram"></a></li>
+                        <li><a href="https://t.me/" target="_blank">
+                                <img src="svg/footer/telegram.svg" alt="telegram"></a></li>
 
-                        <li><a href="https://wa.me/+380677157416" target="_blank"> 
-                            <img src="svg/footer/whatsapp.svg" alt="whatsapp"></a></li>
+                        <li><a href="https://wa.me/+380677157416" target="_blank">
+                                <img src="svg/footer/whatsapp.svg" alt="whatsapp"></a></li>
 
                         <li><a href="https://www.youtube.com/channel/UCnUMZjr3zXIobOTSRs9pluQ" target="_blank">
-                            <img src="svg/footer/youtube.svg" alt="youtube"></a></li>
+                                <img src="svg/footer/youtube.svg" alt="youtube"></a></li>
 
                     </ul>
                 </nav>
@@ -1034,6 +1054,7 @@
 
 
     <!-- =============== javascript ========================================= -->
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>

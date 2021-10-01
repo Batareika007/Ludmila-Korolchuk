@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital@1&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 16px;
     font-family: 'Montserrat',
@@ -81,11 +85,12 @@ span {
     backdrop-filter: blur(16px);
     background: radial-gradient(108.28% 18624.03% at 0% 12.3%, rgba(255, 255, 255, 0.4) 0%, rgba(230, 209, 240, 0.4) 100%);
     box-shadow: 0px 2px 4px #E3D2FC;
-    position: absolute;
+    // position: absolute;
     position: fixed;
     width: 100%;
     overflow: hidden;
     z-index: 1000;
+    transition: top 0.5s;
 }
 
 .header__row {
@@ -95,7 +100,7 @@ span {
     align-items: center;
 }
 
-.header__logo {
+.logo {
     // background: url('/img/logo/LOGO.png') 0 0/100% auto no-repeat;
     // background-image: url('/img/logo/LOGO.png');
     // background-size: 100%;
@@ -103,18 +108,11 @@ span {
     width: 160px;
     height: 96px;
     margin-right: 32px;
-    transition: ease-in-out 0.3s;
+    position: relative;
 
     .logo-front {
-        position: absolute;
         height: 96px;
-    }
-
-    .logo-back {
-        height: 96px;
-        opacity: 0;
-        position: relative;
-        transition: ease-in-out 0.3s;
+        opacity: 1;
     }
 
     img {
@@ -124,24 +122,38 @@ span {
     &:hover {
 
         .logo-front {
-            position: absolute;
-            transition: ease-in-out 0.3s;
+            // position: absolute;
+            transition: linear 0.5s;
             opacity: 0;
         }
 
         .logo-back {
-            position: relative;
+            // position: relative;
             opacity: 1;
-            transition: ease-in-out 0.3s;
+            // transition: ease-in-out 0.3s;
         }
 
         // background-image: url('/img/logo/LOGO2.png');
         // background-image: url('/img/logo/LOGO.png');
         // background-image: url('/img/LOGO2.svg');
-        transition: ease-in-out 0.3s;
+        // transition: ease-in-out 0.3s;
 
     }
 }
+
+.logo-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 96px;
+    opacity: 0;
+    transition: linear 0.5s;
+}
+
+
+
+
+
 
 .header__nav {
     width: 100%;
@@ -150,7 +162,7 @@ span {
         position: relative;
         color: #000;
         margin-right: 32px;
-        transition: ease-in-out 0.3s;
+        // transition: ease-in-out 0.3s;
 
         &:last-child {
             margin-right: 0;
@@ -159,9 +171,9 @@ span {
 
         &:hover {
             color: #904CF5;
-            text-underline-offset: 50%;
-            text-decoration: underline 3px;
-            transition: ease-in-out 0.3s;
+            text-underline-offset: 30%;
+            text-decoration: underline 2px;
+            // transition: ease-in-out 0.3s;
         }
     }
 }
@@ -1058,11 +1070,10 @@ option {
 
             .accordion_title {
                 box-shadow: none;
-            }
 
-            .accordion_title::after {
-                content: url('/img/accordion/arrowDown.svg');
-
+                &::after {
+                    content: url('../img/accordion/arrowDown.svg');
+                }
             }
 
             .accordion__content {
@@ -1086,15 +1097,12 @@ option {
     cursor: pointer;
     box-shadow: inset 0px 2px 8px rgba(255, 255, 255, 0.8);
 
-
-
     &::after {
-        content: url('/img/accordion/arrowUp.svg');
+        content: url('../img/accordion/arrowUp.svg');
         position: absolute;
         top: 50%;
         right: 20px;
         transform: translateY(-50%);
-
     }
 }
 
@@ -1103,18 +1111,23 @@ option {
     background-color: #E3D2FC;
     height: 0;
     overflow-y: auto;
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
     transition: 0.5s;
     color: black;
     // height: 50%;
 
-    /* hide scroll bar*/
+
+    /* ----  hide scroll bar  start ------ */
+
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+
+    /* Firefox */
     &::-webkit-scrollbar {
         display: none;
     }
+
+    /* ----  hide scroll bar  end ------ */
 
     img {
         border-radius: 8px;
@@ -1125,8 +1138,6 @@ option {
         margin: 0 0 16px 0;
     }
 }
-
-
 
 .accordion_text {
     font-weight: bold;
