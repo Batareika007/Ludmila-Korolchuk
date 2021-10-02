@@ -920,10 +920,6 @@ min-widht: 0;
         margin: 0 0 24px 0;
     }
 
-    div {
-        margin: 0 0 16px 0;
-    }
-
     textarea {
         min-height: 172px;
         resize: none;
@@ -931,8 +927,26 @@ min-widht: 0;
     }
 
     input[type=checkbox] {
+        width: 16px;
+        height: 16px;
         margin-right: 16px;
+        margin: 0 16px 0 0;
+        border-radius: 8px;
     }
+}
+
+.chekbox_title {
+    margin-bottom: 16px;
+}
+
+
+.chekbox-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.chekbox-container {
+    margin-bottom: 20px;
 }
 
 .form_input {
@@ -942,13 +956,8 @@ min-widht: 0;
     border-radius: 8px;
 }
 
-option {
-    background-color: white;
-    border: none;
-}
-
 //
-/* feedbacks ------------------------*/
+/*  ============ feedbacks  ===================  */
 //
 .feedback {
     padding: 128px 0 64px 0;

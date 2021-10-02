@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=1160">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -480,21 +481,34 @@
                                 <option value="Couple consultation">Консультация пары</option>
                             </select>
 
-                            <div>Выберите наиболее удобный для Вас способ связи для онлайн-консультации</div>
 
-                            <label for="skype"><input type="checkbox" name="Skype" id="skype">Skype</label>
 
-                            <label for="viber"><input type="checkbox" name="Viber" id="viber">Viber</label>
-
-                            <label for="messenger"><input type="checkbox" name="Messenger"
-                                    id="messenger">Messenger</label>
-
-                            <label for="zoom"><input type="checkbox" name="Zoom" id="zoom">Zoom</label>
-
-                            <label for="all"><input type="checkbox" name="all" id="all">подходят все</label>
+                            <div class="chekbox_title">Выберите наиболее удобный для Вас способ связи для онлайн-консультации</div>
+                            
+                            <div class="chekbox-container">
+                                <input class="chekbox-icon" type="checkbox" name="Skype" id="skype">
+                                <label class="chekbox-text" for="skype">Skype</label>
+                            </div>
+                            <div class="chekbox-container">
+                                <input class="chekbox-icon" type="checkbox" name="Viber" id="viber">
+                                <label class="chekbox-text" for="viber">Viber</label>
+                            </div>
+                            <div class="chekbox-container">
+                                <input class="chekbox-icon" type="checkbox" name="Messenger" id="messenger">
+                                <label class="chekbox-text" for="messenger">Messenger</label>
+                            </div>
+                            <div class="chekbox-container">
+                                <input class="chekbox-icon" type="checkbox" name="Zoom" id="zoom">
+                                <label class="chekbox-text" for="zoom">Zoom</label>
+                            </div>
+                            <div class="chekbox-container">
+                                <input class="chekbox-icon" type="checkbox" name="all" id="all">
+                                <label class="chekbox-text" for="all">подходят все</label>
+                            </div>
                         </div>
                         <!-- name and privet data -->
                         <div class="form__column flex-column">
+                            
                             <label for="lastname">Фамилия</label>
                             <input class="form_input" type="text" name="lastname" id="lastname" placeholder="Фамилия">
 
@@ -503,6 +517,7 @@
 
                             <label for="email">E-mail</label>
                             <input class="form_input" type="email" name="email" id="email" placeholder="E-mail">
+                            
                             <label for="phone">Телефон</label>
                             <input id="phone-input" class="form_input" type="tel" name="phone" id="phone"
                                 placeholder="+38(___) ___-__-__"
@@ -511,15 +526,16 @@
 
                         <!-- textarea and submit -->
                         <div class="form__column flex-column">
+
                             <label for="about-problem">Напишите коротко о проблеме</label>
-                            <textarea class="form_input" name="about-problem" id="about-problem"
-                                placeholder="Коротко о проблеме"></textarea>
+                            <textarea class="form_input" name="about-problem" id="about-problem" placeholder="Коротко о проблеме"></textarea>
                             <label for="date-and-time">Когда Вам было бы удобно получить консультацию</label>
                             <input class="form_input" type="text" name="" id="date-and-time"
                                 placeholder="Укажите удобные даты и время">
 
-                            <button type="submit" value="Submit" class="button_style"> <span
-                                    class="flex-center">ЗАПИСАТЬСЯ</span></button>
+                            <button type="submit" value="Submit" class="button_style"> 
+                                <span class="flex-center">ЗАПИСАТЬСЯ</span>
+                            </button>
                         </div>
 
 
@@ -535,19 +551,22 @@
                     </div>
                     <div class="feedback__content flex-row">
                         <div class="feedback__card">
-                            <p class="feedback_text">Огромная благодарность моя Людмиле! Все материалы курса «Семь шагов к уверенности»
+                            <p class="feedback_text">Огромная благодарность моя Людмиле! Все материалы курса «Семь шагов
+                                к уверенности»
                                 помогли мне стать намного увереннее в себе . Очень много открылось осознаний себя.
                                 Людмила, ты очень бережно вела меня по дебрям. Материалы , тесты, видео очень доступны ,
                                 легки и насыщенны информацией.</p>
                         </div>
                         <div class="feedback__card">
-                            <p class="feedback_text">Прошло уже больше месяца с момента тренинга «Исцеление внутреннего ребенка», но я
+                            <p class="feedback_text">Прошло уже больше месяца с момента тренинга «Исцеление внутреннего
+                                ребенка», но я
                                 периодически к нему возвращаюсь. Результат я получила и очень довольна.
                                 Сейчас я чётко осознаю, когда включается детское поведение и решаю, что мне сним делать!
                             </p>
                         </div>
                         <div class="feedback__card">
-                            <p class="feedback_text">Благодарю за марафон «Как найти опору в себе»! Вы талантливый психолог, в вас есть то,
+                            <p class="feedback_text">Благодарю за марафон «Как найти опору в себе»! Вы талантливый
+                                психолог, в вас есть то,
                                 чего нет в других. Это ваше поле простоты и открытости. Без заумных экивоков, душевно,
                                 честно. Вы можете одновременно объяснить и психотерапевту и простому человеку не
                                 сталкивающемуся с психологией.</p>
@@ -1100,7 +1119,7 @@
     <!-- =============== javascript ========================================= -->
 
     <script src="js/swiper-bundle.min.js"></script>
-    <!-- <script src="jquery/jquery-gp-gallery.js"></script> -->
+    <script src="js/phone-mask.js"></script>
     <script src="js/script.js"></script>
 </body>
 

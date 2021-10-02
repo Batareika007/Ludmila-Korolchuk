@@ -4,35 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=1160">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
     <title>Людмила Корольчук - психолог, арт-терапевт</title>
 
 </head>
 
 <body>
-    <section class="wrapper">
-        <!-- 
-##     ## ########    ###    ########  ######## ########  
-##     ## ##         ## ##   ##     ## ##       ##     ## 
-##     ## ##        ##   ##  ##     ## ##       ##     ## 
-######### ######   ##     ## ##     ## ######   ########  
-##     ## ##       ######### ##     ## ##       ##   ##   
-##     ## ##       ##     ## ##     ## ##       ##    ##  
-##     ## ######## ##     ## ########  ######## ##     ## 
- -->
+    <div class="wrapper">
 
+        <!-- ================ header ============================== -->
 
-        <header class="header">
+        <header class="header" id="header">
             <div class="container">
                 <div class="header__row flex-row">
-                    <a href="index.html" class="header__logo"><img src="img/LOGO.svg" alt="logo"></a>
+                    <a href="index.html" class="logo">
+                        <img class="logo-front" src="img/logo/LOGO.png" alt="logo">
+                        <img class="logo-back" src="img/logo/LOGO2.png" alt="logo">
+                    </a>
                     <nav class="header__nav flex-row">
-                         <a href="about.html">Обо мне</a>
+                        <a href="about.html">Обо мне</a>
                         <a href="courses_and_trainings.html">Курсы и тренинги</a>
                         <a href="consultation.html">Консультации</a>
                         <a href="blog.html">Блог</a>
@@ -41,85 +46,349 @@
                 </div>
             </div>
         </header>
-        <!-- 
-##     ##    ###    #### ##    ## 
-###   ###   ## ##    ##  ###   ## 
-#### ####  ##   ##   ##  ####  ## 
-## ### ## ##     ##  ##  ## ## ## 
-##     ## #########  ##  ##  #### 
-##     ## ##     ##  ##  ##   ### 
-##     ## ##     ## #### ##    ## 
- -->
+
+        <!-- ================= main =============================== -->
 
         <main class="main">
-            <!-- 
- ######  ##     ## ########  ##     ## ########    ###    ########  ######## ########  
-##    ## ##     ## ##     ## ##     ## ##         ## ##   ##     ## ##       ##     ## 
-##       ##     ## ##     ## ##     ## ##        ##   ##  ##     ## ##       ##     ## 
- ######  ##     ## ########  ######### ######   ##     ## ##     ## ######   ########  
-      ## ##     ## ##     ## ##     ## ##       ######### ##     ## ##       ##   ##   
-##    ## ##     ## ##     ## ##     ## ##       ##     ## ##     ## ##       ##    ##  
- ######   #######  ########  ##     ## ######## ##     ## ########  ######## ##     ##  
--->
 
-            <section class="subheader subheader__non-main-page">
+            <!-- ============= subheader ========================== -->
+
+            <section class="subheader">
                 <div class="container">
-                    <!-- <div class="subheader__img">
-                        <img src="" alt="Людмила Корольчук">
-                    </div> -->
-                    <div class="subheader__title">
-                        <h1 class="subheader__title_header">
+                    <div class="subheader__content">
+                        <h1 class="subheader__title">
                             <span>Людмила</span>
                             <span>Корольчук</span>
                         </h1>
-                        <span class="subheader__title_text">
+                        <span class="subheader__subtitle">
                             психолог, арт-терапевт
                         </span>
                     </div>
                 </div>
             </section>
 
-            <!-- 
- ######  ##     ## ########  ##     ## ########    ###    ########  ######## ########   #######  
-##    ## ##     ## ##     ## ##     ## ##         ## ##   ##     ## ##       ##     ## ##     ## 
-##       ##     ## ##     ## ##     ## ##        ##   ##  ##     ## ##       ##     ##        ## 
- ######  ##     ## ########  ######### ######   ##     ## ##     ## ######   ########   #######  
-      ## ##     ## ##     ## ##     ## ##       ######### ##     ## ##       ##   ##   ##        
-##    ## ##     ## ##     ## ##     ## ##       ##     ## ##     ## ##       ##    ##  ##        
- ######   #######  ########  ##     ## ######## ##     ## ########  ######## ##     ## #########  
--->
+            <!-- ================= slogan ========================== -->
 
+            <section class="slogan">
+                <div class="container"><span class="slogan_title flex-center">“Именно Вы - автор картины своей
+                        жизни”</span></div>
+            </section>
 
-            <section class="subheader2">
+            <!-- ======== about ===================================== -->
+
+            <section class="about">
                 <div class="container">
-                    <h2 class="subheader2_title flex-center">“Именно Вы - автор картины своей жизни”</h2>
+
+                    <h2 class="about_title">Обо мне</h2>
+
+
+                    <div class="about__main flex-row">
+                        <div class="about__image">
+                            <img src="img/about.jpg" alt="" srcset="">
+                        </div>
+                        <div class="about__content">
+                            <p>
+                                <span>
+                                    Здравствуйте! Рада приветствовать вас на страницах своего сайта.
+                                </span>
+                                <span>
+                                    Давайте знакомится!
+                                </span>
+                            </p>
+
+                            <p>
+                                <span>
+                                    Я - практикующий психолог, арт-терапевт, ведущая группы психологического
+                                    сопровождения для родителей в Центре развития ребенка “Я+семья” г. Киева.
+                                </span>
+
+
+                                <span>
+                                    Также я автор и ведущая групповых психологических тренингов и курсов для женщин,
+                                    нацеленных на раскрытие самоценности и творческого потенциала.
+                                </span>
+                            </p>
+
+                            <p>Я помогу Вам</p>
+
+                            <div class="flex-row">
+                                <ul class="flex-column">
+                                    <li>раскрыть самоценность и обрести уверенность в себе, </li>
+                                    <li>выйти из созависимых отношений,</li>
+                                    <li>побороть страхи, </li>
+                                </ul>
+                                <ul class="flex-column">
+                                    <li>преодолеть депресивные состояния, </li>
+                                    <li>раскрыть творческий потенциал</li>
+                                    <li>и найти именно Ваш путь личной самореализации.</li>
+                                </ul>
+                            </div>
+                            <p>
+                                В своей работе я использую самые разные инструменты: техники арт-терапии, метафорические
+                                ассоциативные карты, расстановочные практики, техники работы с частями личности
+                                “Взрослый, родитель, ребенок”, медитативные практики, правополушарное рисование.
+                            </p>
+                            <p>Каждый человек индивидуален и уникален, поэтому в нашей с Вами работе мы подберем
+                                инструменты и техники, которые подойдут имено Вам.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="flex-center">
+                        <a href="about.html" class="button_style flex-center">
+                            <span class="flex-center"> Узнать больше</span></a>
+                    </div>
+
                 </div>
             </section>
-            
-            <!-- 
- ######   #######  ##    ##  ######  ##     ## ##       ######## #### ##    ##  ######   
-##    ## ##     ## ###   ## ##    ## ##     ## ##          ##     ##  ###   ## ##    ##  
-##       ##     ## ####  ## ##       ##     ## ##          ##     ##  ####  ## ##        
-##       ##     ## ## ## ##  ######  ##     ## ##          ##     ##  ## ## ## ##   #### 
-##       ##     ## ##  ####       ## ##     ## ##          ##     ##  ##  #### ##    ##  
-##    ## ##     ## ##   ### ##    ## ##     ## ##          ##     ##  ##   ### ##    ##  
- ######   #######  ##    ##  ######   #######  ########    ##    #### ##    ##  ######    
--->
 
-            <!--   Консультации ------------->
+            <!-- =========== certificates =========================== -->
+
+            <section class="certificates">
+                <div class="container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/certificate/certificate-slide1-1.jpg" alt="">
+                                <img src="img/certificate/certificate-slide1-2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/certificate/certificate-slide1-3.jpg" alt="">
+                                <img src="img/certificate/certificate-slide1-4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/certificate/certificate-slide1-5.jpg" alt="">
+                                <img src="img/certificate/certificate-slide1-6.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/certificate/certificate-slide1-7.jpg" alt="">
+                                <img src="img/certificate/certificate-slide1-8.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide flex-center">
+                                <img src="img/certificate/certificate-slide2-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide flex-center">
+                                <img src="img/certificate/certificate-slide2-2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide flex-center">
+                                <img src="img/certificate/certificate-slide2-3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide flex-center">
+                                <img src="img/certificate/certificate-slide2-4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide flex-center">
+                                <img src="img/certificate/certificate-slide3-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide flex-center">
+                                <img src="img/certificate/certificate-slide3-2.png" alt="">
+                            </div>
+                            <div class="swiper-slide flex-center">
+                                <img src="img/certificate/certificate-slide3-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination certificates-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= courses and trainings ============================-->
+
+            <section class="courses-trainings">
+                <div class="container">
+                    <h2 class="courses-trainings__title">Курсы и тренинги</h2>
+                    <!-- !! new card add on top, flex reverse used !!-->
+
+
+                    <div class="courses-trainings__container flex-row">
+                        <!-- Курс ”Личный код твоей уверенности” -->
+                        <div class="flip-card">
+                            <div class="flip-card__item">
+                                <div
+                                    class="courses-trainings__card flip-card-front flex-center personal-code-of-your-confidence">
+                                    <p class="flex-column"><span> Курс</span> ”Личный код твоей уверенности”</p>
+                                </div>
+
+                                <div
+                                    class="courses-trainings__card flip-card-back flex-column personal-code-of-your-confidence-back">
+                                    <div class="flip-card__main">
+                                        <h4 class="flip-card-title flex-column"><span>Тренинг</span> <span> «Личный код
+                                                твоей уверенности»</span></h4>
+                                        <p class="flip-card-text">
+                                            <span>Программа индивидульного сопровождения:</span>
+                                            <span>7 вебинаров в записи и </span>
+                                            <span>7 личных консультаций</span>
+                                        </p>
+                                        <span class="flip-card-price">Стоимость - 9 000 грн</span>
+                                    </div>
+                                    <div class="flip-card_footer flex-center">подробнее</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Курс ”Путь художника” -->
+                        <div class="flip-card">
+                            <div class="flip-card__item">
+                                <div class="courses-trainings__card flip-card-front flex-center the-artist-way ">
+                                    <p class="flex-column"><span>Курс</span> ”Путь художника”</p>
+                                </div>
+                                <div class="courses-trainings__card flip-card-back flex-column the-artist-way-back">
+                                    <div class="flip-card__main">
+                                        <h4 class="flip-card-title flex-column"><span>Курс</span> <span> ”Путь
+                                                художника”</span></h4>
+                                        <span class="flip-card-text">Курс по раскрытию творческого потенциала «Путь
+                                            художника» по книге Джулии Кемерон.
+                                        </span>
+                                        <span class="flip-card-price">Стоимость - 2 500 грн</span>
+                                        <span class="flip-card-price">Старт 27 сентября</span>
+                                    </div>
+                                    <div class="flip-card_footer flex-center">подробнее</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Курс ”Палитра моей души” -->
+                        <div class="flip-card">
+                            <div class="flip-card__item">
+                                <div class="courses-trainings__card flip-card-front flex-center palette-of-my-soul ">
+                                    <p class="flex-column"> <span>Курс</span> ”Палитра моей души”</p>
+                                </div>
+
+                                <div class="courses-trainings__card flip-card-back flex-column palette-of-my-soul-back">
+                                    <div class="flip-card__main">
+                                        <h4 class="flip-card-title flex-column">
+                                            <span>Курс</span>
+                                            <span>”Раскрась свою жизнь”</span></h4>
+                                        <span class="flip-card-text">Мини-курс с арт-практиками и обучение
+                                            правополушарному рисованию «Раскрась свою жизнь». </span>
+                                        <span class="flip-card-price">Стоимость - 750 грн</span>
+                                        <span class="flip-card-text">*Цена указана за тренинг в записи</span>
+                                    </div>
+                                    <div class="flip-card_footer flex-center">подробнее</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Тренинг ”Сокровища в тени” -->
+                        <div class="flip-card">
+                            <div class="flip-card__item">
+                                <div
+                                    class="courses-trainings__card flip-card-front flex-center treasures-in-the-shadows">
+                                    <p class="flex-column"><span>Тренинг</span> ”Сокровища в тени”</p>
+                                </div>
+                                <div
+                                    class="courses-trainings__card flip-card-back flex-column treasures-in-the-shadows-back">
+                                    <div class="flip-card__main">
+                                        <h4 class="flip-card-title flex-column"><span>Тренинг</span> <span> «Сокровища в
+                                                тени»</span></h4>
+                                        <span class="flip-card-text">Познакомит вас с новыми гранями себя.</span>
+                                        <span class="flip-card-text">Груповой</span>
+                                        <span class="flip-card-price">Стоимость - 600 грн*</span>
+                                        <span class="flip-card-text">*Цена указана за тренинг в записи</span>
+                                    </div>
+                                    <div class="flip-card_footer flex-center">подробнее</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Тренинг ”Исцеление внутреннего ребенка” -->
+                        <div class="flip-card">
+                            <div class="flip-card__item">
+                                <div
+                                    class="courses-trainings__card flip-card-front flex-center healing-the-inner-child ">
+                                    <p class="flex-column"><span>Тренинг</span>«Исцеление внутреннего ребенка»</p>
+                                </div>
+                                <div
+                                    class="courses-trainings__card flip-card-back flex-column healing-the-inner-child-back">
+                                    <div class="flip-card__main">
+                                        <h4 class="flip-card-title flex-column"><span>Тренинг</span> <span>«Исцеление
+                                                внутреннего ребенка» </span></h4>
+                                        <span class="flip-card-text">Поможет обрести состояние безопасности, радости и
+                                            доверия к миру.</span>
+                                        <span class="flip-card-text">Груповой</span>
+                                        <span class="flip-card-price">Стоимость - 500 грн*</span>
+                                        <span class="flip-card-text">*Цена указана за тренинг в записи</span>
+                                    </div>
+                                    <div class="flip-card_footer flex-center">подробнее</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Тренинг ”Моя жизнь-мои правила” -->
+                        <div class="flip-card">
+                            <div class="flip-card__item">
+                                <div class="courses-trainings__card flip-card-front flex-center my-life-my-rules">
+                                    <p class="flex-column"><span>Тренинг</span> ”Моя жизнь-мои правила”</p>
+                                </div>
+
+                                <div class="courses-trainings__card flip-card-back flex-column my-life-my-rules-back">
+                                    <div class="flip-card__main">
+                                        <h4 class="flip-card-title flex-column"><span>Тренинг</span> <span> «Моя жизнь –
+                                                мои правила» </span></h4>
+                                        <span class="flip-card-text">Поможет трансформировать страхи и негативные
+                                            убеждения. </span>
+                                        <span class="flip-card-text">Груповой</span>
+                                        <span class="flip-card-price">Стоимость - 500 грн*</span>
+                                        <span class="flip-card-text">*Цена указана за тренинг в записи</span>
+                                    </div>
+                                    <div class="flip-card_footer flex-center">подробнее</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Игра ”Важное о себе” -->
+                        <div class="flip-card">
+
+                            <div class="flip-card__item">
+                                <!-- front card -->
+                                <div
+                                    class="courses-trainings__card flip-card-front flex-center important-about-yourself">
+                                    <p class="flex-column">
+                                        <span>Игра</span>
+                                        <span>”Важное о себе”</span>
+                                    </p>
+                                </div>
+
+
+                                <!-- back card -->
+                                <div
+                                    class="courses-trainings__card flip-card-back flex-column important-about-yourself-back">
+                                    <div class="flip-card__main">
+                                        <h4 class="flip-card-title flex-column">
+                                            <span>Игра</span>
+                                            <span> «Важное о себе»</span>
+                                        </h4>
+                                        <span class="flip-card-text">Трансформационная игра для женщин для познания
+                                            своих истинных целей и обретения ресурсного состояния. </span>
+                                        <span class="flip-card-text">Груповой от 4 участниц</span>
+                                        <span class="flip-card-price">Стоимость - 500 грн</span>
+                                    </div>
+                                    <div class="flip-card_footer flex-center">подробнее</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </section>
+
+
+            <!-- ====================Консультации ===================================-->
             <section class="consulting">
                 <div class="container">
 
-                    <div class="consulting__title">
-                        <h2>Консультации</h2>
-                    </div>
+
+                    <h2 class="consulting_title">Консультации</h2>
+
 
 
                     <div class="consulting__content  flex-row">
                         <div class="content-item">
                             <p class="consulting__content_text">
-                                Я провожу консультации как онлайн так и очно в Киеве. Дату и время консультации мы
-                                согласовываем заранее таким образом, чтобы было удобно и Вам, и мне.
+                                Я провожу консультации как онлайн так и очно в Киеве.
+                                <span>
+                                    Дату и время консультации мы
+                                    согласовываем заранее таким образом, чтобы было удобно и Вам, и мне.
+                                </span>
                             </p>
                             <p class="consulting__content_text">
                                 Как-то особо готовится к встрече не нужно, даже если вам покажется, что Вы не сможете
@@ -127,7 +396,8 @@
                                 диагностическими заданиями.
                             </p>
                             <p class="consulting__content_text">
-                                Продолжительность психотерапии (сколько потребуется встреч) зависит от изначального
+                                Продолжительность психотерапии (сколько потребуется
+                                встреч) зависит от изначального
                                 запроса, от уровня сложности поставленной задачи, степени травматичности переживаний, от
                                 продолжительности воздействия стрессовых факторов, которые привели к проблеме, от
                                 текущих условий вашей жизни, от уровня физического здоровья и поддержки вне терапии
@@ -146,7 +416,8 @@
                                 известить заблаговеременно, как минимум, за сутки.
                             </p>
                             <p class="consulting__content_text">
-                                Для клиентов из других стран есть сервис wayforpay, т.е. Вам на электронную почту
+                                Для клиентов из других стран есть сервис <a href="https://wayforpay.com/ru"
+                                    target="_blank">wayforpay</a>, т.е. Вам на электронную почту
                                 приходит счет от меня и Вы можете оплатить в своей валюте.
                             </p>
                         </div>
@@ -154,11 +425,11 @@
                             <img src="img/consulting_img.png" alt="">
                         </div>
                     </div>
-<!--  
+
                     <div class="consultiung__cards cards flex-row">
 
                         <div class="consultiung__cards_card flex-column">
-                            <h3>Онлайн-консультация</h3>
+                            <h3>Онлайн консультация</h3>
                             <div class="pos-relativ">
                                 <div class="price">Стоимость - 1 300 грн.</div>
                                 <span>Продолжтельность - 90 минут</span>
@@ -183,67 +454,66 @@
                             </div>
                         </div>
                     </div>
-                -->
+
                 </div>
             </section>
-            <!-- 
-########  #######  ########  ##     ## 
-##       ##     ## ##     ## ###   ### 
-##       ##     ## ##     ## #### #### 
-######   ##     ## ########  ## ### ## 
-##       ##     ## ##   ##   ##     ## 
-##       ##     ## ##    ##  ##     ## 
-##        #######  ##     ## ##     ##  
--->
+
+            <!-- ================ Form ======================================= -->
 
             <section class="form">
 
-                <h2 class="form__title">Записаться на консультацию</h2>
+                <p class="form__title">Записаться на консультацию</p>
 
                 <div class="form-container">
 
-                    <form class="form__row flex-row" action="">
+                    <form id="form" class="form__row flex-row" action="mailto:ludakorolchuk@gmail.com" method="POST">
 
                         <!-- chose type of -->
                         <div class="form__column flex-column">
 
                             <label for="consulting-type">Тип консультации</label>
-                            <input class="form_input" type="text" name="" id="consulting-type"
-                                placeholder="Выбрать тип консультации">
+
+                            <select class="form_input" type="text" name="consulting-type" id="consulting-type">
+                                <option value="" selected disabled style="display: none;">Выбрать тип консультации
+                                </option>
+                                <option value="Online consultation">Онлайн консультация</option>
+                                <option value="Full-time consultation">Очная консультация</option>
+                                <option value="Couple consultation">Консультация пары</option>
+                            </select>
 
                             <div>Выберите наиболее удобный для Вас способ связи для онлайн-консультации</div>
 
-                            <label for="skype"><input type="checkbox" name="" id="skype"> Skype </label>
+                            <label for="skype"><input type="checkbox" name="Skype" id="skype">Skype</label>
 
-                            <label for="viber"><input type="checkbox" name="" id="viber"> Viber </label>
+                            <label for="viber"><input type="checkbox" name="Viber" id="viber">Viber</label>
 
-                            <label for="messenger"><input type="checkbox" name="" id="messenger"> Messenger</label>
+                            <label for="messenger"><input type="checkbox" name="Messenger"
+                                    id="messenger">Messenger</label>
 
-                            <label for="zoom"><input type="checkbox" name="" id="zoom"> Zoom</label>
+                            <label for="zoom"><input type="checkbox" name="Zoom" id="zoom">Zoom</label>
 
-                            <label for="all"><input type="checkbox" name="" id="all"> подходят все</label>
+                            <label for="all"><input type="checkbox" name="all" id="all">подходят все</label>
                         </div>
                         <!-- name and privet data -->
                         <div class="form__column flex-column">
                             <label for="lastname">Фамилия</label>
-                            <input class="form_input" type="text" id="lastname" placeholder="Фамилия">
+                            <input class="form_input" type="text" name="lastname" id="lastname" placeholder="Фамилия">
 
                             <label for="firstname">Имя</label>
-                            <input class="form_input" type="text" id="firstname" placeholder="Имя">
+                            <input class="form_input" type="text" name="firstname" id="firstname" placeholder="Имя">
 
                             <label for="email">E-mail</label>
                             <input class="form_input" type="email" name="email" id="email" placeholder="E-mail">
-
                             <label for="phone">Телефон</label>
-                            <input class="form_input" type="tel" name="phone" id="phone"
-                                placeholder="+38(___) ___-__-__">
-
+                            <input id="phone-input" class="form_input" type="tel" name="phone" id="phone"
+                                placeholder="+38(___) ___-__-__"
+                                pattern="[\+]\d{2}\s[\(]\[69]{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength=10 required>
                         </div>
 
                         <!-- textarea and submit -->
                         <div class="form__column flex-column">
                             <label for="about-problem">Напишите коротко о проблеме</label>
-                            <textarea class="form_input" name="" id="about-problem"
+                            <textarea class="form_input" name="about-problem" id="about-problem"
                                 placeholder="Коротко о проблеме"></textarea>
                             <label for="date-and-time">Когда Вам было бы удобно получить консультацию</label>
                             <input class="form_input" type="text" name="" id="date-and-time"
@@ -258,39 +528,557 @@
                 </div>
             </section>
 
+            <!-- =================  feedbacks ================================ -->
+            <section class="feedback">
+                <div class="container">
+                    <div class="feedback_title flex-center">
+                        <h3>Отзывы</h3>
+                    </div>
+                    <div class="feedback__content flex-row">
+                        <div class="feedback__card">
+                            <p class="feedback_text">Огромная благодарность моя Людмиле! Все материалы курса «Семь шагов к уверенности»
+                                помогли мне стать намного увереннее в себе . Очень много открылось осознаний себя.
+                                Людмила, ты очень бережно вела меня по дебрям. Материалы , тесты, видео очень доступны ,
+                                легки и насыщенны информацией.</p>
+                        </div>
+                        <div class="feedback__card">
+                            <p class="feedback_text">Прошло уже больше месяца с момента тренинга «Исцеление внутреннего ребенка», но я
+                                периодически к нему возвращаюсь. Результат я получила и очень довольна.
+                                Сейчас я чётко осознаю, когда включается детское поведение и решаю, что мне сним делать!
+                            </p>
+                        </div>
+                        <div class="feedback__card">
+                            <p class="feedback_text">Благодарю за марафон «Как найти опору в себе»! Вы талантливый психолог, в вас есть то,
+                                чего нет в других. Это ваше поле простоты и открытости. Без заумных экивоков, душевно,
+                                честно. Вы можете одновременно объяснить и психотерапевту и простому человеку не
+                                сталкивающемуся с психологией.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        
+            <!-- =============== Blog =========================================-->
+            <section class="blog">
+                <div class="container">
+
+                    <h2 class="blog__title">Блог</h2>
+
+                    <!-- ============== Blog Articles =================================-->
+                    <div class="blog__article article">
+                        <h3 class="blog__article_title">Статьи</h3>
+
+                        <div class="flex-row article-main">
+
+                            <div class="article-main__item">
+                                <div class="article__section flex-row">
+                                    <div class="article__image">
+                                        <img src="img/blog/three.jpg" alt="Дневник Благодарности Роду">
+                                    </div>
+                                    <div class="article__content flex-column">
+                                        <h3 class="article__content_title">«Дневник благодарности Роду»</h3>
+                                        <p class="article__content_paragraph">Ко мне часто приходят женщины с запросом
+                                            про
+                                            уверенность в себе. Они хотят изменений на работе, в отношении с
+                                            партнером...
+                                        </p>
+                                        <a href="blog.html" class="article__content_read-more">Читать далее</a>
+                                    </div>
+                                </div>
+                                <div class="article__section flex-row">
+                                    <div class="article__image">
+                                        <img src="img/blog/women.jpg" alt="Женские Желания">
+                                    </div>
+                                    <div class="article__content flex-column">
+                                        <h3 class="article__content_title">«Женские желания»</h3>
+                                        <p class="article__content_paragraph">Казалось, что может быть естественнее, а
+                                            вот
+                                            нетушки…
+                                            Оказывается за столь простым предложением: «Напишите свои 30 желаний»,
+                                            скрывается
+                                            столько всего?! Способность спонтанно реагировать, идти за своим интересом и
+                                            желать
+                                            – все это качества нашего «внутреннего» ребенка. И у многих людей доступ к
+                                            этой
+                                            эмоциональной части себя перекрыт логикой, страхом, стыдом, виной.
+                                        </p>
+                                        <a href="blog.html" class="article__content_read-more">Читать далее</a>
+                                    </div>
+                                </div>
+                                <div class="article__section flex-row">
+                                    <div class="article__image">
+                                        <img src="img/blog/couple.jpg" alt="Отношения Двоих">
+                                    </div>
+                                    <div class="article__content flex-column">
+                                        <h3 class="article__content_title">«Отношения двоих»</h3>
+                                        <p class="article__content_paragraph">Отношения двоих всегда начинаются с
+                                            отношения
+                                            к себе! В женском представлении часто присутствует идеальная картинка
+                                            отношений. Ну
+                                            а если что-то не складывается, то это ведь с мужчиной что-то не так. А как
+                                            хорошо мы
+                                            знаем сами себя?
+                                        </p>
+                                        <a href="blog.html" class="article__content_read-more">Читать далее</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 
+                                        TODO NEED TO FINISH
+                                    !! CREATE NEW ACCORDION !! 
+                             -->
+
+                            <!-- accordion -->
+                            <div class="article-main__item accordion">
+
+                                <!-- Отношения -->
+                                <div class="accordion__box active">
+                                    <div class="accordion_title">Отношения</div>
+                                    <div class="accordion__content hide-scroll">
+                                        <div class="flex-row">
+                                            <img src="img/accordion/1.jpg" alt="">
+                                            <span class="accordion_text">
+                                                Как построить любящие отношения
+                                            </span>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="img/accordion/2.jpg" alt="">
+                                            <span class="accordion_text">
+                                                На каком языке говорит любовь
+                                            </span>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="img/accordion/3.jpg" alt="">
+                                            <span class="accordion_text">
+                                                Выйти из отношений
+                                            </span>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="img/accordion/4.jpg" alt="">
+                                            <span class="accordion_text">
+                                                Выйти из родового конфликта
+                                            </span>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="img/accordion/5.jpg" alt="">
+                                            <span class="accordion_text">
+                                                Как себя вести с ревнивцем
+                                            </span>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="img/accordion/6.jpg" alt="">
+                                            <span class="accordion_text">
+                                                Чувства
+                                            </span>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="img/accordion/7.jpg" alt="">
+                                            <span class="accordion_text">
+                                                Выбор
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- САМОРОЗВИТИЕ -->
+                                <div class="accordion__box">
+                                    <div class="accordion_title">САМОРОЗВИТИЕ</div>
+                                    <div class="accordion__content hide-scroll">
+                                        <div class="flex-row">
+                                            <img src="img/accordion/1.jpg" alt="">
+                                            <span class="accordion_text">
+                                                Как построить любящие отношения
+                                            </span>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="img/accordion/2.jpg" alt="">
+                                            <span class="accordion_text">
+                                                На каком языке говорит любовь
+                                            </span>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="img/accordion/3.jpg" alt="">
+                                            <span class="accordion_text">
+                                                Выйти из отношений
+                                            </span>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="img/accordion/4.jpg" alt="">
+                                            <span class="accordion_text">
+                                                Выйти из родового конфликта
+                                            </span>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="img/accordion/5.jpg" alt="">
+                                            <span class="accordion_text">
+                                                Как себя вести с ревнивцем
+                                            </span>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="img/accordion/6.jpg" alt="">
+                                            <span class="accordion_text">
+                                                Чувства
+                                            </span>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="img/accordion/7.jpg" alt="">
+                                            <span class="accordion_text">
+                                                Выбор
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Творчество -->
+                                <div class="accordion__box">
+                                    <div class="accordion_title">творчество</div>
+                                    <div class="accordion__content hide-scroll">
+                                        <div class="flex-row">
+                                            <img src="img/accordion/1.jpg" alt="">
+                                            <span class="accordion_text">
+                                                Как построить любящие отношения
+                                            </span>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="img/accordion/2.jpg" alt="">
+                                            <span class="accordion_text">
+                                                На каком языке говорит любовь
+                                            </span>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="img/accordion/3.jpg" alt="">
+                                            <span class="accordion_text">
+                                                Выйти из отношений
+                                            </span>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="img/accordion/4.jpg" alt="">
+                                            <span class="accordion_text">
+                                                Выйти из родового конфликта
+                                            </span>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="img/accordion/5.jpg" alt="">
+                                            <span class="accordion_text">
+                                                Как себя вести с ревнивцем
+                                            </span>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="img/accordion/6.jpg" alt="">
+                                            <span class="accordion_text">
+                                                Чувства
+                                            </span>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="img/accordion/7.jpg" alt="">
+                                            <span class="accordion_text">
+                                                Выбор
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div> <!-- accordion end -->
+
+                        </div> <!-- artical-main end -->
+                    </div>
+
+                    <!-- ============== Blog Video ====================================-->
+
+                    <div class="blog__video flex-column">
+                        <h3 class="blog__video_title">Видео</h3>
+                        <a class="blog__video_link" href="https://www.youtube.com/channel/UCnUMZjr3zXIobOTSRs9pluQ"
+                            target="_blank">Ознакомится со всеми видеоматериалами Вы также можете
+                            на моем
+                            <img src="svg/contacts/youtube.svg" alt=""> канале</a>
+
+                        <div class="blog__video__carousel flex-row">
+                            <div class="blog__video__carousel_item flex-center">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/POxZJmifjeg"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="blog__video__carousel_item flex-center">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/JR4ZNrvW-cE"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="blog__video__carousel_item flex-center">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HVdKu9hPFnU"
+                                    title="YouTube video player" frameborder="none"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ============== Blog Gallery ==================================-->
+
+                    <div class="blog__gallery">
+                        <h3 class="blog__gallery_title">Галерея</h3>
+
+                        <div class="blog__gallery_text">
+                            <p>Во время курсов и тренингов женщины познают себя и обретают уверенность через волшебную
+                                силу творчества</p>
+                        </div>
+
+
+                        <!-- images container on flex -->
+                        <div class="image-container flex-row">
+                            <div class="image-item">
+                                <img src="img/gallery/1.jpg" alt="">
+                            </div>
+
+                            <div class="image-item">
+                                <img src="img/gallery/2.jpg" alt="">
+                            </div>
+
+                            <div class="image-item">
+                                <img src="img/gallery/3.jpg" alt="">
+                            </div>
+
+                            <div class="image-item">
+                                <img src="img/gallery/4.jpg" alt="">
+                            </div>
+
+
+                        </div>
+                        <div class="image-container flex-row">
+
+                            <div class="image-item">
+                                <img src="img/gallery/5.jpg" alt="">
+                            </div>
+
+                            <div class="image-item">
+                                <img src="img/gallery/6.jpg" alt="">
+                            </div>
+
+                            <div class="image-item">
+                                <img src="img/gallery/7.jpg" alt="">
+                            </div>
+
+                        </div>
+
+
+
+
+                        <!-- ============== Blog Poetry ===================================-->
+
+
+                        <div class="blog__poetry">
+                            <h3 class="blog__poetry_title">Стихи</h3>
+                            <p class="blog__portey_sub-title">
+                                Когда ты открываешся миру, строки приходят сами по себе...
+                            </p>
+
+                            <div class="poetry flex-row">
+
+                                <div class="poetry__card hide-scroll">
+                                    <div class="poetry__card_paraghraph">
+                                        <p>
+                                            <span>Сколько женщине для счастья надо?</span>
+                                            <span>Посмотреть в любимые глаза,</span>
+                                            <span>Улыбнуться солнцу, скушать персик,</span>
+                                            <span>Разрешить себе то, что нельзя.</span>
+                                        </p>
+                                        <p>
+                                            <span>Импульс жизни он свое подскажет,</span>
+                                            <span>И вибрация по телу зазвенит,</span>
+                                            <span>Расцветет в груди цветком нежнейшим,</span>
+                                            <span>Голосом из сердца зазвучит.</span>
+                                        </p>
+                                        <p>
+                                            <span>Сколько нужно женщине для счастья?</span>
+                                            <span>Знать, что есть защита у Творца,</span>
+                                            <span>Что есть силы пережить ненастье,</span>
+                                            <span>И смахнуть слезиночку с лица.</span>
+                                        </p>
+                                        <p>
+                                            <span>Подстветить то лучшее в мужчине,</span>
+                                            <span>А оно там сто процентов есть,</span>
+                                            <span>Что позволит создавать причины,</span>
+                                            <span>Наслаждаться этим счастьем здесь.</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="poetry__card hide-scroll">
+                                    <div class="poetry__card_paraghraph hide-scroll">
+                                        <p>
+                                            <span> Жизнь она просто течет,Доверься,</span>
+                                            <span> открой ей сердце!</span>
+                                            <span> Почувствуй души полет,</span>
+                                            <span> Чтоб любовью Творца согреться.</span>
+                                        </p>
+                                        <p>
+                                            <span> Она ведь в пространстве разлита</span>
+                                            <span> Импульс дает всему,</span>
+                                            <span> Ею листья деревьев умыты,</span>
+                                            <span> С ней солнце встает поутру!</span>
+                                        </p>
+                                        <p>
+                                            <span> С ней пишут стихи и картины,</span>
+                                            <span> Встречают родные глаза,</span>
+                                            <span> Потоки любви и света</span>
+                                            <span> Они ведь с тобою всегда.</span>
+                                        </p>
+                                        <p>
+                                            <span> Настройся на жизни волну,</span>
+                                            <span> Почувствуй свою дорогу.</span>
+                                            <span> В дороге таких же найдешь</span>
+                                            <span> Творящих с импульсом Бога!</span>
+                                        </p>
+                                        <p>
+                                            <span> Одно я прошу, не беги,</span>
+                                            <span> Иногда нас ум загоняет,</span>
+                                            <span> Замедляйся, дыши, смотри,</span>
+                                            <span> Каждый миг раз в жизни бывает.</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="poetry__card hide-scroll">
+                                    <div class="poetry__card_paraghraph hide-scroll">
+                                        <p>
+                                            <span> Ты просто женщина, а значит уязвима,</span>
+                                            <span> Из плоти, крови, но есть еще Душа.</span>
+                                            <span> Моменты жизни, они не повторимы,</span>
+                                            <span> Попробуй смаковать их не спеша.</span>
+                                        </p>
+                                        <p>
+                                            <span> Стоит раскрыть свои ладони Миру</span>
+                                            <span> И принять то, что он сейчас дает.</span>
+                                            <span> Ты вправе прокричать:”Несправедливо!”</span>
+                                            <span> Но в этом суть, Души твоей полет.</span>
+                                        </p>
+                                        <p>
+                                            <span> Из бурелома недоверия пробраться,</span>
+                                            <span> Пройти сквозь боль, обиду и упрек.</span>
+                                            <span> И несмотря на все открытой оставаться,</span>
+                                            <span> Ведь в мире каждый получает свой урок.</span>
+                                        </p>
+                                        <p>
+                                            <span> Что людям предлагаем мы отведать,</span>
+                                            <span> То вскоре получаем и в ответ,</span>
+                                            <span> Поэтому в любом моменте жизни</span>
+                                            <span> Будет полезным следующий рецепт.</span>
+                                        </p>
+                                        <p>
+                                            <span> Чтоб смаковать добро и красоту, и благость,</span>
+                                            <span> Попробуйте с принятия начать,</span>
+                                            <span> Готовьте с благодарностью, в конце добавьте сладость,</span>
+                                            <span> И знайте очень много любовью можно напитать.</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                            <a class="poetry-link" href="http://">Читать еще</a>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- =============== Contacts =====================================-->
+
+            <section class="contacts">
+                <div class="container">
+                    <h2 class="contacts_title">Контакты</h2>
+
+                    <div class="contacts__row flex-row">
+
+                        <div class="contacts__column flex-column">
+                            <a href="tel:+38 (067) 715 74 16"> <img src="svg/contacts/phone.svg" alt="phone">+38 (067)
+                                715 74 16</a>
+                            <a href="mailto:ludakorolchuk@gmail.com"> <img src="svg/contacts/email.svg" alt="email">
+                                ludakorolchuk@gmail.com</a>
+
+                            <span>Мессенджеры:</span>
+                            <ul>
+                                <!-- messenger -->
+                                <li><a href="http://m.me/Ludmylakorolchuk" target="_blank"> <img
+                                            src="svg/contacts/messenger.svg" alt="messenger"> </a></li>
+                                <!-- viber -->
+                                <li><a href="viber://chat?number=+38(067)7157416"> <img src="svg/contacts/viber.svg"
+                                            alt="viber"></a></li>
+                                <!-- telegram -->
+                                <li><a href="https://t.me/" target="_blank"> <img src="svg/contacts/telegram.svg"
+                                            alt="telegram"></a></li>
+                                <!-- whatsapp -->
+                                <li><a href="https://wa.me/+380677157416" target="_blank"> <img
+                                            src="svg/contacts/whatsapp.svg" alt="whatsapp"></a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="contacts__column flex-column">
+                            <span>Соцсети:</span>
+
+                            <ul>
+                                <!-- facebook -->
+                                <li><a href="https://www.facebook.com/Ludmylakorolchuk" target="_blank"><img
+                                            src="svg/contacts/facebook.svg" alt="facebook"></a></li>
+                                <!-- instagta -->
+                                <li><a href="https://www.instagram.com/lyudmilakorolchuk/" target="_blank"> <img
+                                            src="svg/contacts/instagram.svg" alt="instagram"></a></li>
+                            </ul>
+
+                            <span>Видео Вы можете посмотреть на</span>
+                            <!-- youtube -->
+                            <a href="https://www.youtube.com/channel/UCnUMZjr3zXIobOTSRs9pluQ" target="_blank"><img
+                                    src="svg/contacts/youtube.svg" alt="youtube"></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
         </main>
 
-        <!-- 
-########  #######   #######  ######## ######## ########  
-##       ##     ## ##     ##    ##    ##       ##     ## 
-##       ##     ## ##     ##    ##    ##       ##     ## 
-######   ##     ## ##     ##    ##    ######   ########  
-##       ##     ## ##     ##    ##    ##       ##   ##   
-##       ##     ## ##     ##    ##    ##       ##    ##  
-##        #######   #######     ##    ######## ##     ##  
--->
+        <!-- =================== Footer =======================================-->
 
-
-        <!-- Footer ------------------------------->
         <footer class="footer">
             <div class="container">
                 <nav class="footer__row flex-row">
-                    <a class="logo" href="index.html"><img src="img/LOGO.svg" alt="logo"></a>
-                    <a class="footer__row_phone" href="tel:+38(067)7157416"> <img src="svg/footer/phone.svg" alt="phone">+38 (067) 715 74
+                    <a href="index.html" class="logo">
+
+                        <img src="img/logo/LOGO.png" alt="logo">
+                        <!-- <img class="logo-back" src="/img/logo/LOGO2.png" alt="logo"> -->
+                    </a>
+                    <!-- <a class="logo" href="index.html"><img src="img/LOGO.svg" alt="logo"></a> -->
+                    <a class="footer__row_phone" href="tel:+38(067)7157416"> <img src="svg/footer/phone.svg"
+                            alt="phone">+38 (067) 715 74
                         16</a>
-                    <a class="footer__row_email" href="mailto:ludakorolchuk@gmail.com"> 
+                    <a class="footer__row_email" href="mailto:ludakorolchuk@gmail.com">
                         <img src="svg/footer/email.svg" alt="email">ludakorolchuk@gmail.com</a>
 
                     <ul class="footer__links flex-row">
-                        <li><a href="https://www.facebook.com/Ludmylakorolchuk" target="_blank"><img src="svg/footer/facebook.svg" alt="facebook"></a></li>
-                        <li><a href="https://www.instagram.com/lyudmilakorolchuk/" target="_blank"> <img src="svg/footer/instagram.svg" alt="instagram"></a></li>
-                        <li><a href="http://m.me/Ludmylakorolchuk" target="_blank"> <img src="svg/footer/messenger.svg" alt="messenger"> </a></li>
-                        <li><a href="viber://chat?number=+38(067)7157416" target="_blank"> <img src="svg/footer/viber.svg" alt="viber"></a></li>
-                        <li><a href="https://t.me/" target="_blank"> <img src="svg/footer/telegram.svg" alt="telegram"></a></li>
-                        <li><a href="https://wa.me/+380677157416" target="_blank"> <img src="svg/footer/whatsapp.svg" alt="whatsapp"></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCnUMZjr3zXIobOTSRs9pluQ" target="_blank"><img src="svg/footer/youtube.svg" alt="youtube"></a></li>
+
+                        <li><a href="https://www.facebook.com/Ludmylakorolchuk" target="_blank">
+                                <img src="svg/footer/facebook.svg" alt="facebook"></a></li>
+
+                        <li><a href="https://www.instagram.com/lyudmilakorolchuk/" target="_blank">
+                                <img src="svg/footer/instagram.svg" alt="instagram"></a></li>
+
+                        <li><a href="http://m.me/Ludmylakorolchuk" target="_blank">
+                                <img src="svg/footer/messenger.svg" alt="messenger"> </a></li>
+
+                        <!-- <li><a href="viber://chat?number=+38(067)7157416" target="_blank">  -->
+                        <li><a href="viber://add?number=+38(067)7157416" target="_blank">
+                                <img src="svg/footer/viber.svg" alt="viber"></a></li>
+
+                        <li><a href="https://t.me/" target="_blank">
+                                <img src="svg/footer/telegram.svg" alt="telegram"></a></li>
+
+                        <li><a href="https://wa.me/+380677157416" target="_blank">
+                                <img src="svg/footer/whatsapp.svg" alt="whatsapp"></a></li>
+
+                        <li><a href="https://www.youtube.com/channel/UCnUMZjr3zXIobOTSRs9pluQ" target="_blank">
+                                <img src="svg/footer/youtube.svg" alt="youtube"></a></li>
+
                     </ul>
                 </nav>
 
@@ -301,14 +1089,20 @@
                         собственность автора</div>
                     <div class="footer__column_coop">© Desing by Yuliya Hryschenko</div>
                 </nav>
+
+
+
             </div>
         </footer>
-        </section>
 
-        <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
-        <script src="js/swiper-bundle.min.js"></script>
-        <script src="js/handy-collapse.js"></script>
-        <script src="js/script.js"></script>
+    </div>
+
+
+    <!-- =============== javascript ========================================= -->
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/phone-mask.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
