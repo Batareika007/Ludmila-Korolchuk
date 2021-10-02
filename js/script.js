@@ -66,7 +66,11 @@ $(document).ready(function () {
     });
 });
 
+// image full screen
 
-    // form make phone number 
-
-    /* maskinput.js */
+lightbox.option({
+    'fitImagesInViewport':true,
+    'positionFromTop': 300,
+    'showImageNumberLabel':false,
+    'wrapAround':true
+})
