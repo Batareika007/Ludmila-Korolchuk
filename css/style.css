@@ -1121,6 +1121,8 @@ input[type="checkbox"]:checked + label span {
   max-width: 352px;
   border-radius: 8px;
   overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .image-item img {
@@ -1128,6 +1130,11 @@ input[type="checkbox"]:checked + label span {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.image-item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /* Blog  Poetry ------------------------*/

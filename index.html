@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -481,7 +482,8 @@
                                 <option value="Couple consultation">Консультация пары</option>
                             </select>
 
-                            <div class="checkbox_title">Выберите наиболее удобный для Вас способ связи для онлайн-консультации</div>
+                            <div class="checkbox_title">Выберите наиболее удобный для Вас способ связи для
+                                онлайн-консультации</div>
                             <!-- checkbox section -->
                             <div class="checkbox-container">
                                 <input class="checkbox-icon" type="checkbox" name="Skype" id="skype">
@@ -508,7 +510,7 @@
 
                         <!-- name and privet data -->
                         <div class="form__column flex-column">
-                            
+
                             <label for="lastname">Фамилия</label>
                             <input class="form_input" type="text" name="lastname" id="lastname" placeholder="Фамилия">
 
@@ -517,7 +519,7 @@
 
                             <label for="email">E-mail</label>
                             <input class="form_input" type="email" name="email" id="email" placeholder="E-mail">
-                            
+
                             <label for="phone">Телефон</label>
                             <input id="phone-input" class="form_input" type="tel" name="phone" id="phone"
                                 placeholder="+38(___) ___-__-__"
@@ -528,12 +530,13 @@
                         <div class="form__column flex-column">
 
                             <label for="about-problem">Напишите коротко о проблеме</label>
-                            <textarea class="form_input" name="about-problem" id="about-problem" placeholder="Коротко о проблеме"></textarea>
+                            <textarea class="form_input" name="about-problem" id="about-problem"
+                                placeholder="Коротко о проблеме"></textarea>
                             <label for="date-and-time">Когда Вам было бы удобно получить консультацию</label>
                             <input class="form_input" type="text" name="" id="date-and-time"
                                 placeholder="Укажите удобные даты и время">
 
-                            <button type="submit" value="Submit" class="button_style"> 
+                            <button type="submit" value="Submit" class="button_style">
                                 <span class="flex-center">ЗАПИСАТЬСЯ</span>
                             </button>
                         </div>
@@ -845,38 +848,22 @@
 
                         <!-- images container on flex -->
                         <div class="image-container flex-row">
-                            <div class="image-item">
-                                <img src="img/gallery/1.jpg" alt="">
-                            </div>
-
-                            <div class="image-item">
-                                <img src="img/gallery/2.jpg" alt="">
-                            </div>
-
-                            <div class="image-item">
-                                <img src="img/gallery/3.jpg" alt="">
-                            </div>
-
-                            <div class="image-item">
-                                <img src="img/gallery/4.jpg" alt="">
-                            </div>
-
-
+                            <a class="image-item" href="img/gallery/1.jpg" data-lightbox="mygallery"><img
+                                    src="img/gallery/1.jpg" alt=""></a>
+                            <a class="image-item" href="img/gallery/2.jpg" data-lightbox="mygallery"><img
+                                    src="img/gallery/2.jpg" alt=""></a>
+                            <a class="image-item" href="img/gallery/3.jpg" data-lightbox="mygallery"><img
+                                    src="img/gallery/3.jpg" alt=""></a>
+                            <a class="image-item" href="img/gallery/4.jpg" data-lightbox="mygallery"><img
+                                    src="img/gallery/4.jpg" alt=""></a>
                         </div>
                         <div class="image-container flex-row">
-
-                            <div class="image-item">
-                                <img src="img/gallery/5.jpg" alt="">
-                            </div>
-
-                            <div class="image-item">
-                                <img src="img/gallery/6.jpg" alt="">
-                            </div>
-
-                            <div class="image-item">
-                                <img src="img/gallery/7.jpg" alt="">
-                            </div>
-
+                            <a class="image-item" href="img/gallery/5.jpg" data-lightbox="mygallery"><img
+                                    src="img/gallery/5.jpg" alt=""></a>
+                            <a class="image-item" href="img/gallery/6.jpg" data-lightbox="mygallery"><img
+                                    src="img/gallery/6.jpg" alt=""></a>
+                            <a class="image-item" href="img/gallery/7.jpg" data-lightbox="mygallery"><img
+                                    src="img/gallery/7.jpg" alt=""></a>
                         </div>
 
 
@@ -1119,6 +1106,7 @@
     <!-- =============== javascript ========================================= -->
 
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/lightbox.js"></script>
     <script src="js/phone-mask.js"></script>
     <script src="js/script.js"></script>
 </body>
