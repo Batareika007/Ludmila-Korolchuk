@@ -60,18 +60,36 @@ window.onscroll = function () {
 
 
 $(document).ready(function () {
-    $('.accordion__box').click(function () {
-        // $(this).toggleClass('active').siblings().removeClass('active');
-        $(this).toggleClass('active').siblings().removeClass('active');
+    $('.accordion_title').click(function () {
+        // close all all acordions
+        // $(this).parent().toggleClass('active').siblings().removeClass('active');
+
+
+        // alwayse keep one opened
+        const parent = $(this).parent();
+        
+          if ($('accordion__box').hasClass('active')) {
+            parent.removeClass('active');
+          }
+         else {
+            $('.accordion__box').removeClass('active')
+            parent.addClass('active');
+        }
+
 
     });
 });
 
+
+
+
+
+
 // image full screen
 
 lightbox.option({
-    'fitImagesInViewport':true,
+    'fitImagesInViewport': true,
     // 'positionFromTop': 300,
-    'showImageNumberLabel':false,
-    'wrapAround':true
+    'showImageNumberLabel': false,
+    'wrapAround': true
 })

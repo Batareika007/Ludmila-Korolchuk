@@ -1163,6 +1163,7 @@ input[type="checkbox"]:checked+label span {
     text-transform: uppercase;
     cursor: pointer;
     box-shadow: inset 0px 2px 8px rgba(255, 255, 255, 0.8);
+    transition: 0.5s;
 
     &::after {
         content: url('../img/accordion/arrowUp.svg');
@@ -1175,12 +1176,13 @@ input[type="checkbox"]:checked+label span {
 
 
 .accordion__content {
+    height: 0;
     position: relative;
     background-color: #E3D2FC;
-    height: 0;
     overflow-y: auto;
     transition: 0.5s;
     color: black;
+    padding: 0 8px;
     // height: 50%;
 
     img {
