@@ -61,6 +61,7 @@ window.onscroll = function () {
 
 $(document).ready(function () {
     $('.accordion__box').click(function () {
+        // $(this).toggleClass('active').siblings().removeClass('active');
         $(this).toggleClass('active').siblings().removeClass('active');
 
     });
@@ -70,7 +71,7 @@ $(document).ready(function () {
 
 lightbox.option({
     'fitImagesInViewport':true,
-    'positionFromTop': 300,
+    // 'positionFromTop': 300,
     'showImageNumberLabel':false,
     'wrapAround':true
 })
