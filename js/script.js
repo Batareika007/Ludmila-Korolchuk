@@ -5,7 +5,7 @@
 const swiper = new Swiper('.swiper', {
     // loop: true,
     spaceBetween: 32,
-    // slidesPerView: 4,
+    slidesPerView: 1,
     // slidesPerGroup: 4,
     // autoHeight:true,
     grabCursor: true,
@@ -43,7 +43,21 @@ const swiper = new Swiper('.swiper', {
 
 const swiper2 = new Swiper('.swiper2', {
     grabCursor:true,
-    loop:true,
+    // centeredSlides: true,
+    // loop:true,
+    spaceBetween: 48,
+    // slidesPerGroup: 1,
+    slidesPerView:1,
+    breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 28,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 28,
+          },
+        },
 });
 
 
