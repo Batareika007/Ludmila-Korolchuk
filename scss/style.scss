@@ -280,7 +280,7 @@ span {
 /* slogan --------------------*/
 
 .slogan {
-    background: url('../img/subheader2__backgrpund.png') right/100% 100% no-repeat;
+    background: url('../images/slogan_bg.png') right/100% 100% no-repeat;
     position: relative;
     top: -60px;
     height: 180px;
@@ -870,11 +870,10 @@ min-widht: 0;
 /* form --------------------------- */
 
 .form {
+    min-height: 760px;
     padding: 10px 0 62px 0;
-    background: url('../img/form-background.png'), url('../img/form-background.png');
-    background-repeat: no-repeat;
-    background-position: top center, bottom center;
-    background-size: contain;
+    background: url('../images/bg-form.jpg')0 0/105% 100% no-repeat;
+    ;
 }
 
 .form__title {
@@ -984,6 +983,7 @@ input[type="checkbox"]:checked+label span {
 
 .feedback__content {
     justify-content: space-between;
+    margin: 0 0 24px 0;
 }
 
 .feedback__card {
@@ -1139,7 +1139,7 @@ input[type="checkbox"]:checked+label span {
                 box-shadow: none;
 
                 &::after {
-                    content: url('../img/accordion/arrowDown.svg');
+                    content: url('../images/accordion/arrowUp.svg');
                 }
             }
 
@@ -1166,7 +1166,8 @@ input[type="checkbox"]:checked+label span {
     transition: 0.5s;
 
     &::after {
-        content: url('../img/accordion/arrowUp.svg');
+
+        content: url('../images/accordion/arrowDown.svg');
         position: absolute;
         top: 50%;
         right: 20px;
@@ -1340,8 +1341,8 @@ input[type="checkbox"]:checked+label span {
 /* ---- poetry card ------ */
 
 .poetry__card {
-    background: url('../images/icons/poetry-stars.svg') 50% 3%/auto no-repeat;
-    padding: 49px 8px 8px 8px;
+    // background: url('../images/icons/poetry-stars.svg') 50% 3%/auto no-repeat;
+    padding: 8px 8px 8px 8px;
     border-radius: 8px;
     box-shadow: 4px 4px 8px #904CF5;
     overflow-y: auto;
@@ -1354,21 +1355,16 @@ input[type="checkbox"]:checked+label span {
     &:hover {
         transition: all 0.3s linear;
         box-shadow: 4px 4px 18px #904CF5;
-
-
     }
 }
 
 .poetry__card_paraghraph {
-    // overflow: auto;
-    // max-height: 100%;
     text-align: left;
-
     background: -webkit-linear-gradient(#000, #999, #fff);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: 0.5s linear;
+    transition: 0.3s linear;
     // opacity: 0.5;
 
 
@@ -1382,7 +1378,7 @@ input[type="checkbox"]:checked+label span {
         opacity: 1;
     }
 
-    p {
+    p:not(:last-child) {
         line-height: 150%;
         margin: 0 0 16px 0;
 
@@ -1390,46 +1386,14 @@ input[type="checkbox"]:checked+label span {
 
 }
 
-.gradient {
-    position: relative;
-    min-height: 200px;
-    background-image: linear-gradient(to right,
-            hsl(211, 100%, 50%),
-            hsl(179, 100%, 30%));
-    z-index: 1;
-}
-
-.gradient::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to bottom,
-            hsl(344, 100%, 50%),
-            hsl(31, 100%, 40%));
-    z-index: -1;
-    transition: opacity 0.5s linear;
-    opacity: 0;
-}
-
-.gradient:hover::before {
-    opacity: 1;
-}
-
-
-
-
-
-
-
 // arrow read more
 
 .poetry-link,
 .feedback-link,
 .gallery-link {
-    padding-right: 32px;
+    font-size: 16px;
+    color: #000;
+    padding-right: 24px;
     display: flex;
     justify-content: right;
     background-image: url('../images/icons/read-more.svg');
