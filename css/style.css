@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Tinos:ital@1&display=swap");
 body {
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 24px;
 }
 
@@ -74,25 +73,29 @@ span {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
-  max-width: 1140px;
+  padding: 0 20px;
+  max-width: 1160px;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 724px;
-  }
+/* ------- fixed link -------------- */
+.fixed-page-icon {
+  position: fixed;
+  bottom: 100px;
+  right: 13.5%;
+  z-index: 1000;
+  opacity: 0.4;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 376px) {
-  .container {
-    max-width: 350px;
-  }
+.fixed-page-icon:hover {
+  opacity: 1;
 }
 
-/* header --------------------------------- */
+/* ==================  header =================== */
 .header {
-  font-weight: 600;
+  padding: 16px 0;
+  font-weight: 700;
   -webkit-backdrop-filter: blur(16px);
           backdrop-filter: blur(16px);
   background: radial-gradient(108.28% 18624.03% at 0% 12.3%, rgba(255, 255, 255, 0.4) 0%, rgba(230, 209, 240, 0.4) 100%);
@@ -101,7 +104,6 @@ span {
   position: fixed;
   top: 0;
   width: 100%;
-  overflow: hidden;
   z-index: 1000;
   -webkit-transition: top 0.5s;
   transition: top 0.5s;
@@ -110,21 +112,19 @@ span {
 .header__row {
   margin: 0 auto;
   width: 100%;
-  min-height: 128px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .logo {
-  width: 160px;
+  max-width: 160px;
   height: 96px;
   margin-right: 32px;
   position: relative;
 }
 
 .logo .logo-front {
-  height: 96px;
   opacity: 1;
 }
 
@@ -192,14 +192,14 @@ span {
 }
 
 .subheader__content {
-  min-height: 446px;
+  padding-bottom: 140px;
   background-image: url("../images/Lyudmila-Korolchuk-psychologist-art-therapist.png");
   background-repeat: no-repeat;
   background-position: left bottom;
   text-align: center;
 }
 
-/* for non-main page -----------------*/
+/* non-main page -----------------*/
 .subheader__non-main-page {
   background-image: url("../images/abstract-bg2.jpg");
   background-position: center;
@@ -209,27 +209,47 @@ span {
   background-image: none;
 }
 
-/* contacts page end ------------------ */
+/* non-main page end ------------------ */
 .subheader__title {
+  margin-left: 30%;
   font-size: 96px;
-  max-width: 650px;
+  max-width: 673px;
   line-height: 110%;
-  margin-left: 17%;
-  font-weight: 400;
+  font-weight: 500;
   font-style: italic;
   margin-bottom: 16px;
-  font-weight: 500;
-  font-family: 'Tinos', serif;
 }
 
-.subheader__title span:last-child {
-  margin-left: 45%;
+.subheader__title_top {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.subheader__title_bottom {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .subheader__title_bottom {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }
 
 .subheader__subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
   font-size: 32px;
-  margin-left: 23%;
+  margin-left: 16%;
   font-weight: 500;
+  line-height: 250%;
+}
+
+@media screen and (max-width: 768px) {
+  .subheader__subtitle {
+    margin-left: 0;
+  }
 }
 
 /* slogan --------------------*/
@@ -237,11 +257,12 @@ span {
   background: url("../images/slogan_bg.png") right/100% 100% no-repeat;
   position: relative;
   top: -60px;
-  height: 180px;
 }
 
-.slogan .container {
-  padding: 0;
+@media screen and (max-width: 768px) {
+  .slogan {
+    background: url("../images/slogan_bg.png") right/auto 100% no-repeat;
+  }
 }
 
 .slogan_title {
@@ -249,22 +270,30 @@ span {
   line-height: 3rem;
   color: #fff;
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 500;
   font-style: italic;
   text-align: center;
+  font-family: 'Lora';
+}
+
+@media screen and (max-width: 768px) {
+  .slogan_title {
+    font-size: 2rem;
+  }
 }
 
 /* about -------------------------*/
 .about {
-  padding: 32px 0;
+  padding: 64px 0;
 }
 
 .about_title {
   text-align: center;
-  margin: 0 0 32px 0;
+  margin: 0 0 24px 0;
 }
 
 .about__main {
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -273,14 +302,14 @@ span {
   gap: 32px;
 }
 
+.about__image img {
+  width: 100%;
+}
+
 .about__content {
   max-width: 670px;
   font-size: 16px;
   line-height: 150%;
-}
-
-.about__content span {
-  display: block;
 }
 
 .about__content p {
@@ -290,6 +319,14 @@ span {
 
 .about__content .flex-row {
   margin: 0 0 36px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .about__content .flex-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 16px;
+  }
 }
 
 .about__content ul li {
@@ -350,6 +387,7 @@ flex swiper
 min-widht: 0;
 */
 .certificates {
+  max-height: 536px;
   background: radial-gradient(100% 786.95% at 0% 4.74%, #D3DEFC 0%, #E3D2FC 100%);
   -webkit-backdrop-filter: blur(36px);
           backdrop-filter: blur(36px);
@@ -404,6 +442,13 @@ min-widht: 0;
   margin: 0 32px;
   line-height: 40px;
   background-color: #7a9bf7;
+}
+
+@media screen and (max-width: 430px) {
+  .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .swiper-pagination-bullet-active {
@@ -632,14 +677,19 @@ min-widht: 0;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.content-item {
+  max-width: 550px;
+  min-width: 300px;
 }
 
 .consulting__content_text {
   font-size: 16px;
   line-height: 150%;
-  max-width: 510px;
+  max-width: 544px;
   margin: 0 0 16px 0;
 }
 
@@ -648,9 +698,16 @@ min-widht: 0;
 }
 
 .content-item_image {
+  width: 352px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@media screen and (max-width: 935px) {
+  .content-item_image {
+    margin-bottom: 16px;
+  }
 }
 
 .content-item_image img {
@@ -760,7 +817,14 @@ min-widht: 0;
 .form-container {
   margin: 0 auto;
   /* if adding new content make width bigger */
-  max-width: 1230px;
+  max-width: 1250px;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .form-container {
+    padding: 0;
+  }
 }
 
 .form__row {
@@ -780,8 +844,8 @@ min-widht: 0;
 .form__column {
   position: relative;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 354px;
-          flex: 0 1 354px;
+      -ms-flex: 0 0 354px;
+          flex: 0 0 354px;
 }
 
 .form__column label {
@@ -824,7 +888,19 @@ input[type="checkbox"]:checked + label span {
   background: url("../images/icons/checkbox-active.svg") 0 0/auto no-repeat;
 }
 
-.checkbox-container {
+@media screen and (max-width: 1261px) {
+  .checkbox-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.checkbox-item {
   margin-bottom: 20px;
 }
 
@@ -842,13 +918,6 @@ input[type="checkbox"]:checked + label span {
 
 .feedback_title {
   margin: 0 0 64px 0;
-}
-
-.feedback__content {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 0 24px 0;
 }
 
 .feedback__card {
@@ -884,6 +953,8 @@ input[type="checkbox"]:checked + label span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .article-main__item {
@@ -1260,6 +1331,15 @@ input[type="checkbox"]:checked + label span {
   gap: 16px;
 }
 
+.contacts__column a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .contacts__column:last-child {
   margin: 0;
 }
@@ -1288,6 +1368,7 @@ input[type="checkbox"]:checked + label span {
   padding: 32px 0 16px 0;
   background-color: #C7A5FA;
   color: #fff;
+  font-size: 14px;
 }
 
 .footer__row {
@@ -1309,18 +1390,24 @@ input[type="checkbox"]:checked + label span {
 .footer__row .footer__row_phone,
 .footer__row .footer__row_email {
   margin-right: 94px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__row .footer__row_phone img,
 .footer__row .footer__row_email img {
   margin-right: 16px;
-  position: relative;
-  top: 3px;
 }
 
 .footer__row .footer__links {
   position: relative;
   bottom: 6px;
+  font-size: 16px;
 }
 
 .footer__row .footer__links li {

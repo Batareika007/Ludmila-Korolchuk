@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewport" content="width=1160">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=1160"> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/global.css">
     <!-- swiper -->
@@ -15,20 +15,17 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-
-
-
-
-
-
-
-
     <title>Людмила Корольчук - психолог, арт-терапевт</title>
 
 </head>
 
 <body>
     <div class="wrapper">
+        <!-- ============= fixed call ============================ -->
+
+        <a class="fixed-page-icon" href=""><img src="/images/icons/color-viber-messenger-64x64.svg"
+                alt="viber-messenger"></a>
+
 
         <!-- ================ header ============================== -->
 
@@ -59,13 +56,12 @@
             <section class="subheader">
                 <div class="container">
                     <div class="subheader__content">
-                        <h1 class="subheader__title">
-                            <span>Людмила</span>
-                            <span>Корольчук</span>
+                        <h1 class="subheader__title flex-column">
+                            <span class="subheader__title_top">Людмила</span>
+                            <span class="subheader__title_bottom">Корольчук</span>
+                            <span class="subheader__subtitle">психолог, арт-терапевт</span>
                         </h1>
-                        <span class="subheader__subtitle">
-                            психолог, арт-терапевт
-                        </span>
+
                     </div>
                 </div>
             </section>
@@ -77,14 +73,11 @@
                         жизни”</span></div>
             </section>
 
-            <!-- ======== about ===================================== -->
+            <!-- ================= about =========================== -->
 
             <section class="about">
                 <div class="container">
-
                     <h2 class="about_title">Обо мне</h2>
-
-
                     <div class="about__main flex-row">
                         <div class="about__image">
                             <img src="images/About-Lyudmila-Korolchuk-psychologist-art-therapist.png" alt="about">
@@ -98,14 +91,11 @@
                                     Давайте знакомится!
                                 </span>
                             </p>
-
                             <p>
                                 <span>
                                     Я - практикующий психолог, арт-терапевт, ведущая группы психологического
                                     сопровождения для родителей в Центре развития ребенка “Я+семья” г. Киева.
                                 </span>
-
-
                                 <span>
                                     Также я автор и ведущая групповых психологических тренингов и курсов для женщин,
                                     нацеленных на раскрытие самоценности и творческого потенциала.
@@ -187,9 +177,6 @@
                             </div>
                             <div class="swiper-slide flex-center">
                                 <img src="images/certificate/certificate-slide3-3.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide flex-center">
-                                <!-- add here new certificate -->
                             </div>
                         </div>
                         <!-- Add Pagination -->
@@ -381,13 +368,9 @@
             <!-- ====================Консультации ===================================-->
             <section class="consulting">
                 <div class="container">
-
-
                     <h2 class="consulting_title">Консультации</h2>
-
-
-
                     <div class="consulting__content  flex-row">
+
                         <div class="content-item">
                             <p class="consulting__content_text">
                                 Я провожу консультации как онлайн так и очно в Киеве.
@@ -427,6 +410,7 @@
                                 приходит счет от меня и Вы можете оплатить в своей валюте.
                             </p>
                         </div>
+
                         <div class="content-item_image">
                             <img src="images/Konsultation-Lyudmila-Korolchuk-psychologist-art-therapist.png" alt="">
                         </div>
@@ -448,7 +432,7 @@
                             <div class="pos-relativ">
                                 <div class="price">Стоимость - 1 500 грн.</div>
                                 <span>Продолжтельность - 90 минут</span>
-                                <span>г. Киев, ул. Героев Сталинграда 3</span>
+
                             </div>
                         </div>
 
@@ -491,24 +475,33 @@
                                 онлайн-консультации</div>
                             <!-- checkbox section -->
                             <div class="checkbox-container">
-                                <input class="checkbox-icon" type="checkbox" name="Skype" id="skype">
-                                <label class="checkbox-text" for="skype"><span></span>Skype</label>
-                            </div>
-                            <div class="checkbox-container">
-                                <input class="checkbox-icon" type="checkbox" name="Viber" id="viber">
-                                <label class="checkbox-text" for="viber"><span></span>Viber</label>
-                            </div>
-                            <div class="checkbox-container">
-                                <input class="checkbox-icon" type="checkbox" name="Messenger" id="messenger">
-                                <label class="checkbox-text" for="messenger"><span></span>Messenger</label>
-                            </div>
-                            <div class="checkbox-container">
-                                <input class="checkbox-icon" type="checkbox" name="Zoom" id="zoom">
-                                <label class="checkbox-text" for="zoom"><span></span>Zoom</label>
-                            </div>
-                            <div class="checkbox-container">
-                                <input class="checkbox-icon" type="checkbox" name="all" id="all">
-                                <label class="checkbox-text" for="all"><span></span>подходят все</label>
+                                <div>
+                                    <div class="checkbox-item">
+                                        <input class="checkbox-icon" type="checkbox" name="Skype" id="skype">
+                                        <label class="checkbox-text" for="skype"><span></span>Skype</label>
+                                    </div>
+
+                                    <div class="checkbox-item">
+                                        <input class="checkbox-icon" type="checkbox" name="Viber" id="viber">
+                                        <label class="checkbox-text" for="viber"><span></span>Viber</label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="checkbox-item">
+                                        <input class="checkbox-icon" type="checkbox" name="Messenger" id="messenger">
+                                        <label class="checkbox-text" for="messenger"><span></span>Messenger</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input class="checkbox-icon" type="checkbox" name="Zoom" id="zoom">
+                                        <label class="checkbox-text" for="zoom"><span></span>Zoom</label>
+                                    </div>
+                                </div>
+
+                                <div class="checkbox-item">
+                                    <input class="checkbox-icon" type="checkbox" name="подходят все" id="all">
+                                    <label class="checkbox-text" for="all"><span></span>подходят все</label>
+                                </div>
                             </div>
                         </div>
 
@@ -557,29 +550,40 @@
                     <div class="feedback_title flex-center">
                         <h3>Отзывы</h3>
                     </div>
-                    <div class="feedback__content flex-row">
-                        <div class="feedback__card">
-                            <p class="feedback_text">Огромная благодарность моя Людмиле! Все материалы курса «Семь шагов
-                                к уверенности»
-                                помогли мне стать намного увереннее в себе . Очень много открылось осознаний себя.
-                                Людмила, ты очень бережно вела меня по дебрям. Материалы , тесты, видео очень доступны ,
-                                легки и насыщенны информацией.</p>
-                        </div>
-                        <div class="feedback__card">
-                            <p class="feedback_text">Прошло уже больше месяца с момента тренинга «Исцеление внутреннего
-                                ребенка», но я
-                                периодически к нему возвращаюсь. Результат я получила и очень довольна.
-                                Сейчас я чётко осознаю, когда включается детское поведение и решаю, что мне сним делать!
-                            </p>
-                        </div>
-                        <div class="feedback__card">
-                            <p class="feedback_text">Благодарю за марафон «Как найти опору в себе»! Вы талантливый
-                                психолог, в вас есть то,
-                                чего нет в других. Это ваше поле простоты и открытости. Без заумных экивоков, душевно,
-                                честно. Вы можете одновременно объяснить и психотерапевту и простому человеку не
-                                сталкивающемуся с психологией.</p>
+
+                    <div class="feedback__content swiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide feedback__card">
+                                <p class="feedback_text">Огромная благодарность моя Людмиле! Все материалы курса «Семь
+                                    шагов
+                                    к уверенности»
+                                    помогли мне стать намного увереннее в себе . Очень много открылось осознаний себя.
+                                    Людмила, ты очень бережно вела меня по дебрям. Материалы , тесты, видео очень
+                                    доступны ,
+                                    легки и насыщенны информацией.</p>
+                            </div>
+                            <div class="swiper-slide feedback__card">
+                                <p class="feedback_text">Прошло уже больше месяца с момента тренинга «Исцеление
+                                    внутреннего
+                                    ребенка», но я
+                                    периодически к нему возвращаюсь. Результат я получила и очень довольна.
+                                    Сейчас я чётко осознаю, когда включается детское поведение и решаю, что мне сним
+                                    делать!
+                                </p>
+                            </div>
+                            <div class="swiper-slide feedback__card">
+                                <p class="feedback_text">Благодарю за марафон «Как найти опору в себе»! Вы талантливый
+                                    психолог, в вас есть то,
+                                    чего нет в других. Это ваше поле простоты и открытости. Без заумных экивоков,
+                                    душевно,
+                                    честно. Вы можете одновременно объяснить и психотерапевту и простому человеку не
+                                    сталкивающемуся с психологией.</p>
+                            </div>
                         </div>
                     </div>
+
+
+
                     <a class="feedback-link" href="http://">Увидеть больше</a>
                 </div>
             </section>
@@ -658,7 +662,7 @@
                             <!-- accordion -->
                             <div class="article-main__item accordion">
 
-                                                      <!-- Отношения -->
+                                <!-- Отношения -->
                                 <div class="accordion__box active">
                                     <div class="accordion_title">Отношения</div>
 
@@ -750,9 +754,9 @@
                                     </div>
                                 </div>
 
-                                <!-- САМОРОЗВИТИЕ -->
+                                <!-- САМОРАЗВИТИЕ -->
                                 <div class="accordion__box">
-                                    <div class="accordion_title">САМОРОЗВИТИЕ</div>
+                                    <div class="accordion_title">САМОРАЗВИТИЕ</div>
 
                                     <div class="accordion__content hide-scroll">
                                         <div class="flex-row">
@@ -827,7 +831,7 @@
                                 <!-- Творчество -->
                                 <div class="accordion__box">
                                     <div class="accordion_title">творчество</div>
-                                    
+
                                     <div class="accordion__content hide-scroll">
                                         <div class="flex-row">
                                             <img src="images/accordion/art/you-are-light-psycology-about-yourself.png"
@@ -930,7 +934,7 @@
                         </div>
 
                         <a class="gallery-link" href="http://">Увидеть больше</a>
-                        
+
                     </div>
 
                     <!-- ============== Blog Poetry ===================================-->
@@ -938,9 +942,9 @@
 
                     <div class="blog__poetry">
                         <h3 class="blog__poetry_title">Стихи</h3>
-                        <p class="blog__portey_sub-title">
+                        <!-- <p class="blog__portey_sub-title">
                             Когда ты открываешся миру, строки приходят сами по себе...
-                        </p>
+                        </p> -->
 
                         <div class="poetry flex-row">
 
@@ -1063,12 +1067,12 @@
                     <div class="contacts__row flex-row">
 
                         <div class="contacts__column flex-column">
-                            <a href="tel:+38 (067) 715 74 16"> <img src="images/icons/color_phone-filled.svg"
-                                    alt="phone">+38 (067)
-                                715 74 16</a>
-                            <a href="mailto:ludakorolchuk@gmail.com"> <img src="images/icons/color_mail.svg"
-                                    alt="email">
-                                ludakorolchuk@gmail.com</a>
+                            <a href="tel:+38 (067) 715 74 16">
+                                <img src="images/icons/color_phone-filled.svg" alt="phone">+38 (067) 715 74 16</a>
+                            <a href="mailto:ludakorolchuk@gmail.com">
+                                <img src="images/icons/color_mail.svg" alt="email">ludakorolchuk@gmail.com</a>
+
+
 
                             <span>Мессенджеры:</span>
                             <ul>
@@ -1123,9 +1127,9 @@
                         <!-- <img class="logo-back" src="/img/logo/LOGO2.png" alt="logo"> -->
                     </a>
                     <!-- <a class="logo" href="index.html"><img src="img/LOGO.svg" alt="logo"></a> -->
-                    <a class="footer__row_phone" href="tel:+38(067)7157416"> <img
-                            src="images/icons/white_phone-filled.svg" alt="phone">+38 (067) 715 74
-                        16</a>
+                    <a class="footer__row_phone" href="tel:+38(067)7157416">
+                        <img src="images/icons/white_phone-filled.svg" alt="phone">+38 (067) 715 74 16</a>
+
                     <a class="footer__row_email" href="mailto:ludakorolchuk@gmail.com">
                         <img src="images/icons/white_mail.svg" alt="email">ludakorolchuk@gmail.com</a>
 

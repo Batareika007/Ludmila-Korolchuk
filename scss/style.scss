@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tinos:ital@1&display=swap');
-
-// html {
-//     scroll-behavior: smooth;
-// }
 
 body {
     font-size: 16px;
-    font-family: 'Montserrat',
-        sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 24px;
 }
 
@@ -64,18 +58,33 @@ span {
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 10px;
-    max-width: 1140px;
+    padding: 0 20px;
+    max-width: 1160px;
 
-    @media screen and (max-width: 768px) {
-        max-width: 724px;
+    // @media screen and (max-width: 768px) {
+    //     max-width: 744px;
 
+    // }
+
+    // @media screen and (max-width: 375px) {
+    //     max-width: 350px;
+    // }
+
+}
+
+/* ------- fixed link -------------- */
+
+.fixed-page-icon {
+    position: fixed;
+    bottom: 100px;
+    right: 13.5%;
+    z-index: 1000;
+    opacity: 0.4;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+        opacity: 1;
     }
-
-    @media screen and (max-width: 376px) {
-        max-width: 350px;
-    }
-
 }
 
 
@@ -89,40 +98,34 @@ span {
 
 
 
-/* header --------------------------------- */
+/* ==================  header =================== */
 .header {
-    font-weight: 600;
+    padding: 16px 0;
+    font-weight: 700;
     backdrop-filter: blur(16px);
     background: radial-gradient(108.28% 18624.03% at 0% 12.3%, rgba(255, 255, 255, 0.4) 0%, rgba(230, 209, 240, 0.4) 100%);
     box-shadow: 0px 2px 4px #E3D2FC;
-    // position: absolute;
     position: fixed;
     top: 0;
     width: 100%;
-    overflow: hidden;
     z-index: 1000;
     transition: top 0.5s;
+
 }
 
 .header__row {
     margin: 0 auto;
     width: 100%;
-    min-height: 128px;
     align-items: center;
 }
 
 .logo {
-    // background: url('/img/logo/LOGO.png') 0 0/100% auto no-repeat;
-    // background-image: url('/img/logo/LOGO.png');
-    // background-size: 100%;
-    // background-repeat: no-repeat;
-    width: 160px;
+    max-width: 160px;
     height: 96px;
     margin-right: 32px;
     position: relative;
 
     .logo-front {
-        height: 96px;
         opacity: 1;
     }
 
@@ -131,24 +134,14 @@ span {
     }
 
     &:hover {
-
         .logo-front {
-            // position: absolute;
             transition: linear 0.5s;
             opacity: 0;
         }
 
         .logo-back {
-            // position: relative;
             opacity: 1;
-            // transition: ease-in-out 0.3s;
         }
-
-        // background-image: url('/img/logo/LOGO2.png');
-        // background-image: url('/img/logo/LOGO.png');
-        // background-image: url('/img/LOGO2.svg');
-        // transition: ease-in-out 0.3s;
-
     }
 }
 
@@ -162,10 +155,6 @@ span {
 }
 
 
-
-
-
-
 .header__nav {
     width: 100%;
 
@@ -173,7 +162,6 @@ span {
         position: relative;
         color: #000;
         margin-right: 32px;
-        // transition: ease-in-out 0.3s;
 
         &:last-child {
             margin-right: 0;
@@ -184,7 +172,6 @@ span {
             color: #904CF5;
             text-underline-offset: 30%;
             text-decoration: underline 2px;
-            // transition: ease-in-out 0.3s;
         }
     }
 }
@@ -226,14 +213,17 @@ span {
 }
 
 .subheader__content {
-    min-height: 446px;
+    padding-bottom: 140px;
+    // min-height: 446px;
     background-image: url("../images/Lyudmila-Korolchuk-psychologist-art-therapist.png");
     background-repeat: no-repeat;
     background-position: left bottom;
     text-align: center;
+
+    @media screen and (max-width: 768px) {}
 }
 
-/* for non-main page -----------------*/
+/* non-main page -----------------*/
 
 .subheader__non-main-page {
     background-image: url("../images/abstract-bg2.jpg");
@@ -244,29 +234,52 @@ span {
     }
 }
 
-/* contacts page end ------------------ */
+/* non-main page end ------------------ */
+
 
 
 .subheader__title {
+    margin-left: 30%;
     font-size: 96px;
-    max-width: 650px;
+    max-width: 673px;
     line-height: 110%;
-    margin-left: 17%;
-    font-weight: 400;
+    font-weight: 500;
     font-style: italic;
     margin-bottom: 16px;
-    font-weight: 500;
-    font-family: 'Tinos', serif;
 
-    span:last-child {
-        margin-left: 45%;
+    @media screen and (max-width: 768px) {}
+
+    @media screen and (max-width: 375px) {}
+}
+
+.subheader__title_top {
+    align-self: flex-start;
+
+    @media screen and (max-width: 768px) {
+        // align-self: flex-end;
     }
 }
 
+.subheader__title_bottom {
+    align-self: flex-end;
+
+    @media screen and (max-width: 768px) {
+        align-self: flex-start;
+    }
+
+}
+
 .subheader__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
     font-size: 32px;
-    margin-left: 23%;
+    margin-left: 16%;
     font-weight: 500;
+    line-height: 250%;
+
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+    }
 }
 
 //  ######  ##         #######  ########   #######  ###    ##
@@ -283,55 +296,28 @@ span {
     background: url('../images/slogan_bg.png') right/100% 100% no-repeat;
     position: relative;
     top: -60px;
-    height: 180px;
 
-    // animation: gradient 5s ease-in-out infinite;
-
-    .container {
-        padding: 0;
+    // height: 180px;
+    @media screen and (max-width: 768px) {
+        background: url('../images/slogan_bg.png') right/auto 100% no-repeat;
     }
-
 }
-
-
-// @keyframes gradient {
-//     0% {
-//         background: url('../img/subheader2__backgrpund.png') left/cover no-repeat;
-//     }
-
-
-
-//     // 25% {
-//     //     background: url('../img/subheader2__backgrpund.png') center/cover no-repeat;
-//     //     //     // background-position: right;
-//     // }
-
-//     50% {
-//         background: url('../img/subheader2__backgrpund.png') right/cover no-repeat;
-//         //     // background-position: right;
-//     }
-
-//     // 75% {
-//     //     background: url('../img/subheader2__backgrpund.png') center/cover no-repeat;
-//     //     // background-position: left;
-//     // }
-
-//     100% {
-//         background: url('../img/subheader2__backgrpund.png') left/cover no-repeat;
-//         // background-position: left;
-//     }
-// }
-
-
 
 .slogan_title {
     height: 180px;
     line-height: 3rem;
     color: #fff;
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 500;
     font-style: italic;
     text-align: center;
+    font-family: 'Lora';
+
+    @media screen and (max-width: 768px) {
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 375px) {}
 }
 
 //    ###    ########   #######  ##     ## ######## 
@@ -345,31 +331,33 @@ span {
 /* about -------------------------*/
 
 .about {
-    padding: 32px 0;
+    padding: 64px 0;
 }
 
 .about_title {
     text-align: center;
-    margin: 0 0 32px 0;
+    margin: 0 0 24px 0;
 }
 
 .about__main {
-    // width: 100%;
+    width: 100%;
     justify-content: center;
     flex-wrap: wrap;
     gap: 32px;
 }
 
-// .about__image {}
+.about__image {
+    // max-width: 352px;
+
+    img {
+        width: 100%;
+    }
+}
 
 .about__content {
     max-width: 670px;
     font-size: 16px;
     line-height: 150%;
-
-    span {
-        display: block;
-    }
 
     p {
         max-width: 700px;
@@ -378,6 +366,13 @@ span {
 
     .flex-row {
         margin: 0 0 36px 0;
+
+        // flex-wrap: wrap;
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
     }
 
     ul li {
@@ -451,7 +446,7 @@ min-widht: 0;
 */
 
 .certificates {
-    // max-height: 536px;
+    max-height: 536px;
     background: radial-gradient(100% 786.95% at 0% 4.74%, #D3DEFC 0%, #E3D2FC 100%);
     backdrop-filter: blur(36px);
     padding: 10px 0;
@@ -466,16 +461,12 @@ min-widht: 0;
     text-align: center;
     height: auto;
 
-
     &:hover {
-
         z-index: 100;
     }
 
     :not(:last-child) {
         margin-bottom: 32px;
-
-
     }
 
     img {
@@ -493,6 +484,7 @@ min-widht: 0;
 
 
     }
+
 }
 
 .certificates-pagination {
@@ -507,6 +499,11 @@ min-widht: 0;
     line-height: 40px;
     // background: #7A9BF7;
     background-color: rgba(122, 155, 247, 1);
+
+    @media screen and (max-width: 430px) {
+        width: 16px;
+        height: 16px;
+    }
 }
 
 .swiper-pagination-bullet-active {
@@ -575,7 +572,6 @@ min-widht: 0;
 .flip-card-front {
     font-size: 32px;
     line-height: 39px;
-    // font-weight: bold;
     padding: 0 40px;
 }
 
@@ -755,13 +751,18 @@ min-widht: 0;
 .consulting__content {
     padding: 0 0 64px 0;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+}
+
+.content-item {
+    max-width: 550px;
+    min-width: 300px;
 }
 
 .consulting__content_text {
     font-size: 16px;
     line-height: 150%;
-    max-width: 510px;
+    max-width: 544px;
     margin: 0 0 16px 0;
 
     a {
@@ -770,7 +771,12 @@ min-widht: 0;
 }
 
 .content-item_image {
+    width: 352px;
     align-self: center;
+
+    @media screen and (max-width: 935px) {
+        margin-bottom: 16px;
+    }
 
     img {
         max-width: 100%;
@@ -873,7 +879,7 @@ min-widht: 0;
     min-height: 760px;
     padding: 10px 0 62px 0;
     background: url('../images/bg-form.jpg')0 0/105% 100% no-repeat;
-    ;
+
 }
 
 .form__title {
@@ -891,7 +897,12 @@ min-widht: 0;
 .form-container {
     margin: 0 auto;
     /* if adding new content make width bigger */
-    max-width: 1230px;
+    max-width: 1250px;
+    padding: 0 10px;
+
+    @media screen and (max-width: 400px) {
+        padding: 0;
+    }
 }
 
 
@@ -904,11 +915,15 @@ min-widht: 0;
     backdrop-filter: blur(40px);
     border-radius: 8px;
     padding: 48px;
+
+
+
+
 }
 
 .form__column {
     position: relative;
-    flex: 0 1 354px;
+    flex: 0 0 354px;
 
     label {
         margin: 0 0 4px 0;
@@ -934,12 +949,6 @@ min-widht: 0;
     margin-bottom: 16px;
 }
 
-
-// .checkbox-icon {
-//     width: 24px;
-//     height: 24px;
-// }
-
 input[type="checkbox"]+label {
     cursor: pointer;
 }
@@ -960,7 +969,18 @@ input[type="checkbox"]:checked+label span {
 }
 
 .checkbox-container {
+
+    @media screen and (max-width: 1261px) {
+        //  width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.checkbox-item {
     margin-bottom: 20px;
+
 }
 
 .form_input {
@@ -970,9 +990,9 @@ input[type="checkbox"]:checked+label span {
     border-radius: 8px;
 }
 
-//
+// ============================================
 /*  ============ feedbacks  ===================  */
-//
+//  ===========================================
 .feedback {
     padding: 128px 0 64px 0;
 }
@@ -982,8 +1002,8 @@ input[type="checkbox"]:checked+label span {
 }
 
 .feedback__content {
-    justify-content: space-between;
-    margin: 0 0 24px 0;
+    // justify-content: center;
+    // margin: 0 0 24px 0;
 }
 
 .feedback__card {
@@ -1043,7 +1063,7 @@ input[type="checkbox"]:checked+label span {
 .article-main {
     justify-content: space-between;
     // border: 1px solid black;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .article-main__item {
@@ -1444,6 +1464,11 @@ input[type="checkbox"]:checked+label span {
     margin: 0 60px 20px 0;
     gap: 16px;
 
+    a {
+        display: flex;
+        align-items: center;
+    }
+
     &:last-child {
         margin: 0;
     }
@@ -1482,6 +1507,7 @@ input[type="checkbox"]:checked+label span {
     padding: 32px 0 16px 0;
     background-color: #C7A5FA;
     color: #fff;
+    font-size: 14px;
 }
 
 .footer__row {
@@ -1497,17 +1523,19 @@ input[type="checkbox"]:checked+label span {
     .footer__row_phone,
     .footer__row_email {
         margin-right: 94px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
 
         img {
             margin-right: 16px;
-            position: relative;
-            top: 3px;
         }
     }
 
     .footer__links {
         position: relative;
         bottom: 6px;
+        font-size: 16px;
 
         li {
             margin-right: 16px;
