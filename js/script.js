@@ -2,7 +2,7 @@
 
 // ----------------   swiper
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.certificates__swiper', {
     // loop: true,
     spaceBetween: 32,
     slidesPerView: 1,
@@ -39,14 +39,11 @@ const swiper = new Swiper('.swiper', {
 
 });
 
-const swiper2 = new Swiper('.swiper2', {
+const swiper2 = new Swiper('.swiper-feedback', {
 
     grabCursor: true,
     spaceBetween: 28,
     slidesPerView:1,
-    // centeredSlidesBounds:true,
-    // centeredSlides: true,
-    // centerInsufficientSlides:true,
     breakpoints: {
         
     //     // when window width is >= 480px
