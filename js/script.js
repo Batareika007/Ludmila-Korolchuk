@@ -6,8 +6,6 @@ const swiper = new Swiper('.swiper', {
     // loop: true,
     spaceBetween: 32,
     slidesPerView: 1,
-    // slidesPerGroup: 4,
-    // autoHeight:true,
     grabCursor: true,
     pagination: {
         el: '.swiper-pagination',
@@ -24,7 +22,7 @@ const swiper = new Swiper('.swiper', {
         580: {
             slidesPerView: 2,
             slidesPerGroup: 2,
-              spaceBetween: 30
+            spaceBetween: 30
         },
         // when window width is >= 640px
         900: {
@@ -42,22 +40,29 @@ const swiper = new Swiper('.swiper', {
 });
 
 const swiper2 = new Swiper('.swiper2', {
-    grabCursor:true,
-    // centeredSlides: true,
-    // loop:true,
-    spaceBetween: 48,
-    // slidesPerGroup: 1,
+
+    grabCursor: true,
+    spaceBetween: 28,
     slidesPerView:1,
+    // centeredSlidesBounds:true,
+    // centeredSlides: true,
+    // centerInsufficientSlides:true,
     breakpoints: {
-          768: {
+        
+    //     // when window width is >= 480px
+        768: {
             slidesPerView: 2,
-            spaceBetween: 28,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 28,
-          },
+   
         },
+    //     // when window width is >= 640px
+        1160: {
+            centeredSlides: false,
+    //         // centeredSlides: false,
+            slidesPerView: 3,
+    //         // slidesPerGroup: 3,
+    //         //   spaceBetween: 40
+        },
+    },
 });
 
 
@@ -87,11 +92,10 @@ $(document).ready(function () {
 
         // alwayse keep one opened
         const parent = $(this).parent();
-        
-          if ($('accordion__box').hasClass('active')) {
+
+        if ($('accordion__box').hasClass('active')) {
             parent.removeClass('active');
-          }
-         else {
+        } else {
             $('.accordion__box').removeClass('active')
             parent.addClass('active');
         }

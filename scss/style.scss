@@ -66,9 +66,10 @@ span {
 
     // }
 
-    // @media screen and (max-width: 375px) {
-    //     max-width: 350px;
-    // }
+    @media screen and (max-width: 375px) {
+        padding: 0;
+        max-width: 365px;
+    }
 
 }
 
@@ -209,19 +210,59 @@ span {
     background-image: url("../images/abstract-bg1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    // height: 638px;
     padding-top: 192px;
+
 }
 
 .subheader__content {
-    padding-bottom: 140px;
-    // min-height: 446px;
+    height: 446px;
     background-image: url("../images/Lyudmila-Korolchuk-psychologist-art-therapist.png");
     background-repeat: no-repeat;
     background-position: left bottom;
-    text-align: center;
-
-    @media screen and (max-width: 768px) {}
+    // justify-content: flex-start;
+    align-items: flex-start;
+    // @media screen and (max-width: 768px) {}
 }
+
+
+
+.subheader__title {
+    margin-left: 30%;
+    font-size: 96px;
+    width: 673px;
+    line-height: 110%;
+    font-weight: 500;
+    font-style: italic;
+    // border: 1px solid red;
+}
+
+.subheader__title_top {
+    align-self: flex-start;
+
+    // @media screen and (max-width: 768px) {
+    //     // align-self: flex-end;
+    // }
+}
+
+.subheader__title_bottom {
+    width: 485px;
+    align-self: flex-end;
+
+    span {
+        display: block;
+    }
+}
+
+.subheader__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: 500;
+    // line-height: 1%;
+}
+
+
 
 /* non-main page -----------------*/
 
@@ -236,51 +277,6 @@ span {
 
 /* non-main page end ------------------ */
 
-
-
-.subheader__title {
-    margin-left: 30%;
-    font-size: 96px;
-    max-width: 673px;
-    line-height: 110%;
-    font-weight: 500;
-    font-style: italic;
-    margin-bottom: 16px;
-
-    @media screen and (max-width: 768px) {}
-
-    @media screen and (max-width: 375px) {}
-}
-
-.subheader__title_top {
-    align-self: flex-start;
-
-    @media screen and (max-width: 768px) {
-        // align-self: flex-end;
-    }
-}
-
-.subheader__title_bottom {
-    align-self: flex-end;
-
-    @media screen and (max-width: 768px) {
-        align-self: flex-start;
-    }
-
-}
-
-.subheader__subtitle {
-    font-family: 'Montserrat', sans-serif;
-    font-style: italic;
-    font-size: 32px;
-    margin-left: 16%;
-    font-weight: 500;
-    line-height: 250%;
-
-    @media screen and (max-width: 768px) {
-        margin-left: 0;
-    }
-}
 
 //  ######  ##         #######  ########   #######  ###    ##
 // ##    ## ##        ##     ## ##     ## ##     ## ####   ##
@@ -453,9 +449,6 @@ min-widht: 0;
     margin-bottom: 118px;
 }
 
-// .swiper {
-//     padding: 40px 15px;
-// }
 .certificates__swiper {
     padding: 40px 15px;
 }
@@ -1006,32 +999,31 @@ input[type="checkbox"]:checked+label span {
 }
 
 .feedback__content {
-    margin: 0 auto;
-    max-width: 1160px;
-    // border: 1px solid red;
+    max-width: 100%;
+    padding: 0 10px;
     overflow: hidden;
+    // border: 1px solid red;
 
-    // margin: 0 0 24px 0;
-    // @media screen and (max-width: 1160px) {
-    //     max-width: 740px;
-    // }
-
-    // @media screen and (max-width: 780px) {
-    //     max-width: 380px;
-    // }
 }
 
 .feedback__card_swiper-slide {
-    border-radius: 8px;
-    padding: 16px;
-    max-width: 355px;
-    min-height: 248px;
-    border: 1px solid #330774;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background: white;
+    // text-align: center;
+    // height: auto;
+
+    div {
+        text-align: right;
+        border-radius: 8px;
+        padding: 16px;
+        width: 350px;
+        height: 248px;
+        border: 1px solid #330774;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        background: white;
+    }
 }
 
 .feedback_text {
+    text-align: left;
     font-family: 'Lora';
     font-size: 16px;
     line-height: 150%;
