@@ -1,6 +1,5 @@
-// alert("hello");    
 
-// ----------------   swiper
+// ----------------   swiper ------------------------------//
 
 const swiper = new Swiper('.certificates__swiper', {
     // loop: true,
@@ -65,7 +64,7 @@ const swiper2 = new Swiper('.swiper-feedback', {
 
 
 
-// ------------------- hide header on scroll down
+// ------------------- hide header on scroll down ----------------//
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
