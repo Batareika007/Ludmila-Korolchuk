@@ -90,6 +90,12 @@ span {
   max-width: 1160px;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .container {
     padding: 0 24px;
@@ -583,12 +589,20 @@ min-widht: 0;
 
 /* card section ---------------------- */
 .courses-trainings__container {
+  display: block;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
   gap: 32px;
+}
+
+@media screen and (max-width: 425px) {
+  .courses-trainings__container {
+    gap: 14px;
+  }
 }
 
 .courses-trainings__card {
@@ -651,7 +665,7 @@ min-widht: 0;
   font-size: 24px;
   line-height: 120%;
   margin-bottom: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 
@@ -677,11 +691,27 @@ min-widht: 0;
 }
 
 .flip-card {
+  display: inline-block;
   background-color: transparent;
   width: 352px;
   height: 352px;
   -webkit-perspective: 1000px;
           perspective: 1000px;
+}
+
+@media screen and (max-width: 375px) {
+  .flip-card {
+    width: 152px;
+    height: 152px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .flip-card:hover {
+    width: 352px;
+    height: 352px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
 }
 
 .flip-card:hover .flip-card__item {
@@ -696,6 +726,17 @@ min-widht: 0;
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+@media screen and (max-width: 425px) {
+  .flip-card-front {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 18px;
+    line-height: 21px;
+    width: 156px;
+    height: 156px;
+  }
 }
 
 .important-about-yourself {

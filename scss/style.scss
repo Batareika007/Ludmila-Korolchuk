@@ -66,10 +66,9 @@ span {
     padding: 0 20px;
     max-width: 1160px;
 
-    // @media screen and (max-width: 768px) {
-    //     max-width: 744px;
-
-    // }
+    @media screen and (max-width: 768px) {
+        padding: 0 10px;
+    }
 
     @media screen and (max-width: 375px) {
         padding: 0 24px;
@@ -614,9 +613,19 @@ min-widht: 0;
 
 /* card section ---------------------- */
 .courses-trainings__container {
+    // --- try mobile veriosn --- //
+    display: block;
+    text-align: center;
+    // --- end mobile version -- //
+
     justify-content: center;
     flex-wrap: wrap-reverse;
     gap: 32px;
+
+    @media screen and (max-width: 425px) {
+        // justify-content: flex-start;
+        gap: 14px;
+    }
 }
 
 .courses-trainings__card {
@@ -679,8 +688,7 @@ min-widht: 0;
     font-size: 24px;
     line-height: 120%;
     margin-bottom: 10px;
-    font-family: 'Montserrat',
-        sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 
 }
@@ -691,7 +699,6 @@ min-widht: 0;
     width: 320px;
     margin-bottom: 8px;
     font-weight: 600;
-    // font-family: 'Montserrat', sans-serif;
 }
 
 .flip-card-price {
@@ -707,13 +714,27 @@ min-widht: 0;
     height: 60px;
 }
 
-// flip animation
+// ------------------------- flip animation
 
 .flip-card {
+    display: inline-block;
     background-color: transparent;
     width: 352px;
     height: 352px;
     perspective: 1000px;
+
+    @media screen and (max-width: 375px) {
+        width: 152px;
+        height: 152px;
+
+        transition: 0.5s;
+
+        &:hover {
+            width: 352px;
+            height: 352px;
+            transition: 0.5s;
+        }
+    }
 }
 
 .flip-card:hover .flip-card__item {
@@ -729,8 +750,16 @@ min-widht: 0;
     backface-visibility: hidden;
 }
 
-
-
+.flip-card-front {
+    @media screen and (max-width: 425px) {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 18px;
+        line-height: 21px;
+        width: 156px;
+        height: 156px;
+    }
+}
 
 // each card background 
 
@@ -803,7 +832,6 @@ min-widht: 0;
         url("../images/courses-trainings/courses-trainings/palette-of-my-soul.png");
     background-size: cover;
 }
-
 
 //  ######   #######  ##    ##  ######  ##     ## ##       ######## #### ##    ##  ######   
 // ##    ## ##     ## ###   ## ##    ## ##     ## ##          ##     ##  ###   ## ##    ##  
