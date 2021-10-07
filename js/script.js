@@ -1,4 +1,3 @@
-
 // ----------------   swiper ------------------------------//
 
 const swiper = new Swiper('.certificates__swiper', {
@@ -39,25 +38,46 @@ const swiper = new Swiper('.certificates__swiper', {
 });
 
 const swiper2 = new Swiper('.swiper-feedback', {
-
+    centeredSlides: true,
     grabCursor: true,
-    spaceBetween: 28,
-    slidesPerView:1,
+    spaceBetween:10,
+    slidesPerView: 1,
+    // autoHeight: true,
     breakpoints: {
-        
-    //     // when window width is >= 480px
         768: {
+            spaceBetween: 10,
+            centeredSlides: true,
             slidesPerView: 2,
-   
+
         },
-    //     // when window width is >= 640px
-        1160: {
+        1150: {
             centeredSlides: false,
-    //         // centeredSlides: false,
             slidesPerView: 3,
-    //         // slidesPerGroup: 3,
-    //         //   spaceBetween: 40
         },
+
+    },
+});
+
+const swiper3 = new Swiper('.swiper-price', {
+    centeredSlides: true,
+    grabCursor: true,
+    spaceBetween: 15,
+    slidesPerView: 1,
+    breakpoints: {
+
+        //     // when window width is >= 480px
+        768: {
+            centeredSlides: true,
+            spaceBetween: 10,
+            slidesPerView: 2,
+        },
+        //     // when window width is >= 640px
+        1024: {
+            centeredSlides: false,
+            slidesPerView: 3,
+            spaceBetween: 35,
+        },
+
     },
 });
 

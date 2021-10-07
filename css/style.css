@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&display=swap");
 body {
@@ -16,6 +17,18 @@ h6 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 500;
+}
+
+@media screen and (max-width: 375px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .flex-row {
@@ -79,8 +92,7 @@ span {
 
 @media screen and (max-width: 375px) {
   .container {
-    padding: 0;
-    max-width: 365px;
+    padding: 0 24px;
   }
 }
 
@@ -99,6 +111,15 @@ span {
   opacity: 1;
 }
 
+.guillemet::before {
+  content: '«';
+}
+
+.guillemet::after {
+  content: '»';
+}
+
+/* ======= start page styling ===========*/
 /* ==================  header =================== */
 .header {
   padding: 16px 0;
@@ -114,6 +135,12 @@ span {
   z-index: 1000;
   -webkit-transition: top 0.5s;
   transition: top 0.5s;
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    display: none;
+  }
 }
 
 .header__row {
@@ -198,6 +225,13 @@ span {
   padding-top: 192px;
 }
 
+@media screen and (max-width: 375px) {
+  .subheader {
+    padding-top: 50px;
+    background-size: cover;
+  }
+}
+
 .subheader__content {
   height: 446px;
   background-image: url("../images/Lyudmila-Korolchuk-psychologist-art-therapist.png");
@@ -206,6 +240,14 @@ span {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media screen and (max-width: 375px) {
+  .subheader__content {
+    height: 170px;
+    background-size: 160px auto;
+    background-position: 0 0;
+  }
 }
 
 .subheader__title {
@@ -217,15 +259,38 @@ span {
   font-style: italic;
 }
 
+@media screen and (max-width: 375px) {
+  .subheader__title {
+    font-size: 32px;
+    margin-left: 0;
+    width: 100%;
+    line-height: 140%;
+  }
+}
+
 .subheader__title_top {
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+@media screen and (max-width: 375px) {
+  .subheader__title_top {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
 }
 
 .subheader__title_bottom {
   width: 485px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+@media screen and (max-width: 375px) {
+  .subheader__title_bottom {
+    width: 100%;
+    text-align: right;
+  }
 }
 
 .subheader__title_bottom span {
@@ -237,6 +302,12 @@ span {
   font-style: italic;
   font-size: 32px;
   font-weight: 500;
+}
+
+@media screen and (max-width: 375px) {
+  .subheader__subtitle {
+    font-size: 16px;
+  }
 }
 
 /* non-main page -----------------*/
@@ -263,6 +334,16 @@ span {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .slogan {
+    background: url("../images/slogan_bg_small.png") right/100% 100% no-repeat;
+    top: -20px;
+  }
+  .slogan .container {
+    padding: 0;
+  }
+}
+
 .slogan_title {
   height: 180px;
   line-height: 3rem;
@@ -274,15 +355,22 @@ span {
   font-family: 'Lora';
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
   .slogan_title {
-    font-size: 2rem;
+    font-size: 1rem;
+    height: 48px;
   }
 }
 
 /* about -------------------------*/
 .about {
   padding: 64px 0;
+}
+
+@media screen and (max-width: 375px) {
+  .about {
+    padding: 32px 0;
+  }
 }
 
 .about_title {
@@ -298,6 +386,12 @@ span {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 32px;
+}
+
+@media screen and (max-width: 375px) {
+  .about__image {
+    display: none;
+  }
 }
 
 .about__image img {
@@ -393,8 +487,20 @@ min-widht: 0;
   margin-bottom: 118px;
 }
 
+@media screen and (max-width: 375px) {
+  .certificates {
+    margin-bottom: 32px;
+  }
+}
+
 .certificates__swiper {
   padding: 40px 15px;
+}
+
+@media screen and (max-width: 375px) {
+  .certificates__swiper {
+    padding: 14px 0px;
+  }
 }
 
 .certificates__swiper-slide {
@@ -459,8 +565,20 @@ min-widht: 0;
   margin-bottom: 128px;
 }
 
+@media screen and (max-width: 375px) {
+  .courses-trainings {
+    margin-bottom: 32px;
+  }
+}
+
 .courses-trainings__title {
   margin: 0 0 62px 0;
+}
+
+@media screen and (max-width: 375px) {
+  .courses-trainings__title {
+    margin: 0 0 32px 0;
+  }
 }
 
 /* card section ---------------------- */
@@ -614,10 +732,6 @@ min-widht: 0;
   background-image: url("../images/courses-trainings/courses-trainings/my-life-my-rules.png");
 }
 
-.my-life-my-rules p {
-  width: 242px;
-}
-
 .my-life-my-rules-back {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/courses-trainings/courses-trainings/my-life-my-rules.png");
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/courses-trainings/courses-trainings/my-life-my-rules.png");
@@ -646,10 +760,6 @@ min-widht: 0;
 
 .palette-of-my-soul {
   background-image: url("../images/courses-trainings/courses-trainings/palette-of-my-soul.png");
-}
-
-.palette-of-my-soul p {
-  width: 227px;
 }
 
 .palette-of-my-soul-back {
@@ -717,18 +827,19 @@ min-widht: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 32px;
+  overflow: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px;
 }
 
 .consultiung__cards_card {
   overflow: hidden;
   background-color: #FFFFFF;
-  min-height: 172px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 352px;
-          flex: 0 1 352px;
+  min-height: 260px;
+  max-width: 352px;
+  min-width: 280px;
   padding: 32px 18px;
   text-align: center;
   border: 1px solid #330774;
@@ -801,6 +912,12 @@ min-widht: 0;
   background: url("../images/bg-form.jpg") 0 0/105% 100% no-repeat;
 }
 
+@media screen and (max-width: 425px) {
+  .form {
+    display: none;
+  }
+}
+
 .form__title {
   font-style: normal;
   font-weight: bold;
@@ -817,12 +934,6 @@ min-widht: 0;
   /* if adding new content make width bigger */
   max-width: 1250px;
   padding: 0 10px;
-}
-
-@media screen and (max-width: 400px) {
-  .form-container {
-    padding: 0;
-  }
 }
 
 .form__row {
@@ -920,7 +1031,7 @@ input[type="checkbox"]:checked + label span {
 
 .feedback__content {
   max-width: 100%;
-  padding: 0 10px;
+  padding: 10px 15px;
   overflow: hidden;
 }
 
@@ -929,7 +1040,8 @@ input[type="checkbox"]:checked + label span {
   border-radius: 8px;
   padding: 16px;
   width: 350px;
-  height: 248px;
+  min-width: 325px;
+  min-height: 248px;
   border: 1px solid #330774;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -957,9 +1069,9 @@ input[type="checkbox"]:checked + label span {
 
 /*---- Blog Articles -------------------*/
 .article-main {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -968,6 +1080,11 @@ input[type="checkbox"]:checked + label span {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 736px;
           flex: 0 1 736px;
+}
+
+.article-main__item:not(:last-child) {
+  margin-right: 32px;
+  margin-bottom: 32px;
 }
 
 .blog__article_title {
