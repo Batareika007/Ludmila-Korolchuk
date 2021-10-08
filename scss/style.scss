@@ -613,16 +613,16 @@ min-widht: 0;
 
 /* card section ---------------------- */
 .courses-trainings__container {
-    // --- try mobile veriosn --- //
-    display: block;
-    text-align: center;
-    // --- end mobile version -- //
-
+    transition: 0.5s;
     justify-content: center;
     flex-wrap: wrap-reverse;
     gap: 32px;
 
     @media screen and (max-width: 425px) {
+        // --- try mobile veriosn --- //
+        // display: block;
+        // text-align: center;
+        // --- end mobile version -- //
         // justify-content: flex-start;
         gap: 14px;
     }

@@ -589,8 +589,8 @@ min-widht: 0;
 
 /* card section ---------------------- */
 .courses-trainings__container {
-  display: block;
-  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
