@@ -19,7 +19,7 @@ h6 {
   font-weight: 500;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   h1,
   h2,
   h3,
@@ -96,7 +96,7 @@ span {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .container {
     padding: 0 24px;
   }
@@ -143,7 +143,7 @@ span {
   transition: top 0.5s;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .header {
     display: none;
   }
@@ -231,7 +231,7 @@ span {
   padding-top: 192px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .subheader {
     padding-top: 50px;
     background-size: cover;
@@ -248,7 +248,7 @@ span {
           align-items: flex-start;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .subheader__content {
     height: 170px;
     background-size: 160px auto;
@@ -265,7 +265,7 @@ span {
   font-style: italic;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .subheader__title {
     font-size: 32px;
     margin-left: 0;
@@ -279,7 +279,7 @@ span {
       align-self: flex-start;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .subheader__title_top {
     -ms-flex-item-align: end;
         align-self: flex-end;
@@ -292,7 +292,7 @@ span {
       align-self: flex-end;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .subheader__title_bottom {
     width: 100%;
     text-align: right;
@@ -310,7 +310,7 @@ span {
   font-weight: 500;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .subheader__subtitle {
     font-size: 16px;
   }
@@ -340,7 +340,7 @@ span {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .slogan {
     background: url("../images/slogan_bg_small.png") right/100% 100% no-repeat;
     top: -20px;
@@ -361,7 +361,7 @@ span {
   font-family: 'Lora';
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .slogan_title {
     font-size: 1rem;
     height: 48px;
@@ -373,7 +373,7 @@ span {
   padding: 64px 0;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .about {
     padding: 32px 0;
   }
@@ -394,7 +394,7 @@ span {
   gap: 32px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .about__image {
     display: none;
   }
@@ -493,7 +493,7 @@ min-widht: 0;
   margin-bottom: 118px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .certificates {
     margin-bottom: 32px;
   }
@@ -503,7 +503,7 @@ min-widht: 0;
   padding: 40px 15px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .certificates__swiper {
     padding: 14px 0px;
   }
@@ -571,7 +571,7 @@ min-widht: 0;
   margin-bottom: 128px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .courses-trainings {
     margin-bottom: 32px;
   }
@@ -581,7 +581,7 @@ min-widht: 0;
   margin: 0 0 62px 0;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .courses-trainings__title {
     margin: 0 0 32px 0;
   }
@@ -699,7 +699,7 @@ min-widht: 0;
           perspective: 1000px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .flip-card {
     width: 152px;
     height: 152px;
