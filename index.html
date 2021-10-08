@@ -11,6 +11,7 @@
     <!-- swiper -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- full screen image -->
+    <link rel="stylesheet" href="css/nice-select2.css">
     <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -373,7 +374,7 @@
 
                             </div>
                         </div>
-                        
+
                     </div>
 
 
@@ -489,21 +490,27 @@
                         <!-- chose type of -->
                         <div class="form__column flex-column">
 
-                            <label for="consulting-type">Тип консультации</label>
-
-                            <select class="form_input" type="text" name="consulting-type" id="consulting-type">
-                                <option value="" selected disabled style="display: none;">Выбрать тип консультации
-                                </option>
+                            <label  for="consulting-type">Тип консультации</label>
+                            <!-- <div class="custom-select"> -->
+                            <select id="nice-select"  class="form_input"  name="consulting-type" id="consulting-type" placeholder="Выбрать тип консультации">
+                                <!-- <option value="" selected disabled style="display: none;">Выбрать тип консультации</option> -->
+                                <!-- <option value="">Выбрать тип консультации</option> -->
                                 <option value="Online consultation">Онлайн консультация</option>
                                 <option value="Full-time consultation">Очная консультация</option>
                                 <option value="Couple consultation">Консультация семейной пары</option>
-                            </select>
 
-                            <div class="checkbox_title">Выберите наиболее удобный для Вас способ связи для
-                                онлайн-консультации</div>
+                            </select>
+                            <!-- </div> -->
+
+
+
+
+
                             <!-- checkbox section -->
+                            <div class="checkbox_title">Выберите наиболее удобный для Вас способ связи для онлайн-консультации</div>
+
                             <div class="checkbox-container">
-                                <div>
+                                
                                     <div class="checkbox-item">
                                         <input class="checkbox-icon" type="checkbox" name="Skype" id="skype">
                                         <label class="checkbox-text" for="skype"><span></span>Skype</label>
@@ -513,9 +520,9 @@
                                         <input class="checkbox-icon" type="checkbox" name="Viber" id="viber">
                                         <label class="checkbox-text" for="viber"><span></span>Viber</label>
                                     </div>
-                                </div>
+                                
 
-                                <div>
+                                
                                     <div class="checkbox-item">
                                         <input class="checkbox-icon" type="checkbox" name="Messenger" id="messenger">
                                         <label class="checkbox-text" for="messenger"><span></span>Messenger</label>
@@ -524,7 +531,7 @@
                                         <input class="checkbox-icon" type="checkbox" name="Zoom" id="zoom">
                                         <label class="checkbox-text" for="zoom"><span></span>Zoom</label>
                                     </div>
-                                </div>
+                                
 
                                 <div class="checkbox-item">
                                     <input class="checkbox-icon" type="checkbox" name="подходят все" id="all">
@@ -534,7 +541,7 @@
                         </div>
 
 
-                        <!-- name and privet data -->
+                        <!-- name + email + phone -->
                         <div class="form__column flex-column">
 
                             <label for="lastname">Фамилия</label>
@@ -549,7 +556,7 @@
                             <label for="phone">Телефон</label>
                             <input id="phone-input" class="form_input" type="tel" name="phone" id="phone"
                                 placeholder="+38(___) ___-__-__"
-                                pattern="[\+]\d{2}\s[\(]\[69]{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength=10 required>
+                                pattern="[\+]\d{2}\s[\(]\[69]{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength=28 required>
                         </div>
 
                         <!-- textarea and submit -->
@@ -1224,6 +1231,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/lightbox.js"></script>
     <script src="js/phone-mask.js"></script>
+    <script src="js/nice-select2.js"></script>
     <script src="js/script.js"></script>
 </body>
 

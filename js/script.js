@@ -82,8 +82,6 @@ const swiper3 = new Swiper('.swiper-price', {
 });
 
 
-
-
 // ------------------- hide header on scroll down ----------------//
 
 var prevScrollpos = window.pageYOffset;
@@ -120,12 +118,7 @@ $(document).ready(function () {
     });
 });
 
-
-
-
-
-
-// image full screen
+// ----------------- image full screen
 
 lightbox.option({
     'fitImagesInViewport': true,
@@ -133,3 +126,7 @@ lightbox.option({
     'showImageNumberLabel': false,
     'wrapAround': true
 })
+
+// ------------ custom select form ----------------
+
+NiceSelect.bind(document.getElementById("nice-select"));

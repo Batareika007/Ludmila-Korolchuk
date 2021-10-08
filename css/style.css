@@ -1018,6 +1018,7 @@ min-widht: 0;
 }
 
 .checkbox_title {
+  margin-top: 24px;
   margin-bottom: 16px;
 }
 
@@ -1043,8 +1044,10 @@ input[type="checkbox"]:checked + label span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -1077,7 +1080,6 @@ input[type="checkbox"]:checked + label span {
 }
 
 .feedback__card_swiper-slide div {
-  text-align: right;
   border-radius: 8px;
   padding: 16px;
   width: 350px;

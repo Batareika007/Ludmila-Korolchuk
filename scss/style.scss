@@ -1015,6 +1015,12 @@ min-widht: 0;
 }
 
 
+
+
+
+
+
+
 .form-container {
     margin: 0 auto;
     /* if adding new content make width bigger */
@@ -1032,10 +1038,6 @@ min-widht: 0;
     backdrop-filter: blur(40px);
     border-radius: 8px;
     padding: 48px;
-
-
-
-
 }
 
 .form__column {
@@ -1063,6 +1065,7 @@ min-widht: 0;
 }
 
 .checkbox_title {
+    margin-top: 24px;
     margin-bottom: 16px;
 }
 
@@ -1090,7 +1093,8 @@ input[type="checkbox"]:checked+label span {
     @media screen and (max-width: 1261px) {
         //  width: 90%;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        // flex-wrap: wrap;
         justify-content: space-around;
     }
 }
@@ -1126,11 +1130,8 @@ input[type="checkbox"]:checked+label span {
 }
 
 .feedback__card_swiper-slide {
-    // text-align: center;
-    // height: auto;
 
     div {
-        text-align: right;
         border-radius: 8px;
         padding: 16px;
         width: 350px;
