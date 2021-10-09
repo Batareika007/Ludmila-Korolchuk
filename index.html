@@ -20,11 +20,7 @@
 
 <body>
     <div class="wrapper">
-        <!-- ============= fixed call ============================ -->
-
-        <a class="fixed-page-icon" href=""><img src="images/icons/color-viber-messenger-64x64.svg"
-                alt="viber-messenger"></a>
-
+        
 
         <!-- ================ header ============================== -->
 
@@ -50,6 +46,9 @@
 
         <main class="main">
 
+            <!-- ============= fixed call ============================ -->
+            <a class="fixed-page-icon" href="viber://chat/?number=+38 (067) 715 74 16"><img src="images/icons/color-viber-messenger-64x64.svg"
+                alt="viber-messenger"></a>
             <!-- ============= subheader ========================== -->
 
             <section class="subheader">
@@ -77,7 +76,7 @@
 
             <!-- ================= about =========================== -->
 
-            <section class="about">
+            <section class="about" id="about">
                 <div class="container">
                     <h2 class="about_title">Обо мне</h2>
                     <div class="about__main flex-row">
@@ -139,7 +138,7 @@
 
             <!-- =========== certificates =========================== -->
 
-            <section class="certificates">
+            <section class="certificates" id="certificates">
                 <div class="container">
                     <div class="swiper certificates__swiper">
                         <div class="swiper-wrapper">
@@ -189,7 +188,7 @@
 
             <!-- ================= courses and trainings ============================-->
 
-            <section class="courses-trainings">
+            <section class="courses-trainings" id="courses-trainings">
                 <div class="container">
                     <h2 class="courses-trainings__title">Курсы и тренинги</h2>
                     <!-- !! new card add on top, flex reverse used !!-->
@@ -386,7 +385,7 @@
 
 
             <!-- ====================Консультации ===================================-->
-            <section class="consulting">
+            <section class="consulting" id="consulting">
                 <div class="container">
                     <h2 class="consulting_title">Консультации</h2>
                     <div class="consulting__content  flex-row">
@@ -473,13 +472,15 @@
                             </div>
                         </div>
                     </div>
+                    
+                    
 
                 </div>
             </section>
 
             <!-- ================ Form ======================================= -->
 
-            <section class="form">
+            <section class="form" id="form">
 
                 <p class="form__title">Записаться на консультацию</p>
 
@@ -490,48 +491,44 @@
                         <!-- chose type of -->
                         <div class="form__column flex-column">
 
-                            <label  for="consulting-type">Тип консультации</label>
-                            <!-- <div class="custom-select"> -->
-                            <select id="nice-select"  class="form_input"  name="consulting-type" id="consulting-type" placeholder="Выбрать тип консультации">
-                                <!-- <option value="" selected disabled style="display: none;">Выбрать тип консультации</option> -->
-                                <!-- <option value="">Выбрать тип консультации</option> -->
+                            <label for="consulting-type">Тип консультации</label>
+                            
+                            <select id="nice-select" class="form_input" name="consulting-type" id="consulting-type"
+                            placeholder="Выбрать тип консультации" required>
+                                <option value=""></option>
                                 <option value="Online consultation">Онлайн консультация</option>
                                 <option value="Full-time consultation">Очная консультация</option>
                                 <option value="Couple consultation">Консультация семейной пары</option>
 
                             </select>
-                            <!-- </div> -->
-
-
-
-
-
+                          
                             <!-- checkbox section -->
-                            <div class="checkbox_title">Выберите наиболее удобный для Вас способ связи для онлайн-консультации</div>
+                            <div class="checkbox_title">Выберите наиболее удобный для Вас способ связи для
+                                онлайн-консультации</div>
 
                             <div class="checkbox-container">
-                                
-                                    <div class="checkbox-item">
-                                        <input class="checkbox-icon" type="checkbox" name="Skype" id="skype">
-                                        <label class="checkbox-text" for="skype"><span></span>Skype</label>
-                                    </div>
 
-                                    <div class="checkbox-item">
-                                        <input class="checkbox-icon" type="checkbox" name="Viber" id="viber">
-                                        <label class="checkbox-text" for="viber"><span></span>Viber</label>
-                                    </div>
-                                
+                                <div class="checkbox-item">
+                                    <input class="checkbox-icon" type="checkbox" name="Skype" id="skype">
+                                    <label class="checkbox-text" for="skype"><span></span>Skype</label>
+                                </div>
 
-                                
-                                    <div class="checkbox-item">
-                                        <input class="checkbox-icon" type="checkbox" name="Messenger" id="messenger">
-                                        <label class="checkbox-text" for="messenger"><span></span>Messenger</label>
-                                    </div>
-                                    <div class="checkbox-item">
-                                        <input class="checkbox-icon" type="checkbox" name="Zoom" id="zoom">
-                                        <label class="checkbox-text" for="zoom"><span></span>Zoom</label>
-                                    </div>
-                                
+                                <div class="checkbox-item">
+                                    <input class="checkbox-icon" type="checkbox" name="Viber" id="viber">
+                                    <label class="checkbox-text" for="viber"><span></span>Viber</label>
+                                </div>
+
+
+
+                                <div class="checkbox-item">
+                                    <input class="checkbox-icon" type="checkbox" name="Messenger" id="messenger">
+                                    <label class="checkbox-text" for="messenger"><span></span>Messenger</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input class="checkbox-icon" type="checkbox" name="Zoom" id="zoom">
+                                    <label class="checkbox-text" for="zoom"><span></span>Zoom</label>
+                                </div>
+
 
                                 <div class="checkbox-item">
                                     <input class="checkbox-icon" type="checkbox" name="подходят все" id="all">
@@ -546,30 +543,27 @@
 
                             <label for="lastname">Фамилия</label>
                             <input class="form_input" type="text" name="lastname" id="lastname" placeholder="Фамилия">
-
                             <label for="firstname">Имя</label>
-                            <input class="form_input" type="text" name="firstname" id="firstname" placeholder="Имя">
-
+                            <input class="form_input" type="text" name="Имя" id="firstname" placeholder="Имя">
                             <label for="email">E-mail</label>
-                            <input class="form_input" type="email" name="email" id="email" placeholder="E-mail">
-
+                            <input class="form_input" type="email" name="E-mail" id="email" placeholder="E-mail">
                             <label for="phone">Телефон</label>
-                            <input id="phone-input" class="form_input" type="tel" name="phone" id="phone"
+                            <input id="phone-input" class="form_input" type="tel" name="Телефон" id="phone"
                                 placeholder="+38(___) ___-__-__"
-                                pattern="[\+]\d{2}\s[\(]\[69]{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength=28 required>
+                                pattern="[\+]\d{2}\s[\(]\[69]{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength=28>
                         </div>
 
                         <!-- textarea and submit -->
                         <div class="form__column flex-column">
 
                             <label for="about-problem">Напишите коротко о проблеме</label>
-                            <textarea class="form_input" name="about-problem" id="about-problem"
+                            <textarea class="form_input" name="коротко о проблеме" id="about-problem"
                                 placeholder="Коротко о проблеме"></textarea>
                             <label for="date-and-time">Когда Вам было бы удобно получить консультацию</label>
-                            <input class="form_input" type="text" name="" id="date-and-time"
+                            <input class="form_input" type="text" name="Когда удобно получить консультацию" id="date-and-time"
                                 placeholder="Укажите удобные даты и время">
-
-                            <button type="submit" value="Submit" class="button_style" disabled="disabled">
+                            <!-- disabled="disabled" -->
+                            <button type="submit" value="Submit" class="button_style" >
                                 <span class="flex-center">ЗАПИСАТЬСЯ</span>
                             </button>
                         </div>
@@ -581,8 +575,7 @@
 
             <!-- =================  feedbacks ================================ -->
 
-
-            <section class="feedback">
+            <section class="feedback" id="feedbacks">
                 <div class="container">
                     <div class="feedback_title flex-center">
                         <h3>Отзывы</h3>
@@ -632,12 +625,52 @@
 
 
 
-                    <a class="feedback-link" href="http://">Увидеть больше</a>
+
+                    <div class="consultiung__cards cards swiper-price flex-row">
+
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide flex-center">
+                                <div class="consultiung__cards_card flex-column">
+                                    <p> Огромная благодарность моя Людмиле! Все материалы курса
+                                        «Семь шагов к уверенности» помогли мне стать намного увереннее в себе. Очень много открылось осознаний
+                                        себя. Людмила, ты очень бережно вела меня по дебрям. Материалы, тесты, видео очень
+                                        доступны, легки и насыщенны информацией. </p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide flex-center">
+                                <div class="consultiung__cards_card flex-column">
+                                    <p> Прошло уже больше месяца с момента тренинга «Исцеление
+                                        внутреннего
+                                        ребенка», но я
+                                        периодически к нему возвращаюсь. Результат я получила и очень довольна.
+                                        Сейчас я чётко осознаю, когда включается детское поведение и решаю, что мне сним
+                                        делать! </p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide flex-center">
+                                <div class="consultiung__cards_card flex-column">
+                                    <p> Благодарю за марафон «Как найти опору в себе»! Вы
+                                        талантливый
+                                        психолог, в вас есть то,
+                                        чего нет в других. Это ваше поле простоты и открытости. Без заумных экивоков,
+                                        душевно,
+                                        честно. Вы можете одновременно объяснить и психотерапевту и простому человеку не
+                                        сталкивающемуся с психологией. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <a class="feedback-link" href="https://www.facebook.com/media/set/?set=a.968632056661582" target="_blank">Увидеть больше</a>
                 </div>
             </section>
 
             <!-- =============== Blog =========================================-->
-            <section class="blog">
+            <section class="blog" id="blog">
                 <div class="container">
 
                     <h2 class="blog__title">Блог</h2>
@@ -954,7 +987,7 @@
 
                     <!-- ============== Blog Gallery ==================================-->
 
-                    <div class="blog__gallery">
+                    <div class="blog__gallery" id="blog__gallery">
                         <h3 class="blog__gallery_title">Галерея</h3>
 
                         <div class="blog__gallery_text">
@@ -983,14 +1016,14 @@
                                     src="images/galerry/gallery-small/7.jpg" alt="gallery"></a>
                         </div>
 
-                        <a class="gallery-link" href="http://">Увидеть больше</a>
+                        <a class="gallery-link" href="blog.html#blog__gallery">Увидеть больше</a>
 
                     </div>
 
                     <!-- ============== Blog Poetry ===================================-->
 
 
-                    <div class="blog__poetry">
+                    <div class="blog__poetry" id="blog__poetry">
                         <h3 class="blog__poetry_title">Стихи</h3>
                         <!-- <p class="blog__portey_sub-title">
                             Когда ты открываешся миру, строки приходят сами по себе...
@@ -1103,14 +1136,14 @@
                         </div>
 
 
-                        <a class="poetry-link" href="http://">Читать еще</a>
+                        <a class="poetry-link" href="blog.html#blog__poetry">Читать еще</a>
                     </div>
 
             </section>
 
             <!-- =============== Contacts =====================================-->
 
-            <section class="contacts">
+            <section class="contacts" id="contacts">
                 <div class="container">
                     <h2 class="contacts_title">Контакты</h2>
 
@@ -1133,10 +1166,10 @@
                                 <li><a href="viber://chat?number=+38(067)7157416"> <img
                                             src="images/icons/color_viber.svg" alt="viber"></a></li>
                                 <!-- telegram -->
-                                <li><a href="https://t.me/" target="_blank"> <img src="images/icons/color_telegram.svg"
+                                <li><a href="https://t.me/+380677157416"> <img src="images/icons/color_telegram.svg"
                                             alt="telegram"></a></li>
                                 <!-- whatsapp -->
-                                <li><a href="https://wa.me/+380677157416" target="_blank"> <img
+                                <li><a href="https://wa.me/+380677157416" > <img
                                             src="images/icons/color_whatsapp.svg" alt="whatsapp"></a></li>
                             </ul>
                         </div>
@@ -1195,7 +1228,7 @@
                                 <img src="images/icons/white_messenger.svg" alt="messenger"> </a></li>
 
                         <!-- <li><a href="viber://chat?number=+38(067)7157416" target="_blank">  -->
-                        <li><a href="viber://add?number=+38(067)7157416" target="_blank">
+                        <li><a href="viber://add?number=+38(067)7157416">
                                 <img src="images/icons/white_viber.svg" alt="viber"></a></li>
 
                         <li><a href="https://t.me/" target="_blank">
