@@ -1,4 +1,27 @@
-alert('ВНИМАНИЕ Тестовый режим просмотра страницы, отдельные функции недоступны. С уважением, Администратор.');
+// alert('ВНИМАНИЕ Тестовый режим просмотра страницы, отдельные функции недоступны. С уважением, Администратор.');
+
+// --------- hamburger menu -------------- // 
+
+$( document ).ready(function() {
+ 
+  $(function() { // TOGGLE CLASS ON ELEMENT
+    $(".hamburger_menu").on("click", function() { 
+      $(".header__nav").toggleClass('header__nav__active'); });
+  }); //END TOGGLE CLASS
+  
+  $(function() {  // REMOVE CLASS WHEN YOU CLICK, EXCLUDE ELEMENTS
+    // elements to ignore
+    var ignore= Array(".hamburger_menu");
+    ignore.forEach(function (item) { // loop through ignore array
+      $(item).click(function(){ return false; }); // ignore item
+    });
+
+    $(document).on("click", function() { // remove class when you click anywhere else
+      $(".header__nav").removeClass('header__nav__active'); });
+  });// END REMOVE CLASS
+   
+});
+
 
 // ----------------   swiper ------------------------------//
 
@@ -42,7 +65,7 @@ const swiper = new Swiper('.certificates__swiper', {
 const swiper2 = new Swiper('.swiper-feedback', {
     centeredSlides: true,
     grabCursor: true,
-    spaceBetween:10,
+    spaceBetween: 10,
     slidesPerView: 1,
     // autoHeight: true,
     breakpoints: {

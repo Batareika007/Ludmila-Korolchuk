@@ -133,12 +133,17 @@ span {
     z-index: 1000;
     transition: top 0.5s;
 
-    // @media screen and (max-width: 375px) {
-    @media screen and (max-width: 425px) {
-        display: none;
-        // align-self: flex-end;
+    @media (max-width:768px) {
+        padding: 8px 0;
     }
 
+    // @media (max-width:480px) {
+    // }
+
+    @media (max-width:375px) {
+        padding: 5px 0;
+
+    }
 }
 
 .header__row {
@@ -153,12 +158,18 @@ span {
     margin-right: 32px;
     position: relative;
 
+    @media (max-width:768px) {
+        width: 88px;
+        height: 54px;
+    }
+
     .logo-front {
         opacity: 1;
     }
 
     img {
-        width: 160px;
+        width: 100%;
+        // width: 160px;
     }
 
     &:hover {
@@ -184,16 +195,81 @@ span {
 
 
 .header__nav {
+    position: relative;
     width: 100%;
 
+    @media (max-width:890px) {
+        // padding: 24px;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        width: auto;
+        border-radius: 8px;
+        top: 77px;
+        right: 32px;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 4px #330774;
+        border-radius: 8px;
+        overflow: hidden;
+        height: 0;
+        // display: none;
+
+        a {
+            margin-right: 0;
+            display: inline-block;
+            width: 100%;
+            text-align: right;
+            // line-height: 64px;
+            padding: 0 24px 32px 24px;
+
+            &:first-child {
+                padding-top: 24px;
+            }
+
+            &:last-child {
+                padding-bottom: 24px;
+            }
+
+            &:hover {
+                // border-inline: 1px solid #33077405;
+                background-color: #33077405;
+            }
+        }
+
+        &.header__nav__active {
+            // display: block;
+            // padding: 24px;
+            height: auto;
+        }
+    }
+
+
+
+    @media (max-width:768px) {
+        top: 48px;
+        right: 32px;
+    }
+
+    @media (max-width:425px) {
+        right: 24px;
+    }
+
+    @media (max-width:375px) {
+        top: 46px;
+    }
+
     a {
-        position: relative;
+        // position: relative;
         color: #000;
         margin-right: 32px;
 
-        &:last-child {
+        @media (max-width:890px) {
             margin-right: 0;
+        }
+
+        &:last-child {
             margin-left: auto;
+            margin-right: 0;
         }
 
         &:hover {
@@ -204,6 +280,27 @@ span {
     }
 }
 
+.hamburger_menu {
+    display: none;
+    background-color: transparent;
+
+    @media (max-width:890px) {
+        display: block;
+        position: absolute;
+        right: 32px;
+        height: 24px;
+        width: 24px;
+        z-index: 100;
+    }
+
+    @media (max-width:425px) {
+        right: 24px;
+    }
+}
+
+
+
+
 // ##     ##    ###    #### ##    ## 
 // ###   ###   ## ##    ##  ###   ## 
 // #### ####  ##   ##   ##  ####  ## 
@@ -211,8 +308,6 @@ span {
 // ##     ## #########  ##  ##  #### 
 // ##     ## ##     ##  ##  ##   ### 
 // ##     ## ##     ## #### ##    ## 
-
-
 
 
 /* main -------------------  */
@@ -348,30 +443,30 @@ span {
 /* slogan --------------------*/
 
 .slogan {
+    .container {
+        text-align: center;
+    }
+
+    height: 152px;
     background: url('../images/slogan_bg.png') right/100% 100% no-repeat;
     position: relative;
     top: -60px;
 
-    // height: 180px;
     @media screen and (max-width: 768px) {
-        background: url('../images/slogan_bg.png') right/auto 100% no-repeat;
+        background: url('../images/slogan_bg_medium.png') center/110% 100% no-repeat;
+        height: 84px;
+        top: -40px;
     }
 
-    // @media screen and (max-width: 375px) {
-    @media screen and (max-width: 425px) {
+    // @media screen and (max-width: 425px) {
+    @media screen and (max-width: 375px) {
         background: url('../images/slogan_bg_small.png') right/100% 100% no-repeat;
+        height: 48px;
         top: -20px;
-
-        .container {
-            padding: 0;
-        }
-
     }
 }
 
 .slogan_title {
-    height: 180px;
-    line-height: 3rem;
     color: #fff;
     font-size: 3rem;
     font-weight: 500;
@@ -379,12 +474,16 @@ span {
     text-align: center;
     font-family: 'Lora';
 
-    // @media screen and (max-width: 375px) {
+    @media screen and (max-width: 768px) {
+        font-size: 2rem;
+    }
+
     @media screen and (max-width: 425px) {
-        // line-height: 1.5rem;
         font-size: 1rem;
-        // height: auto;
-        height: 48px;
+    }
+
+    @media screen and (max-width: 375px) {
+        font-size: 0.9rem;
     }
 }
 
