@@ -143,13 +143,13 @@ span {
   transition: top 0.5s;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header {
     padding: 8px 0;
   }
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .header {
     padding: 5px 0;
   }
@@ -170,7 +170,7 @@ span {
   position: relative;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .logo {
     width: 88px;
     height: 54px;
@@ -210,7 +210,7 @@ span {
   width: 100%;
 }
 
-@media (max-width: 890px) {
+@media screen and (max-width: 890px) {
   .header__nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -244,28 +244,25 @@ span {
   .header__nav a:last-child {
     padding-bottom: 24px;
   }
-  .header__nav a:hover {
-    background-color: #33077405;
-  }
   .header__nav.header__nav__active {
     height: auto;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header__nav {
     top: 48px;
     right: 32px;
   }
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .header__nav {
     right: 24px;
   }
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
   .header__nav {
     top: 46px;
   }
@@ -276,7 +273,7 @@ span {
   margin-right: 32px;
 }
 
-@media (max-width: 890px) {
+@media screen and (max-width: 890px) {
   .header__nav a {
     margin-right: 0;
   }
@@ -299,7 +296,7 @@ span {
   background-color: transparent;
 }
 
-@media (max-width: 890px) {
+@media screen and (max-width: 890px) {
   .hamburger_menu {
     display: block;
     position: absolute;
@@ -310,7 +307,7 @@ span {
   }
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .hamburger_menu {
     right: 24px;
   }
@@ -327,44 +324,65 @@ span {
 
 /* subheader ------------------- */
 .subheader {
-  background-image: url("../images/abstract-bg1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 192px;
+  background: url("../images/abstract-bg1.jpg") center/cover no-repeat;
+  height: 638px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .subheader {
-    padding-top: 50px;
-    background-size: cover;
+    height: 304px;
   }
 }
 
+@media screen and (max-width: 375px) {
+  .subheader {
+    height: 278px;
+  }
+}
+
+.subheader .container {
+  height: 100%;
+}
+
 .subheader__content {
-  height: 446px;
-  background-image: url("../images/Lyudmila-Korolchuk-psychologist-art-therapist.png");
-  background-repeat: no-repeat;
-  background-position: left bottom;
+  padding-top: 192px;
+  height: 100%;
+  background: url("../images/Lyudmila-Korolchuk-psychologist-art-therapist.png") left bottom/346px 446px no-repeat;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .subheader__content {
-    height: 170px;
-    background-size: 160px auto;
-    background-position: 0 0;
+    padding-top: 96px;
+    background-size: 162px 208px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .subheader__content {
+    padding-top: 80px;
   }
 }
 
 .subheader__title {
   margin-left: 30%;
   font-size: 96px;
-  width: 673px;
+  max-width: 673px;
   line-height: 110%;
-  font-weight: 500;
   font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .subheader__title {
+    font-size: 48px;
+    line-height: 110%;
+    max-width: 344px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -394,7 +412,7 @@ span {
       align-self: flex-end;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .subheader__title_bottom {
     width: 100%;
     text-align: right;
@@ -412,9 +430,16 @@ span {
   font-weight: 500;
 }
 
+@media screen and (max-width: 768px) {
+  .subheader__subtitle {
+    padding-right: 37px;
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .subheader__subtitle {
-    font-size: 16px;
+    padding-right: 0;
   }
 }
 
@@ -1602,7 +1627,7 @@ input[type="checkbox"]:checked + label span {
       flex-wrap: wrap;
 }
 
-@media (max-width: 540px) {
+@media screen and (max-width: 540px) {
   .contacts__row {
     max-width: 300px;
   }
@@ -1636,7 +1661,7 @@ input[type="checkbox"]:checked + label span {
   margin-right: 8px;
 }
 
-@media (max-width: 544px) {
+@media screen and (max-width: 544px) {
   .contacts__column {
     min-width: 280px;
     -webkit-box-pack: center;

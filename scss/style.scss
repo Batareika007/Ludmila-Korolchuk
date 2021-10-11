@@ -122,6 +122,7 @@ span {
 
 /* ==================  header =================== */
 .header {
+    // display: none;
     padding: 16px 0;
     font-weight: 700;
     backdrop-filter: blur(16px);
@@ -133,16 +134,12 @@ span {
     z-index: 1000;
     transition: top 0.5s;
 
-    @media (max-width:768px) {
+    @media screen and (max-width:768px) {
         padding: 8px 0;
     }
 
-    // @media (max-width:480px) {
-    // }
-
-    @media (max-width:375px) {
+    @media screen and (max-width:480px) {
         padding: 5px 0;
-
     }
 }
 
@@ -158,7 +155,7 @@ span {
     margin-right: 32px;
     position: relative;
 
-    @media (max-width:768px) {
+    @media screen and (max-width:768px) {
         width: 88px;
         height: 54px;
     }
@@ -198,7 +195,7 @@ span {
     position: relative;
     width: 100%;
 
-    @media (max-width:890px) {
+    @media screen and (max-width:890px) {
         // padding: 24px;
         flex-direction: column;
         align-items: flex-end;
@@ -229,11 +226,6 @@ span {
             &:last-child {
                 padding-bottom: 24px;
             }
-
-            &:hover {
-                // border-inline: 1px solid #33077405;
-                background-color: #33077405;
-            }
         }
 
         &.header__nav__active {
@@ -245,16 +237,16 @@ span {
 
 
 
-    @media (max-width:768px) {
+    @media screen and (max-width:768px) {
         top: 48px;
         right: 32px;
     }
 
-    @media (max-width:425px) {
+    @media screen and (max-width:425px) {
         right: 24px;
     }
 
-    @media (max-width:375px) {
+    @media screen and (max-width:375px) {
         top: 46px;
     }
 
@@ -263,7 +255,7 @@ span {
         color: #000;
         margin-right: 32px;
 
-        @media (max-width:890px) {
+        @media screen and (max-width:890px) {
             margin-right: 0;
         }
 
@@ -284,7 +276,7 @@ span {
     display: none;
     background-color: transparent;
 
-    @media (max-width:890px) {
+    @media screen and (max-width:890px) {
         display: block;
         position: absolute;
         right: 32px;
@@ -293,7 +285,7 @@ span {
         z-index: 100;
     }
 
-    @media (max-width:425px) {
+    @media screen and (max-width:425px) {
         right: 24px;
     }
 }
@@ -329,33 +321,43 @@ span {
 /* subheader ------------------- */
 
 .subheader {
-    background-image: url("../images/abstract-bg1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    // border: 5px solid red;
+    background: url("../images/abstract-bg1.jpg") center/cover no-repeat;
+    // padding-top: 192px;
     // height: 638px;
-    padding-top: 192px;
+    height: 638px;
+    // max-height: 100%;
 
-    // @media screen and (max-width: 375px) {
-    @media screen and (max-width: 425px) {
-        padding-top: 50px;
-        background-size: cover;
+    @media screen and (max-width:768px) {
+        // padding-top: 96;
+        height: 304px;
+    }
+
+    @media screen and (max-width:375px) {
+        // padding-top: 80px;
+        height: 278px;
+    }
+
+    .container {
+        height: 100%;
     }
 
 }
 
 .subheader__content {
-    height: 446px;
-    background-image: url("../images/Lyudmila-Korolchuk-psychologist-art-therapist.png");
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    // justify-content: flex-start;
+    padding-top: 192px;
+    height: 100%;
+    background: url("../images/Lyudmila-Korolchuk-psychologist-art-therapist.png") left bottom / 346px 446px no-repeat;
+    justify-content: flex-start;
     align-items: flex-start;
 
-    // @media screen and (max-width: 375px) {
-    @media screen and (max-width: 425px) {
-        height: 170px;
-        background-size: 160px auto;
-        background-position: 0 0;
+    @media screen and (max-width:768px) {
+        padding-top: 96px;
+        background-size: 162px 208px;
+    }
+
+    @media screen and (max-width:375px) {
+        padding-top: 80px;
     }
 }
 
@@ -364,25 +366,32 @@ span {
 .subheader__title {
     margin-left: 30%;
     font-size: 96px;
-    width: 673px;
+    max-width: 673px;
     line-height: 110%;
-    font-weight: 500;
     font-style: italic;
 
-    // border: 1px solid red;
-    // @media screen and (max-width: 375px) {
+    @media screen and (max-width:768px) {
+        font-size: 48px;
+        line-height: 110%;
+        max-width: 344px;
+    }
+
     @media screen and (max-width: 425px) {
         font-size: 32px;
         margin-left: 0;
         width: 100%;
         line-height: 140%;
     }
+
+    @media screen and (max-width:375px) {}
+
+    @media screen and (max-width:320px) {}
+
 }
 
 .subheader__title_top {
     align-self: flex-start;
 
-    // @media screen and (max-width: 375px) {
     @media screen and (max-width: 425px) {
         align-self: flex-end;
     }
@@ -393,7 +402,7 @@ span {
     align-self: flex-end;
 
     // @media screen and (max-width: 375px) {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 768px) {
         width: 100%;
         text-align: right;
     }
@@ -409,10 +418,15 @@ span {
     font-size: 32px;
     font-weight: 500;
 
-    // line-height: 1%;
-    // @media screen and (max-width: 375px) {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width:768px) {
+        // text-align: center;
+        padding-right: 37px;
         font-size: 16px;
+    }
+
+    @media screen and (max-width: 425px) {
+        padding-right: 0;
+
     }
 }
 
@@ -1699,7 +1713,7 @@ input[type="checkbox"]:checked+label span {
     justify-content: center;
     flex-wrap: wrap;
 
-    @media (max-width: 540px) {
+    @media screen and (max-width: 540px) {
         max-width: 300px;
     }
 }
@@ -1727,7 +1741,7 @@ input[type="checkbox"]:checked+label span {
         margin-right: 8px;
     }
 
-    @media (max-width: 544px) {
+    @media screen and (max-width: 544px) {
         min-width: 280px;
         justify-content: center;
         // align-items: center;
