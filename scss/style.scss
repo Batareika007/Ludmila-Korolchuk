@@ -549,9 +549,8 @@ span {
 .about {
     padding: 64px 0;
 
-    // @media screen and (max-width: 375px) {
     @media screen and (max-width: 425px) {
-        padding: 32px 0;
+        padding: 0 0 32px 0;
     }
 }
 
@@ -561,44 +560,94 @@ span {
 }
 
 .about__main {
+    margin-bottom: 8px;
     width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 32px;
+    display: grid;
+    grid-template-columns: 352px 1fr;
+    grid-template-rows: auto auto;
+    gap: 0 34px;
+
+    grid-template-areas: "about-image about-text"
+        "about-image about-text2";
+
+    @media screen and (max-width:1440px) {}
+
+    @media screen and (max-width:1024px) {}
+
+    @media screen and (max-width:768px) {
+        grid-template-areas: "about-image about-text"
+            "about-text2 about-text2";
+        gap: 0 14px;
+    }
+
+    @media screen and (max-width:660px) {
+        grid-template-columns: 1fr;
+        grid-template-areas: "about-text"
+            "about-text2";
+        gap: 0;
+    }
+
+    @media screen and (max-width:425px) {
+        grid-template-columns: 1fr;
+        grid-template-areas: "about-text"
+            "about-text2";
+        gap: 0
+    }
+
+    @media screen and (max-width:375px) {}
+
+    @media screen and (max-width:320px) {}
 }
 
 .about__image {
-
-    // max-width: 352px;
-    // @media screen and (max-width: 375px) {
-    @media screen and (max-width: 425px) {
-        display: none;
-    }
+    grid-area: about-image;
+    max-width: 340px;
 
     img {
-        width: 100%;
+        max-width: 100%;
+    }
+
+    @media screen and (max-width:768px) {
+        display: flex;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 660px) {
+        display: none;
     }
 }
 
 .about__content {
-    max-width: 670px;
+    grid-area: about-text;
+    max-width: 100%;
+
+    &:last-child {
+        grid-area: about-text2;
+    }
+
     font-size: 16px;
     line-height: 150%;
 
     p {
-        max-width: 700px;
+        max-width: 735px;
         margin: 0 0 16px 0;
     }
 
     .flex-row {
         margin: 0 0 36px 0;
 
-        // flex-wrap: wrap;
         @media screen and (max-width: 768px) {
             flex-wrap: wrap;
             gap: 16px;
         }
 
+        @media screen and (max-width: 660px) {
+            flex-wrap: nowrap;
+        }
+
+        @media screen and (max-width: 570px) {
+            flex-wrap: wrap;
+        }
     }
 
     ul li {

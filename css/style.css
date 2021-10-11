@@ -562,7 +562,7 @@ span {
 
 @media screen and (max-width: 425px) {
   .about {
-    padding: 32px 0;
+    padding: 0 0 32px 0;
   }
 }
 
@@ -572,33 +572,89 @@ span {
 }
 
 .about__main {
+  margin-bottom: 8px;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 32px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 352px 1fr;
+      grid-template-columns: 352px 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  gap: 0 34px;
+      grid-template-areas: "about-image about-text" "about-image about-text2";
+}
+
+@media screen and (max-width: 768px) {
+  .about__main {
+        grid-template-areas: "about-image about-text" "about-text2 about-text2";
+    gap: 0 14px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .about__main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "about-text" "about-text2";
+    gap: 0;
+  }
 }
 
 @media screen and (max-width: 425px) {
+  .about__main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "about-text" "about-text2";
+    gap: 0;
+  }
+}
+
+.about__image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: about-image;
+  max-width: 340px;
+}
+
+.about__image img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .about__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 660px) {
   .about__image {
     display: none;
   }
 }
 
-.about__image img {
-  width: 100%;
-}
-
 .about__content {
-  max-width: 670px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: about-text;
+  max-width: 100%;
   font-size: 16px;
   line-height: 150%;
 }
 
+.about__content:last-child {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: about-text2;
+}
+
 .about__content p {
-  max-width: 700px;
+  max-width: 735px;
   margin: 0 0 16px 0;
 }
 
@@ -611,6 +667,20 @@ span {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 16px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .about__content .flex-row {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .about__content .flex-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
