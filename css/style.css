@@ -358,8 +358,15 @@ span {
 
 @media screen and (max-width: 768px) {
   .subheader__content {
+    margin-left: 30px;
     padding-top: 96px;
     background-size: 162px 208px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .subheader__content {
+    margin-left: 0;
   }
 }
 
@@ -456,19 +463,22 @@ span {
 /* non-main page end ------------------ */
 /* slogan --------------------*/
 .slogan {
+  text-align: center;
+  position: relative;
   height: 152px;
   background: url("../images/slogan_bg.png") right/100% 100% no-repeat;
-  position: relative;
   top: -60px;
 }
 
-.slogan .container {
-  text-align: center;
+@media screen and (max-width: 1600px) {
+  .slogan {
+    background: url("../images/slogan_bg.png") right/auto 100% no-repeat;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .slogan {
-    background: url("../images/slogan_bg_medium.png") center/110% 100% no-repeat;
+    background: url("../images/slogan_bg_medium.png") center/auto 100% no-repeat;
     height: 84px;
     top: -40px;
   }
@@ -476,7 +486,7 @@ span {
 
 @media screen and (max-width: 375px) {
   .slogan {
-    background: url("../images/slogan_bg_small.png") right/100% 100% no-repeat;
+    background: url("../images/slogan_bg_small.png") right/auto 100% no-repeat;
     height: 48px;
     top: -20px;
   }
@@ -491,9 +501,39 @@ span {
   font-family: 'Lora';
 }
 
+@media screen and (max-width: 1440px) {
+  .slogan_title {
+    font-size: 2.9rem;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .slogan_title {
+    font-size: 2.7rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .slogan_title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .slogan_title {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .slogan_title {
+    font-size: 2.1rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .slogan_title {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 
@@ -506,6 +546,12 @@ span {
 @media screen and (max-width: 375px) {
   .slogan_title {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .slogan_title {
+    font-size: 0.7rem;
   }
 }
 
