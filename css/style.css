@@ -113,6 +113,16 @@ span {
   transition: opacity 0.3s ease-in-out;
 }
 
+@media screen and (max-width: 425px) {
+  .fixed-page-icon {
+    height: 48px;
+    width: 48px;
+  }
+  .fixed-page-icon img {
+    max-width: 100%;
+  }
+}
+
 .fixed-page-icon:hover {
   opacity: 1;
 }
