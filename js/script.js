@@ -27,6 +27,7 @@ $( document ).ready(function() {
 
 const swiper = new Swiper('.certificates__swiper', {
     // loop: true,
+    lazy: true,
     spaceBetween: 32,
     slidesPerView: 1,
     grabCursor: true,
@@ -37,18 +38,21 @@ const swiper = new Swiper('.certificates__swiper', {
     breakpoints: {
         // when window width is >= 320px
         200: {
+            lazy: true,
             slidesPerView: 1,
             slidesPerGroup: 1,
             //   spaceBetween: 30
         },
         // when window width is >= 480px
         580: {
+            lazy: true,
             slidesPerView: 2,
             slidesPerGroup: 2,
             spaceBetween: 30
         },
         // when window width is >= 640px
         900: {
+            lazy: true,
             slidesPerView: 3,
             slidesPerGroup: 3,
             //   spaceBetween: 40
@@ -87,9 +91,13 @@ const swiper3 = new Swiper('.swiper-price', {
     centeredSlides: true,
     grabCursor: true,
     spaceBetween: 15,
-    slidesPerView: 1,
+    slidesPerView: "auto",
+    // slidesPerView: 1.9,
     breakpoints: {
 
+    //    425:{
+    //        slidesPerView:2,
+    //    } ,
         //     // when window width is >= 480px
         768: {
             centeredSlides: true,
@@ -97,7 +105,7 @@ const swiper3 = new Swiper('.swiper-price', {
             slidesPerView: 2,
         },
         //     // when window width is >= 640px
-        1024: {
+        1100: {
             centeredSlides: false,
             slidesPerView: 3,
             spaceBetween: 35,
