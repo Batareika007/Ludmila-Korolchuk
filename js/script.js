@@ -2,24 +2,28 @@
 
 // --------- hamburger menu -------------- // 
 
-$( document ).ready(function() {
- 
-  $(function() { // TOGGLE CLASS ON ELEMENT
-    $(".hamburger_menu").on("click", function() { 
-      $(".header__nav").toggleClass('header__nav__active'); });
-  }); //END TOGGLE CLASS
-  
-  $(function() {  // REMOVE CLASS WHEN YOU CLICK, EXCLUDE ELEMENTS
-    // elements to ignore
-    var ignore= Array(".hamburger_menu");
-    ignore.forEach(function (item) { // loop through ignore array
-      $(item).click(function(){ return false; }); // ignore item
-    });
+$(document).ready(function () {
 
-    $(document).on("click", function() { // remove class when you click anywhere else
-      $(".header__nav").removeClass('header__nav__active'); });
-  });// END REMOVE CLASS
-   
+    $(function () { // TOGGLE CLASS ON ELEMENT
+        $(".hamburger_menu").on("click", function () {
+            $(".header__nav").toggleClass('header__nav__active');
+        });
+    }); //END TOGGLE CLASS
+
+    $(function () { // REMOVE CLASS WHEN YOU CLICK, EXCLUDE ELEMENTS
+        // elements to ignore
+        var ignore = Array(".hamburger_menu");
+        ignore.forEach(function (item) { // loop through ignore array
+            $(item).click(function () {
+                return false;
+            }); // ignore item
+        });
+
+        $(document).on("click", function () { // remove class when you click anywhere else
+            $(".header__nav").removeClass('header__nav__active');
+        });
+    }); // END REMOVE CLASS
+
 });
 
 
@@ -70,11 +74,52 @@ const swiper2 = new Swiper('.swiper-feedback', {
     centeredSlides: true,
     grabCursor: true,
     spaceBetween: 10,
-    slidesPerView: 1,
-    // autoHeight: true,
+    slidesPerView: 1.08,
     breakpoints: {
+        330:{
+            slidesPerView: 1.08,
+        },
+
+        350:{
+          slidesPerView:1.13,  
+        },
+        
+        
+        375:{
+            slidesPerView: 1.16,
+        },
+        390:{
+            slidesPerView: 1.19,
+        },
+        426:{
+            slidesPerView:1.2,
+        },
+        446:{
+            slidesPerView:1.25,
+        },
+        475:{
+            slidesPerView: 1.3,
+        },
+        520:{
+            slidesPerView: 1.4,
+        },
+        580:{
+            slidesPerView: 1.5,
+        },
+        600:{
+            slidesPerView: 1.55,
+        },
+        620:{
+            slidesPerView: 1.6,
+        },
+        640:{
+            slidesPerView: 1.65,
+        },
+        660:{
+            slidesPerView: 1.7,
+        },
+        
         768: {
-            spaceBetween: 10,
             centeredSlides: true,
             slidesPerView: 2,
 
@@ -90,25 +135,59 @@ const swiper2 = new Swiper('.swiper-feedback', {
 const swiper3 = new Swiper('.swiper-price', {
     centeredSlides: true,
     grabCursor: true,
-    spaceBetween: 15,
-    slidesPerView: "auto",
-    // slidesPerView: 1.9,
+    slidesPerView: 1.1,
     breakpoints: {
 
-    //    425:{
-    //        slidesPerView:2,
-    //    } ,
-        //     // when window width is >= 480px
+        330:{
+            slidesPerView: 1.15,
+        },
+
+        350:{
+          slidesPerView:1.21,  
+        },
+        
+        
+        375:{
+            slidesPerView: 1.3,
+        },
+        426:{
+            slidesPerView:1.2,
+        },
+        446:{
+            slidesPerView:1.25,
+        },
+        475:{
+            slidesPerView: 1.3,
+        },
+        520:{
+            slidesPerView: 1.4,
+        },
+        580:{
+            slidesPerView: 1.5,
+        },
+        600:{
+            slidesPerView: 1.55,
+        },
+        620:{
+            slidesPerView: 1.6,
+        },
+        640:{
+            slidesPerView: 1.65,
+        },
+        660:{
+            slidesPerView: 1.7,
+        },
+   
         768: {
             centeredSlides: true,
-            spaceBetween: 10,
-            slidesPerView: 2,
+            spaceBetween: 16,
+            slidesPerView: 2.2,
         },
-        //     // when window width is >= 640px
+
         1100: {
             centeredSlides: false,
             slidesPerView: 3,
-            spaceBetween: 35,
+            // spaceBetween: 35,
         },
 
     },

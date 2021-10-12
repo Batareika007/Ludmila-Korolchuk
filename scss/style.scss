@@ -171,7 +171,7 @@ span {
     margin-right: 32px;
     position: relative;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:831px) {
         width: 88px;
         height: 54px;
     }
@@ -1074,7 +1074,22 @@ min-widht: 0;
 
 /* Consulting ----------------------*/
 .consulting {
+    width: 100%;
     margin-bottom: 64px;
+
+    @media screen and (max-width:1440px) {}
+
+    @media screen and (max-width:1024px) {}
+
+    @media screen and (max-width:768px) {}
+
+    @media screen and (max-width:425px) {}
+
+    @media screen and (max-width:375px) {
+        margin-bottom: 34px;
+    }
+
+    @media screen and (max-width:320px) {}
 }
 
 .consulting_title {
@@ -1137,7 +1152,7 @@ min-widht: 0;
 .consulting__grid {
     width: 100%;
     justify-content: right;
-
+    margin-bottom: 64px;
     display: grid;
     grid-template-columns: 544px 352px;
     grid-template-rows: repeat(7, auto);
@@ -1158,6 +1173,7 @@ min-widht: 0;
     }
 
     @media screen and (max-width:768px) {
+        margin-bottom: 32px;
         justify-content: center;
         grid-template-columns: repeat(2, 344px);
         gap: 24px 16px;
@@ -1225,25 +1241,24 @@ min-widht: 0;
     }
 }
 
-// cards section ----------------//
+// ----------------------------- cards section ----------------//
 
 .consultiung__cards {
-    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
     justify-content: center;
-    border: 2px solid red;
+    // border: 2px solid red;
     overflow: hidden;
     justify-content: space-between;
-    padding: 25px;
+    // padding: 25px;
+
 }
 
 .consultiung__cards_card {
     overflow: hidden;
     background-color: #FFFFFF;
-    // min-height: 172px;
-    height: 260px;
-    max-height: 260px;
+    height: 214px;
     width: 352px;
-    // min-width: 280px;
     padding: 32px 18px;
     text-align: center;
     border: 1px solid #330774;
@@ -1261,6 +1276,8 @@ min-widht: 0;
 
     @media screen and (max-width:425px) {
         width: 280px;
+        height: 194px;
+        padding: 32px 12px;
     }
 
     @media screen and (max-width:375px) {}
@@ -1281,6 +1298,7 @@ min-widht: 0;
         font-size: 32px;
         font-weight: 400;
         margin: 0 0 16px 0;
+        line-height: 39px;
         font-family: 'Montserrat',
             sans-serif;
 
@@ -1292,6 +1310,7 @@ min-widht: 0;
 
         @media screen and (max-width:425px) {
             font-size: 24px;
+            line-height: 29px;
         }
 
         @media screen and (max-width:375px) {}
@@ -1469,35 +1488,87 @@ input[type="checkbox"]:checked+label span {
     border-radius: 8px;
 }
 
-// ============================================
+// ######## ######## ######## ########  ########     ###     ######  ##    ##  ######  
+// ##       ##       ##       ##     ## ##     ##   ## ##   ##    ## ##   ##  ##    ## 
+// ##       ##       ##       ##     ## ##     ##  ##   ##  ##       ##  ##   ##       
+// ######   ######   ######   ##     ## ########  ##     ## ##       #####     ######  
+// ##       ##       ##       ##     ## ##     ## ######### ##       ##  ##         ## 
+// ##       ##       ##       ##     ## ##     ## ##     ## ##    ## ##   ##  ##    ## 
+// ##       ######## ######## ########  ########  ##     ##  ######  ##    ##  ######  
+
+
 /*  ============ feedbacks  ===================  */
-//  ===========================================
+
 .feedback {
+    max-width: 1120px;
+    margin: 0 auto;
     padding: 128px 0 64px 0;
+
+    @media screen and (max-width:1440px) {}
+
+    @media screen and (max-width:1024px) {}
+
+    @media screen and (max-width:768px) {}
+
+    @media screen and (max-width:425px) {}
+
+    @media screen and (max-width:375px) {}
+
+    @media screen and (max-width:320px) {
+        padding: 32px 0;
+    }
 }
 
 .feedback_title {
-    margin: 0 0 64px 0;
+    margin-bottom: 64px;
+
+    @media screen and (max-width:1440px) {}
+
+    @media screen and (max-width:1024px) {}
+
+    @media screen and (max-width:768px) {}
+
+    @media screen and (max-width:425px) {}
+
+    @media screen and (max-width:375px) {}
+
+    @media screen and (max-width:320px) {
+        margin-bottom: 32px;
+    }
 }
 
-.feedback__content {
-    max-width: 100%;
-    padding: 10px 15px;
-    overflow: hidden;
-
-}
 
 .feedback__card_swiper-slide {
 
     div {
         border-radius: 8px;
         padding: 16px;
-        width: 350px;
-        min-width: 325px;
-        min-height: 248px;
+        width: 352px;
+        height: 248px;
         border: 1px solid #330774;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        box-shadow: 2px 2px 4px rgba(116, 31, 242, 0.6);
         background: white;
+
+        @media screen and (max-width:1440px) {}
+
+        @media screen and (max-width:1024px) {}
+
+        @media screen and (max-width:768px) {
+            width: 344px;
+        }
+
+        @media screen and (max-width:425px) {
+            width: 328px;
+            height: 256px;
+            padding: 8px;
+        }
+
+        @media screen and (max-width:375px) {}
+
+        @media screen and (max-width:320px) {
+            height: auto;
+        }
+
     }
 }
 
