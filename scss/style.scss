@@ -1066,43 +1066,148 @@ min-widht: 0;
     font-weight: 500;
     font-size: 48px;
     margin-bottom: 62px;
-}
 
-.consulting__content {
-    padding: 0 0 64px 0;
-    justify-content: space-evenly;
-    flex-wrap: wrap-reverse;
-}
+    @media screen and (max-width:1440px) {}
 
-.content-item {
-    max-width: 550px;
-    min-width: 300px;
-}
+    @media screen and (max-width:1024px) {}
 
-.consulting__content_text {
-    font-size: 16px;
-    line-height: 150%;
-    max-width: 544px;
-    margin: 0 0 16px 0;
-
-    a {
-        font-style: italic;
+    @media screen and (max-width:768px) {
+        margin-bottom: 32px;
     }
-}
 
-.content-item_image {
-    width: 352px;
-    align-self: center;
+    @media screen and (max-width:425px) {}
 
-    @media screen and (max-width: 935px) {
+    @media screen and (max-width:375px) {
+        font-size: 24px;
         margin-bottom: 16px;
     }
 
-    img {
-        max-width: 100%;
-    }
+    @media screen and (max-width:320px) {}
 }
 
+.consulting_text1 {
+    grid-area: consulting_text1;
+}
+
+.consulting_text2 {
+    grid-area: consulting_text2;
+}
+
+.consulting_text3 {
+    grid-area: consulting_text3;
+}
+
+.consulting_text4 {
+    grid-area: consulting_text4;
+}
+
+.consulting_text5 {
+    grid-area: consulting_text5;
+}
+
+.consulting_text6 {
+    grid-area: consulting_text6;
+}
+
+.consulting_text7 {
+    grid-area: consulting_text7;
+}
+
+.consulting_image {
+    grid-area: consulting_image;
+    align-self: center;
+}
+
+.consulting__grid {
+    width: 100%;
+    justify-content: right;
+
+    display: grid;
+    grid-template-columns: 544px 352px;
+    grid-template-rows: repeat(7, auto);
+    gap: 24px 33px;
+    grid-template-areas:
+        "consulting_text1 consulting_image"
+        "consulting_text2 consulting_image"
+        "consulting_text3 consulting_image"
+        "consulting_text4 consulting_image"
+        "consulting_text5 consulting_image"
+        "consulting_text6 consulting_image"
+        "consulting_text7 consulting_image";
+
+    @media screen and (max-width:1440px) {}
+
+    @media screen and (max-width:1024px) {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    @media screen and (max-width:768px) {
+        justify-content: center;
+        grid-template-columns: repeat(2, 344px);
+        gap: 24px 16px;
+        grid-template-areas: "consulting_text1 consulting_image"
+            "consulting_text2 consulting_image"
+            "consulting_text3 consulting_image"
+            "consulting_text4 consulting_image"
+            "consulting_text5 consulting_image"
+            "consulting_text6 consulting_text7";
+    }
+
+    @media screen and (max-width:730px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "consulting_text1 consulting_text1"
+            "consulting_text2 consulting_image"
+            "consulting_text3 consulting_image"
+            "consulting_text4 consulting_image"
+            "consulting_text5 consulting_image"
+            "consulting_text6 consulting_text6"
+            "consulting_text7 consulting_text7";
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width:650px) {
+        grid-template-areas: "consulting_text1 consulting_text1"
+            "consulting_text2 consulting_image"
+            "consulting_text3 consulting_image"
+            "consulting_text4 consulting_image"
+            "consulting_text5 consulting_text5"
+            "consulting_text6 consulting_text6"
+            "consulting_text7 consulting_text7";
+    }
+
+    @media screen and (max-width:530px) {
+        grid-template-areas: "consulting_text1 consulting_text1"
+            "consulting_text2 consulting_image"
+            "consulting_text3 consulting_image"
+            "consulting_text4 consulting_text4"
+            "consulting_text5 consulting_text5"
+            "consulting_text6 consulting_text6"
+            "consulting_text7 consulting_text7";
+    }
+
+    @media screen and (max-width:425px) {
+        grid-template-areas: "consulting_text1 consulting_text1"
+            "consulting_text2 consulting_image"
+            "consulting_text3 consulting_text3"
+            "consulting_text4 consulting_text4"
+            "consulting_text5 consulting_text5"
+            "consulting_text6 consulting_text6"
+            "consulting_text7 consulting_text7";
+    }
+
+
+
+    @media screen and (max-width:375px) {
+        grid-template-columns: repeat(2, 156px);
+    }
+
+    @media screen and (max-width:375px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 // cards section ----------------//
 

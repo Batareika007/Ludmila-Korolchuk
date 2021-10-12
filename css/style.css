@@ -1078,46 +1078,145 @@ min-widht: 0;
   margin-bottom: 62px;
 }
 
-.consulting__content {
-  padding: 0 0 64px 0;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
+@media screen and (max-width: 768px) {
+  .consulting_title {
+    margin-bottom: 32px;
+  }
 }
 
-.content-item {
-  max-width: 550px;
-  min-width: 300px;
-}
-
-.consulting__content_text {
-  font-size: 16px;
-  line-height: 150%;
-  max-width: 544px;
-  margin: 0 0 16px 0;
-}
-
-.consulting__content_text a {
-  font-style: italic;
-}
-
-.content-item_image {
-  width: 352px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-@media screen and (max-width: 935px) {
-  .content-item_image {
+@media screen and (max-width: 375px) {
+  .consulting_title {
+    font-size: 24px;
     margin-bottom: 16px;
   }
 }
 
-.content-item_image img {
-  max-width: 100%;
+.consulting_text1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: consulting_text1;
+}
+
+.consulting_text2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: consulting_text2;
+}
+
+.consulting_text3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: consulting_text3;
+}
+
+.consulting_text4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: consulting_text4;
+}
+
+.consulting_text5 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: consulting_text5;
+}
+
+.consulting_text6 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: consulting_text6;
+}
+
+.consulting_text7 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: consulting_text7;
+}
+
+.consulting_image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 7;
+  -ms-grid-column: 2;
+  grid-area: consulting_image;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.consulting__grid {
+  width: 100%;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 544px 352px;
+      grid-template-columns: 544px 352px;
+  -ms-grid-rows: (auto)[7];
+      grid-template-rows: repeat(7, auto);
+  gap: 24px 33px;
+      grid-template-areas: "consulting_text1 consulting_image" "consulting_text2 consulting_image" "consulting_text3 consulting_image" "consulting_text4 consulting_image" "consulting_text5 consulting_image" "consulting_text6 consulting_image" "consulting_text7 consulting_image";
+}
+
+@media screen and (max-width: 1024px) {
+  .consulting__grid {
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .consulting__grid {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: (344px)[2];
+        grid-template-columns: repeat(2, 344px);
+    gap: 24px 16px;
+        grid-template-areas: "consulting_text1 consulting_image" "consulting_text2 consulting_image" "consulting_text3 consulting_image" "consulting_text4 consulting_image" "consulting_text5 consulting_image" "consulting_text6 consulting_text7";
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .consulting__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "consulting_text1 consulting_text1" "consulting_text2 consulting_image" "consulting_text3 consulting_image" "consulting_text4 consulting_image" "consulting_text5 consulting_image" "consulting_text6 consulting_text6" "consulting_text7 consulting_text7";
+  }
+  .consulting__grid img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .consulting__grid {
+        grid-template-areas: "consulting_text1 consulting_text1" "consulting_text2 consulting_image" "consulting_text3 consulting_image" "consulting_text4 consulting_image" "consulting_text5 consulting_text5" "consulting_text6 consulting_text6" "consulting_text7 consulting_text7";
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .consulting__grid {
+        grid-template-areas: "consulting_text1 consulting_text1" "consulting_text2 consulting_image" "consulting_text3 consulting_image" "consulting_text4 consulting_text4" "consulting_text5 consulting_text5" "consulting_text6 consulting_text6" "consulting_text7 consulting_text7";
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .consulting__grid {
+        grid-template-areas: "consulting_text1 consulting_text1" "consulting_text2 consulting_image" "consulting_text3 consulting_text3" "consulting_text4 consulting_text4" "consulting_text5 consulting_text5" "consulting_text6 consulting_text6" "consulting_text7 consulting_text7";
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .consulting__grid {
+    -ms-grid-columns: (156px)[2];
+        grid-template-columns: repeat(2, 156px);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .consulting__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .consultiung__cards {
