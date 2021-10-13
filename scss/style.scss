@@ -22,6 +22,10 @@ h6 {
     }
 }
 
+.grid {
+    display: grid;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -1784,105 +1788,75 @@ input[type="checkbox"]:checked+label span {
 
 /*---- Blog Articles -------------------*/
 
-// .blog__article {}
-
-
-// .article {
-// max-width: 740px;
-// margin: 0 auto;
-// }
-
-.article-main {
-    justify-content: center;
-    // border: 1px solid black;
-    flex-wrap: wrap;
-}
-
-.article-main__item {
-    flex: 0 1 736px;
-
-    &:not(:last-child) {
-        margin-right: 32px;
-        margin-bottom: 32px;
-    }
-}
-
-.blog__article_title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 150%;
-    margin: 0 0 24px 0;
-}
-
-.article__section {
-    position: relative;
-    justify-content: center;
-    gap: 32px;
+.article__container {
+    justify-content: space-between;
     // flex-wrap: wrap;
+}
 
-    &:not(:last-child) {
+
+.article__grid {
+    .grid {
         margin-bottom: 32px;
+        display: grid;
+        grid-template-columns: 160px auto;
+        grid-template-rows: 0.6fr 1.8fr 0.6fr;
+        grid-auto-rows: 1fr;
+        gap: 8px 28px;
+        grid-auto-flow: column dense;
+        grid-template-areas:
+            "photo title"
+            "photo paragragh"
+            "photo link";
+        width: 736px;
+        height: 160px;
     }
-}
 
-.article__image {
-    flex: 0 1 160px;
-    width: 160px;
-    height: 160px;
-    border-radius: 8px;
-    background-color: grey;
-}
+    .article__image {
+        grid-area: photo;
+    }
 
-.article__content {
-    flex: 0 1 547px;
-    text-align: left;
-}
+    .article__title {
+        text-align: left;
+        font-family: 'Montserrat',
+            sans-serif;
+        grid-area: title;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+    }
 
-.article__content_title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 150%;
-}
+    .article__text {
+        text-align: left;
+        grid-area: paragragh;
+        font-size: 16px;
+        line-height: 150%;
+        max-height: 100px;
+        overflow-y: hidden;
+        background: -webkit-linear-gradient(#000, #fff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-.article__content_paragraph {
-    position: relative;
-    flex: 1 1 auto;
-    font-size: 16px;
-    line-height: 150%;
-    max-height: 100px;
-    overflow-y: hidden;
-    background: -webkit-linear-gradient(#000, #fff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.article__content_read-more {
-    align-self: flex-end;
-    font-size: 18px;
-    line-height: 150%;
-    padding: 0 32px 0 0;
-    background-image: url('../images/icons/read-more.svg');
-    background-position: right center;
-    background-repeat: no-repeat;
-
-}
-
-.article-main__item {
-    flex: 0 1 736px;
-    text-align: left;
-    border-radius: 8px;
-    overflow: hidden;
+    .article__link {
+        text-align: right;
+        grid-area: link;
+        font-size: 18px;
+        line-height: 150%;
+        padding: 0 32px 0 0;
+        background-image: url('../images/icons/read-more.svg');
+        background-position: right center;
+        background-repeat: no-repeat;
+    }
 }
 
 /* ========================= accordion =======================*/
 
 
 .accordion {
-    // flex: 0 1 351px;
-    // height: 600px;
     max-width: 352px;
     max-height: 594px;
+    border-radius: 8px;
     overflow-y: hidden;
 
     .accordion__box {
@@ -1910,6 +1884,7 @@ input[type="checkbox"]:checked+label span {
 }
 
 .accordion_title {
+    text-align: left;
     position: relative;
     font-weight: 500;
     line-height: 150%;
@@ -1923,7 +1898,6 @@ input[type="checkbox"]:checked+label span {
     transition: 0.5s;
 
     &::after {
-
         content: url('../images/accordion/arrowDown.svg');
         position: absolute;
         top: 50%;
@@ -1934,6 +1908,7 @@ input[type="checkbox"]:checked+label span {
 
 
 .accordion__content {
+    text-align: left;
     height: 0;
     position: relative;
     background-color: #E3D2FC;
