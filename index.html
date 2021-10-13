@@ -506,89 +506,96 @@
             <section class="form" id="form">
 
                 <p class="form__title">Записаться на консультацию</p>
-                    <form class="form-container" action="mailto:ludakorolchuk@gmail.com" method="POST">
 
-                        
-                            <!-- chose type of consulting -->
-                            <div class="form-consulting-select">
-                                <label for="consulting-type">Тип консультации</label>
-                                <select id="nice-select" class="form_input" name="consulting-type" id="consulting-type"
-                                    placeholder="Выбрать тип консультации" required>
-                                    <option value=""></option>
-                                    <option value="Online consultation">Онлайн консультация</option>
-                                    <option value="Full-time consultation">Очная консультация</option>
-                                    <option value="Couple consultation">Консультация семейной пары</option>
+                <form class="form-container" action="mailto:ludakorolchuk@gmail.com" method="POST">
 
-                                </select>
+
+                    <!-- chose type of consulting -->
+                    <div class="form-consulting-select">
+                        <label for="consulting-type">Тип консультации</label>
+                        <select id="nice-select" class="form_input" name="consulting-type" id="consulting-type"
+                            placeholder="Выбрать тип консультации" required>
+                            <option value=""></option>
+                            <option value="Online consultation">Онлайн консультация</option>
+                            <option value="Full-time consultation">Очная консультация</option>
+                            <option value="Couple consultation">Консультация семейной пары</option>
+
+                        </select>
+                    </div>
+                    <!-- checkbox section -->
+                    <div class="form-checkbox">
+                        <div class="checkbox_title">Выберите наиболее удобный для Вас способ связи для
+                            онлайн-консультации</div>
+
+                        <div class="checkbox-container">
+
+                            <div class="checkbox-item">
+                                <input class="checkbox-icon" type="checkbox" name="Skype" id="skype">
+                                <label class="checkbox-text" for="skype"><span></span>Skype</label>
                             </div>
-                            <!-- checkbox section -->
-                            <div class="form-checkbox">
-                                <div class="checkbox_title">Выберите наиболее удобный для Вас способ связи для
-                                    онлайн-консультации</div>
-
-                                <div class="checkbox-container">
-
-                                    <div class="checkbox-item">
-                                        <input class="checkbox-icon" type="checkbox" name="Skype" id="skype">
-                                        <label class="checkbox-text" for="skype"><span></span>Skype</label>
-                                    </div>
-
-                                    <div class="checkbox-item">
-                                        <input class="checkbox-icon" type="checkbox" name="Viber" id="viber">
-                                        <label class="checkbox-text" for="viber"><span></span>Viber</label>
-                                    </div>
-
-
-
-                                    <div class="checkbox-item">
-                                        <input class="checkbox-icon" type="checkbox" name="Messenger" id="messenger">
-                                        <label class="checkbox-text" for="messenger"><span></span>Messenger</label>
-                                    </div>
-                                    <div class="checkbox-item">
-                                        <input class="checkbox-icon" type="checkbox" name="Zoom" id="zoom">
-                                        <label class="checkbox-text" for="zoom"><span></span>Zoom</label>
-                                    </div>
-
-
-                                    <div class="checkbox-item">
-                                        <input class="checkbox-icon" type="checkbox" name="подходят все" id="all">
-                                        <label class="checkbox-text" for="all"><span></span>подходят все</label>
-                                    </div>
-                                </div>
+                            <div class="checkbox-item checkbox-messenger">
+                                <input class="checkbox-icon" type="checkbox" name="Viber" id="viber">
+                                <label class="checkbox-text" for="viber"><span></span>Viber</label>
                             </div>
-                            <!-- name + email + phone -->
-                            <div class="form-input-private-data">
-                                <label for="lastname">Фамилия</label>
-                                <input class="form_input" type="text" name="lastname" id="lastname"
-                                    placeholder="Фамилия">
-                                <label for="firstname">Имя</label>
-                                <input class="form_input" type="text" name="first-name" id="firstname" placeholder="Имя">
-                                <label for="email">E-mail</label>
-                                <input class="form_input" type="email" name="E-mail" id="email" placeholder="E-mail">
-                                <label for="phone">Телефон</label>
-                                <input id="phone-input" class="form_input" type="tel" name="phone" id="phone"
-                                    placeholder="+38(___) ___-__-__"
-                                    pattern="[\+]\d{2}\s[\(]\[69]{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength=28>
+                            <div class="checkbox-item">
+                                <input class="checkbox-icon" type="checkbox" name="Messenger" id="messenger">
+                                <label class="checkbox-text" for="messenger"><span></span>Messenger</label>
                             </div>
-                            <!-- textarea -->
-                            <div class="form-textarea">
-                                <label for="about-problem">Напишите коротко о проблеме</label>
-                                <textarea class="form_input" name="about-problem" id="about-problem"
-                                    placeholder="Коротко о проблеме"></textarea>
+                            <div class="checkbox-item">
+                                <input class="checkbox-icon" type="checkbox" name="Zoom" id="zoom">
+                                <label class="checkbox-text" for="zoom"><span></span>Zoom</label>
                             </div>
-                            <!-- date and time -->
-                            <div class="form-input-date-time">
-                                <label for="date-and-time">Когда Вам было бы удобно получить консультацию</label>
-                                <input class="form_input" type="text" name="date-and-time"
-                                    id="date-and-time" placeholder="Укажите удобные даты и время">
+                            <div class="checkbox-item">
+                                <input class="checkbox-icon" type="checkbox" name="подходят все" id="all">
+                                <label class="checkbox-text" for="all"><span></span>подходят все</label>
                             </div>
-                            <!-- submit button -->
-                            <div class="form-submit">
-                                <button type="submit" value="Submit" class="button_style">
-                                    <span class="flex-center">ЗАПИСАТЬСЯ</span>
-                                </button>
-                            </div>
-                    </form>
+                        </div>
+                    </div>
+                    <!-- name + email + phone -->
+                    <div class="form-input-private-data">
+                        <div>
+
+                            <label for="lastname">Фамилия</label>
+                            <input class="form_input" type="text" name="lastname" id="lastname" placeholder="Фамилия">
+                        </div>
+                        <div>
+
+                            <label for="firstname">Имя</label>
+                            <input class="form_input" type="text" name="first-name" id="firstname" placeholder="Имя">
+                        </div>
+                        <div>
+
+                            <label for="email">E-mail</label>
+                            <input class="form_input" type="email" name="E-mail" id="email" placeholder="E-mail">
+                        </div>
+                        <div>
+
+                            <label for="phone">Телефон</label>
+                            <input id="phone-input" class="form_input" type="tel" name="phone" id="phone"
+                                placeholder="+38(___) ___-__-__"
+                                pattern="[\+]\d{2}\s[\(]\[69]{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength=28>
+                        </div>
+
+                    </div>
+                    <!-- textarea -->
+                    <div class="form-textarea">
+                        <label for="about-problem">Напишите коротко о проблеме</label>
+                        <textarea class="form_input" name="about-problem" id="about-problem"
+                            placeholder="Коротко о проблеме"></textarea>
+                    </div>
+                    <!-- date and time -->
+                    <div class="form-input-date-time">
+                        <label for="date-and-time">Когда Вам было бы удобно получить консультацию</label>
+                        <input class="form_input" type="text" name="date-and-time" id="date-and-time"
+                            placeholder="Укажите удобные даты и время">
+                    </div>
+                    <!-- submit button -->
+                    <div class="form-submit">
+                        <button type="submit" value="Submit" class="button_style">
+                            <span class="flex-center">ЗАПИСАТЬСЯ</span>
+                        </button>
+                    </div>
+                </form>
             </section>
 
             <!-- =================  feedbacks ================================ -->

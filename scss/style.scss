@@ -1372,12 +1372,13 @@ min-widht: 0;
 // ##        #######  ##     ## ##     ## 
 
 
-/* form --------------------------- */
+/* ----------- form section --------------------------- */
 
 .form {
     min-height: 760px;
     padding: 10px 0 62px 0;
     background: url('../images/bg-form.jpg')0 0/105% 100% no-repeat;
+
 
     @media screen and (max-width: 425px) {
         // display: none;
@@ -1397,6 +1398,8 @@ min-widht: 0;
     text-align: center;
 }
 
+/* ============   main form ================ */
+
 .form_input {
     height: 60px;
     padding: 18px 16px;
@@ -1407,9 +1410,14 @@ min-widht: 0;
 }
 
 .form-container {
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 1214px;
     margin: 0 auto;
+
     max-width: fit-content;
     padding: 48px 50px 48px 44px;
+
     background: #E3D2FC;
     border-radius: 8px;
     backdrop-filter: blur(40px);
@@ -1456,16 +1464,12 @@ min-widht: 0;
     @media screen and (max-width:375px) {}
 
     @media screen and (max-width:320px) {}
+
 }
 
 
 .form-consulting-select {
     grid-area: form-consulting-select;
-
-    label {
-        display: inline-block;
-        margin-bottom: 4px;
-    }
 }
 
 .form-checkbox {
@@ -1511,6 +1515,7 @@ min-widht: 0;
 
         .checkbox-item:not(:last-child) {
             margin-bottom: 16px;
+
         }
     }
 }
@@ -1527,28 +1532,20 @@ min-widht: 0;
 .form-textarea {
     grid-area: form-textarea;
 
-    label {
-        display: inline-block;
-        margin-bottom: 4px;
-    }
-
     textarea {
-        min-height: 172px;
+        height: 169px;
         resize: none;
-        margin-bottom: 0px;
+
+        @media screen and (max-width:1200px) {
+            height: 144px;
+        }
+
+
     }
 }
 
 .form-input-date-time {
     grid-area: form-input-date-time;
-    height: 106px;
-
-    label {
-        display: inline-block;
-        margin-bottom: 4px;
-    }
-
-
 }
 
 .form-submit {
@@ -1557,6 +1554,7 @@ min-widht: 0;
     button {
         width: 100%;
     }
+
 
     @media screen and (max-width:1200px) {
         justify-self: center;
@@ -1576,8 +1574,15 @@ min-widht: 0;
 
 
 
-/* ======= main form content =============== */
+    @media screen and (max-width:1200px) {
+        justify-self: center;
+        font-size: 16px;
 
+        button {
+            width: 344px;
+        }
+    }
+}
 
 
 /* ======= custom checkbox button ==========*/
