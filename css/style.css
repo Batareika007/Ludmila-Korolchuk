@@ -589,14 +589,12 @@ span {
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
   gap: 0 34px;
-      grid-template-areas: "about-image about-text"
- "about-image about-text2";
+      grid-template-areas: "about-image about-text" "about-image about-text2";
 }
 
 @media screen and (max-width: 768px) {
   .about__main {
-        grid-template-areas: "about-image about-text"
- "about-text2 about-text2";
+        grid-template-areas: "about-image about-text" "about-text2 about-text2";
     gap: 0 14px;
   }
 }
@@ -605,8 +603,7 @@ span {
   .about__main {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "about-text"
- "about-text2";
+        grid-template-areas: "about-text" "about-text2";
     gap: 0;
   }
 }
@@ -615,8 +612,7 @@ span {
   .about__main {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "about-text"
- "about-text2";
+        grid-template-areas: "about-text" "about-text2";
     gap: 0;
   }
 }
@@ -1174,13 +1170,7 @@ min-widht: 0;
   -ms-grid-rows: (auto)[7];
       grid-template-rows: repeat(7, auto);
   gap: 24px 33px;
-      grid-template-areas: "consulting_text1 consulting_image"
- "consulting_text2 consulting_image"
- "consulting_text3 consulting_image"
- "consulting_text4 consulting_image"
- "consulting_text5 consulting_image"
- "consulting_text6 consulting_image"
- "consulting_text7 consulting_image";
+      grid-template-areas: "consulting_text1 consulting_image" "consulting_text2 consulting_image" "consulting_text3 consulting_image" "consulting_text4 consulting_image" "consulting_text5 consulting_image" "consulting_text6 consulting_image" "consulting_text7 consulting_image";
 }
 
 @media screen and (max-width: 1024px) {
@@ -1199,12 +1189,7 @@ min-widht: 0;
     -ms-grid-columns: (344px)[2];
         grid-template-columns: repeat(2, 344px);
     gap: 24px 16px;
-        grid-template-areas: "consulting_text1 consulting_image"
- "consulting_text2 consulting_image"
- "consulting_text3 consulting_image"
- "consulting_text4 consulting_image"
- "consulting_text5 consulting_image"
- "consulting_text6 consulting_text7";
+        grid-template-areas: "consulting_text1 consulting_image" "consulting_text2 consulting_image" "consulting_text3 consulting_image" "consulting_text4 consulting_image" "consulting_text5 consulting_image" "consulting_text6 consulting_text7";
   }
 }
 
@@ -1212,13 +1197,7 @@ min-widht: 0;
   .consulting__grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "consulting_text1 consulting_text1"
- "consulting_text2 consulting_image"
- "consulting_text3 consulting_image"
- "consulting_text4 consulting_image"
- "consulting_text5 consulting_image"
- "consulting_text6 consulting_text6"
- "consulting_text7 consulting_text7";
+        grid-template-areas: "consulting_text1 consulting_text1" "consulting_text2 consulting_image" "consulting_text3 consulting_image" "consulting_text4 consulting_image" "consulting_text5 consulting_image" "consulting_text6 consulting_text6" "consulting_text7 consulting_text7";
   }
   .consulting__grid img {
     max-width: 100%;
@@ -1227,37 +1206,19 @@ min-widht: 0;
 
 @media screen and (max-width: 650px) {
   .consulting__grid {
-        grid-template-areas: "consulting_text1 consulting_text1"
- "consulting_text2 consulting_image"
- "consulting_text3 consulting_image"
- "consulting_text4 consulting_image"
- "consulting_text5 consulting_text5"
- "consulting_text6 consulting_text6"
- "consulting_text7 consulting_text7";
+        grid-template-areas: "consulting_text1 consulting_text1" "consulting_text2 consulting_image" "consulting_text3 consulting_image" "consulting_text4 consulting_image" "consulting_text5 consulting_text5" "consulting_text6 consulting_text6" "consulting_text7 consulting_text7";
   }
 }
 
 @media screen and (max-width: 530px) {
   .consulting__grid {
-        grid-template-areas: "consulting_text1 consulting_text1"
- "consulting_text2 consulting_image"
- "consulting_text3 consulting_image"
- "consulting_text4 consulting_text4"
- "consulting_text5 consulting_text5"
- "consulting_text6 consulting_text6"
- "consulting_text7 consulting_text7";
+        grid-template-areas: "consulting_text1 consulting_text1" "consulting_text2 consulting_image" "consulting_text3 consulting_image" "consulting_text4 consulting_text4" "consulting_text5 consulting_text5" "consulting_text6 consulting_text6" "consulting_text7 consulting_text7";
   }
 }
 
 @media screen and (max-width: 425px) {
   .consulting__grid {
-        grid-template-areas: "consulting_text1 consulting_text1"
- "consulting_text2 consulting_image"
- "consulting_text3 consulting_text3"
- "consulting_text4 consulting_text4"
- "consulting_text5 consulting_text5"
- "consulting_text6 consulting_text6"
- "consulting_text7 consulting_text7";
+        grid-template-areas: "consulting_text1 consulting_text1" "consulting_text2 consulting_image" "consulting_text3 consulting_text3" "consulting_text4 consulting_text4" "consulting_text5 consulting_text5" "consulting_text6 consulting_text6" "consulting_text7 consulting_text7";
   }
 }
 
@@ -1328,8 +1289,7 @@ min-widht: 0;
   font-weight: 400;
   margin: 0 0 16px 0;
   line-height: 39px;
-  font-family: 'Montserrat',
- sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media screen and (max-width: 425px) {
@@ -1413,19 +1373,16 @@ min-widht: 0;
   line-height: 21px;
   max-width: 1214px;
   margin: 0 auto;
-
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
   padding: 48px 50px 48px 44px;
-
   background: #E3D2FC;
   border-radius: 8px;
   -webkit-backdrop-filter: blur(40px);
           backdrop-filter: blur(40px);
   display: -ms-grid;
   display: grid;
-
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1434,11 +1391,7 @@ min-widht: 0;
   -ms-grid-rows: 80px 86px 102px 60px;
       grid-template-rows: 80px 86px 102px 60px;
   gap: 32px 24px;
-      grid-template-areas: "form-consulting-select form-input-private-data form-textarea"
- "form-checkbox form-input-private-data form-textarea"
- "form-checkbox form-input-private-data form-input-date-time"
- "form-checkbox form-input-private-data form-submit";
-
+      grid-template-areas: "form-consulting-select form-input-private-data form-textarea" "form-checkbox form-input-private-data form-textarea" "form-checkbox form-input-private-data form-input-date-time" "form-checkbox form-input-private-data form-submit";
 }
 
 @media screen and (max-width: 1200px) {
@@ -1448,10 +1401,7 @@ min-widht: 0;
     -ms-grid-rows: 80px 204px 185px 60px;
         grid-template-rows: 80px 204px 185px 60px;
     gap: 32px 24px;
-        grid-template-areas: "form-consulting-select form-input-private-data"
- "form-checkbox form-input-private-data"
- "form-textarea form-input-date-time"
- "form-submit   form-submit";
+        grid-template-areas: "form-consulting-select form-input-private-data" "form-checkbox form-input-private-data" "form-textarea form-input-date-time" "form-submit   form-submit";
   }
 }
 
@@ -1462,12 +1412,14 @@ min-widht: 0;
     -ms-grid-rows: 216px 85px 186px 350px 100px 60px;
         grid-template-rows: 216px 85px 186px 350px 100px 60px;
     gap: 0 16px;
-        grid-template-areas: "form-textarea"
- "form-consulting-select"
- "form-checkbox"
- " form-input-private-data"
- "form-input-date-time"
- "form-submit";
+        grid-template-areas: "form-textarea" "form-consulting-select" "form-checkbox" " form-input-private-data" "form-input-date-time" "form-submit";
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .form-container {
+    -ms-grid-columns: 300px;
+        grid-template-columns: 300px;
   }
 }
 
@@ -1478,8 +1430,8 @@ min-widht: 0;
 }
 
 .form-checkbox {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: form-checkbox;
 }
@@ -1507,6 +1459,15 @@ min-widht: 0;
   .form-checkbox .checkbox-container .checkbox-item {
     width: 155px;
   }
+}
+
+@media screen and (max-width: 1200px) and (max-width: 375px) {
+  .form-checkbox .checkbox-container .checkbox-item {
+    width: 145px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .form-checkbox .checkbox-container .checkbox-item:nth-child(1) {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -1538,9 +1499,13 @@ min-widht: 0;
   margin-bottom: 16px;
 }
 
+.form-checkbox .checkbox-container .checkbox-item:last-child {
+  width: 100%;
+}
+
 .form-input-private-data {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 7;
+  -ms-grid-row-span: 4;
   -ms-grid-column: 2;
   grid-area: form-input-private-data;
 }
@@ -1552,7 +1517,7 @@ min-widht: 0;
 
 .form-textarea {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   grid-area: form-textarea;
 }
@@ -1569,13 +1534,13 @@ min-widht: 0;
 }
 
 .form-input-date-time {
-  -ms-grid-row: 5;
+  -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: form-input-date-time;
 }
 
 .form-submit {
-  -ms-grid-row: 7;
+  -ms-grid-row: 4;
   -ms-grid-column: 3;
   grid-area: form-submit;
 }
@@ -1588,7 +1553,6 @@ min-widht: 0;
   .form-submit {
     -ms-grid-column-align: center;
         justify-self: center;
-
   }
   .form-submit button {
     width: 344px;
@@ -1601,7 +1565,16 @@ min-widht: 0;
   }
 }
 
-/* ======= main form content =============== */
+@media screen and (max-width: 1200px) {
+  .form-submit {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    font-size: 16px;
+  }
+  .form-submit button {
+    width: 344px;
+  }
+}
 
 /* ======= custom checkbox button ==========*/
 input[type=checkbox] {
