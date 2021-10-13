@@ -1372,18 +1372,12 @@ min-widht: 0;
 // ##        #######  ##     ## ##     ## 
 
 
-/* form --------------------------- */
+/* ----------- form section --------------------------- */
 
 .form {
     min-height: 760px;
     padding: 10px 0 62px 0;
     background: url('../images/bg-form.jpg')0 0/105% 100% no-repeat;
-
-    @media screen and (max-width: 425px) {
-        display: none;
-    }
-
-
 }
 
 .form__title {
@@ -1397,66 +1391,52 @@ min-widht: 0;
     text-align: center;
 }
 
+/* ============   main form ================ */
+
 .form_input {
-    // height: 60px;
+    height: 60px;
     padding: 18px 16px;
     border: 1px solid #330774;
     border-radius: 8px;
     width: 100%;
     margin-bottom: 24px;
-
-    @media screen and (max-width:1440px) {
-        // margin-bottom: 4px;
-    }
-
-    @media screen and (max-width:1024px) {}
-
-    @media screen and (max-width:768px) {}
-
-    @media screen and (max-width:425px) {}
-
-    @media screen and (max-width:375px) {}
-
-    @media screen and (max-width:320px) {}
 }
 
 .form-container {
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 1214px;
     margin: 0 auto;
-    max-width: fit-content;
     padding: 48px 44px;
     background: #E3D2FC;
     border-radius: 8px;
     backdrop-filter: blur(40px);
     display: grid;
-    // grid-auto-flow: column;
-    // grid-auto-rows: auto;
-    // grid-template-columns: 352px 352px 352px;
-    grid-template-columns: repeat(3, 352px);
-    grid-template-rows: 80px 24px 85px 27px 106px 25px 60px;
-    // grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 85px 24px 85px 28px 106px 25px 60px;
     gap: 0 24px;
     grid-template-areas:
-        "form-consulting-select form-input-private-data form-textarea"
-        ".                      form-input-private-data form-textarea"
-        "form-checkbox          form-input-private-data form-textarea"
-        "form-checkbox          form-input-private-data ."
-        "form-checkbox          form-input-private-data form-input-date-time"
-        "form-checkbox          form-input-private-data ."
-        ".                      form-input-private-data form-submit";
+        "form-consulting-select form-input-private-data     form-textarea"
+        ".                      form-input-private-data     form-textarea"
+        "form-checkbox          form-input-private-data     form-textarea"
+        "form-checkbox          form-input-private-data     ."
+        "form-checkbox          form-input-private-data     form-input-date-time"
+        "form-checkbox          form-input-private-data     ."
+        ".                      form-input-private-data     form-submit";
 
-    @media screen and (max-width:1440px) {}
-
-    @media screen and (max-width:1424px) {
+    @media screen and (max-width:1200px) {
+        width: fit-content;
         grid-template-columns: repeat(2, 344px);
-        // grid-template-rows: 80px 184px 42px 108px 60px;
-        grid-template-rows: auto;
-        gap: 16px 16px;
+        grid-template-rows: 80px 21px 186px 20px 60px 106px 16px 60px;
         grid-template-areas:
             "form-consulting-select  form-input-private-data"
-            "form-checkbox              form-input-private-data "
-            "form-textarea               form-input-private-data"
-            "form-textarea              form-input-date-time"
-            "form-submit form-submit";
+            ".                       form-input-private-data "
+            "form-checkbox              form-input-private-data"
+            ".                          form-input-private-data"
+            "form-textarea             form-input-private-data"
+            "form-textarea                  form-input-date-time"
+            ".                              ."
+            "form-submit                form-submit";
     }
 }
 
@@ -1468,24 +1448,13 @@ min-widht: 0;
 .form-checkbox {
     grid-area: form-checkbox;
 
-    @media screen and (max-width:1440px) {}
-
-    @media screen and (max-width:1024px) {}
-
-    @media screen and (max-width:768px) {}
-
-    @media screen and (max-width:425px) {}
-
-    @media screen and (max-width:375px) {}
-
-    @media screen and (max-width:320px) {}
-
     .checkbox_title {
         margin-bottom: 16px;
     }
 
     .checkbox-container {
-        @media screen and (max-width:1000px) {
+        @media screen and (max-width:1200px) {
+            font-size: 16px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -1493,6 +1462,26 @@ min-widht: 0;
 
             .checkbox-item {
                 width: 155px;
+
+                &:nth-child(1) {
+                    order: 1;
+                }
+
+                &:nth-child(2) {
+                    order: 3;
+                }
+
+                &:nth-child(3) {
+                    order: 2;
+                }
+
+                &:nth-child(4) {
+                    order: 4;
+                }
+
+                &:nth-child(5) {
+                    order: 5;
+                }
 
             }
         }
@@ -1516,21 +1505,20 @@ min-widht: 0;
 .form-textarea {
     grid-area: form-textarea;
 
-    label {
-        display: inline-block;
-        // margin-bottom: 4px;
-    }
-
     textarea {
         height: 169px;
         resize: none;
-        margin-bottom: 0px;
+
+        @media screen and (max-width:1200px) {
+            height: 144px;
+        }
+
+
     }
 }
 
 .form-input-date-time {
     grid-area: form-input-date-time;
-
 }
 
 .form-submit {
@@ -1539,13 +1527,16 @@ min-widht: 0;
     button {
         width: 100%;
     }
+
+    @media screen and (max-width:1200px) {
+        justify-self: center;
+        font-size: 16px;
+
+        button {
+            width: 344px;
+        }
+    }
 }
-
-
-
-
-/* ======= main form content =============== */
-
 
 
 /* ======= custom checkbox button ==========*/

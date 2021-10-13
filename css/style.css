@@ -1340,17 +1340,11 @@ min-widht: 0;
   opacity: 1;
 }
 
-/* form --------------------------- */
+/* ----------- form section --------------------------- */
 .form {
   min-height: 760px;
   padding: 10px 0 62px 0;
   background: url("../images/bg-form.jpg") 0 0/105% 100% no-repeat;
-}
-
-@media screen and (max-width: 425px) {
-  .form {
-    display: none;
-  }
 }
 
 .form__title {
@@ -1364,7 +1358,9 @@ min-widht: 0;
   text-align: center;
 }
 
+/* ============   main form ================ */
 .form_input {
+  height: 60px;
   padding: 18px 16px;
   border: 1px solid #330774;
   border-radius: 8px;
@@ -1373,10 +1369,10 @@ min-widht: 0;
 }
 
 .form-container {
+  font-size: 14px;
+  line-height: 21px;
+  max-width: 1214px;
   margin: 0 auto;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
   padding: 48px 44px;
   background: #E3D2FC;
   border-radius: 8px;
@@ -1384,22 +1380,24 @@ min-widht: 0;
           backdrop-filter: blur(40px);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (352px)[3];
-      grid-template-columns: repeat(3, 352px);
-  -ms-grid-rows: 80px 24px 85px 27px 106px 25px 60px;
-      grid-template-rows: 80px 24px 85px 27px 106px 25px 60px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 85px 24px 85px 28px 106px 25px 60px;
+      grid-template-rows: 85px 24px 85px 28px 106px 25px 60px;
   gap: 0 24px;
-      grid-template-areas: "form-consulting-select form-input-private-data form-textarea" ".                      form-input-private-data form-textarea" "form-checkbox          form-input-private-data form-textarea" "form-checkbox          form-input-private-data ." "form-checkbox          form-input-private-data form-input-date-time" "form-checkbox          form-input-private-data ." ".                      form-input-private-data form-submit";
+      grid-template-areas: "form-consulting-select form-input-private-data     form-textarea" ".                      form-input-private-data     form-textarea" "form-checkbox          form-input-private-data     form-textarea" "form-checkbox          form-input-private-data     ." "form-checkbox          form-input-private-data     form-input-date-time" "form-checkbox          form-input-private-data     ." ".                      form-input-private-data     form-submit";
 }
 
-@media screen and (max-width: 1424px) {
+@media screen and (max-width: 1200px) {
   .form-container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     -ms-grid-columns: (344px)[2];
         grid-template-columns: repeat(2, 344px);
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-    gap: 16px 16px;
-        grid-template-areas: "form-consulting-select  form-input-private-data" "form-checkbox              form-input-private-data " "form-textarea               form-input-private-data" "form-textarea              form-input-date-time" "form-submit form-submit";
+    -ms-grid-rows: 80px 21px 186px 20px 60px 106px 16px 60px;
+        grid-template-rows: 80px 21px 186px 20px 60px 106px 16px 60px;
+        grid-template-areas: "form-consulting-select  form-input-private-data" ".                       form-input-private-data " "form-checkbox              form-input-private-data" ".                          form-input-private-data" "form-textarea             form-input-private-data" "form-textarea                  form-input-date-time" ".                              ." "form-submit                form-submit";
   }
 }
 
@@ -1420,8 +1418,9 @@ min-widht: 0;
   margin-bottom: 16px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .form-checkbox .checkbox-container {
+    font-size: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1437,6 +1436,31 @@ min-widht: 0;
   }
   .form-checkbox .checkbox-container .checkbox-item {
     width: 155px;
+  }
+  .form-checkbox .checkbox-container .checkbox-item:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .form-checkbox .checkbox-container .checkbox-item:nth-child(2) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .form-checkbox .checkbox-container .checkbox-item:nth-child(3) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .form-checkbox .checkbox-container .checkbox-item:nth-child(4) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .form-checkbox .checkbox-container .checkbox-item:nth-child(5) {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
   }
 }
 
@@ -1463,14 +1487,15 @@ min-widht: 0;
   grid-area: form-textarea;
 }
 
-.form-textarea label {
-  display: inline-block;
-}
-
 .form-textarea textarea {
   height: 169px;
   resize: none;
-  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .form-textarea textarea {
+    height: 144px;
+  }
 }
 
 .form-input-date-time {
@@ -1489,7 +1514,17 @@ min-widht: 0;
   width: 100%;
 }
 
-/* ======= main form content =============== */
+@media screen and (max-width: 1200px) {
+  .form-submit {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    font-size: 16px;
+  }
+  .form-submit button {
+    width: 344px;
+  }
+}
+
 /* ======= custom checkbox button ==========*/
 input[type=checkbox] {
   display: none;
