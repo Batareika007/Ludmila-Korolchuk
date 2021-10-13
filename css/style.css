@@ -1364,56 +1364,117 @@ min-widht: 0;
   text-align: center;
 }
 
-.form-container {
-  margin: 0 auto;
-  /* if adding new content make width bigger */
-  max-width: 1250px;
-  padding: 0 10px;
-}
-
-.form__row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 32px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  background: #E3D2FC;
-  -webkit-backdrop-filter: blur(40px);
-          backdrop-filter: blur(40px);
+.form_input {
+  height: 60px;
+  padding: 18px 16px;
+  border: 1px solid #330774;
   border-radius: 8px;
-  padding: 48px;
-}
-
-.form__column {
-  position: relative;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 354px;
-          flex: 0 0 354px;
-}
-
-.form__column label {
-  margin: 0 0 4px 0;
-}
-
-.form__column input,
-.form__column select {
-  margin: 0 0 24px 0;
-}
-
-.form__column textarea {
-  min-height: 172px;
-  resize: none;
+  width: 352px;
   margin-bottom: 24px;
 }
 
-.form__column input[type=checkbox] {
-  display: none;
+.form-container {
+  margin: 0 auto;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 48px 44px;
+  background: #E3D2FC;
+  border-radius: 8px;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (352px)[3];
+      grid-template-columns: repeat(3, 352px);
+  -ms-grid-rows: 80px 86px 102px 60px;
+      grid-template-rows: 80px 86px 102px 60px;
+  gap: 32px 24px;
+      grid-template-areas: "form-consulting-select form-input-private-data form-textarea" "form-checkbox form-input-private-data form-textarea" "form-checkbox form-input-private-data form-input-date-time" "form-checkbox form-input-private-data form-submit";
 }
 
-.checkbox_title {
-  margin-top: 24px;
+.form-consulting-select {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: form-consulting-select;
+}
+
+.form-consulting-select label {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.form-checkbox {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: form-checkbox;
+}
+
+.form-checkbox .checkbox_title {
   margin-bottom: 16px;
+}
+
+.form-checkbox .checkbox-container .checkbox-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.form-input-private-data {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 2;
+  grid-area: form-input-private-data;
+}
+
+.form-input-private-data label {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.form-textarea {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: form-textarea;
+}
+
+.form-textarea label {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.form-textarea textarea {
+  min-height: 172px;
+  resize: none;
+  margin-bottom: 0px;
+}
+
+.form-input-date-time {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: form-input-date-time;
+  height: 106px;
+}
+
+.form-input-date-time label {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.form-submit {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: form-submit;
+}
+
+.form-submit button {
+  width: 100%;
+}
+
+/* ======= main form content =============== */
+/* ======= custom checkbox button ==========*/
+input[type=checkbox] {
+  display: none;
 }
 
 input[type="checkbox"] + label {
@@ -1447,17 +1508,7 @@ input[type="checkbox"]:checked + label span {
   }
 }
 
-.checkbox-item {
-  margin-bottom: 20px;
-}
-
-.form_input {
-  height: 60px;
-  padding: 18px 16px;
-  border: 1px solid #330774;
-  border-radius: 8px;
-}
-
+/* ======= custom checkbox button end==========*/
 /*  ============ feedbacks  ===================  */
 .feedback {
   max-width: 1120px;
