@@ -1375,27 +1375,42 @@ min-widht: 0;
 /* ----------- form section --------------------------- */
 
 .form {
-    min-height: 760px;
-    padding: 10px 0 62px 0;
-    background: url('../images/bg-form.jpg')0 0/105% 100% no-repeat;
+    padding: 80px 0 73px 0;
+    background: url('../images/bg-form.jpg') 0 0 /105% 100% no-repeat;
 
-
-    @media screen and (max-width: 425px) {
-        // display: none;
+    @media screen and (max-width:768px) {
+        padding: 40px 0 80px 0;
+        background: url('../images/bg-form-medium.jpg')center/cover no-repeat;
     }
 
-
+    @media screen and (max-width:736px) {
+        padding: 0;
+        background: none;
+    }
 }
 
 .form__title {
-    font-style: normal;
     font-weight: bold;
     font-size: 32px;
-    line-height: 150%;
     color: #fff;
-    padding-top: 55px;
     margin: 0 0 21px 0;
     text-align: center;
+
+    @media screen and (max-width:1200px) {
+        font-size: 24px;
+        margin: -24px 0 0 0;
+        position: relative;
+        z-index: 100;
+        top: 60px;
+    }
+
+    @media screen and (max-width:736px) {
+        font-size: 16px;
+        position: relative;
+        color: #000;
+        margin: -24px 0 0 0;
+        top: 40px;
+    }
 }
 
 /* ============   main form ================ */
@@ -1432,24 +1447,22 @@ min-widht: 0;
         "form-checkbox form-input-private-data form-input-date-time"
         "form-checkbox form-input-private-data form-submit";
 
-    @media screen and (max-width:1440px) {}
-
     @media screen and (max-width:1200px) {
+        padding-top: 76px;
         grid-template-columns: repeat(2, 344px);
         grid-template-rows: 80px 204px 185px 60px;
-        gap: 32px 24px;
-
-
+        gap: 30px 24px;
         grid-template-areas: "form-consulting-select form-input-private-data"
-            "form-checkbox form-input-private-data"
-            "form-textarea form-input-date-time"
-            "form-submit   form-submit";
+            "form-checkbox                           form-input-private-data"
+            "form-textarea                           form-input-date-time"
+            "form-submit                             form-submit";
     }
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:736px) {
+        padding-top: 46px;
         grid-template-columns: 328px;
-        grid-template-rows: 216px 85px 186px 350px 100px 60px;
-        gap: 0 16px;
+        grid-template-rows: 162px 90px 184px 430px 100px 60px;
+        gap: 12px;
         grid-template-areas:
             "form-textarea"
             "form-consulting-select"
@@ -1472,6 +1485,21 @@ min-widht: 0;
 
 .form-consulting-select {
     grid-area: form-consulting-select;
+
+    .nice-select-dropdown {
+
+        @media screen and (max-width:1200px) {
+            .list {
+                width: 344px;
+            }
+        }
+
+        @media screen and (max-width:736px) {
+            .list {
+                width: 328px;
+            }
+        }
+    }
 }
 
 .form-checkbox {
@@ -1492,19 +1520,9 @@ min-widht: 0;
             .checkbox-item {
                 width: 155px;
 
-                @media screen and (max-width:1440px) {}
-
-                @media screen and (max-width:1024px) {}
-
-                @media screen and (max-width:768px) {}
-
-                @media screen and (max-width:425px) {}
-
                 @media screen and (max-width:375px) {
                     width: 145px;
                 }
-
-                @media screen and (max-width:320px) {}
 
                 &:nth-child(1) {
                     order: 1;
@@ -1545,6 +1563,12 @@ min-widht: 0;
     label {
         display: inline-block;
         margin-bottom: 4px;
+
+        @media screen and (max-width:1440px) {}
+
+        @media screen and (max-width:1200px) {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -1565,6 +1589,11 @@ min-widht: 0;
 
 .form-input-date-time {
     grid-area: form-input-date-time;
+
+    @media screen and (max-width:1200px) {
+        align-self: end;
+    }
+
 }
 
 .form-submit {
@@ -1577,6 +1606,7 @@ min-widht: 0;
 
     @media screen and (max-width:1200px) {
         justify-self: center;
+        font-size: 16px;
 
         button {
             width: 344px;
@@ -1584,17 +1614,8 @@ min-widht: 0;
     }
 
     @media screen and (max-width:768px) {
-        bottom {
-            width: 100%;
-        }
-    }
-
-    @media screen and (max-width:1200px) {
-        justify-self: center;
-        font-size: 16px;
-
         button {
-            width: 344px;
+            max-width: 100%;
         }
     }
 }
