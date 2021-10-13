@@ -1380,7 +1380,7 @@ min-widht: 0;
     background: url('../images/bg-form.jpg')0 0/105% 100% no-repeat;
 
     @media screen and (max-width: 425px) {
-        display: none;
+        // display: none;
     }
 
 
@@ -1402,30 +1402,60 @@ min-widht: 0;
     padding: 18px 16px;
     border: 1px solid #330774;
     border-radius: 8px;
-    width: 352px;
+    width: 100%;
     margin-bottom: 24px;
 }
 
 .form-container {
     margin: 0 auto;
     max-width: fit-content;
-    padding: 48px 44px;
+    padding: 48px 50px 48px 44px;
     background: #E3D2FC;
     border-radius: 8px;
     backdrop-filter: blur(40px);
     display: grid;
-    // grid-auto-flow: column;
-    // grid-auto-rows: auto;
-    // grid-template-columns: 352px 352px 352px;
+    justify-content: center;
     grid-template-columns: repeat(3, 352px);
     grid-template-rows: 80px 86px 102px 60px;
-    // grid-template-rows: auto;
     gap: 32px 24px;
     grid-template-areas:
         "form-consulting-select form-input-private-data form-textarea"
         "form-checkbox form-input-private-data form-textarea"
         "form-checkbox form-input-private-data form-input-date-time"
         "form-checkbox form-input-private-data form-submit";
+
+    @media screen and (max-width:1440px) {}
+
+    @media screen and (max-width:1200px) {
+        grid-template-columns: repeat(2, 344px);
+        grid-template-rows: 80px 204px 185px 60px;
+        gap: 32px 24px;
+
+
+        grid-template-areas: "form-consulting-select form-input-private-data"
+            "form-checkbox form-input-private-data"
+            "form-textarea form-input-date-time"
+            "form-submit   form-submit";
+    }
+
+    @media screen and (max-width:768px) {
+        grid-template-columns: 328px;
+        grid-template-rows: 216px 85px 186px 350px 100px 60px;
+        gap: 0 16px;
+        grid-template-areas:
+            "form-textarea"
+            "form-consulting-select"
+            "form-checkbox"
+            " form-input-private-data"
+            "form-input-date-time"
+            "form-submit";
+    }
+
+    @media screen and (max-width:425px) {}
+
+    @media screen and (max-width:375px) {}
+
+    @media screen and (max-width:320px) {}
 }
 
 
@@ -1493,6 +1523,20 @@ min-widht: 0;
 
     button {
         width: 100%;
+    }
+
+    @media screen and (max-width:1200px) {
+        justify-self: center;
+
+        button {
+            width: 344px;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        bottom {
+            width: 100%;
+        }
     }
 }
 
