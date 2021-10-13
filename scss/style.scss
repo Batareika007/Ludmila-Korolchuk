@@ -1398,12 +1398,26 @@ min-widht: 0;
 }
 
 .form_input {
-    height: 60px;
+    // height: 60px;
     padding: 18px 16px;
     border: 1px solid #330774;
     border-radius: 8px;
-    width: 352px;
+    width: 100%;
     margin-bottom: 24px;
+
+    @media screen and (max-width:1440px) {
+        // margin-bottom: 4px;
+    }
+
+    @media screen and (max-width:1024px) {}
+
+    @media screen and (max-width:768px) {}
+
+    @media screen and (max-width:425px) {}
+
+    @media screen and (max-width:375px) {}
+
+    @media screen and (max-width:320px) {}
 }
 
 .form-container {
@@ -1418,36 +1432,74 @@ min-widht: 0;
     // grid-auto-rows: auto;
     // grid-template-columns: 352px 352px 352px;
     grid-template-columns: repeat(3, 352px);
-    grid-template-rows: 80px 86px 102px 60px;
+    grid-template-rows: 80px 24px 85px 27px 106px 25px 60px;
     // grid-template-rows: auto;
-    gap: 32px 24px;
+    gap: 0 24px;
     grid-template-areas:
         "form-consulting-select form-input-private-data form-textarea"
-        "form-checkbox form-input-private-data form-textarea"
-        "form-checkbox form-input-private-data form-input-date-time"
-        "form-checkbox form-input-private-data form-submit";
+        ".                      form-input-private-data form-textarea"
+        "form-checkbox          form-input-private-data form-textarea"
+        "form-checkbox          form-input-private-data ."
+        "form-checkbox          form-input-private-data form-input-date-time"
+        "form-checkbox          form-input-private-data ."
+        ".                      form-input-private-data form-submit";
+
+    @media screen and (max-width:1440px) {}
+
+    @media screen and (max-width:1424px) {
+        grid-template-columns: repeat(2, 344px);
+        // grid-template-rows: 80px 184px 42px 108px 60px;
+        grid-template-rows: auto;
+        gap: 16px 16px;
+        grid-template-areas:
+            "form-consulting-select  form-input-private-data"
+            "form-checkbox              form-input-private-data "
+            "form-textarea               form-input-private-data"
+            "form-textarea              form-input-date-time"
+            "form-submit form-submit";
+    }
 }
 
 
 .form-consulting-select {
     grid-area: form-consulting-select;
-
-    label {
-        display: inline-block;
-        margin-bottom: 4px;
-    }
 }
 
 .form-checkbox {
     grid-area: form-checkbox;
+
+    @media screen and (max-width:1440px) {}
+
+    @media screen and (max-width:1024px) {}
+
+    @media screen and (max-width:768px) {}
+
+    @media screen and (max-width:425px) {}
+
+    @media screen and (max-width:375px) {}
+
+    @media screen and (max-width:320px) {}
 
     .checkbox_title {
         margin-bottom: 16px;
     }
 
     .checkbox-container {
+        @media screen and (max-width:1000px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            .checkbox-item {
+                width: 155px;
+
+            }
+        }
+
         .checkbox-item:not(:last-child) {
             margin-bottom: 16px;
+
         }
     }
 }
@@ -1466,11 +1518,11 @@ min-widht: 0;
 
     label {
         display: inline-block;
-        margin-bottom: 4px;
+        // margin-bottom: 4px;
     }
 
     textarea {
-        min-height: 172px;
+        height: 169px;
         resize: none;
         margin-bottom: 0px;
     }
@@ -1478,13 +1530,6 @@ min-widht: 0;
 
 .form-input-date-time {
     grid-area: form-input-date-time;
-    height: 106px;
-
-    label {
-        display: inline-block;
-        margin-bottom: 4px;
-    }
-
 
 }
 

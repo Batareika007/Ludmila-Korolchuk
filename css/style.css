@@ -1365,11 +1365,10 @@ min-widht: 0;
 }
 
 .form_input {
-  height: 60px;
   padding: 18px 16px;
   border: 1px solid #330774;
   border-radius: 8px;
-  width: 352px;
+  width: 100%;
   margin-bottom: 24px;
 }
 
@@ -1387,10 +1386,21 @@ min-widht: 0;
   display: grid;
   -ms-grid-columns: (352px)[3];
       grid-template-columns: repeat(3, 352px);
-  -ms-grid-rows: 80px 86px 102px 60px;
-      grid-template-rows: 80px 86px 102px 60px;
-  gap: 32px 24px;
-      grid-template-areas: "form-consulting-select form-input-private-data form-textarea" "form-checkbox form-input-private-data form-textarea" "form-checkbox form-input-private-data form-input-date-time" "form-checkbox form-input-private-data form-submit";
+  -ms-grid-rows: 80px 24px 85px 27px 106px 25px 60px;
+      grid-template-rows: 80px 24px 85px 27px 106px 25px 60px;
+  gap: 0 24px;
+      grid-template-areas: "form-consulting-select form-input-private-data form-textarea" ".                      form-input-private-data form-textarea" "form-checkbox          form-input-private-data form-textarea" "form-checkbox          form-input-private-data ." "form-checkbox          form-input-private-data form-input-date-time" "form-checkbox          form-input-private-data ." ".                      form-input-private-data form-submit";
+}
+
+@media screen and (max-width: 1424px) {
+  .form-container {
+    -ms-grid-columns: (344px)[2];
+        grid-template-columns: repeat(2, 344px);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    gap: 16px 16px;
+        grid-template-areas: "form-consulting-select  form-input-private-data" "form-checkbox              form-input-private-data " "form-textarea               form-input-private-data" "form-textarea              form-input-date-time" "form-submit form-submit";
+  }
 }
 
 .form-consulting-select {
@@ -1399,14 +1409,9 @@ min-widht: 0;
   grid-area: form-consulting-select;
 }
 
-.form-consulting-select label {
-  display: inline-block;
-  margin-bottom: 4px;
-}
-
 .form-checkbox {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
   -ms-grid-column: 1;
   grid-area: form-checkbox;
 }
@@ -1415,13 +1420,33 @@ min-widht: 0;
   margin-bottom: 16px;
 }
 
+@media screen and (max-width: 1000px) {
+  .form-checkbox .checkbox-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .form-checkbox .checkbox-container .checkbox-item {
+    width: 155px;
+  }
+}
+
 .form-checkbox .checkbox-container .checkbox-item:not(:last-child) {
   margin-bottom: 16px;
 }
 
 .form-input-private-data {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 4;
+  -ms-grid-row-span: 7;
   -ms-grid-column: 2;
   grid-area: form-input-private-data;
 }
@@ -1433,36 +1458,29 @@ min-widht: 0;
 
 .form-textarea {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 3;
   grid-area: form-textarea;
 }
 
 .form-textarea label {
   display: inline-block;
-  margin-bottom: 4px;
 }
 
 .form-textarea textarea {
-  min-height: 172px;
+  height: 169px;
   resize: none;
   margin-bottom: 0px;
 }
 
 .form-input-date-time {
-  -ms-grid-row: 3;
+  -ms-grid-row: 5;
   -ms-grid-column: 3;
   grid-area: form-input-date-time;
-  height: 106px;
-}
-
-.form-input-date-time label {
-  display: inline-block;
-  margin-bottom: 4px;
 }
 
 .form-submit {
-  -ms-grid-row: 4;
+  -ms-grid-row: 7;
   -ms-grid-column: 3;
   grid-area: form-submit;
 }
