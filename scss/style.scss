@@ -1476,6 +1476,39 @@ min-widht: 0;
     }
 
     .checkbox-container {
+        @media screen and (max-width:1200px) {
+            font-size: 16px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            .checkbox-item {
+                width: 155px;
+
+                &:nth-child(1) {
+                    order: 1;
+                }
+
+                &:nth-child(2) {
+                    order: 3;
+                }
+
+                &:nth-child(3) {
+                    order: 2;
+                }
+
+                &:nth-child(4) {
+                    order: 4;
+                }
+
+                &:nth-child(5) {
+                    order: 5;
+                }
+
+            }
+        }
+
         .checkbox-item:not(:last-child) {
             margin-bottom: 16px;
         }
