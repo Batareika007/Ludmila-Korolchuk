@@ -2078,7 +2078,7 @@ input[type="checkbox"]:checked+label span {
     }
 }
 
-.visible-on-375 {
+.visible-on-425 {
     display: none;
 
     @media screen and (max-width:425px) {
@@ -2086,7 +2086,7 @@ input[type="checkbox"]:checked+label span {
     }
 }
 
-.hide-on-375 {
+.hide-on-425 {
     @media screen and (max-width:425px) {
         display: none;
     }

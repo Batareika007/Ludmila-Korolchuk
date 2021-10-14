@@ -2091,12 +2091,12 @@ input[type="checkbox"]:checked + label span {
   }
 }
 
-.visible-on-375 {
+.visible-on-425 {
   display: none;
 }
 
 @media screen and (max-width: 425px) {
-  .visible-on-375 {
+  .visible-on-425 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2104,7 +2104,7 @@ input[type="checkbox"]:checked + label span {
 }
 
 @media screen and (max-width: 425px) {
-  .hide-on-375 {
+  .hide-on-425 {
     display: none;
   }
 }
