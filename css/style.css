@@ -1010,72 +1010,72 @@ min-widht: 0;
 }
 
 .important-about-yourself {
-  background-image: url("../images/courses-trainings/courses-trainings/about-yourself.png");
+  background-image: url("../images/courses-trainings/about-yourself.png");
 }
 
 .important-about-yourself-back {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/courses-trainings/courses-trainings/about-yourself.png");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/courses-trainings/courses-trainings/about-yourself.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/courses-trainings/about-yourself.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/courses-trainings/about-yourself.png");
   background-size: cover;
 }
 
 .treasures-in-the-shadows {
-  background-image: url("../images/courses-trainings/courses-trainings/treasures-in-the-shadows.png");
+  background-image: url("../images/courses-trainings/treasures-in-the-shadows.png");
 }
 
 .treasures-in-the-shadows-back {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/courses-trainings/courses-trainings/treasures-in-the-shadows.png");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/courses-trainings/courses-trainings/treasures-in-the-shadows.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/courses-trainings/treasures-in-the-shadows.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/courses-trainings/treasures-in-the-shadows.png");
   background-size: cover;
 }
 
 .healing-the-inner-child {
-  background-image: url("../images/courses-trainings/courses-trainings/healing-the-inner-child.png");
+  background-image: url("../images/courses-trainings/healing-the-inner-child.png");
 }
 
 .healing-the-inner-child-back {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/courses-trainings/courses-trainings/healing-the-inner-child.png");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/courses-trainings/courses-trainings/healing-the-inner-child.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/courses-trainings/healing-the-inner-child.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/courses-trainings/healing-the-inner-child.png");
   background-size: cover;
 }
 
 .my-life-my-rules {
-  background-image: url("../images/courses-trainings/courses-trainings/my-life-my-rules.png");
+  background-image: url("../images/courses-trainings/my-life-my-rules.png");
 }
 
 .my-life-my-rules-back {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/courses-trainings/courses-trainings/my-life-my-rules.png");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/courses-trainings/courses-trainings/my-life-my-rules.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/courses-trainings/my-life-my-rules.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/courses-trainings/my-life-my-rules.png");
   background-size: cover;
 }
 
 .personal-code-of-your-confidence {
-  background-image: url("../images/courses-trainings/courses-trainings/code-of-your-confidence.png");
+  background-image: url("../images/courses-trainings/code-of-your-confidence.png");
 }
 
 .personal-code-of-your-confidence-back {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/courses-trainings/courses-trainings/code-of-your-confidence.png");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/courses-trainings/courses-trainings/code-of-your-confidence.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/courses-trainings/code-of-your-confidence.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/courses-trainings/code-of-your-confidence.png");
   background-size: cover;
 }
 
 .the-artist-way {
-  background-image: url("../images/courses-trainings/courses-trainings/artist-way.png");
+  background-image: url("../images/courses-trainings/artist-way.png");
 }
 
 .the-artist-way-back {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/courses-trainings/courses-trainings/artist-way.png");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/courses-trainings/courses-trainings/artist-way.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/courses-trainings/artist-way.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/courses-trainings/artist-way.png");
   background-size: cover;
 }
 
 .palette-of-my-soul {
-  background-image: url("../images/courses-trainings/courses-trainings/palette-of-my-soul.png");
+  background-image: url("../images/courses-trainings/palette-of-my-soul.png");
 }
 
 .palette-of-my-soul-back {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/courses-trainings/courses-trainings/palette-of-my-soul.png");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/courses-trainings/courses-trainings/palette-of-my-soul.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/courses-trainings/palette-of-my-soul.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/courses-trainings/palette-of-my-soul.png");
   background-size: cover;
 }
 
@@ -1561,7 +1561,6 @@ min-widht: 0;
 
 .form-input-private-data label {
   display: inline-block;
-  margin-bottom: 4px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1957,9 +1956,22 @@ input[type="checkbox"]:checked + label span {
   padding: 0 8px;
 }
 
-.accordion__content img {
+.accordion__content .accordion-img {
+  display: block;
+  height: 64px !important;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 64px;
+          flex: 0 0 64px;
+  overflow: hidden;
   border-radius: 8px;
   margin: 0 32px 0 0;
+}
+
+.accordion__content .accordion-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 110%;
+  height: 110%;
 }
 
 .accordion__content .flex-row:not(:last-child) {
@@ -2058,6 +2070,43 @@ input[type="checkbox"]:checked + label span {
   max-width: 550px;
   margin: 0 auto 32px auto;
   line-height: 24px;
+}
+
+/* hide on 768*/
+@media screen and (max-width: 768px) {
+  .hide-on-768 {
+    display: none;
+  }
+}
+
+.visible-on-768 {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .visible-on-768 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.visible-on-375 {
+  display: none;
+}
+
+@media screen and (max-width: 425px) {
+  .visible-on-375 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hide-on-375 {
+    display: none;
+  }
 }
 
 .image-container {

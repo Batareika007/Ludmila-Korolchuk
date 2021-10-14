@@ -999,77 +999,77 @@ min-widht: 0;
 // each card background 
 
 .important-about-yourself {
-    background-image: url("../images/courses-trainings/courses-trainings/about-yourself.png");
+    background-image: url("../images/courses-trainings/about-yourself.png");
 }
 
 .important-about-yourself-back {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("../images/courses-trainings/courses-trainings/about-yourself.png");
+        url("../images/courses-trainings/about-yourself.png");
     background-size: cover;
 }
 
 .treasures-in-the-shadows {
-    background-image: url("../images/courses-trainings/courses-trainings/treasures-in-the-shadows.png");
+    background-image: url("../images/courses-trainings/treasures-in-the-shadows.png");
 }
 
 .treasures-in-the-shadows-back {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("../images/courses-trainings/courses-trainings/treasures-in-the-shadows.png");
+        url("../images/courses-trainings/treasures-in-the-shadows.png");
     background-size: cover;
 }
 
 .healing-the-inner-child {
-    background-image: url("../images/courses-trainings/courses-trainings/healing-the-inner-child.png");
+    background-image: url("../images/courses-trainings/healing-the-inner-child.png");
 }
 
 .healing-the-inner-child-back {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("../images/courses-trainings/courses-trainings/healing-the-inner-child.png");
+        url("../images/courses-trainings/healing-the-inner-child.png");
     background-size: cover;
 }
 
 .my-life-my-rules {
-    background-image: url("../images/courses-trainings/courses-trainings/my-life-my-rules.png");
+    background-image: url("../images/courses-trainings/my-life-my-rules.png");
 }
 
 .my-life-my-rules-back {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("../images/courses-trainings/courses-trainings/my-life-my-rules.png");
+        url("../images/courses-trainings/my-life-my-rules.png");
     background-size: cover;
 }
 
 .personal-code-of-your-confidence {
-    background-image: url("../images/courses-trainings/courses-trainings/code-of-your-confidence.png");
+    background-image: url("../images/courses-trainings/code-of-your-confidence.png");
 }
 
 .personal-code-of-your-confidence-back {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("../images/courses-trainings/courses-trainings/code-of-your-confidence.png");
+        url("../images/courses-trainings/code-of-your-confidence.png");
     background-size: cover;
 }
 
 .the-artist-way {
-    background-image: url("../images/courses-trainings/courses-trainings/artist-way.png");
+    background-image: url("../images/courses-trainings/artist-way.png");
 }
 
 .the-artist-way-back {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("../images/courses-trainings/courses-trainings/artist-way.png");
+        url("../images/courses-trainings/artist-way.png");
     background-size: cover;
 }
 
 .palette-of-my-soul {
-    background-image: url("../images/courses-trainings/courses-trainings/palette-of-my-soul.png");
+    background-image: url("../images/courses-trainings/palette-of-my-soul.png");
 }
 
 .palette-of-my-soul-back {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("../images/courses-trainings/courses-trainings/palette-of-my-soul.png");
+        url("../images/courses-trainings/palette-of-my-soul.png");
     background-size: cover;
 }
 
 //  ######   #######  ##    ##  ######  ##     ## ##       ######## #### ##    ##  ######   
-// ##    ## ##     ## ###   ## ##    ## ##     ## ##          ##     ##  ###   ## ##    ##  
+// ##    ## ##     ## #s##   ## ##    ## ##     ## ##          ##     ##  ###   ## ##    ##  
 // ##       ##     ## ####  ## ##       ##     ## ##          ##     ##  ####  ## ##        
 // ##       ##     ## ## ## ##  ######  ##     ## ##          ##     ##  ## ## ## ##   #### 
 // ##       ##     ## ##  ####       ## ##     ## ##          ##     ##  ##  #### ##    ##  
@@ -1081,19 +1081,9 @@ min-widht: 0;
     width: 100%;
     margin-bottom: 64px;
 
-    @media screen and (max-width:1440px) {}
-
-    @media screen and (max-width:1024px) {}
-
-    @media screen and (max-width:768px) {}
-
-    @media screen and (max-width:425px) {}
-
     @media screen and (max-width:375px) {
         margin-bottom: 34px;
     }
-
-    @media screen and (max-width:320px) {}
 }
 
 .consulting_title {
@@ -1101,10 +1091,6 @@ min-widht: 0;
     font-weight: 500;
     font-size: 48px;
     margin-bottom: 62px;
-
-    @media screen and (max-width:1440px) {}
-
-    @media screen and (max-width:1024px) {}
 
     @media screen and (max-width:768px) {
         margin-bottom: 32px;
@@ -1114,10 +1100,6 @@ min-widht: 0;
         font-size: 24px;
         margin-bottom: 16px;
     }
-
-    @media screen and (max-width:375px) {}
-
-    @media screen and (max-width:320px) {}
 }
 
 .consulting_text1 {
@@ -1169,8 +1151,6 @@ min-widht: 0;
         "consulting_text5 consulting_image"
         "consulting_text6 consulting_image"
         "consulting_text7 consulting_image";
-
-    @media screen and (max-width:1440px) {}
 
     @media screen and (max-width:1024px) {
         grid-template-columns: repeat(2, auto);
@@ -1251,11 +1231,8 @@ min-widht: 0;
     max-width: 1120px;
     margin: 0 auto;
     justify-content: center;
-    // border: 2px solid red;
     overflow: hidden;
     justify-content: space-between;
-    // padding: 25px;
-
 }
 
 .consultiung__cards_card {
@@ -1270,10 +1247,6 @@ min-widht: 0;
     border-radius: 8px;
     transition: all 0.3s linear;
 
-    @media screen and (max-width:1440px) {}
-
-    @media screen and (max-width:1024px) {}
-
     @media screen and (max-width:768px) {
         width: 344px;
     }
@@ -1283,15 +1256,6 @@ min-widht: 0;
         height: 194px;
         padding: 32px 12px;
     }
-
-    @media screen and (max-width:375px) {}
-
-    @media screen and (max-width:320px) {}
-
-    // @media screen and (max-width: 375px) {
-    // max-width: 280px;
-    // }
-
 
     &:hover {
         transition: all 0.3s linear;
@@ -1306,21 +1270,10 @@ min-widht: 0;
         font-family: 'Montserrat',
             sans-serif;
 
-        @media screen and (max-width:1440px) {}
-
-        @media screen and (max-width:1024px) {}
-
-        @media screen and (max-width:768px) {}
-
         @media screen and (max-width:425px) {
             font-size: 24px;
             line-height: 29px;
         }
-
-        @media screen and (max-width:375px) {}
-
-        @media screen and (max-width:320px) {}
-
     }
 
     span {
@@ -1345,12 +1298,9 @@ min-widht: 0;
         text-align: center;
         opacity: 0;
         transition: all 0.3s linear;
-
     }
 
     &:hover {
-
-
         span {
             transition: all 0.3s linear;
             opacity: 0;
@@ -1363,7 +1313,6 @@ min-widht: 0;
             transition: all 0.3s linear;
             opacity: 1;
         }
-
     }
 }
 
@@ -1566,9 +1515,6 @@ min-widht: 0;
 
     label {
         display: inline-block;
-        margin-bottom: 4px;
-
-        @media screen and (max-width:1440px) {}
 
         @media screen and (max-width:1200px) {
             margin-bottom: 0;
@@ -1931,29 +1877,15 @@ input[type="checkbox"]:checked+label span {
     border-radius: 8px;
     overflow-y: hidden;
 
-    @media screen and (max-width:1440px) {}
-
-    @media screen and (max-width:1024px) {}
-
     @media screen and (max-width:700px) {
         flex: 0 0 auto;
         align-self: center;
-
     }
-
-    @media screen and (max-width:425px) {}
-
-    @media screen and (max-width:375px) {}
-
-    @media screen and (max-width:320px) {}
 
     .accordion__box {
         position: relative;
 
-
         &.active {
-            // transition: 0.5s;
-
             .accordion_title {
                 box-shadow: none;
 
@@ -1967,7 +1899,6 @@ input[type="checkbox"]:checked+label span {
                 padding: 16px 8px;
             }
         }
-
     }
 }
 
@@ -2005,9 +1936,19 @@ input[type="checkbox"]:checked+label span {
     transition: 0.5s;
     color: black;
     padding: 0 8px;
-    // height: 50%;
 
-    img {
+    .accordion-img {
+        display: block;
+
+        img {
+            object-fit: cover;
+            width: 110%;
+            height: 110%;
+        }
+
+        height: 64px !important;
+        flex: 0 0 64px;
+        overflow: hidden;
         border-radius: 8px;
         margin: 0 32px 0 0;
     }
@@ -2121,6 +2062,36 @@ input[type="checkbox"]:checked+label span {
 
 // ------------------------ images container 
 
+/* hide on 768*/
+.hide-on-768 {
+    @media screen and (max-width:768px) {
+        display: none;
+    }
+}
+
+
+.visible-on-768 {
+    display: none;
+
+    @media screen and (max-width:768px) {
+        display: flex;
+    }
+}
+
+.visible-on-375 {
+    display: none;
+
+    @media screen and (max-width:425px) {
+        display: flex;
+    }
+}
+
+.hide-on-375 {
+    @media screen and (max-width:425px) {
+        display: none;
+    }
+}
+
 .image-container {
     // gap: 32px;
     gap: 2%;
@@ -2134,7 +2105,6 @@ input[type="checkbox"]:checked+label span {
     border-radius: 8px;
     overflow: hidden;
     transition: 1s;
-
 
     img {
         max-width: 100%;
