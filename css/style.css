@@ -2223,13 +2223,14 @@ input[type="checkbox"]:checked + label span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 650px) {
   .contacts__row {
-    max-width: 300px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -2264,9 +2265,9 @@ input[type="checkbox"]:checked + label span {
 @media screen and (max-width: 544px) {
   .contacts__column {
     min-width: 280px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin: 0 0 20px 0;
   }
 }

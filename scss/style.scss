@@ -2318,10 +2318,9 @@ input[type="checkbox"]:checked+label span {
 .contacts__row {
     margin: 0 auto;
     justify-content: center;
-    flex-wrap: wrap;
 
-    @media screen and (max-width: 540px) {
-        max-width: 300px;
+    @media screen and (max-width: 650px) {
+        flex-direction: column;
     }
 }
 
@@ -2350,7 +2349,7 @@ input[type="checkbox"]:checked+label span {
 
     @media screen and (max-width: 544px) {
         min-width: 280px;
-        justify-content: center;
+        justify-content: flex-start;
         // align-items: center;
         // flex: 1 1 auto;
         margin: 0 0 20px 0;
