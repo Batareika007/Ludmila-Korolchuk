@@ -1265,7 +1265,6 @@ min-widht: 0;
 
 .consultiung__cards {
   max-width: 1120px;
-  margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
