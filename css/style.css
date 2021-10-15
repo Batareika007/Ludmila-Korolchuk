@@ -1975,7 +1975,6 @@ input[type="checkbox"]:checked + label span {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 352px;
           flex: 0 0 352px;
-  width: 352px !important;
   max-height: 594px;
   border-radius: 8px;
   overflow-y: hidden;
@@ -1989,6 +1988,15 @@ input[type="checkbox"]:checked + label span {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .accordion {
+    max-width: 352px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
   }
 }
 
