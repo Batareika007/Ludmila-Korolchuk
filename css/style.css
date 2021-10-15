@@ -490,10 +490,9 @@ span {
 /* non-main page -----------------*/
 .subheader__non-main-page {
   background-image: url("../images/abstract-bg2.jpg");
-  background-position: center;
 }
 
-.subheader__non-main-page .subheader__title {
+.subheader__non-main-page .subheader__content {
   background-image: none;
 }
 

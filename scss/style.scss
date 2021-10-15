@@ -379,6 +379,10 @@ span {
     }
 }
 
+
+
+
+
 .subheader__content {
     padding-top: 192px;
     height: 100%;
@@ -474,9 +478,9 @@ span {
 
 .subheader__non-main-page {
     background-image: url("../images/abstract-bg2.jpg");
-    background-position: center;
+    // background-position: center;
 
-    .subheader__title {
+    .subheader__content {
         background-image: none;
     }
 }
