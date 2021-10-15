@@ -1836,7 +1836,7 @@ input[type="checkbox"]:checked+label span {
         @media screen and (max-width:768px) {
             grid-template-columns: none;
             grid-auto-columns: 1fr;
-            grid-template-rows: 160px 29px 1fr 29px;
+            grid-template-rows: 160px auto 1fr 29px;
             gap: 4px 0px;
             height: 294px;
             grid-template-areas:
@@ -1934,20 +1934,10 @@ input[type="checkbox"]:checked+label span {
         align-self: center;
     }
 
-    @media screen and (max-width:1440px) {}
-
-    @media screen and (max-width:1024px) {}
-
-    @media screen and (max-width:768px) {}
-
-    @media screen and (max-width:425px) {}
-
     @media screen and (max-width:375px) {
         max-width: 352px;
         flex: 0 1 auto;
     }
-
-    @media screen and (max-width:320px) {}
 
     .accordion__box {
         position: relative;
@@ -2004,16 +1994,11 @@ input[type="checkbox"]:checked+label span {
     color: black;
     padding: 0 8px;
 
-    .accordion-img {
-        display: block;
-
-        img {
-            object-fit: cover;
-            width: 110%;
-            height: 110%;
-        }
-
-        height: 64px !important;
+    a img {
+        display: inline-block;
+        object-fit: cover;
+        width: 64px;
+        height: 64px;
         flex: 0 0 64px;
         overflow: hidden;
         border-radius: 8px;

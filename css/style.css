@@ -1885,8 +1885,8 @@ input[type="checkbox"]:checked + label span {
     -ms-grid-columns: none;
         grid-template-columns: none;
     grid-auto-columns: 1fr;
-    -ms-grid-rows: 160px 29px 1fr 29px;
-        grid-template-rows: 160px 29px 1fr 29px;
+    -ms-grid-rows: 160px auto 1fr 29px;
+        grid-template-rows: 160px auto 1fr 29px;
     gap: 4px 0px;
     height: 294px;
         grid-template-areas: "photo" "title" "paragragh" "link";
@@ -2059,22 +2059,18 @@ input[type="checkbox"]:checked + label span {
   padding: 0 8px;
 }
 
-.accordion__content .accordion-img {
-  display: block;
-  height: 64px !important;
+.accordion__content a img {
+  display: inline-block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 64px;
+  height: 64px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 64px;
           flex: 0 0 64px;
   overflow: hidden;
   border-radius: 8px;
   margin: 0 32px 0 0;
-}
-
-.accordion__content .accordion-img img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 110%;
-  height: 110%;
 }
 
 .accordion__content .flex-row:not(:last-child) {
