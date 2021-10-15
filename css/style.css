@@ -905,6 +905,9 @@ min-widht: 0;
 
 @media screen and (max-width: 425px) {
   .courses-trainings__container {
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
     gap: 14px;
   }
 }
@@ -1277,6 +1280,7 @@ min-widht: 0;
 
 .consultiung__cards {
   max-width: 1120px;
+  margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

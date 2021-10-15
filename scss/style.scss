@@ -874,12 +874,25 @@ min-widht: 0;
     gap: 32px;
 
     @media screen and (max-width: 425px) {
-        // --- try mobile veriosn --- //
-        // display: inline-block;
-        // text-align: center;
-        // --- end mobile version -- //
-        // justify-content: flex-start;
+        // flex-wrap: nowrap;
+
+        // display: block;
+        // align-items: center;
+        justify-content: none;
         gap: 14px;
+
+        .flip-card {
+            // margin: 7px;
+
+            // position: relative;ы
+            &:hover {
+                // flex: 0 1 auto;
+                // top: 10px;
+                // position: absolute;
+                // overflow: visible;
+                // width: 352px;
+            }
+        }
     }
 }
 
@@ -1250,6 +1263,7 @@ min-widht: 0;
 
 .consultiung__cards {
     max-width: 1120px;
+    margin: 0 auto;
     justify-content: center;
     overflow: hidden;
     justify-content: space-between;
