@@ -575,6 +575,10 @@ span {
     @media screen and (max-width: 768px) {
         padding: 32px 0;
     }
+
+    @media screen and (max-width: 425px) {
+        padding: 0 0 32px 0;
+    }
 }
 
 .about_title {
@@ -857,6 +861,10 @@ min-widht: 0;
     @media screen and (max-width: 768px) {
         margin: 0 0 32px 0;
     }
+
+    @media screen and (max-width: 425px) {
+        margin: 0 0 16px 0;
+    }
 }
 
 /* card section ---------------------- */
@@ -1083,7 +1091,7 @@ min-widht: 0;
 }
 
 //  ######   #######  ##    ##  ######  ##     ## ##       ######## #### ##    ##  ######   
-// ##    ## ##     ## #s##   ## ##    ## ##     ## ##          ##     ##  ###   ## ##    ##  
+// ##    ## ##     ## ###   ## ##    ## ##     ## ##          ##     ##  ###   ## ##    ##  
 // ##       ##     ## ####  ## ##       ##     ## ##          ##     ##  ####  ## ##        
 // ##       ##     ## ## ## ##  ######  ##     ## ##          ##     ##  ## ## ## ##   #### 
 // ##       ##     ## ##  ####       ## ##     ## ##          ##     ##  ##  #### ##    ##  
@@ -1095,9 +1103,10 @@ min-widht: 0;
     width: 100%;
     margin-bottom: 64px;
 
-    @media screen and (max-width:375px) {
-        margin-bottom: 34px;
+    @media screen and (max-width:425px) {
+        margin-bottom: 10px;
     }
+
 }
 
 .consulting_title {
@@ -1243,7 +1252,6 @@ min-widht: 0;
 
 .consultiung__cards {
     max-width: 1120px;
-    // margin: 0 auto;
     justify-content: center;
     overflow: hidden;
     justify-content: space-between;
@@ -1643,11 +1651,12 @@ input[type="checkbox"]:checked+label span {
     padding: 128px 0 64px 0;
 
     @media screen and (max-width:768px) {
-        margin: 64px auto;
+        padding: 64px 0;
     }
 
-    @media screen and (max-width:320px) {
-        margin: 32px auto;
+    @media screen and (max-width:425px) {
+        padding: 32px 0;
+
     }
 }
 
@@ -1722,11 +1731,27 @@ input[type="checkbox"]:checked+label span {
 
 .blog {
     text-align: center;
+    margin-bottom: 64px;
+
+    @media screen and (max-width:768px) {
+        margin-bottom: 48px;
+    }
+
+    @media screen and (max-width:425px) {
+        margin-bottom: 32px;
+    }
 }
 
 .blog__title {
     font-size: 48px;
     margin-bottom: 32px;
+
+    @media screen and (max-width:768px) {}
+
+    @media screen and (max-width:425px) {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
 }
 
 // ########        ###    ########  ######## ####  ######  ##       ########  ######  
@@ -1738,20 +1763,22 @@ input[type="checkbox"]:checked+label span {
 // ########     ##     ## ##     ##    ##    ####  ######  ######## ########  ######  
 
 /*---- Blog Articles -------------------*/
+.blog__article {
+    margin-bottom: 32px;
+}
+
 
 .blog__article_title {
     font-size: 32px;
     margin-bottom: 32px;
 
-    @media screen and (max-width:1440px) {}
-
-    @media screen and (max-width:1024px) {}
-
     @media screen and (max-width:768px) {
         margin-bottom: 23px;
     }
 
-    @media screen and (max-width:425px) {}
+    @media screen and (max-width:425px) {
+        font-size: 18px;
+    }
 
     @media screen and (max-width:375px) {}
 
@@ -1982,7 +2009,17 @@ input[type="checkbox"]:checked+label span {
 
 /*---- Blog Video  ---------------------*/
 
-// .blog__video {}
+.blog__video {
+    margin-bottom: 64px;
+
+    @media screen and (max-width:768px) {
+        margin-bottom: 48px;
+    }
+
+    @media screen and (max-width:425px) {
+        margin-bottom: 32px;
+    }
+}
 
 .blog__video_title {
     font-size: 32px;
@@ -1993,7 +2030,9 @@ input[type="checkbox"]:checked+label span {
         margin: 0 auto 16px auto;
     }
 
-    @media screen and (max-width:425px) {}
+    @media screen and (max-width:425px) {
+        font-size: 18px;
+    }
 }
 
 .blog__video_link {
@@ -2056,7 +2095,16 @@ input[type="checkbox"]:checked+label span {
 
 /*----- blog Gallery --------------------*/
 .blog__gallery {
-    padding: 88px 0 48px 0;
+    margin-bottom: 64px;
+
+    @media screen and (max-width:768px) {
+        margin-bottom: 48px;
+    }
+
+    @media screen and (max-width:425px) {
+        margin-bottom: 32px;
+    }
+
 }
 
 .blog__gallery_title {
@@ -2064,19 +2112,13 @@ input[type="checkbox"]:checked+label span {
     font-size: 32px;
     margin-bottom: 40px;
 
-    @media screen and (max-width:1440px) {}
-
-    @media screen and (max-width:1024px) {}
-
     @media screen and (max-width:768px) {
         margin-bottom: 16px;
     }
 
-    @media screen and (max-width:425px) {}
-
-    @media screen and (max-width:375px) {}
-
-    @media screen and (max-width:320px) {}
+    @media screen and (max-width:425px) {
+        font-size: 18px;
+    }
 }
 
 .blog__gallery_text {
@@ -2088,7 +2130,9 @@ input[type="checkbox"]:checked+label span {
         margin-bottom: 16px;
     }
 
-    @media screen and (max-width:425px) {}
+    @media screen and (max-width:425px) {
+        font-size: 18px;
+    }
 
     @media screen and (max-width:375px) {}
 
@@ -2164,10 +2208,6 @@ input[type="checkbox"]:checked+label span {
 
 /* Blog  Poetry ------------------------*/
 
-.blog__poetry {
-    margin-bottom: 64px;
-}
-
 .poetry {
     padding: 0 0 32px 0;
     justify-content: center;
@@ -2196,19 +2236,14 @@ input[type="checkbox"]:checked+label span {
     font-size: 32px;
     line-height: 150%;
 
-    @media screen and (max-width:1440px) {}
-
-    @media screen and (max-width:1024px) {}
-
     @media screen and (max-width:768px) {
+        margin-bottom: 24px;
+    }
+
+    @media screen and (max-width:425px) {
         margin-bottom: 16px;
     }
 
-    @media screen and (max-width:425px) {}
-
-    @media screen and (max-width:375px) {}
-
-    @media screen and (max-width:320px) {}
 }
 
 .blog__portey_sub-title {
@@ -2219,7 +2254,6 @@ input[type="checkbox"]:checked+label span {
 /* ---- poetry card ------ */
 
 .poetry__card {
-    // background: url('../images/icons/poetry-stars.svg') 50% 3%/auto no-repeat;
     padding: 8px 8px 8px 8px;
     border-radius: 8px;
     box-shadow: 4px 4px 8px #904CF5;
@@ -2263,14 +2297,15 @@ input[type="checkbox"]:checked+label span {
         background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: 0.3s linear;
+
+        @media screen and (max-width:425px) {
+            opacity: 1;
+            background: -webkit-linear-gradient(#000, #000);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
-
-
-    @media screen and (max-width:1440px) {}
-
-    @media screen and (max-width:1024px) {}
-
-    @media screen and (max-width:768px) {}
 
     @media screen and (max-width:425px) {
         opacity: 1;
@@ -2279,8 +2314,6 @@ input[type="checkbox"]:checked+label span {
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-
-
 
     p:not(:last-child) {
         line-height: 150%;
@@ -2331,6 +2364,16 @@ input[type="checkbox"]:checked+label span {
     font-size: 48px;
     line-height: 150%;
     margin-bottom: 32px;
+
+    @media screen and (max-width:1440px) {}
+
+    @media screen and (max-width:1024px) {}
+
+    @media screen and (max-width:768px) {}
+
+    @media screen and (max-width:425px) {
+        font-size: 24px;
+    }
 }
 
 .contacts__row {
