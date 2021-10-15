@@ -142,7 +142,6 @@ span {
 
 /* ==================  header =================== */
 .header {
-    // display: none;
     padding: 16px 0;
     font-weight: 700;
     backdrop-filter: blur(16px);
@@ -153,6 +152,11 @@ span {
     width: 100%;
     z-index: 1000;
     transition: top 0.5s;
+
+    @-moz-document url-prefix() {
+        background: #FFFFFFEB;
+    }
+
 
     @media screen and (max-width:768px) {
         padding: 8px 0;
@@ -175,7 +179,7 @@ span {
     margin-right: 32px;
     position: relative;
 
-    @media screen and (max-width:831px) {
+    @media screen and (max-width:890px) {
         width: 88px;
         height: 54px;
     }
@@ -186,7 +190,6 @@ span {
 
     img {
         width: 100%;
-        // width: 160px;
     }
 
     &:hover {
@@ -569,8 +572,8 @@ span {
 .about {
     padding: 64px 0;
 
-    @media screen and (max-width: 425px) {
-        padding: 0 0 32px 0;
+    @media screen and (max-width: 768px) {
+        padding: 32px 0;
     }
 }
 
@@ -748,6 +751,10 @@ min-widht: 0;
     margin-bottom: 118px;
 
     // @media screen and (max-width: 375px) {
+    @media screen and (max-width: 768px) {
+        margin-bottom: 64px;
+    }
+
     @media screen and (max-width: 425px) {
         margin-bottom: 32px;
     }
@@ -830,17 +837,24 @@ min-widht: 0;
     text-align: center;
     margin-bottom: 128px;
 
-    // @media screen and (max-width: 375px) {
+    @media screen and (max-width: 768px) {
+        margin-bottom: 64px;
+    }
+
     @media screen and (max-width: 425px) {
         margin-bottom: 32px;
     }
+
+    .container {
+        padding: 0;
+    }
 }
 
-.courses-trainings__title {
-    margin: 0 0 62px 0;
 
-    // @media screen and (max-width: 375px) {
-    @media screen and (max-width: 425px) {
+.courses-trainings__title {
+    margin: 0 0 64px 0;
+
+    @media screen and (max-width: 768px) {
         margin: 0 0 32px 0;
     }
 }
@@ -1628,37 +1642,24 @@ input[type="checkbox"]:checked+label span {
     margin: 0 auto;
     padding: 128px 0 64px 0;
 
-    @media screen and (max-width:1440px) {}
-
-    @media screen and (max-width:1024px) {}
-
-    @media screen and (max-width:768px) {}
-
-    @media screen and (max-width:425px) {}
-
-    @media screen and (max-width:375px) {}
+    @media screen and (max-width:768px) {
+        margin: 64px auto;
+    }
 
     @media screen and (max-width:320px) {
-        padding: 32px 0;
+        margin: 32px auto;
     }
 }
 
 .feedback_title {
     margin-bottom: 64px;
 
-    @media screen and (max-width:1440px) {}
-
-    @media screen and (max-width:1024px) {}
-
-    @media screen and (max-width:768px) {}
+    @media screen and (max-width:768px) {
+        margin-bottom: 32px;
+    }
 
     @media screen and (max-width:425px) {}
 
-    @media screen and (max-width:375px) {}
-
-    @media screen and (max-width:320px) {
-        margin-bottom: 32px;
-    }
 }
 
 
@@ -1670,8 +1671,14 @@ input[type="checkbox"]:checked+label span {
         width: 352px;
         height: 248px;
         border: 1px solid #330774;
-        box-shadow: 2px 2px 4px rgba(116, 31, 242, 0.6);
         background: white;
+        filter: drop-shadow(2px 2px 4px rgba(116, 31, 242, 0.6));
+
+        &:hover {
+            box-shadow: 2px 2px 4px rgba(116, 31, 242, 0.6);
+            box-shadow: 2px 2px 4px #741FF2;
+
+        }
 
         @media screen and (max-width:1440px) {}
 
@@ -1978,10 +1985,15 @@ input[type="checkbox"]:checked+label span {
 // .blog__video {}
 
 .blog__video_title {
-    font-weight: 500;
     font-size: 32px;
     line-height: 150%;
-    padding: 40px 0;
+    margin: 64px auto 32px auto;
+
+    @media screen and (max-width:768px) {
+        margin: 0 auto 16px auto;
+    }
+
+    @media screen and (max-width:425px) {}
 }
 
 .blog__video_link {
@@ -2048,16 +2060,39 @@ input[type="checkbox"]:checked+label span {
 }
 
 .blog__gallery_title {
-    font-weight: 500;
-    font-size: 32px;
     line-height: 150%;
-    padding: 0 0 40px 0;
+    font-size: 32px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width:1440px) {}
+
+    @media screen and (max-width:1024px) {}
+
+    @media screen and (max-width:768px) {
+        margin-bottom: 16px;
+    }
+
+    @media screen and (max-width:425px) {}
+
+    @media screen and (max-width:375px) {}
+
+    @media screen and (max-width:320px) {}
 }
 
 .blog__gallery_text {
     max-width: 550px;
     margin: 0 auto 32px auto;
     line-height: 24px;
+
+    @media screen and (max-width:768px) {
+        margin-bottom: 16px;
+    }
+
+    @media screen and (max-width:425px) {}
+
+    @media screen and (max-width:375px) {}
+
+    @media screen and (max-width:320px) {}
 }
 
 // ------------------------ images container 
@@ -2130,7 +2165,7 @@ input[type="checkbox"]:checked+label span {
 /* Blog  Poetry ------------------------*/
 
 .blog__poetry {
-    padding: 0 0 40px 0;
+    margin-bottom: 64px;
 }
 
 .poetry {
@@ -2138,13 +2173,12 @@ input[type="checkbox"]:checked+label span {
     justify-content: center;
     gap: 3%;
 
-    // flex-wrap: wrap;
     @media screen and (max-width:1440px) {}
 
     @media screen and (max-width:1024px) {
-        &:last-child {
-            display: none;
-        }
+        // &:last-child {
+        //     display: none;
+        // }
     }
 
     @media screen and (max-width:768px) {}
@@ -2161,6 +2195,20 @@ input[type="checkbox"]:checked+label span {
     font-weight: 500;
     font-size: 32px;
     line-height: 150%;
+
+    @media screen and (max-width:1440px) {}
+
+    @media screen and (max-width:1024px) {}
+
+    @media screen and (max-width:768px) {
+        margin-bottom: 16px;
+    }
+
+    @media screen and (max-width:425px) {}
+
+    @media screen and (max-width:375px) {}
+
+    @media screen and (max-width:320px) {}
 }
 
 .blog__portey_sub-title {
@@ -2187,7 +2235,7 @@ input[type="checkbox"]:checked+label span {
         }
     }
 
-    @media screen and (max-width:425px) {
+    @media screen and (max-width:733px) {
         &:nth-child(2) {
             display: none;
         }
@@ -2273,7 +2321,7 @@ input[type="checkbox"]:checked+label span {
 /* contacts ------------------------- */
 
 .contacts {
-    padding: 64px 0;
+    margin-bottom: 64px;
 
 }
 
@@ -2402,7 +2450,6 @@ input[type="checkbox"]:checked+label span {
 
 }
 
-
 .footer__links {
     @media screen and (max-width:900px) {
         height: 80px;
@@ -2443,22 +2490,11 @@ input[type="checkbox"]:checked+label span {
 
     .flex-row {
         gap: 16px;
-
-        @media screen and (max-width:1440px) {}
-
-        @media screen and (max-width:768px) {}
-
-        @media screen and (max-width:425px) {}
-
-        @media screen and (max-width:375px) {}
-
-        @media screen and (max-width:320px) {}
     }
 
     align-self: center;
-    // border: 2px solid red;
     grid-area: footer__icons;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .footer__bottom {

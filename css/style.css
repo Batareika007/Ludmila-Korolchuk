@@ -156,6 +156,12 @@ span {
   transition: top 0.5s;
 }
 
+@-moz-document url-prefix() {
+  .header {
+    background: #FFFFFFEB;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header {
     padding: 8px 0;
@@ -183,7 +189,7 @@ span {
   position: relative;
 }
 
-@media screen and (max-width: 831px) {
+@media screen and (max-width: 890px) {
   .logo {
     width: 88px;
     height: 54px;
@@ -573,9 +579,9 @@ span {
   padding: 64px 0;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .about {
-    padding: 0 0 32px 0;
+    padding: 32px 0;
   }
 }
 
@@ -763,6 +769,12 @@ min-widht: 0;
   margin-bottom: 118px;
 }
 
+@media screen and (max-width: 768px) {
+  .certificates {
+    margin-bottom: 64px;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .certificates {
     margin-bottom: 32px;
@@ -841,17 +853,27 @@ min-widht: 0;
   margin-bottom: 128px;
 }
 
+@media screen and (max-width: 768px) {
+  .courses-trainings {
+    margin-bottom: 64px;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .courses-trainings {
     margin-bottom: 32px;
   }
 }
 
-.courses-trainings__title {
-  margin: 0 0 62px 0;
+.courses-trainings .container {
+  padding: 0;
 }
 
-@media screen and (max-width: 425px) {
+.courses-trainings__title {
+  margin: 0 0 64px 0;
+}
+
+@media screen and (max-width: 768px) {
   .courses-trainings__title {
     margin: 0 0 32px 0;
   }
@@ -1672,9 +1694,15 @@ input[type="checkbox"]:checked + label span {
   padding: 128px 0 64px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .feedback {
+    margin: 64px auto;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .feedback {
-    padding: 32px 0;
+    margin: 32px auto;
   }
 }
 
@@ -1682,7 +1710,7 @@ input[type="checkbox"]:checked + label span {
   margin-bottom: 64px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
   .feedback_title {
     margin-bottom: 32px;
   }
@@ -1694,9 +1722,16 @@ input[type="checkbox"]:checked + label span {
   width: 352px;
   height: 248px;
   border: 1px solid #330774;
+  background: white;
+  -webkit-filter: drop-shadow(2px 2px 4px rgba(116, 31, 242, 0.6));
+          filter: drop-shadow(2px 2px 4px rgba(116, 31, 242, 0.6));
+}
+
+.feedback__card_swiper-slide div:hover {
   -webkit-box-shadow: 2px 2px 4px rgba(116, 31, 242, 0.6);
           box-shadow: 2px 2px 4px rgba(116, 31, 242, 0.6);
-  background: white;
+  -webkit-box-shadow: 2px 2px 4px #741FF2;
+          box-shadow: 2px 2px 4px #741FF2;
 }
 
 @media screen and (max-width: 768px) {
@@ -1988,10 +2023,15 @@ input[type="checkbox"]:checked + label span {
 
 /*---- Blog Video  ---------------------*/
 .blog__video_title {
-  font-weight: 500;
   font-size: 32px;
   line-height: 150%;
-  padding: 40px 0;
+  margin: 64px auto 32px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .blog__video_title {
+    margin: 0 auto 16px auto;
+  }
 }
 
 .blog__video_link {
@@ -2060,16 +2100,27 @@ input[type="checkbox"]:checked + label span {
 }
 
 .blog__gallery_title {
-  font-weight: 500;
-  font-size: 32px;
   line-height: 150%;
-  padding: 0 0 40px 0;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .blog__gallery_title {
+    margin-bottom: 16px;
+  }
 }
 
 .blog__gallery_text {
   max-width: 550px;
   margin: 0 auto 32px auto;
   line-height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .blog__gallery_text {
+    margin-bottom: 16px;
+  }
 }
 
 /* hide on 768*/
@@ -2140,7 +2191,7 @@ input[type="checkbox"]:checked + label span {
 
 /* Blog  Poetry ------------------------*/
 .blog__poetry {
-  padding: 0 0 40px 0;
+  margin-bottom: 64px;
 }
 
 .poetry {
@@ -2151,17 +2202,17 @@ input[type="checkbox"]:checked + label span {
   gap: 3%;
 }
 
-@media screen and (max-width: 1024px) {
-  .poetry:last-child {
-    display: none;
-  }
-}
-
 .blog__poetry_title {
   margin: 0 0 32px 0;
   font-weight: 500;
   font-size: 32px;
   line-height: 150%;
+}
+
+@media screen and (max-width: 768px) {
+  .blog__poetry_title {
+    margin-bottom: 16px;
+  }
 }
 
 .blog__portey_sub-title {
@@ -2190,7 +2241,7 @@ input[type="checkbox"]:checked + label span {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 733px) {
   .poetry__card:nth-child(2) {
     display: none;
   }
@@ -2256,7 +2307,7 @@ input[type="checkbox"]:checked + label span {
 
 /* contacts ------------------------- */
 .contacts {
-  padding: 64px 0;
+  margin-bottom: 64px;
 }
 
 .contacts_title {
@@ -2441,9 +2492,9 @@ input[type="checkbox"]:checked + label span {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: footer__icons;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 1080px) {
