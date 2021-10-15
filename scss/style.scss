@@ -193,13 +193,37 @@ span {
     }
 
     &:hover {
+        @media screen and (max-width:1440px) {}
+
+        @media screen and (max-width:1024px) {}
+
+        @media screen and (max-width:768px) {}
+
+        @media screen and (max-width:425px) {
+            .logo-back {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:375px) {}
+
+        @media screen and (max-width:320px) {}
+
         .logo-front {
             transition: linear 0.5s;
             opacity: 0;
+
+            @media screen and (max-width:890px) {
+                opacity: 1;
+            }
         }
 
         .logo-back {
             opacity: 1;
+
+            @media screen and (max-width:890px) {
+                display: none;
+            }
         }
     }
 }
@@ -874,25 +898,7 @@ min-widht: 0;
     gap: 32px;
 
     @media screen and (max-width: 425px) {
-        // flex-wrap: nowrap;
-
-        // display: block;
-        // align-items: center;
-        justify-content: none;
         gap: 14px;
-
-        .flip-card {
-            // margin: 7px;
-
-            // position: relative;ы
-            &:hover {
-                // flex: 0 1 auto;
-                // top: 10px;
-                // position: absolute;
-                // overflow: visible;
-                // width: 352px;
-            }
-        }
     }
 }
 

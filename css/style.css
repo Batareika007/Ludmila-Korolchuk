@@ -204,14 +204,32 @@ span {
   width: 100%;
 }
 
+@media screen and (max-width: 425px) {
+  .logo:hover .logo-back {
+    display: none;
+  }
+}
+
 .logo:hover .logo-front {
   -webkit-transition: linear 0.5s;
   transition: linear 0.5s;
   opacity: 0;
 }
 
+@media screen and (max-width: 890px) {
+  .logo:hover .logo-front {
+    opacity: 1;
+  }
+}
+
 .logo:hover .logo-back {
   opacity: 1;
+}
+
+@media screen and (max-width: 890px) {
+  .logo:hover .logo-back {
+    display: none;
+  }
 }
 
 .logo-back {
@@ -905,9 +923,6 @@ min-widht: 0;
 
 @media screen and (max-width: 425px) {
   .courses-trainings__container {
-    -webkit-box-pack: none;
-        -ms-flex-pack: none;
-            justify-content: none;
     gap: 14px;
   }
 }
