@@ -850,10 +850,9 @@ min-widht: 0;
     }
 
     .container {
-        padding: 0;
+        padding: 10px;
     }
 }
-
 
 .courses-trainings__title {
     margin: 0 0 64px 0;
@@ -876,7 +875,7 @@ min-widht: 0;
 
     @media screen and (max-width: 425px) {
         // --- try mobile veriosn --- //
-        // display: block;
+        // display: inline-block;
         // text-align: center;
         // --- end mobile version -- //
         // justify-content: flex-start;
@@ -979,7 +978,6 @@ min-widht: 0;
     height: 352px;
     perspective: 1000px;
 
-    // @media screen and (max-width: 375px) {
     @media screen and (max-width: 425px) {
         width: 152px;
         height: 152px;
