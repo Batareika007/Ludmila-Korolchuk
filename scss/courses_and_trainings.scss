@@ -1,0 +1,41 @@
+.courses-trainings-card {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1.8fr auto;
+    gap: 16px 32px;
+    grid-template-areas: "card__image card__text"
+        "card__image card__button";
+    width: 992px;
+    padding: 32px;
+    margin-bottom: 16px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 4px rgba(51, 7, 116, 0.8);
+    border-radius: 8px;
+    overflow: hidden;
+
+    .card__image {
+        height: 352px;
+        width: 352px;
+        box-shadow: 2px 2px 4px rgba(51, 7, 116, 0.8);
+        border-radius: 8px;
+        overflow: hidden;
+        margin-right: 32px;
+        grid-area: card__image;
+        align-self: center;
+    }
+
+    .card__text {
+        text-align: left;
+        grid-area: card__text;
+
+        p {
+            margin-bottom: 16px;
+        }
+    }
+
+    .card__button {
+        font-weight: bold;
+        grid-area: card__button;
+    }
+}

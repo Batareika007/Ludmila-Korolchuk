@@ -1,0 +1,54 @@
+.courses-trainings-card {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: 1.8fr auto;
+      grid-template-rows: 1.8fr auto;
+  gap: 16px 32px;
+      grid-template-areas: "card__image card__text" "card__image card__button";
+  width: 992px;
+  padding: 32px;
+  margin-bottom: 16px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 2px 2px 4px rgba(51, 7, 116, 0.8);
+          box-shadow: 2px 2px 4px rgba(51, 7, 116, 0.8);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.courses-trainings-card .card__image {
+  height: 352px;
+  width: 352px;
+  -webkit-box-shadow: 2px 2px 4px rgba(51, 7, 116, 0.8);
+          box-shadow: 2px 2px 4px rgba(51, 7, 116, 0.8);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-right: 32px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: card__image;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.courses-trainings-card .card__text {
+  text-align: left;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: card__text;
+}
+
+.courses-trainings-card .card__text p {
+  margin-bottom: 16px;
+}
+
+.courses-trainings-card .card__button {
+  font-weight: bold;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: card__button;
+}
