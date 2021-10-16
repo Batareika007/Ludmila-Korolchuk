@@ -1372,11 +1372,13 @@ min-widht: 0;
 /* ----------- form section --------------------------- */
 
 .form {
-    padding: 80px 0 73px 0;
+    margin: 96px 0;
+    padding: 75px 0;
     background: url('../images/bg-form.jpg') 0 0 /105% 100% no-repeat;
 
     @media screen and (max-width:768px) {
-        padding: 40px 0 80px 0;
+        padding: 70px 0 80px 0;
+        margin: 64px 0;
         background: url('../images/bg-form-medium.jpg')center/cover no-repeat;
     }
 
@@ -1384,9 +1386,14 @@ min-widht: 0;
         padding: 0;
         background: none;
     }
+
+    @media screen and (max-width:425px) {
+        margin: 32px 0;
+    }
 }
 
 .form__title {
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 32px;
     color: #fff;
@@ -1395,7 +1402,8 @@ min-widht: 0;
 
     @media screen and (max-width:1200px) {
         font-size: 24px;
-        margin: -24px 0 0 0;
+        margin: 0;
+        // margin: -24px 0 0 0;
         position: relative;
         z-index: 100;
         top: 60px;
@@ -1403,9 +1411,9 @@ min-widht: 0;
 
     @media screen and (max-width:736px) {
         font-size: 16px;
-        position: relative;
+        // position: relative;
         color: #000;
-        margin: -24px 0 0 0;
+        margin: -54px 0 0 0;
         top: 40px;
     }
 }
@@ -1670,14 +1678,14 @@ input[type="checkbox"]:checked+label span {
 .feedback {
     max-width: 1120px;
     margin: 0 auto;
-    padding: 128px 0 64px 0;
+    margin-bottom: 96px;
 
     @media screen and (max-width:768px) {
-        padding: 64px 0;
+        margin-bottom: 64px;
     }
 
     @media screen and (max-width:425px) {
-        padding: 32px 0;
+        margin-bottom: 32px;
 
     }
 }

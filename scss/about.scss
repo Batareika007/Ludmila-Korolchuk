@@ -1,0 +1,285 @@
+/* ------------ slogan 1 start--------------- */
+
+.slogan {
+    @media screen and (max-width:768px) {
+        height: 90px;
+    }
+}
+
+.slogan_title {
+    font-size: 32px;
+
+    @media screen and (max-width:768px) {
+        font-size: 1rem;
+        line-height: 150%;
+    }
+}
+
+/* ------------ slogan 1 end --------------- */
+
+/* ---------- slogan 2 start --------------- */
+
+.slogan2 {
+    @media screen and (max-width:768px) {
+
+        height: 130px;
+    }
+
+    @media screen and (max-width:600px) {
+        height: 110px;
+
+        .container {
+            padding: 0;
+        }
+    }
+
+
+}
+
+.slogan_title2 {
+    font-size: 24px;
+    line-height: 140%;
+
+    @media screen and (max-width:768px) {
+        line-height: 110%;
+    }
+
+    @media screen and (max-width:600px) {
+        font-size: 16px;
+        line-height: 110%;
+    }
+
+    span {
+        display: block;
+    }
+}
+
+/*----------- slogan 2 end ---------- */
+
+/* ---------- all texts sections ------------ */
+.about {
+    margin-bottom: 32px;
+}
+
+.about__image {
+    border-radius: 8px;
+    overflow: hidden;
+
+    @media screen and (max-width:660px) {
+        display: block;
+    }
+}
+
+.about__container {
+    margin: 0 auto;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 162px auto;
+    grid-template-rows: auto auto;
+    gap: 24px 24px;
+    grid-template-areas: "about__image about__text1"
+        "about__image about__text2";
+    max-width: 750px;
+
+    @media screen and (max-width:560px) {
+        grid-template-columns: auto auto;
+        grid-template-areas: "about__image about__text1"
+            "about__text2 about__text2";
+    }
+
+    @media screen and (max-width:425px) {
+        grid-template-areas: "about__image about__text1"
+            "about__text2 about__text2";
+        gap: 14px;
+    }
+
+    .about__image {
+        grid-area: about__image;
+    }
+
+    .about__text1 {
+        grid-area: about__text1;
+    }
+
+    .about__text2 {
+        grid-area: about__text2;
+    }
+}
+
+.about__container1 {
+    margin: 0 auto;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: auto 352px;
+    grid-template-rows: auto auto;
+    gap: 24px 24px;
+    grid-template-areas: "about__text1 about__image"
+        "about__text2 about__image";
+    max-width: 750px;
+    margin-bottom: 16px;
+
+    @media screen and (max-width:768px) {
+        grid-template-columns: auto 210px;
+        gap: 16px;
+    }
+
+    @media screen and (max-width:425px) {
+        grid-template-columns: auto 156px;
+        grid-template-areas: "about__text1 about__image"
+            "about__text2 about__text2";
+    }
+
+    .about__image {
+        grid-area: about__image;
+
+    }
+
+    .about__text1 {
+        align-self: end;
+        grid-area: about__text1;
+    }
+
+    .about__text2 {
+        align-self: start;
+        grid-area: about__text2;
+    }
+}
+
+
+.about__container2 {
+    margin: 0 auto;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 352px auto;
+    grid-template-rows: auto auto;
+    gap: 24px 24px;
+    grid-template-areas: "about__image about__text1"
+        "about__text2 about__text2";
+    max-width: 750px;
+    margin-bottom: 16px;
+
+    @media screen and (max-width:768px) {
+        grid-template-columns: 344px auto;
+        grid-template-areas: "about__image about__text1"
+            ". about__text2";
+        gap: 16px;
+    }
+
+    @media screen and (max-width:425px) {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "about__image"
+            "about__text1"
+            " about__text2"
+        ;
+    }
+
+    .about__image {
+        grid-area: about__image;
+
+    }
+
+    .about__text1 {
+        grid-area: about__text1;
+    }
+
+    .about__text2 {
+        grid-area: about__text2;
+    }
+}
+
+
+.about__container3 {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 448px auto;
+    grid-template-rows: auto auto;
+    gap: 24px 24px;
+    grid-template-areas: "about__image about__text1"
+        "about__image about__text2";
+    max-width: 830px;
+    margin-bottom: 16px;
+
+    @media screen and (max-width:768px) {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "about__image about__image"
+            "about__text1 about__text2";
+        gap: 16px;
+
+        .about__image {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width:425px) {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "about__image"
+            "about__text1"
+            " about__text2"
+        ;
+    }
+
+    .about__image {
+        max-width: 100%;
+        grid-area: about__image;
+
+        @media screen and (max-width:768px) {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .about__text1 {
+        grid-area: about__text1;
+    }
+
+    .about__text2 {
+        grid-area: about__text2;
+    }
+}
+
+.about__container4 {
+    margin: 0 auto;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: auto 544px;
+    grid-template-rows: auto auto;
+    gap: 24px 24px;
+    grid-template-areas: "about__text1 about__image"
+        "about__text2 about__image";
+    max-width: 100%;
+    margin-bottom: 16px;
+
+    @media screen and (max-width:768px) {
+        grid-template-columns: 344px auto;
+        gap: 16px;
+        grid-template-areas: "about__image about__text1"
+            "about__image about__text2";
+    }
+
+    @media screen and (max-width:425px) {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "about__text1"
+            "about__text2"
+            "about__image";
+    }
+
+    .about__image {
+        grid-area: about__image;
+
+    }
+
+    .about__text1 {
+        align-self: end;
+        grid-area: about__text1;
+    }
+
+    .about__text2 {
+        align-self: start;
+        grid-area: about__text2;
+    }
+}

@@ -1,0 +1,351 @@
+/* ------------ slogan 1 start--------------- */
+@media screen and (max-width: 768px) {
+  .slogan {
+    height: 90px;
+  }
+}
+
+.slogan_title {
+  font-size: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .slogan_title {
+    font-size: 1rem;
+    line-height: 150%;
+  }
+}
+
+/* ------------ slogan 1 end --------------- */
+/* ---------- slogan 2 start --------------- */
+@media screen and (max-width: 768px) {
+  .slogan2 {
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slogan2 {
+    height: 110px;
+  }
+  .slogan2 .container {
+    padding: 0;
+  }
+}
+
+.slogan_title2 {
+  font-size: 24px;
+  line-height: 140%;
+}
+
+@media screen and (max-width: 768px) {
+  .slogan_title2 {
+    line-height: 110%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slogan_title2 {
+    font-size: 16px;
+    line-height: 110%;
+  }
+}
+
+.slogan_title2 span {
+  display: block;
+}
+
+/*----------- slogan 2 end ---------- */
+/* ---------- all texts sections ------------ */
+.about {
+  margin-bottom: 32px;
+}
+
+.about__image {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 660px) {
+  .about__image {
+    display: block;
+  }
+}
+
+.about__container {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 162px auto;
+      grid-template-columns: 162px auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  gap: 24px 24px;
+      grid-template-areas: "about__image about__text1" "about__image about__text2";
+  max-width: 750px;
+}
+
+@media screen and (max-width: 560px) {
+  .about__container {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+        grid-template-areas: "about__image about__text1" "about__text2 about__text2";
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about__container {
+        grid-template-areas: "about__image about__text1" "about__text2 about__text2";
+    gap: 14px;
+  }
+}
+
+.about__container .about__image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: about__image;
+}
+
+.about__container .about__text1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: about__text1;
+}
+
+.about__container .about__text2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: about__text2;
+}
+
+.about__container1 {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: auto 352px;
+      grid-template-columns: auto 352px;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  gap: 24px 24px;
+      grid-template-areas: "about__text1 about__image" "about__text2 about__image";
+  max-width: 750px;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .about__container1 {
+    -ms-grid-columns: auto 210px;
+        grid-template-columns: auto 210px;
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about__container1 {
+    -ms-grid-columns: auto 156px;
+        grid-template-columns: auto 156px;
+        grid-template-areas: "about__text1 about__image" "about__text2 about__text2";
+  }
+}
+
+.about__container1 .about__image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: about__image;
+}
+
+.about__container1 .about__text1 {
+  -ms-flex-item-align: end;
+      align-self: end;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: about__text1;
+}
+
+.about__container1 .about__text2 {
+  -ms-flex-item-align: start;
+      align-self: start;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: about__text2;
+}
+
+.about__container2 {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 352px auto;
+      grid-template-columns: 352px auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  gap: 24px 24px;
+      grid-template-areas: "about__image about__text1" "about__text2 about__text2";
+  max-width: 750px;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .about__container2 {
+    -ms-grid-columns: 344px auto;
+        grid-template-columns: 344px auto;
+        grid-template-areas: "about__image about__text1" ". about__text2";
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about__container2 {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "about__image" "about__text1" " about__text2";
+  }
+}
+
+.about__container2 .about__image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: about__image;
+}
+
+.about__container2 .about__text1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: about__text1;
+}
+
+.about__container2 .about__text2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: about__text2;
+}
+
+.about__container3 {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 448px auto;
+      grid-template-columns: 448px auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  gap: 24px 24px;
+      grid-template-areas: "about__image about__text1" "about__image about__text2";
+  max-width: 830px;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .about__container3 {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "about__image about__image" "about__text1 about__text2";
+    gap: 16px;
+  }
+  .about__container3 .about__image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about__container3 {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "about__image" "about__text1" " about__text2";
+  }
+}
+
+.about__container3 .about__image {
+  max-width: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: about__image;
+}
+
+@media screen and (max-width: 768px) {
+  .about__container3 .about__image img {
+    width: 100%;
+  }
+}
+
+.about__container3 .about__text1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: about__text1;
+}
+
+.about__container3 .about__text2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: about__text2;
+}
+
+.about__container4 {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: auto 544px;
+      grid-template-columns: auto 544px;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  gap: 24px 24px;
+      grid-template-areas: "about__text1 about__image" "about__text2 about__image";
+  max-width: 100%;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .about__container4 {
+    -ms-grid-columns: 344px auto;
+        grid-template-columns: 344px auto;
+    gap: 16px;
+        grid-template-areas: "about__image about__text1" "about__image about__text2";
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about__container4 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "about__text1" "about__text2" "about__image";
+  }
+}
+
+.about__container4 .about__image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: about__image;
+}
+
+.about__container4 .about__text1 {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: about__text1;
+}
+
+.about__container4 .about__text2 {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: about__text2;
+}
