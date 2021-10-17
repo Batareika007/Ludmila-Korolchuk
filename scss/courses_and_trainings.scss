@@ -1,12 +1,11 @@
 .courses-trainings-card {
-    display: grid;
     grid-auto-columns: 1fr;
-    grid-template-columns: auto auto;
     grid-template-rows: 1.8fr auto;
+    grid-template-columns: auto auto;
     gap: 16px 32px;
     grid-template-areas: "card__image card__text"
         "card__image card__button";
-    width: 992px;
+    max-width: 992px;
     padding: 32px;
     margin-bottom: 16px;
     background: #FFFFFF;
@@ -14,18 +13,67 @@
     border-radius: 8px;
     overflow: hidden;
 
+    @media screen and (max-width:768px) {
+        gap: 16px;
+        padding: 0;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: "card__image"
+            "card__text"
+            "card__button";
+    }
+
+    @media screen and (max-width:425px) {}
+
+    @media screen and (max-width:375px) {}
+
+    @media screen and (max-width:320px) {}
+
     .card__image {
+        grid-area: card__image;
+        background-size: cover;
         height: 352px;
         width: 352px;
         box-shadow: 2px 2px 4px rgba(51, 7, 116, 0.8);
         border-radius: 8px;
         overflow: hidden;
-        margin-right: 32px;
-        grid-area: card__image;
         align-self: center;
+        color: #fff;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 39px;
+
+        justify-content: space-between;
+
+        .card__price {
+            background-image: url('../images/icons/card_pice_bg.svg');
+            background-repeat: no-repeat;
+            background-position: top right;
+            padding: 16px 8px;
+            font-size: 24px;
+            align-self: flex-end;
+            min-width: 160px;
+            line-height: 29px;
+            text-align: right;
+            filter: drop-shadow(-2px 2px 2px #330774);
+        }
+
+        @media screen and (max-width:768px) {
+            // height: 100%;
+            width: 100%;
+            background-size: cover;
+        }
     }
 
     .card__text {
+        @media screen and (max-width:768px) {
+            padding: 4px;
+            /*  hide text  */
+            height: 0;
+            opacity: 0;
+
+        }
+
         text-align: left;
         grid-area: card__text;
 
@@ -35,7 +83,50 @@
     }
 
     .card__button {
-        font-weight: bold;
         grid-area: card__button;
+        justify-self: end;
+
+        @media screen and (max-width:768px) {
+            justify-self: center;
+            margin-bottom: 4px;
+        }
     }
+}
+
+
+
+
+
+
+
+
+
+
+/* cards background */
+.important-about-yourself {
+    background-image: url("../images/courses-trainings/about-yourself.png");
+}
+
+.treasures-in-the-shadows {
+    background-image: url("../images/courses-trainings/treasures-in-the-shadows.png");
+}
+
+.healing-the-inner-child {
+    background-image: url("../images/courses-trainings/healing-the-inner-child.png");
+}
+
+.my-life-my-rules {
+    background-image: url("../images/courses-trainings/my-life-my-rules.png");
+}
+
+.personal-code-of-your-confidence {
+    background-image: url("../images/courses-trainings/code-of-your-confidence.png");
+}
+
+.the-artist-way {
+    background-image: url("../images/courses-trainings/artist-way.png");
+}
+
+.palette-of-my-soul {
+    background-image: url("../images/courses-trainings/palette-of-my-soul.png");
 }
