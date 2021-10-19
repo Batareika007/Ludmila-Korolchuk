@@ -95,6 +95,7 @@
 }
 
 .courses-trainings-card .card__text {
+  padding: 8px;
   text-align: left;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -103,8 +104,8 @@
 
 @media screen and (max-width: 768px) {
   .courses-trainings-card .card__text {
-    padding: 4px;
     /*  hide text  */
+    padding: 0;
     height: 0;
     overflow: hidden;
     /* hide text*/
@@ -132,6 +133,19 @@
 }
 
 .courses-trainings-card .hide-text {
+  padding: 8px;
   height: auto;
   overflow: visible;
+}
+
+.about__content ul {
+  margin-bottom: 16px;
+}
+
+.about__content ul li {
+  max-width: 100%;
+}
+
+.about__content ul li:not(:last-child) {
+  margin-bottom: 8px;
 }

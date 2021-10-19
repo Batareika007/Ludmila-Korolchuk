@@ -79,12 +79,15 @@
     }
 
     .card__text {
+        padding: 8px;
+
         @media screen and (max-width:768px) {
-            padding: 4px;
             /*  hide text  */
+            padding: 0;
             height: 0;
             overflow: hidden;
             /* hide text*/
+
         }
 
         text-align: left;
@@ -106,10 +109,25 @@
     }
 
     .hide-text {
+        padding: 8px;
         height: auto;
         overflow: visible;
         // height: 0;
         // overflow: hidden;
         // opacity: 0;
+    }
+}
+
+.about__content {
+    ul {
+        margin-bottom: 16px;
+
+        li {
+            max-width: 100%;
+
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
     }
 }
