@@ -183,15 +183,29 @@
 }
 
 .poetry__container {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0px 32px;
+      grid-template-areas: "main-page lists-page";
   max-width: 750px;
   padding: 10px;
 }
 
 .poetry__container .poetry__main-card {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: main-page;
 }
 
 .poetry__container .poetry__lists {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: lists-page;
 }
 
@@ -225,31 +239,44 @@
           box-shadow: 4px 4px 8px #904CF5;
   border-radius: 8px;
   padding: 8px 8px 0 8px;
+}
+
+.poetry__big,
+.poetry__small {
+  max-width: 850px;
+  padding: 10px;
+  height: auto;
+}
+
+.poetry__big .poetry__lists-item,
+.poetry__small .poetry__lists-item {
+  -webkit-box-shadow: 4px 4px 8px #904CF5;
+          box-shadow: 4px 4px 8px #904CF5;
+  border-radius: 8px;
+  padding: 8px 8px 0 8px;
+}
+
+.poetry__big .poetry__lists-item .poetry__paraghraph,
+.poetry__small .poetry__lists-item .poetry__paraghraph {
+  text-align: left;
+}
+
+.poetry__big .poetry__lists-item .poetry__paraghraph p,
+.poetry__small .poetry__lists-item .poetry__paraghraph p {
+  margin-bottom: 1rem;
+}
+
+.poetry__big .poetry__lists-item {
+  margin: 0 auto;
+  max-width: 352px;
+  height: auto;
+}
+
+.poetry__small .poetry__lists-item {
+  overflow: hidden;
+  height: 200px;
   background: -webkit-linear-gradient(#000, #fff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.swiper-slide {
-  background-size: cover;
-  background-position: center;
-}
-
-.mySwiper2 {
-  height: 80%;
-  width: 100%;
-}
-
-.mySwiper {
-  height: 20%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 10px 0;
-}
-
-.mySwiper .swiper-slide {
-  width: 25%;
-  height: 100%;
-  opacity: 0.4;
 }
