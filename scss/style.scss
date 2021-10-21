@@ -1861,7 +1861,6 @@ input[type="checkbox"]:checked+label span {
 
     .article__image {
         grid-area: photo;
-        // border: 1px solid red;
         border-radius: 8px;
         overflow: hidden;
 
@@ -1875,7 +1874,6 @@ input[type="checkbox"]:checked+label span {
 
         @media screen and (max-width:768px) {
 
-            // height: 160px;
             img {
                 object-position: center;
             }
@@ -1891,8 +1889,6 @@ input[type="checkbox"]:checked+label span {
         font-size: 24px;
         line-height: 150%;
 
-        @media screen and (max-width:1440px) {}
-
         @media screen and (max-width:1024px) {
             font-size: 20px;
         }
@@ -1901,11 +1897,6 @@ input[type="checkbox"]:checked+label span {
             font-size: 18px;
         }
 
-        @media screen and (max-width:425px) {}
-
-        @media screen and (max-width:375px) {}
-
-        @media screen and (max-width:320px) {}
     }
 
     .article__text {
