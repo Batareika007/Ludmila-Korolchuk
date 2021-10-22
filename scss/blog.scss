@@ -148,120 +148,50 @@
     align-self: start;
 }
 
-// --------- article end
+// --------- article end ---------//
 
-// --------- Poetry start
+// --------- Poetry start --------//
 
 .blog__poetry {
     margin-bottom: 64px;
 }
 
-.blog__poetry_title {
-    margin-bottom: 24px;
-}
-
+.blog__poetry_title,
 .blog__poetry_text {
-    margin: 0 auto 24px auto;
     max-width: 352px;
-    text-align: center;
+    margin: 0 auto 24px auto;
 }
 
-.poetry__container {
-    margin: 0 auto;
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 32px;
-    grid-template-areas: "main-page lists-page";
-    max-width: 750px;
-    padding: 10px;
+// poetry corousel cards
 
-    .poetry__main-card {
-        grid-area: main-page;
-    }
-
-    .poetry__lists {
-        .poetry__lists-item {
-            overflow: hidden;
-            height: 200px;
-            margin-bottom: 1rem;
-            box-shadow: 4px 4px 8px #904CF5;
-            border-radius: 8px;
-            padding: 8px 8px 0 8px;
-            background: -webkit-linear-gradient(#000, #fff);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        grid-area: lists-page;
-
-
-        .poetry__paraghraph {
-            overflow: hidden;
-            text-align: left;
-
-            p {
-                margin-bottom: 1rem;
-            }
-        }
-    }
+.poetry-cards {
+    max-width: 550px;
 }
 
 .poetry__lists-item {
     overflow: hidden;
-    height: 200px;
     box-shadow: 4px 4px 8px #904CF5;
     border-radius: 8px;
-    padding: 8px 8px 0 8px;
-    // background: -webkit-linear-gradient(#000, #fff);
-    // -webkit-background-clip: text;
-    // background-clip: text;
-    // -webkit-text-fill-color: transparent;
-}
+    // padding: 8px 8px 16px 8px;
+    padding: 16px;
+    background-color: #fff;
 
-// Poetry end
+    .poetry__paraghraph {
+        max-width: fit-content;
+        margin: 0 auto;
+    }
 
-.poetry__big,
-.poetry__small {
-    max-width: 850px;
-    padding: 10px;
-    height: auto;
+    p {
+        margin-bottom: 1rem;
+        text-align: left;
 
-    .poetry__lists-item {
-        box-shadow: 4px 4px 8px #904CF5;
-        border-radius: 8px;
-        padding: 8px 8px 0 8px;
-
-        .poetry__paraghraph {
-            text-align: left;
-
-            p {
-                margin-bottom: 1rem;
-            }
+        span {
+            display: block;
         }
     }
 }
 
-.poetry__big {
-    // max-width: 750px;
 
-    .poetry__lists-item {
-        margin: 0 auto;
-        max-width: 352px;
-        height: auto;
 
-    }
-}
 
-.poetry__small {
-    .poetry__lists-item {
-        overflow: hidden;
-        height: 200px;
-        background: -webkit-linear-gradient(#000, #fff);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-}
+// Poetry end
