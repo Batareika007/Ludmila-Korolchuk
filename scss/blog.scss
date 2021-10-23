@@ -191,7 +191,320 @@
     }
 }
 
-
-
-
 // Poetry end
+
+
+// --------------- Gallery start 
+.blog__gallery {
+    .container {
+        padding: 0;
+    }
+}
+
+.images-container1 {
+    display: grid;
+    margin-bottom: 15px;
+    grid-template-columns: 0.65fr 1.4fr 1.4fr 0.65fr;
+    grid-template-rows: 200px;
+    gap: 0 24px;
+    grid-template-areas:
+        "image1 image2 image3 image4";
+    // max-width: 1120px;
+
+    div {
+        border-radius: 8px;
+    }
+
+    @media screen and (max-width:768px) {
+        grid-template-columns: 0.5fr 1.5fr 0.5fr;
+        grid-template-areas: "image1 image2 image4";
+        gap: 0 16px;
+
+        .image3 {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:425px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "image1 image4";
+
+        .image2 {
+            display: none;
+        }
+    }
+}
+
+.images-container2 {
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+    gap: 0 24px;
+    grid-template-areas:
+        "image5 image6 image7";
+
+    div {
+        border-radius: 8px;
+    }
+
+    @media screen and (max-width:768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "image5 image7";
+        gap: 0 16px;
+
+        .image6 {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:425px) {
+        grid-template-columns: 1fr;
+        grid-template-areas: "image5";
+
+        .image7 {
+            display: none;
+        }
+    }
+}
+
+.images-container3 {
+    display: grid;
+    margin-bottom: 15px;
+    grid-template-columns: 0.65fr 1.4fr 1.4fr 0.65fr;
+    grid-template-rows: 200px;
+    gap: 0 24px;
+    grid-template-areas:
+        "image9 image8 image12 image10";
+
+    div {
+        border-radius: 8px;
+    }
+
+    @media screen and (max-width:768px) {
+        grid-template-columns: 0.5fr 1.5fr 0.5fr;
+        grid-template-areas: "image9 image12 image10";
+        gap: 0 16px;
+
+        .image8 {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:425px) {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: "image12 image10";
+
+        .image9 {
+            display: none;
+        }
+    }
+}
+
+.images-container4 {
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1.4fr 1.4fr 0.65fr 0.65fr;
+    grid-template-rows: 200px;
+    gap: 0 24px;
+    grid-template-areas:
+        "image18 image17 image11 image14";
+
+    div {
+        border-radius: 8px;
+    }
+
+    @media screen and (max-width:768px) {
+        grid-template-columns: 1fr 1fr 0.5fr;
+        grid-template-areas: "image18 image17 image11";
+        gap: 0 16px;
+
+        .image14 {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:425px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "image17 image11";
+
+        .image18 {
+            display: none;
+        }
+    }
+}
+
+.images-container5 {
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1.4fr 1.4fr 0.65fr 0.65fr;
+    grid-template-rows: 200px;
+    gap: 0 24px;
+    grid-template-areas:
+        "image20 image19 image15 image13";
+
+    div {
+        border-radius: 8px;
+    }
+
+    @media screen and (max-width:768px) {
+        grid-template-columns: repeat(4, 0.5fr);
+        gap: 0 16px;
+
+        .image3 {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:425px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "image15 image13";
+
+        .image20,
+        .image19 {
+            display: none;
+        }
+    }
+}
+
+.image1 {
+    grid-area: image1;
+    background-image: url('../images/galerry/gallery-small/img1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image2 {
+    grid-area: image2;
+    background-image: url('../images/galerry/gallery-small/img2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image3 {
+    grid-area: image3;
+    background-image: url('../images/galerry/gallery-small/img3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image4 {
+    grid-area: image4;
+    background-image: url('../images/galerry/gallery-small/img4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image5 {
+    grid-area: image5;
+    background-image: url('../images/galerry/gallery-small/img5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image6 {
+    grid-area: image6;
+    background-image: url('../images/galerry/gallery-small/img6.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image7 {
+    grid-area: image7;
+    background-image: url('../images/galerry/gallery-small/img7.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image8 {
+    grid-area: image8;
+    background-image: url('../images/galerry/gallery-small/img8.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image9 {
+    grid-area: image9;
+    background-image: url('../images/galerry/gallery-small/img-blog9.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image10 {
+    grid-area: image10;
+    background-image: url('../images/galerry/gallery-small/img-blog10.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image11 {
+    grid-area: image11;
+    background-image: url('../images/galerry/gallery-small/img-blog11.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image12 {
+    grid-area: image12;
+    background-image: url('../images/galerry/gallery-small/img-blog12.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image13 {
+    grid-area: image13;
+    background-image: url('../images/galerry/gallery-small/img-blog13.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image14 {
+    grid-area: image14;
+    background-image: url('../images/galerry/gallery-small/img-blog14.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image15 {
+    grid-area: image15;
+    background-image: url('../images/galerry/gallery-small/img-blog15.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image16 {
+    grid-area: image16;
+    background-image: url('../images/galerry/gallery-small/img-blog16.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image17 {
+    grid-area: image17;
+    background-image: url('../images/galerry/gallery-small/img-blog17.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image18 {
+    grid-area: image18;
+    background-image: url('../images/galerry/gallery-small/img-blog18.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image19 {
+    grid-area: image19;
+    background-image: url('../images/galerry/gallery-small/img-blog19.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image20 {
+    grid-area: image20;
+    background-image: url('../images/galerry/gallery-small/img-blog20.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+// --------- Gallery end
