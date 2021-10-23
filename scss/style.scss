@@ -1719,12 +1719,9 @@ input[type="checkbox"]:checked+label span {
 
         }
 
-        @media screen and (max-width:1440px) {}
-
-        @media screen and (max-width:1024px) {}
-
         @media screen and (max-width:768px) {
             width: 344px;
+            height: auto;
         }
 
         @media screen and (max-width:425px) {
@@ -1732,20 +1729,11 @@ input[type="checkbox"]:checked+label span {
             height: 256px;
             padding: 8px;
         }
-
-        @media screen and (max-width:375px) {}
-
-        @media screen and (max-width:320px) {
-            height: auto;
-        }
-
     }
 }
 
 .feedback_text {
     text-align: left;
-    font-family: 'Lora';
-    font-size: 16px;
     line-height: 150%;
 }
 

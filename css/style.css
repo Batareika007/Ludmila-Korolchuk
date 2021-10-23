@@ -1774,6 +1774,7 @@ input[type="checkbox"]:checked + label span {
 @media screen and (max-width: 768px) {
   .feedback__card_swiper-slide div {
     width: 344px;
+    height: auto;
   }
 }
 
@@ -1785,16 +1786,8 @@ input[type="checkbox"]:checked + label span {
   }
 }
 
-@media screen and (max-width: 320px) {
-  .feedback__card_swiper-slide div {
-    height: auto;
-  }
-}
-
 .feedback_text {
   text-align: left;
-  font-family: 'Lora';
-  font-size: 16px;
   line-height: 150%;
 }
 
