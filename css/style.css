@@ -1040,6 +1040,10 @@ min-widht: 0;
           transform: rotateY(180deg);
 }
 
+.flip-card:hover .flip-card__item a {
+  color: #fff;
+}
+
 .flip-card-front,
 .flip-card-back {
   position: absolute;
@@ -1379,6 +1383,13 @@ min-widht: 0;
   opacity: 0;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+}
+
+@media screen and (max-width: 425px) {
+  .consultiung__cards_card .price {
+    font-size: 1rem;
+    font-weight: 600;
+  }
 }
 
 .consultiung__cards_card:hover span {

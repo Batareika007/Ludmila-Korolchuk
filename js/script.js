@@ -75,7 +75,9 @@ const swiper2 = new Swiper('.swiper-feedback', {
     grabCursor: true,
     spaceBetween: 10,
     slidesPerView: 1.08,
+    loop: true,
     breakpoints: {
+        
         330:{
             slidesPerView: 1.08,
         },
@@ -125,6 +127,7 @@ const swiper2 = new Swiper('.swiper-feedback', {
 
         },
         1150: {
+            loop: false,
             centeredSlides: false,
             slidesPerView: 3,
         },
@@ -135,6 +138,7 @@ const swiper2 = new Swiper('.swiper-feedback', {
 const swiper3 = new Swiper('.swiper-price', {
     centeredSlides: true,
     grabCursor: true,
+    loop: true,
     slidesPerView: 1.1,
     breakpoints: {
 
@@ -185,6 +189,7 @@ const swiper3 = new Swiper('.swiper-price', {
         },
 
         1100: {
+            loop: false,
             centeredSlides: false,
             slidesPerView: 3,
             // spaceBetween: 35,

@@ -1017,6 +1017,10 @@ min-widht: 0;
 
 .flip-card:hover .flip-card__item {
     transform: rotateY(180deg);
+
+    a {
+        color: #fff;
+    }
 }
 
 .flip-card-front,
@@ -1342,6 +1346,17 @@ min-widht: 0;
         text-align: center;
         opacity: 0;
         transition: all 0.3s linear;
+
+        @media screen and (max-width:768px) {}
+
+        @media screen and (max-width:425px) {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        @media screen and (max-width:375px) {}
+
+        @media screen and (max-width:320px) {}
     }
 
     &:hover {
