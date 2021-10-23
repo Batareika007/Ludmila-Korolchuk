@@ -2162,42 +2162,120 @@ input[type="checkbox"]:checked+label span {
 
 // ------------------------ images container 
 
-/* hide on 768*/
-.hide-on-768 {
-    @media screen and (max-width:768px) {
-        display: none;
+.images-container1 {
+    display: grid;
+    margin-bottom: 15px;
+    grid-template-columns: 0.65fr 1.4fr 1.4fr 0.65fr;
+    grid-template-rows: 200px;
+    gap: 0 24px;
+    grid-template-areas:
+        "image1 image2 image3 image4";
+    // max-width: 1120px;
+
+    div {
+        border-radius: 8px;
     }
-}
-
-
-.visible-on-768 {
-    display: none;
 
     @media screen and (max-width:768px) {
-        display: flex;
-    }
-}
+        grid-template-columns: 0.5fr 1.5fr 0.5fr;
+        grid-template-areas: "image1 image2 image4";
+        gap: 0 16px;
 
-.visible-on-425 {
-    display: none;
+        .image3 {
+            display: none;
+        }
+    }
 
     @media screen and (max-width:425px) {
-        display: flex;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "image1 image4";
+
+        .image2 {
+            display: none;
+        }
     }
 }
 
-.hide-on-425 {
+.images-container2 {
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+    gap: 0 24px;
+    grid-template-areas:
+        "image5 image6 image7";
+
+    div {
+        border-radius: 8px;
+    }
+
+    @media screen and (max-width:768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "image5 image7";
+        gap: 0 16px;
+
+        .image6 {
+            display: none;
+        }
+    }
+
     @media screen and (max-width:425px) {
-        display: none;
+        grid-template-columns: 1fr;
+        grid-template-areas: "image5";
+
+        .image7 {
+            display: none;
+        }
     }
 }
 
-.image-container {
-    // gap: 32px;
-    gap: 2%;
-    justify-content: center;
-    margin-bottom: 2%;
-    position: relative;
+.image1 {
+    grid-area: image1;
+    background-image: url('../images/galerry/gallery-small/img1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image2 {
+    grid-area: image2;
+    background-image: url('../images/galerry/gallery-small/img2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image3 {
+    grid-area: image3;
+    background-image: url('../images/galerry/gallery-small/img3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image4 {
+    grid-area: image4;
+    background-image: url('../images/galerry/gallery-small/img4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image5 {
+    grid-area: image5;
+    background-image: url('../images/galerry/gallery-small/img5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image6 {
+    grid-area: image6;
+    background-image: url('../images/galerry/gallery-small/img6.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.image7 {
+    grid-area: image7;
+    background-image: url('../images/galerry/gallery-small/img7.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .image-item {
