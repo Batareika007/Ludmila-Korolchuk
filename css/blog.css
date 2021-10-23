@@ -41,8 +41,8 @@
   .article__container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 284px auto auto auto;
-        grid-template-rows: 284px auto auto auto;
+    -ms-grid-rows: 200px auto auto auto;
+        grid-template-rows: 200px auto auto auto;
         grid-template-areas: "article__image" "article__text" "article__links" "acordion";
   }
 }
