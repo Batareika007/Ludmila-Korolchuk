@@ -1,5 +1,13 @@
 .blog__title {
     margin-bottom: 64px;
+
+    @media screen and (max-width:768px) {
+        margin-bottom: 32px;
+    }
+
+    @media screen and (max-width:425px) {
+        margin-bottom: 16px;
+    }
 }
 
 // article start
@@ -8,6 +16,12 @@
     font-weight: 500;
     font-size: 32px;
     line-height: 150%;
+
+    @media screen and (max-width:425px) {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
 }
 
 .article-title {
@@ -17,6 +31,12 @@
     margin-bottom: 24px;
     font-family: 'Montserrat',
         sans-serif;
+
+    @media screen and (max-width:425px) {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
 }
 
 .article__container {
