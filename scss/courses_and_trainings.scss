@@ -80,12 +80,14 @@
 
     .card__text {
         padding: 8px;
+        transition: .3s linear;
 
         @media screen and (max-width:768px) {
             /*  hide text  */
             padding: 0;
             height: 0;
             overflow: hidden;
+            transition: .3s linear;
             /* hide text*/
 
         }
@@ -108,13 +110,15 @@
         }
     }
 
-    .hide-text {
+    .show-text {
         padding: 8px;
         height: auto;
         overflow: visible;
         // height: 0;
         // overflow: hidden;
         // opacity: 0;
+        transition: .3s linear;
+
     }
 }
 
@@ -129,5 +133,204 @@
                 margin-bottom: 8px;
             }
         }
+    }
+}
+
+.form {
+    display: none;
+    // opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    // display: inline-block;
+    margin: 0 auto 30px auto;
+    background: none;
+    background-color: #E3D2FC;
+    width: 790px;
+    max-width: 100%;
+    padding: 48px 0 24px 0;
+    border-radius: 8px;
+    height: auto;
+
+    input {
+        margin-bottom: 16px;
+    }
+
+    @media screen and (max-width:735px) {
+        padding-top: 24px;
+        width: 400px;
+    }
+}
+
+.form__title {
+    color: #330774;
+    position: static;
+    font-size: 24px;
+    margin: 0 0 24px 0 !important;
+
+    @media screen and (max-width:1440px) {}
+
+    @media screen and (max-width:1024px) {}
+
+    @media screen and (max-width:768px) {
+        margin: 0 0 24px 0;
+    }
+
+    @media screen and (max-width:425px) {
+        // margin-bottom: 8px;
+    }
+
+    @media screen and (max-width:375px) {
+        margin: 0 0 16px 0 !important;
+    }
+
+    @media screen and (max-width:320px) {}
+}
+
+.form-container {
+    padding: 0;
+    display: block;
+
+    .flex-row {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 0 32px;
+
+        div {
+            flex: 0 1 352px;
+        }
+    }
+}
+
+.form-submit {
+    align-self: center;
+    margin-bottom: 16px;
+
+    button {
+        width: 100% !important;
+        font-size: 16px !important;
+
+
+    }
+}
+
+.inner-button {
+    text-transform: uppercase;
+
+}
+
+.form-consulting-select {
+    z-index: 100;
+}
+
+.nice-select .list {
+    width: 352px !important;
+    background-color: #fff;
+}
+
+/* cross to close form start */
+.cross {
+    content: url("../images/icons/cross.svg");
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    @media screen and (max-width:1440px) {}
+
+    @media screen and (max-width:1024px) {}
+
+    @media screen and (max-width:768px) {}
+
+    @media screen and (max-width:425px) {}
+
+    @media screen and (max-width:375px) {
+        top: 8px;
+        right: 8px;
+    }
+
+    @media screen and (max-width:320px) {}
+}
+
+/* cross to close form end */
+
+/* --------------  form privacy-policy ---------*/
+
+input[type="checkbox"]+label {
+    cursor: auto;
+
+}
+
+input[type="checkbox"]+label span {
+    position: relative;
+    right: 32px;
+    top: 25%;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    margin: -1px -23px 0 0;
+    vertical-align: middle;
+    background: url('../images/icons/checkbox.svg') 1px 0 /auto no-repeat;
+    z-index: 0;
+}
+
+input[type="checkbox"]:checked+label span {
+    // margin: -2px 16px 0 0;
+    background: url('../images/icons/checkbox-active.svg') 0 0 /auto no-repeat;
+    z-index: 0;
+}
+
+.checkbox-container {
+    @media screen and (max-width: 1261px) {
+        display: unset;
+        // flex-direction: row;
+        // justify-content: space-around;
+    }
+}
+
+.checkbox-item {
+    margin: 0 auto;
+    max-width: 465px;
+
+    @media screen and (max-width:735px) {
+        max-width: 272px;
+    }
+
+    .checkbox-text {
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+.form-success {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    padding: 56px 16px 16px 16px;
+    margin: 0 auto;
+    max-width: 576px;
+    min-width: 344px;
+    background-color: #E3D2FC;
+
+    h4 {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    @media screen and (max-width:768px) {
+        padding: 56px 11px 16px 11px;
     }
 }

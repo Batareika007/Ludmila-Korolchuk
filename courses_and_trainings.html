@@ -124,7 +124,7 @@
 
                         <div class="card__button flex-row flex-center">
                             <button class="button_style flex-center">
-                                <span class="flex-center">
+                                <span class="flex-center inner-button">
                                     ЗАКАЗАТЬ
                                 </span>
                             </button>
@@ -181,7 +181,7 @@
 
                         <div class="card__button flex-row flex-center">
                             <button class="button_style flex-center">
-                                <span class="flex-center">
+                                <span class="flex-center inner-button">
                                     ЗАКАЗАТЬ
                                 </span>
                             </button>
@@ -241,7 +241,7 @@
 
                         <div class="card__button flex-row flex-center">
                             <button class="button_style flex-center">
-                                <span class="flex-center">
+                                <span class="flex-center inner-button">
                                     ЗАКАЗАТЬ
                                 </span>
                             </button>
@@ -272,8 +272,8 @@
                         <div class="card__text">
                             <div class="about__content">
                                 <ul> <span>
-                                    Программа поможет вам
-                                </span> 
+                                        Программа поможет вам
+                                    </span>
                                     <li>более четко исследовать тему своих личных границ, чтобы определить зоны, где
                                         идет
                                         утечка энергии.
@@ -286,7 +286,7 @@
                                         (по
                                         материалам Михаила Литвака). </li>
                                 </ul>
-                                
+
                                 <ul>
                                     <span>
                                         Это базовые навыки коммуникации, которые помогут решать конфликты в повседневной
@@ -310,7 +310,7 @@
 
                         <div class="card__button flex-row flex-center">
                             <button class="button_style flex-center">
-                                <span class="flex-center">
+                                <span class="flex-center inner-button">
                                     ЗАКАЗАТЬ
                                 </span>
                             </button>
@@ -339,8 +339,8 @@
                         <div class="card__text">
                             <p>Курс «Личный код твоей уверенности» - это программа индивидульного сопровождения, 7
                                 вебинаров в записи и 7 личных консультаций. Стоимость 9000 грн.</p>
-                                <div class="about__content">
-                                    <ul>
+                            <div class="about__content">
+                                <ul>
                                     <span>Моя программа поможет вам:</span>
                                     <li>Если вы не уверенны в себе, ваша жизнь зависит от других и сложно принимать
                                         самостоятельные решения.
@@ -421,7 +421,7 @@
 
                         <div class="card__button flex-row flex-center">
                             <button class="button_style flex-center">
-                                <span class="flex-center">
+                                <span class="flex-center inner-button">
                                     ЗАКАЗАТЬ
                                 </span>
                             </button>
@@ -481,7 +481,7 @@
 
                         <div class="card__button flex-row flex-center">
                             <button class="button_style flex-center">
-                                <span class="flex-center">
+                                <span class="flex-center inner-button">
                                     ЗАКАЗАТЬ
                                 </span>
                             </button>
@@ -562,21 +562,103 @@
 
                         <div class="card__button flex-row flex-center">
                             <button class="button_style flex-center">
-                                <span class="flex-center">
+                                <span class="flex-center inner-button">
                                     ЗАКАЗАТЬ
                                 </span>
                             </button>
                         </div>
                     </div>
 
-
-
                 </div>
-
-
 
             </section>
 
+            <!-- ================= form on click start ============================-->
+
+
+            <section class="form" id="form">
+                <div class="cross"></div>
+
+                <h3 class="form__title">ЗАПИСАТЬСЯ НА КУРС</h3>
+                <form class="form-container" action="https://formsubmit.co/ludakorolchuk@gmail.com" method="POST">
+
+                    <div class="flex-row">
+                        <div>
+                            <label for="lastname">Фамилия</label>
+                            <input class="form_input" type="text" name="lastname" id="lastname" placeholder="Фамилия"
+                                required>
+                        </div>
+                        <div>
+
+                            <label for="firstname">Имя</label>
+                            <input class="form_input" type="text" name="first-name" id="firstname" placeholder="Имя"
+                                required>
+                        </div>
+                        <div>
+
+                            <label for="email">E-mail</label>
+                            <input class="form_input" type="email" name="E-mail" id="email" placeholder="E-mail"
+                                required>
+                        </div>
+                        <div>
+
+                            <label for="phone-input">Телефон</label>
+                            <input id="phone-input" class="form_input" type="tel" name="phone"
+                                placeholder="+38(___) ___-__-__"
+                                pattern="[\+]\d{2}\s[\(]\[69]{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="29" required>
+                        </div>
+                        <div class="form-consulting-select">
+                            <label for="nice-select">Выбрать курс (тренинг)</label>
+                            <select id="nice-select" class="form_input" name="consulting-type"
+                                placeholder="Выбрать курс (тренинг)" required>
+                                <option value=""> </option>
+                                <option value="important about yourself">Игра ”Важное о себе”</option>
+                                <option value="treasures in the shadows">Тренинг ”Сокровища в тени”</option>
+                                <option value="healing the inner child">Тренинг ”Исцеление внутреннего ребенка”</option>
+                                <option value="my life my rules">Тренинг ”Моя жизнь- мои правила”</option>
+                                <option value="personal code of your confidence">Курс ”Личный код твоей уверенности”
+                                </option>
+                                <option value="the artist way">Курс ”Путь художника”</option>
+                                <option value="palette of my soul">Курс ”Раскрась свою жизнь”</option>
+
+                            </select>
+                        </div>
+                        <!-- submit button -->
+                        <div class="form-submit">
+                            <button type="submit" value="Submit" class="button_style">
+                                <span class="flex-center">отправить</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="checkbox-container">
+                        <div class="checkbox-item">
+                            <input class="checkbox-icon" type="checkbox" name="privacy policy" id="privacy-policy"
+                                required>
+                            <label class="checkbox-text" for="privacy-policy">
+                                <span></span>Отправляя форму я соглашаюсь с <a href="#"> политикой
+                                    конфинденциальности</a> и обработкой персональных данных
+                            </label>
+                        </div>
+                    </div>
+
+                </form>
+            </section>
+
+            <!-- ================= form on click end ============================-->
+
+            <!-- ================= messeg after sending form start ============================-->
+
+            <div class="form-success">
+                <div class="cross"></div>
+                <h4>Благодарим Вас за заказ.</h4>
+                <p>
+                    <span>Реквизиты для оплаты будут высланы Вам на электронную почту.</span>
+                    <span>Мы свяжемся с Вами в ближайшее время для подтверждения заказа.</span>
+                </p>
+            </div>
+
+            <!-- ================= messeg after sending form end ============================-->
 
 
         </main>
@@ -587,7 +669,8 @@
             <div class="container">
                 <nav class="footer__container grid">
 
-                    <a href="https://korolchuk.com.ua/" class="footer__logo"><img src="images/logo/LOGO.png" alt="logo"></a>
+                    <a href="https://korolchuk.com.ua/" class="footer__logo"><img src="images/logo/LOGO.png"
+                            alt="logo"></a>
 
                     <ul class="flex-row footer__links">
                         <li>
@@ -652,15 +735,51 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/lightbox.js"></script>
     <script src="js/phone-mask.js"></script>
-    <!-- <script src="js/nice-select2.js"></script> -->
+    <script src="js/nice-select2.js"></script>
     <script src="js/script.js"></script>
     <script>
-        $('.courses-trainings-card').on('click', '.card__button', function () {
-            if ($(this).closest('.courses-trainings-card').find('.card__text').hasClass('hide-text')) {
-                $(this).closest('.courses-trainings-card').find('.card__text').removeClass('hide-text');
-            } else {
-                $(this).closest('.courses-trainings-card').find('.card__text').addClass('hide-text');
-            }
+
+        $(document).ready(function () {
+
+
+            // if ($(window).width() <= 768 ) {
+            //     $('.inner-button').text("подробнее");
+            // }
+
+            $(window).on('resize', function () {
+                var win = $(this); //this = window
+                if (win.width() <= 768) {
+                    $('.inner-button').text("подробнее");
+
+                } else if (win.width() > 768) {
+                    $('.inner-button').text("подробнее");
+                }
+            });
+
+            // if ($(window).width() <= 768) {
+            //     $('.inner-button').text("подробнее");
+
+            //     $('.courses-trainings-card').on('click', '.card__button', function () {
+            //         if ($(this).closest('.courses-trainings-card').find('.card__text').hasClass('')) {
+            //             // $('.form').css('display', 'block');
+            //             $('.inner-button').text("ЗАКАЗАТЬ");
+            //             // $(this).closest('.courses-trainings-card').find('.card__text').removeClass('hide-text');
+            //         } else {
+            //             $(this).closest('.courses-trainings-card').find('.card__text').addClass('show-text');
+            //             // $('.inner-button').text("ЗАКАЗАТЬ");
+            //         }
+            //     });
+            // }
+
+
+
+            // close window in cross click //
+            $('.form-success').on('click', '.cross', function () {
+                $('.form-success').css('display', 'none');
+            });
+            $('.form').on('click', '.cross', function () {
+                $('.form').css('display', 'none');
+            });
         });
     </script>
 </body>
