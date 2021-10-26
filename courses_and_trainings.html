@@ -738,49 +738,38 @@
     <script src="js/nice-select2.js"></script>
     <script src="js/script.js"></script>
     <script>
-
         $(document).ready(function () {
+                    if ($(window).width() <= 768) {
+                        $('.inner-button').text("подробнее");
 
 
-            // if ($(window).width() <= 768 ) {
-            //     $('.inner-button').text("подробнее");
-            // }
+                        $('.courses-trainings-card').on('click', '.card__button', function () {
+                            if ($(this).closest('.courses-trainings-card').find('.card__text').hasClass('show-text')) {
+                                $('.form').css('display', 'block');
+                                // $(this).closest('.courses-trainings-card').find('.card__text').removeClass('show-text');
+                            } else {
+                                $(this).closest('.courses-trainings-card').find('.card__text').addClass(
+                                    'show-text');
+                                $(this).closest('.courses-trainings-card').find('.inner-button').text(
+                                    'заказать');
+                            }
+                        });
+                    }else{
+                        $('.courses-trainings-card').on('click', '.card__button', function () {
+                            $('.form').css('display', 'block');
+                        });
+                    }
 
-            $(window).on('resize', function () {
-                var win = $(this); //this = window
-                if (win.width() <= 768) {
-                    $('.inner-button').text("подробнее");
+                });
 
-                } else if (win.width() > 768) {
-                    $('.inner-button').text("подробнее");
-                }
-            });
-
-            // if ($(window).width() <= 768) {
-            //     $('.inner-button').text("подробнее");
-
-            //     $('.courses-trainings-card').on('click', '.card__button', function () {
-            //         if ($(this).closest('.courses-trainings-card').find('.card__text').hasClass('')) {
-            //             // $('.form').css('display', 'block');
-            //             $('.inner-button').text("ЗАКАЗАТЬ");
-            //             // $(this).closest('.courses-trainings-card').find('.card__text').removeClass('hide-text');
-            //         } else {
-            //             $(this).closest('.courses-trainings-card').find('.card__text').addClass('show-text');
-            //             // $('.inner-button').text("ЗАКАЗАТЬ");
-            //         }
-            //     });
-            // }
-
-
-
-            // close window in cross click //
-            $('.form-success').on('click', '.cross', function () {
-                $('.form-success').css('display', 'none');
-            });
-            $('.form').on('click', '.cross', function () {
-                $('.form').css('display', 'none');
-            });
-        });
+                    // close window in cross click //
+                    $('.form-success').on('click', '.cross', function () {
+                        $('.form-success').css('display', 'none');
+                    });
+                    $('.form').on('click', '.cross', function () {
+                        $('.form').css('display', 'none');
+                    });
+               
     </script>
 </body>
 
