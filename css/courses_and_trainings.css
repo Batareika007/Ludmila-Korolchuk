@@ -233,6 +233,7 @@
 }
 
 .form-submit button {
+  text-transform: uppercase;
   width: 100% !important;
   font-size: 16px !important;
 }
