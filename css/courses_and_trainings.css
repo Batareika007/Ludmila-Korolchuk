@@ -181,6 +181,9 @@
   .form {
     padding-top: 24px;
     width: 400px;
+    max-height: 100%;
+    overflow: scroll;
+    z-index: 1000;
   }
 }
 
