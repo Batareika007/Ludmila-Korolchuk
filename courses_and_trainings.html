@@ -580,7 +580,7 @@
                 <div class="cross"></div>
 
                 <h3 class="form__title">ЗАПИСАТЬСЯ НА КУРС</h3>
-                <form class="form-container" action="https://formsubmit.co/ludakorolchuk@gmail.com" method="POST">
+                <form class="form-container gform" action="https://script.google.com/macros/s/AKfycbwR0cZ7UH8LpLb2p4sam08S3TJN5nUVp84W0Oyu/exec" method="POST">
 
                     <div class="flex-row">
                         <div>
@@ -641,7 +641,14 @@
                             </label>
                         </div>
                     </div>
-
+                    <div class="form-success thankyou_message">
+                <div class="cross"></div>
+                <h4>Благодарим Вас за заказ.</h4>
+                <p>
+                    <span>Реквизиты для оплаты будут высланы Вам на электронную почту.</span>
+                    <span>Мы свяжемся с Вами в ближайшее время для подтверждения заказа.</span>
+                </p>
+            </div>
                 </form>
             </section>
 
@@ -649,7 +656,7 @@
 
             <!-- ================= messeg after sending form start ============================-->
 
-            <div class="form-success">
+            <div class="form-success thankyou_message">
                 <div class="cross"></div>
                 <h4>Благодарим Вас за заказ.</h4>
                 <p>
@@ -736,6 +743,7 @@
     <script src="js/lightbox.js"></script>
     <script src="js/phone-mask.js"></script>
     <script src="js/nice-select2.js"></script>
+    <script src="js/form-submission-handler.js"></script>
     <script src="js/script.js"></script>
     <script>
         $(document).ready(function () {

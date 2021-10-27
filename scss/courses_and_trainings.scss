@@ -244,14 +244,6 @@
     top: 16px;
     right: 16px;
 
-    @media screen and (max-width:1440px) {}
-
-    @media screen and (max-width:1024px) {}
-
-    @media screen and (max-width:768px) {}
-
-    @media screen and (max-width:425px) {}
-
     @media screen and (max-width:375px) {
         top: 8px;
         right: 8px;
@@ -313,29 +305,8 @@ input[type="checkbox"]:checked+label span {
 }
 
 .form-success {
-    display: none;
+    // display: block;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 8px;
-    padding: 56px 16px 16px 16px;
-    margin: 0 auto;
+    // margin: 0 auto;
     max-width: 576px;
-    min-width: 344px;
-    background-color: #E3D2FC;
-
-    h4 {
-        text-align: center;
-        font-family: 'Montserrat';
-        font-size: 24px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    @media screen and (max-width:768px) {
-        padding: 56px 11px 16px 11px;
-    }
 }

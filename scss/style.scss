@@ -2657,20 +2657,25 @@ input[type="checkbox"]:checked+label span {
 .form-success {
     display: none;
     position: fixed;
-    top: 50%;
+    // top: 50%;
+    bottom: -10%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 8px;
-    padding: 56px 16px 16px 16px;
-    margin: 0 auto;
-    max-width: 576px;
-    min-width: 344px;
+    padding: 16px;
+    // margin: 0 auto;
+    // max-width: 576px;
+    min-width: 320px;
     background-color: #E3D2FC;
+    box-shadow: 1px 1px 18px rgba(51, 7, 116, 1);
+    z-index: 300;
 
     h4 {
         text-align: center;
         font-family: 'Montserrat';
         font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 16px;
     }
 
     p {
@@ -2678,7 +2683,7 @@ input[type="checkbox"]:checked+label span {
     }
 
     @media screen and (max-width:768px) {
-        padding: 56px 11px 16px 11px;
+        padding: 16px;
     }
 }
 

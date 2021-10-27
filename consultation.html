@@ -190,15 +190,17 @@
 
                 <h3 class="form__title">Записаться на консультацию</h3>
 
-                <form class="form-container" action="mailto:ludakorolchuk@gmail.com" method="POST">
+                <form class="form-container gform"
+                    action="https://script.google.com/macros/s/AKfycbwR0cZ7UH8LpLb2p4sam08S3TJN5nUVp84W0Oyu/exec"
+                    method="POST">
 
 
                     <!-- chose type of consulting -->
                     <div class="form-consulting-select">
                         <label for="nice-select">Тип консультации</label>
                         <select id="nice-select" class="form_input" name="consulting-type"
-                            placeholder="Выбрать тип консультации" required>
-                            <option value=""></option>
+                            placeholder="Выбрать тип консультации">
+                            <option value=""> </option>
                             <option value="Online consultation">Онлайн консультация</option>
                             <option value="Full-time consultation">Очная консультация</option>
                             <option value="Couple consultation">Консультация семейной пары</option>
@@ -213,23 +215,24 @@
                         <div class="checkbox-container">
 
                             <div class="checkbox-item">
-                                <input class="checkbox-icon" type="checkbox" name="Skype" id="skype">
+                                <input class="checkbox-icon" type="checkbox" name="способ связи" id="skype" value="skype">
                                 <label class="checkbox-text" for="skype"><span></span>Skype</label>
                             </div>
-                            <div class="checkbox-item checkbox-messenger">
-                                <input class="checkbox-icon" type="checkbox" name="Viber" id="viber">
+
+                            <div class="checkbox-item">
+                                <input class="checkbox-icon" type="checkbox" name="способ связи" id="viber" value="Viber">
                                 <label class="checkbox-text" for="viber"><span></span>Viber</label>
                             </div>
                             <div class="checkbox-item">
-                                <input class="checkbox-icon" type="checkbox" name="Messenger" id="messenger">
+                                <input class="checkbox-icon" type="checkbox" name="способ связи" id="messenger" value="Messenger">
                                 <label class="checkbox-text" for="messenger"><span></span>Messenger</label>
                             </div>
                             <div class="checkbox-item">
-                                <input class="checkbox-icon" type="checkbox" name="Zoom" id="zoom">
+                                <input class="checkbox-icon" type="checkbox" name="способ связи" id="zoom" value="Zoom">
                                 <label class="checkbox-text" for="zoom"><span></span>Zoom</label>
                             </div>
                             <div class="checkbox-item">
-                                <input class="checkbox-icon" type="checkbox" name="подходят все" id="all">
+                                <input class="checkbox-icon" type="checkbox" name="способ связи" id="all" value="подходят все">
                                 <label class="checkbox-text" for="all"><span></span>подходят все</label>
                             </div>
                         </div>
@@ -256,7 +259,7 @@
                             <label for="phone-input">Телефон</label>
                             <input id="phone-input" class="form_input" type="tel" name="phone"
                                 placeholder="+38(___) ___-__-__"
-                                pattern="[\+]\d{2}\s[\(]\[69]{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength=28>
+                                pattern="[\+]\d{2}\s[\(]\[69]{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
                         </div>
 
                     </div>
@@ -264,13 +267,13 @@
                     <div class="form-textarea">
                         <label for="about-problem">Напишите коротко о проблеме</label>
                         <textarea class="form_input" name="about-problem" id="about-problem"
-                            placeholder="Коротко о проблеме"></textarea>
+                            placeholder="Коротко о проблеме" required></textarea>
                     </div>
                     <!-- date and time -->
                     <div class="form-input-date-time">
                         <label for="date-and-time">Когда Вам было бы удобно получить консультацию</label>
                         <input class="form_input" type="text" name="date-and-time" id="date-and-time"
-                            placeholder="Укажите удобные даты и время">
+                            placeholder="Укажите удобные даты и время" required>
                     </div>
                     <!-- submit button -->
                     <div class="form-submit">
@@ -278,6 +281,23 @@
                             <span class="flex-center">ЗАПИСАТЬСЯ</span>
                         </button>
                     </div>
+                    <!-- form thankyou message after sending start -->
+
+                    <div class="form-success thankyou_message">
+                    <!-- <div class="form-success"> -->
+                        <div class="cross"></div>
+                        <h4>Благодарим вас за запись.</h4>
+                        <p>
+                            <span>Реквизиты для оплаты будут высланы Вам на электронную почту.</span>
+                            <span>Мы свяжемся с Вами в ближайшее время для подтверждения заказа.</span>
+                        </p>
+                    </div>
+                    <!-- <div style="display:none" class="thankyou_message">
+                        
+                        <h2><em>Thanks</em> for contacting us! We will get back to you soon!
+                        </h2>
+                    </div> -->
+                    <!-- form thankyou message after sending end -->
                 </form>
             </section>
 
@@ -356,7 +376,19 @@
     <script src="js/lightbox.js"></script>
     <script src="js/phone-mask.js"></script>
     <script src="js/nice-select2.js"></script>
+    <script src="js/form-submission-handler.js"></script>
     <script src="js/script.js"></script>
+    
+
+    <script>
+        $('.form').on('click', '.cross', function () {
+            $('.form').css('display', 'none');
+        });
+
+        $('.form-success').on('click', '.cross', function () {
+            $('.form-success').css('display', 'none');
+        });
+    </script>
 </body>
 
 </html>

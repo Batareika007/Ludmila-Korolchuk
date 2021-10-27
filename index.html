@@ -608,8 +608,9 @@
                     <!-- form thankyou message after sending start -->
 
                     <div class="form-success thankyou_message">
+                    <!-- <div class="form-success"> -->
                         <div class="cross"></div>
-                        <h4>Благодарим Вас за заказ.</h4>
+                        <h4>Благодарим вас за запись.</h4>
                         <p>
                             <span>Реквизиты для оплаты будут высланы Вам на электронную почту.</span>
                             <span>Мы свяжемся с Вами в ближайшее время для подтверждения заказа.</span>
@@ -1347,9 +1348,9 @@
     <script src="js/script.js"></script>
 
     <script>
-        // $('.form').on('click', '.cross', function () {
-        //     $('.form').css('display', 'none');
-        // });
+        $('.form').on('click', '.cross', function () {
+            $('.form').css('display', 'none');
+        });
 
         $('.form-success').on('click', '.cross', function () {
             $('.form-success').css('display', 'none');
