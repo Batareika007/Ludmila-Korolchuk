@@ -2657,8 +2657,7 @@ input[type="checkbox"]:checked+label span {
 .form-success {
     display: none;
     position: fixed;
-    // top: 50%;
-    bottom: -10%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 8px;

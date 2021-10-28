@@ -316,4 +316,5 @@ input[type="checkbox"]:checked + label span {
 .form-success {
   position: fixed;
   max-width: 576px;
+  bottom: -10%;
 }
