@@ -1,13 +1,11 @@
 .blog__title {
   margin-bottom: 64px;
 }
-
 @media screen and (max-width: 768px) {
   .blog__title {
     margin-bottom: 32px;
   }
 }
-
 @media screen and (max-width: 425px) {
   .blog__title {
     margin-bottom: 16px;
@@ -19,7 +17,6 @@
   font-size: 32px;
   line-height: 150%;
 }
-
 @media screen and (max-width: 425px) {
   .blog__article_title {
     font-size: 20px;
@@ -32,9 +29,8 @@
   font-size: 24px;
   line-height: 150%;
   margin-bottom: 24px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 @media screen and (max-width: 425px) {
   .article-title {
     font-size: 20px;
@@ -44,49 +40,36 @@
 
 .article__container {
   margin: 0 auto;
-  display: -ms-grid;
   display: grid;
   grid-auto-columns: 1fr;
-  -ms-grid-columns: 352px 1fr;
-      grid-template-columns: 352px 1fr;
-  -ms-grid-rows: 528px auto auto;
-      grid-template-rows: 528px auto auto;
+  grid-template-columns: 352px 1fr;
+  grid-template-rows: 528px auto auto;
   gap: 16px 32px;
-      grid-template-areas: "article__image article__text" "article__links                 article__text" "acordion                       article__text";
+  grid-template-areas: "article__image article__text" "article__links                 article__text" "acordion                       article__text";
   max-width: 931px;
 }
-
 @media screen and (max-width: 1024px) {
   .article__container {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
-
 @media screen and (max-width: 600px) {
   .article__container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 200px auto auto auto;
-        grid-template-rows: 200px auto auto auto;
-        grid-template-areas: "article__image" "article__text" "article__links" "acordion";
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px auto auto auto;
+    grid-template-areas: "article__image" "article__text" "article__links" "acordion";
   }
 }
 
 .article__text {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 2;
   grid-area: article__text;
   text-align: left;
 }
-
 .article__text p {
   font-size: 16px;
   line-height: 150%;
   margin-bottom: 24px;
 }
-
 .article__text .custom-background {
   background: linear-gradient(261.82deg, #C7A5FA -10.12%, rgba(199, 165, 250, 0.2) 94.87%);
   -webkit-box-shadow: 2px 2px 4px rgba(116, 31, 242, 0.6);
@@ -95,27 +78,22 @@
   padding: 16px;
   font-weight: 500;
 }
-
 .article__text span {
   display: block;
   text-align: right;
 }
 
 .article__image {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: article__image;
   border-radius: 8px;
   overflow: hidden;
 }
-
 .article__image img {
   width: 100%;
   min-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 @media screen and (max-width: 425px) {
   .article__image img {
     -o-object-fit: cover;
@@ -124,56 +102,39 @@
 }
 
 .article__links {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: article__links;
   text-align: left;
 }
-
 .article__links .link__grid {
   margin-bottom: 16px;
   grid-auto-columns: 1fr;
-  -ms-grid-columns: 64px auto;
-      grid-template-columns: 64px auto;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
+  grid-template-columns: 64px auto;
+  grid-template-rows: auto auto;
   gap: 0px 16px;
-      grid-template-areas: "link_image link_header" "link_image link_text";
+  grid-template-areas: "link_image link_header" "link_image link_text";
 }
-
 .article__links .link__grid:first-child {
   display: none;
 }
-
 .article__links .link__grid .link__grid_image {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
   grid-area: link_image;
   width: 64px;
   height: 64px;
   border-radius: 8px;
   overflow: hidden;
 }
-
 .article__links .link__grid .link__grid_image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .article__links .link__grid .link__grid_header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: link_header;
   font-size: 18px;
   line-height: 150%;
 }
-
 .article__links .link__grid .link__grid_text {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: link_text;
   font-size: 16px;
   max-height: 72px;
@@ -186,12 +147,8 @@
 }
 
 .article__accordion {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   grid-area: acordion;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
+  align-self: start;
 }
 
 .blog__poetry {
@@ -216,19 +173,16 @@
   padding: 16px;
   background-color: #fff;
 }
-
 .poetry__lists-item .poetry__paraghraph {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
   margin: 0 auto;
 }
-
 .poetry__lists-item p {
   margin-bottom: 1rem;
   text-align: left;
 }
-
 .poetry__lists-item p span {
   display: block;
 }
@@ -238,38 +192,30 @@
 }
 
 .images-container1 {
-  display: -ms-grid;
   display: grid;
   margin-bottom: 15px;
-  -ms-grid-columns: 0.65fr 1.4fr 1.4fr 0.65fr;
-      grid-template-columns: 0.65fr 1.4fr 1.4fr 0.65fr;
-  -ms-grid-rows: 200px;
-      grid-template-rows: 200px;
+  grid-template-columns: 0.65fr 1.4fr 1.4fr 0.65fr;
+  grid-template-rows: 200px;
   gap: 0 24px;
-      grid-template-areas: "image1 image2 image3 image4";
+  grid-template-areas: "image1 image2 image3 image4";
 }
-
 .images-container1 div {
   border-radius: 8px;
 }
-
 @media screen and (max-width: 768px) {
   .images-container1 {
-    -ms-grid-columns: 0.5fr 1.5fr 0.5fr;
-        grid-template-columns: 0.5fr 1.5fr 0.5fr;
-        grid-template-areas: "image1 image2 image4";
+    grid-template-columns: 0.5fr 1.5fr 0.5fr;
+    grid-template-areas: "image1 image2 image4";
     gap: 0 16px;
   }
   .images-container1 .image3 {
     display: none;
   }
 }
-
 @media screen and (max-width: 425px) {
   .images-container1 {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "image1 image4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image1 image4";
   }
   .images-container1 .image2 {
     display: none;
@@ -278,37 +224,29 @@
 
 .images-container2 {
   margin-bottom: 15px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: 200px;
-      grid-template-rows: 200px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px;
   gap: 0 24px;
-      grid-template-areas: "image5 image6 image7";
+  grid-template-areas: "image5 image6 image7";
 }
-
 .images-container2 div {
   border-radius: 8px;
 }
-
 @media screen and (max-width: 768px) {
   .images-container2 {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "image5 image7";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image5 image7";
     gap: 0 16px;
   }
   .images-container2 .image6 {
     display: none;
   }
 }
-
 @media screen and (max-width: 425px) {
   .images-container2 {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "image5";
+    grid-template-columns: 1fr;
+    grid-template-areas: "image5";
   }
   .images-container2 .image7 {
     display: none;
@@ -316,38 +254,30 @@
 }
 
 .images-container3 {
-  display: -ms-grid;
   display: grid;
   margin-bottom: 15px;
-  -ms-grid-columns: 0.65fr 1.4fr 1.4fr 0.65fr;
-      grid-template-columns: 0.65fr 1.4fr 1.4fr 0.65fr;
-  -ms-grid-rows: 200px;
-      grid-template-rows: 200px;
+  grid-template-columns: 0.65fr 1.4fr 1.4fr 0.65fr;
+  grid-template-rows: 200px;
   gap: 0 24px;
-      grid-template-areas: "image9 image8 image12 image10";
+  grid-template-areas: "image9 image8 image12 image10";
 }
-
 .images-container3 div {
   border-radius: 8px;
 }
-
 @media screen and (max-width: 768px) {
   .images-container3 {
-    -ms-grid-columns: 0.5fr 1.5fr 0.5fr;
-        grid-template-columns: 0.5fr 1.5fr 0.5fr;
-        grid-template-areas: "image9 image12 image10";
+    grid-template-columns: 0.5fr 1.5fr 0.5fr;
+    grid-template-areas: "image9 image12 image10";
     gap: 0 16px;
   }
   .images-container3 .image8 {
     display: none;
   }
 }
-
 @media screen and (max-width: 425px) {
   .images-container3 {
-    -ms-grid-columns: 2fr 1fr;
-        grid-template-columns: 2fr 1fr;
-        grid-template-areas: "image12 image10";
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "image12 image10";
   }
   .images-container3 .image9 {
     display: none;
@@ -356,37 +286,29 @@
 
 .images-container4 {
   margin-bottom: 15px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1.4fr 1.4fr 0.65fr 0.65fr;
-      grid-template-columns: 1.4fr 1.4fr 0.65fr 0.65fr;
-  -ms-grid-rows: 200px;
-      grid-template-rows: 200px;
+  grid-template-columns: 1.4fr 1.4fr 0.65fr 0.65fr;
+  grid-template-rows: 200px;
   gap: 0 24px;
-      grid-template-areas: "image18 image17 image11 image14";
+  grid-template-areas: "image18 image17 image11 image14";
 }
-
 .images-container4 div {
   border-radius: 8px;
 }
-
 @media screen and (max-width: 768px) {
   .images-container4 {
-    -ms-grid-columns: 1fr 1fr 0.5fr;
-        grid-template-columns: 1fr 1fr 0.5fr;
-        grid-template-areas: "image18 image17 image11";
+    grid-template-columns: 1fr 1fr 0.5fr;
+    grid-template-areas: "image18 image17 image11";
     gap: 0 16px;
   }
   .images-container4 .image14 {
     display: none;
   }
 }
-
 @media screen and (max-width: 425px) {
   .images-container4 {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "image17 image11";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image17 image11";
   }
   .images-container4 .image18 {
     display: none;
@@ -395,46 +317,36 @@
 
 .images-container5 {
   margin-bottom: 15px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1.4fr 1.4fr 0.65fr 0.65fr;
-      grid-template-columns: 1.4fr 1.4fr 0.65fr 0.65fr;
-  -ms-grid-rows: 200px;
-      grid-template-rows: 200px;
+  grid-template-columns: 1.4fr 1.4fr 0.65fr 0.65fr;
+  grid-template-rows: 200px;
   gap: 0 24px;
-      grid-template-areas: "image20 image19 image15 image13";
+  grid-template-areas: "image20 image19 image15 image13";
 }
-
 .images-container5 div {
   border-radius: 8px;
 }
-
 @media screen and (max-width: 768px) {
   .images-container5 {
-    -ms-grid-columns: (0.5fr)[4];
-        grid-template-columns: repeat(4, 0.5fr);
+    grid-template-columns: repeat(4, 0.5fr);
     gap: 0 16px;
   }
   .images-container5 .image3 {
     display: none;
   }
 }
-
 @media screen and (max-width: 425px) {
   .images-container5 {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "image15 image13";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image15 image13";
   }
   .images-container5 .image20,
-  .images-container5 .image19 {
+.images-container5 .image19 {
     display: none;
   }
 }
 
 .image1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: image1;
   background-image: url("../images/galerry/gallery-small/img1.jpg");
   background-size: cover;
@@ -442,8 +354,6 @@
 }
 
 .image2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: image2;
   background-image: url("../images/galerry/gallery-small/img2.jpg");
   background-size: cover;
@@ -451,8 +361,6 @@
 }
 
 .image3 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   grid-area: image3;
   background-image: url("../images/galerry/gallery-small/img3.jpg");
   background-size: cover;
@@ -460,8 +368,6 @@
 }
 
 .image4 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
   grid-area: image4;
   background-image: url("../images/galerry/gallery-small/img4.jpg");
   background-size: cover;
@@ -469,8 +375,6 @@
 }
 
 .image5 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: image5;
   background-image: url("../images/galerry/gallery-small/img5.jpg");
   background-size: cover;
@@ -478,8 +382,6 @@
 }
 
 .image6 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: image6;
   background-image: url("../images/galerry/gallery-small/img6.jpg");
   background-size: cover;
@@ -487,8 +389,6 @@
 }
 
 .image7 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   grid-area: image7;
   background-image: url("../images/galerry/gallery-small/img7.jpg");
   background-size: cover;
@@ -496,8 +396,6 @@
 }
 
 .image8 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: image8;
   background-image: url("../images/galerry/gallery-small/img8.jpg");
   background-size: cover;
@@ -505,8 +403,6 @@
 }
 
 .image9 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: image9;
   background-image: url("../images/galerry/gallery-small/img-blog9.jpg");
   background-size: cover;
@@ -514,8 +410,6 @@
 }
 
 .image10 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
   grid-area: image10;
   background-image: url("../images/galerry/gallery-small/img-blog10.jpg");
   background-size: cover;
@@ -523,8 +417,6 @@
 }
 
 .image11 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   grid-area: image11;
   background-image: url("../images/galerry/gallery-small/img-blog11.jpg");
   background-size: cover;
@@ -532,8 +424,6 @@
 }
 
 .image12 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   grid-area: image12;
   background-image: url("../images/galerry/gallery-small/img-blog12.jpg");
   background-size: cover;
@@ -541,8 +431,6 @@
 }
 
 .image13 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
   grid-area: image13;
   background-image: url("../images/galerry/gallery-small/img-blog13.jpg");
   background-size: cover;
@@ -550,8 +438,6 @@
 }
 
 .image14 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
   grid-area: image14;
   background-image: url("../images/galerry/gallery-small/img-blog14.jpg");
   background-size: cover;
@@ -559,8 +445,6 @@
 }
 
 .image15 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   grid-area: image15;
   background-image: url("../images/galerry/gallery-small/img-blog15.jpg");
   background-size: cover;
@@ -575,8 +459,6 @@
 }
 
 .image17 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: image17;
   background-image: url("../images/galerry/gallery-small/img-blog17.jpg");
   background-size: cover;
@@ -584,8 +466,6 @@
 }
 
 .image18 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: image18;
   background-image: url("../images/galerry/gallery-small/img-blog18.jpg");
   background-size: cover;
@@ -593,8 +473,6 @@
 }
 
 .image19 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: image19;
   background-image: url("../images/galerry/gallery-small/img-blog19.jpg");
   background-size: cover;
@@ -602,8 +480,6 @@
 }
 
 .image20 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: image20;
   background-image: url("../images/galerry/gallery-small/img-blog20.jpg");
   background-size: cover;
