@@ -47,8 +47,7 @@ select::-ms-expand {
 
 /* remove arrow from select */
 select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    appearance: none;
     /* text-indent: 1px; */
     /* text-overflow: ''; */
 }
